@@ -6,10 +6,14 @@ Live App link : [Coffee Boutique]()
 
 Git Hub Repository : [Coffee Boutique Repository]()
 
+Coffee Boutique is a online E-commerce website engaged in the selling of Coffee & associated Coffee Product. The store offers it's shoppers a wide range of Coffee as well as Coffee product such as machines, manual coffee makers, gift sets and even some treats for those with a sweet tooth.
+The App is aimed at all Coffee Lovers and shows it love of Coffee in its design and colour choice.
+
 
 # Contents
 
 - [User Experience(UX)](#user-experience-ux)
+   * [Scope](#scope)
    * [User Stories](#user-stories)
         * [Agile Method](#agile-method-git-projects)
         * [Future Features](#future-features) 
@@ -66,8 +70,77 @@ Git Hub Repository : [Coffee Boutique Repository]()
 
 ## User Experience UX
 
+## Scope
+
+As an App Developer & Designer, I have tried to incorporate the needs of the Shopper & Business Owner/Admin Manager along with a User-Friendly navigation & an aesthetically pleasing App. The App is designed for the use of anyone who Loves & wishes to purchase Coffee & Coffee Products with an easy to use check out system.
+
+   *  Main App Goals
+      +	To provide our Shoppers with a good website experience and relevant coffee content on display
+      + To provide our Shoppers with a visually pleasing website that is easy to navigate.
+      + To provide our Shoppers a website with a clear purpose and understanding of their needs.
+      + To provide our Shopper with the correct tools allowing shopper to search for products ,leave reviews and rate the products.
+      + To provide our Shopper with an easy and safe way to purchase our coffee products.
+      + To provide our Shoppers with access to mailing list so that they may be informed on our coffee products.
+
+[Back to top ⇧](#contents)
 
 ## User Stories
+
+I have used the Agile method starting with the Epics from which the User Stories are propagated and Task required to complete the User Stories.
+
+### Epic : Navigation & Viewing 
+
+1.	Navigate around the site with ease .
+2.	Navigate to & view a list of Coffee products and choose accordingly.
+3.	Click on a Coffee product to read and view the details
+4.	View Coffee product Reviews so that I can read other Shopper opinions.
+
+### Epic : Registration & User Accounts
+
+1.	Register for an account to avail of the services offered to members
+2.	Login & Logout of the website.
+3.	Recover my password easily if case I forget it .
+4.	Receive confirmation of my registration via email
+5.	Be given a personal profile that I can manage my own details on & from.
+
+### Epic : Review & Rate Products
+
+1.	Review the Coffee Products .
+2.	Delete my Previous reviews.
+3.	Edit my Previous reviews.
+4.	Rate / change my rating on a Coffee Product.
+
+### Epic : Sorting & Searching 
+
+1.	Search for Coffee products via name to find a specific product.
+2.	Sort through a list of available products
+3.	Sort via Categories for coffee products
+4.	Know easily what I have searched for & how many results I have gotten 
+
+### Epic : Purchasing & Check Out
+
+1.	Easily select a product size & quantity.
+2.	View what I have chosen in my shopping Cart
+3.	Be able to adjust quantity of my purchase in my shopping Cart.
+4.	Easily fill out the payment information & use the checkout system provided
+5.	Feel that my details are safe & secure
+6.	Get confirmation that my order has been processed after checkout.
+7.	Receive a Confirmation email for my order after I have checked out . 
+
+### Epic : Favourite Products
+
+1.	Have a Favourite Products section so I can find them again
+2.	Have easy access to my Favourite Products – navigate to 
+3.	Easily add my favourite products
+4.	Easily delete products that I no longer favour
+
+### Epic : Admin & Store Management
+
+1.	Login & Log out and have access to an Admin section via website
+2.	Add new product.
+3.	Edit a product.
+4.	Delete a product
+5.	Be able to add / update / delete a Discount Coupon
 
 
 [Back to top ⇧](#contents)
