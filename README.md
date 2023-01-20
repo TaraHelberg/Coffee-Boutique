@@ -21,6 +21,7 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
       * [Colour Scheme](#colour-scheme)
       * [Images](#images)
       * [Product Descriptions](#product-descriptions)
+      * [Fixtures Categories & Products](#fixtures-categories--products)
       * [Font](#fonts)
       * [Wireframes(Balsamiq Wireframes)](#balsamiq-wireframes)
       * [Data Modal](#data-modal)
@@ -94,7 +95,8 @@ I have used the Agile method starting with the Epics from which the User Stories
 1.	Navigate around the site with ease .
 2.	Navigate to & view a list of Coffee products and choose accordingly.
 3.	Click on a Coffee product to read and view the details
-4.	View Coffee product Reviews so that I can read other Shopper opinions.
+4.  Find Specific Category of Products to quickly find products interested in
+5.	View Coffee product Reviews so that I can read other Shopper opinions.
 
 ### Epic : Registration & User Accounts
 
@@ -367,7 +369,12 @@ Gift Sets Products - Names & Descriptions are made up as to how I felt they shou
 
 Treats Products - Names & Descriptions are made up as to how I felt they should be described to my Shoppers.
 
+[Back to top ⇧](#contents)
 
+## Fixtures Categories & Products
+
+Fixtures are used to loaddata of Catergories & Products in the development of this site.
+The fixture json files are used and modified from the Walkthrough Boutique Ado as I was unable to find a dataset to use that suited this websites theme.
 
 [Back to top ⇧](#contents)
 
@@ -703,32 +710,15 @@ This is part of the Django Framework and supplies a simple form area requesting 
 ## Bugs
 
 Debug was kept on True in order to make use of Django's error page which came in use more often than not as a new Django Developer.
-I as a new Django User & Developer encountered a great many Bugs . Solving them through many different means.
 
-Bug Errors solved via :
+List of Bugs / Errors During Development 
 
-1 :  
+1. Loaddata products using Fixtures, an error was shown in the gitpod.io terminal.
+   It was determined after searching alka "googleing" that the error was generated due to having to few decimal places allocated withing the Products model on the Pricing.
 
-2 : Stack Overflow 
+   ![Loaddata Products Error](assets/readmme-images/Bugs/loaddata-products-error.png)
 
-3 : Djano Documentation
-
-4 : CI Tutor support
-
-Find below a few images of errors encountered and solved through the making of this App.
-
-<details><summary>Images of Bugs / Errors</summary>
-
-![1]()
-
-![2]()
-
-![3]()
-
-![4]()
-
-![5]()
-</details>
+   [Article Credited for Solution](https://code.djangoproject.com/ticket/24636) 
 
 
 ## Manual Testing
