@@ -21,9 +21,9 @@
                 Coffee
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Coffee Beans</a>
-                <a href="" class="dropdown-item">Coffee Ground</a>
-                <a href="" class="dropdown-item">Coffee Pods</a>                
+                <a href="{% url 'products' %}?category=coffee_beans" class="dropdown-item">Coffee Beans</a>
+                <a href="{% url 'products' %}?category=coffee_grounds" class="dropdown-item">Coffee Grounds</a>
+                <a href="{% url 'products' %}?category=coffee_capsule_pods" class="dropdown-item">Coffee Capsule Pods</a>                
             </div>
         </li>
 
@@ -32,9 +32,9 @@
                 Coffee Machines
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Capsule Pod</a>
-                <a href="" class="dropdown-item">Coffee Makers</a>
-                <a href="" class="dropdown-item">Espresso</a>
+                <a href="{% url 'products' %}?category=capsule_pod_machines" class="dropdown-item">Capsule Pod</a>
+                <a href="{% url 'products' %}?category=coffee_makers_machines" class="dropdown-item">Coffee Makers</a>
+                <a href="{% url 'products' %}?category=espresso_machines" class="dropdown-item">Espresso</a>
             </div>
         </li>
 
@@ -43,8 +43,8 @@
                 Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Drink Wears</a>
-                <a href="" class="dropdown-item">Manual Coffee Makers</a>                
+                <a href="{% url 'products' %}?category=drinks_wears" class="dropdown-item">Drink Wears</a>
+                <a href="{% url 'products' %}?category=manual_coffee_makers" class="dropdown-item">Manual Coffee Makers</a>                
             </div>
         </li>
 
@@ -53,8 +53,8 @@
                 Gifts & Treats
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Gift Sets</a>
-                <a href="" class="dropdown-item">Treats</a>                
+                <a href="{% url 'products' %}?category=gift_sets" class="dropdown-item">Gift Sets</a>
+                <a href="{% url 'products' %}?category=coffee_treats" class="dropdown-item">Treats</a>                
             </div>
         </li>                
     </ul>
