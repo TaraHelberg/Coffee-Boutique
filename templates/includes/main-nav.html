@@ -10,9 +10,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>                
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>                                
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>               
             </div>
         </li>
 
@@ -21,6 +21,7 @@
                 Coffee
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                <a href="{% url 'products' %}?category=coffee_beans,coffee_grounds,coffee_capsule_pods" class="dropdown-item">All Coffee</a>
                 <a href="{% url 'products' %}?category=coffee_beans" class="dropdown-item">Coffee Beans</a>
                 <a href="{% url 'products' %}?category=coffee_grounds" class="dropdown-item">Coffee Grounds</a>
                 <a href="{% url 'products' %}?category=coffee_capsule_pods" class="dropdown-item">Coffee Capsule Pods</a>                
@@ -32,6 +33,7 @@
                 Coffee Machines
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+                <a href="{% url 'products' %}?category=capsule_pod_machines,coffee_makers_machines,espresso_machines" class="dropdown-item">All Coffee Machines</a>
                 <a href="{% url 'products' %}?category=capsule_pod_machines" class="dropdown-item">Capsule Pod</a>
                 <a href="{% url 'products' %}?category=coffee_makers_machines" class="dropdown-item">Coffee Makers</a>
                 <a href="{% url 'products' %}?category=espresso_machines" class="dropdown-item">Espresso</a>
@@ -43,6 +45,7 @@
                 Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="{% url 'products' %}?category=drinks_wears,manual_coffee_makers" class="dropdown-item">All Accessories</a>
                 <a href="{% url 'products' %}?category=drinks_wears" class="dropdown-item">Drink Wears</a>
                 <a href="{% url 'products' %}?category=manual_coffee_makers" class="dropdown-item">Manual Coffee Makers</a>                
             </div>
@@ -53,6 +56,7 @@
                 Gifts & Treats
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="{% url 'products' %}?category=gift_sets,coffee_treats" class="dropdown-item">All Gift Sets & Treats</a>
                 <a href="{% url 'products' %}?category=gift_sets" class="dropdown-item">Gift Sets</a>
                 <a href="{% url 'products' %}?category=coffee_treats" class="dropdown-item">Treats</a>                
             </div>
