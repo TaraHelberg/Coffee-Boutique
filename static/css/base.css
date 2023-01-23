@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    font-family: 'Noto Serif Toto';    
+    font-family: 'Noto Serif Toto'; 
+    background-color: #fffdd0;   
 }
 
 /* from Bulma */
@@ -45,7 +46,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #271300 !important;
 }
 
 .border-black {
