@@ -108,7 +108,7 @@
                     </li>
                     <!-- Shopping Cart Icon with Grand Total -->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-coffee{% endif %} nav-link" href="">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-coffee{% endif %} nav-link" href="{% url 'view_cart' %}">
                             <div class="text-center">
                                 <div><i class="fa-solid fa-cart-shopping"></i></div>
                                 <!-- Displays the total cost of items in the basket with 2 decimal points -->
