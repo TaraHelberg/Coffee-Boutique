@@ -10,8 +10,8 @@
         <!--Above Meta allows support of older Internet Explorer versions and eliminate validation errors when validating our HTML-->
         <meta http-equiv="Cache-control" content="public">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Coffee Boutique, online Coffee and products,high quality,taste and flavour coffee,makers and products.">
+        <meta name="keywords" content="Coffee,beans,grounds,pods,manual coffee makers,machines,esspresso,moka pots,drip coffee pots,cups,mugs,esspresso cups,gift sets and treats,Coffee Boutique">
     {% endblock %}
 
     <!-- Extra META Block , incase Extra are require and not contained above -->
@@ -52,14 +52,22 @@
     <title>Coffee Boutique {% block extra_title %}{% endblock %}</title>
 </head>
 <body>
+    <!-- Code from Institute Boutique Ado follow along project slightly modified -->
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+         <!-- Delivery Banner -->
+         <div id="delivery-banner" class="row text-center">
+            <div class="col bg-gold">
+                <h4 class="title-font text-coffee my-3"><strong>Free delivery on orders over  €{{ free_shipping_threshold }}!</strong></h4>                
+            </div>            
+        </div>
+        <div id="topnav" class="row bg-white pt-lg-3 d-none d-lg-flex">            
+            <!-- Products Search Form -->
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">               
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                        <input class="form-control border border-coffee rounded-1" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                            <button class="form-control btn btn-coffee border border-coffee rounded-1" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -68,15 +76,18 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black text-center my-0"><strong>Coffee Boutique</strong></h2>
+            <!-- Page Logo Title & Home page Nav link-->
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">                
+                <a href="{% url 'home' %}" aria-label="Go to the home page" class="nav-link main-title-link">
+                    <h2 class="title-font text-coffee text-center my-0"><strong>Coffee Boutique</strong></h2>
                 </a>                
             </div>
+            <!-- Account Navigation Dropdown to Account Links & Shopping Cart Icon with Grand Total -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <!-- Account Navigation Dropdown to Account Links -->
                     <li class="dropdown list-inline-item">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link text-coffee" href="#" aria-label="Go to Accounts Links" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">Account</p>
@@ -85,25 +96,27 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Product Management</a>
+                                    <a href="#" aria-label="Go to the product management page"class="dropdown-item">Product Management</a>
                                 {% endif %}
-                                <a href="" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                <a href="" aria-label="Go to the profile page" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" aria-label="Go to the accout logout page"class="dropdown-item">Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                <a href="{% url 'account_signup' %}" aria-label="Go to the sign up page" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" aria-label="Go to the login page" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
+                    <!-- Shopping Cart Icon with Grand Total -->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-coffee{% endif %} nav-link" href="">
                             <div class="text-center">
                                 <div><i class="fa-solid fa-cart-shopping"></i></div>
+                                <!-- Displays the total cost of items in the basket with 2 decimal points -->
                                 <p class="my-0">
                                     {% if grand_total %}
-                                        ${{ grand_total|floatformat:2 }}
+                                        €{{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        $0.00
+                                        € 0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -112,22 +125,23 @@
                 </ul>
             </div>
         </div>
+        <!-- Products Navigation -->
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Mobile Top Header with Navbar, Search, Account & Shopping Bag Includes -->
                 {% include 'includes/mobile-top-header.html' %}
+                <!-- End of Mobile Top Header with Navbar, Search, Account & Shopping Bag Includes -->
+                <!-- Main Navbar Includes -->
                 {% include 'includes/main-nav.html' %}
+                <!-- End of Main Navbar Includes -->
             </nav>
-        </div>
-        <div id="delivery-banner" class="row text-center">
-            <div class="col bg-gold">
-                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_shipping_threshold }}!</h4>                
-            </div>            
-        </div>
+        </div>       
     </header>
 
+    <!-- Messages, linked to Toasts. Code From Boutique Ado -->
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}

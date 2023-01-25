@@ -6,7 +6,10 @@ from .models import Product, Category
 
 
 def all_products(request):
-    """ A view to show all products, including sorting and search queries """
+    """
+    A view to show all products, including sorting and search queries
+    Credit : Code Institutes Boutique Ado project
+    """
 
     products = Product.objects.all()
     query = None

@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Block Page Header -->
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -8,16 +9,19 @@
         </div>
     </div>
 {% endblock %}
+<!-- End Block Page Header -->
 
 {% block content %}
+<!-- Products Section: Code from Institute Boutique Ado follow along project slightly modified-->
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font">Products</h2>
+            <div class="col text-center mt-5">
+                <h2 class="title-font">Products</h2>
+                <!-- Display the Category User is in  -->
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                        <span class="p-2 mt-2 badge badge-white text-coffee rounded-1 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
                 <hr class="w-50 mb-1">
@@ -26,6 +30,7 @@
         <div class="row">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
+                    <!-- Sort Functinality Code Credit :Code Institute Boutique Ado walkthrough Project -->
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
                             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
@@ -38,40 +43,47 @@
                                 <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
                             </select>
                         </div>
-                    </div>
+                    </div>                    
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
                                 <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
                             {% endif %}
+                            <!-- Number of products found in search -->
                             {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
                 </div>
+                <!--Products Card with Image ,Product Name-->
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
+                            <div class="card h-100">
+                                <!--Product Image-->
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    <img class="card-img-top img-responsive" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 {% else %}
+                                <!-- Product No image --> 
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    <img class="card-img-top img-responsive" src="{{ MEDIA_URL }}noimage.png"  alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
+                                <!-- Product Name -->
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+                                    <p class="mb-0 text-center"><strong>{{ product.name }}</strong></p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                            <!-- Product Price -->
+                                            <p class="lead mb-0 text-left"><strong>€ {{ product.price }}</strong></p>
+                                            <!-- Product Category -->
                                             {% if product.category %}
-                                            <p class="small mt-1 mb-0">
-                                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                            <p class="small mt-1 mb-2">
+                                                <a class="text-coffee" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                    <i class="fa-solid fa-tags mr-2"></i>{{ product.category.friendly_name }}
                                                 </a>
                                             </p>
                                             {% endif %}
@@ -107,7 +119,7 @@
     </div>
     <div class="btt-button shadow-sm rounded-0 border border-black">
         <a class="btt-link d-flex h-100">
-            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+            <i class="fas fa-arrow-up text-coffee mx-auto my-auto"></i>
         </a>	
     </div>
 {% endblock %}

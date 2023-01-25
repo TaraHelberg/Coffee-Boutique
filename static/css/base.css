@@ -1,70 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 html {
     height: 100%;
 }
 
+/*general body style*/
 body {
-    font-family: 'Noto Serif Toto';        
+    font-family: 'Noto Serif Toto', sans-serif;
+    font-weight: 300;        
 }
 
-/* from Bulma */
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-.logo-font {
-    text-transform: uppercase;
-}
-
-.main-logo-link {
-    width: fit-content;
-}
-
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-}
-
-.btn-black {
-    background: black;
-    color: white;
-}
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
-}
-
-.text-black {
-    color: #271300 !important;
-}
-
-.border-black {
-    border: 1px solid black !important;
-}
-
+/* Delivery Banner Style */
 .bg-gold {
     background: #d4af37 !important;
 }
 
+/*All main Titles style*/
+
+/*Title Font Case Style*/
+.title-font {
+    text-transform: uppercase;    
+}
+
+/*Title Font Color*/
+.text-coffee {
+    color: #5f2f02 !important;
+}
+
+/* from Bulma - Icon stsyles */ 
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+/*Main Title Link Header Style*/
+.main-title-link {
+    width: fit-content;
+}
+
+/* Button style */
+.btn-coffee {
+    background: #5f2f02;
+    color: #ffffed;
+}
+
+.btn-coffee:hover,
+.btn-coffee:active,
+.btn-coffee:focus {
+    background: #d4af37;
+    color: #ffffed;
+}
+
+/* Search Input Style*/
+.border-coffee {
+    border: 0.1em solid #5f2f02 !important;
+}
+
+/* Main-Naviagtion Style*/
+.dropdown-menu > a {
+    color: #5f2f02 !important;
+}
+
+/* Products Overlay background style*/
 .overlay {
 	height: 100%;
 	width: 100%;
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: #ffffed;
 	z-index: -1;
 }
+
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
@@ -104,17 +118,17 @@ a.category-badge > span.badge:hover {
       }
   
       .header-container {
-          padding-top: 164px;
+          padding-top: 12em;
       }
   }
   
   /* pad the top a bit when navbar is collapsed on mobile */
   @media (max-width: 991px) {
       .header-container {
-          padding-top: 116px;
+          padding-top: 9em;
       }
   
       body {
-          height: calc(100vh - 116px);
+          height: calc(100vh - 9em);
       }
   }
