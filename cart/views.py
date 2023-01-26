@@ -19,6 +19,5 @@ def add_to_cart(request, item_id):
     else:
         cart[item_id] = quantity
 
-    request.session['cart'] = cart
-    print(request.session['cart'])
+    request.session['cart'] = cart   
     return redirect(redirect_url)
