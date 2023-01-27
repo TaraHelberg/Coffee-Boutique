@@ -64,6 +64,9 @@ body {
     color: white !important;
 }
 
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
 .btn-coffee:hover,
 .btn-coffee:active,
 .btn-coffee:focus {
@@ -106,10 +109,12 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
-
 
 /* -------------------------------- Media Queries */
 
