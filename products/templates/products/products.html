@@ -90,6 +90,19 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                    <div class="row">
+                                        {% if request.user.is_superuser %}
+                                        <!-- Edit and Delete buttons is user is Superuser -->
+                                        <div class="col edit-product">
+                                            <a href="{% url 'edit_product' product.id %}" class="text-dark">Edit<i class="fa-solid fa-pencil"></i></a>
+                                        </div>
+                                        <div class="col text-right del-product">
+                                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete<i class="fa-solid fa-trash-can"></i></a>
+                                        </div>
+                                        {% endif %}                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         {% if forloop.counter|divisibleby:1 %}
