@@ -720,7 +720,49 @@ List of Bugs / Errors During Development
 
    [Article Credited for Solution](https://code.djangoproject.com/ticket/24636) 
 
+2. Product has_size error, an error was shown in the gitpod.io terminal AttributeError.
+   It was determined after inspecting the terminal error that the s was left off the objects.
+   Error resloved by correcting the spelling .
 
+   ![Product has_size Error](assets/readmme-images/Bugs/has_sizes-attribute-error.png)
+
+3. Toast Success error, an error was shown in the Django 404 yellow error page Template Syntac Error.
+   It was determined after inspecting the error message from Django 404 yellow page, that the error was due to the unused 'grand_total' at the end of an if expression.
+   The error was correct by removing an extra % sign & lining up the 'grand_total' correctly.
+
+   ![Toast Success error](assets/readmme-images/Bugs/toast_success-error.png)
+
+4. Checkout Cart error, an error was shown in the Django 404 yellow error page NameError.
+   It was determined after inspecting the error message from Django 404 yellow page, that the error was due to the cart name error had a capital C in views.py line 11.
+   The error was correct by using lower case c.
+
+   ![Checkout Cart error](assets/readmme-images/Bugs/checkout-error.png)
+
+5. Products add_to_cart error, an error was shown in the Django 404 yellow error page NoReverseMatch.
+   It was determined after inspecting the error message from Django 404 yellow page, that the error was due to a bad url path.
+   This error was correct by inspecting all add_to_cart urls and found that a syntax error had occured, corrected and url become functional.
+
+   ![Products add_to_cart](assets/readmme-images/Bugs/noReverseMatch-at-products-error.png)
+
+6.  Stipe Webhook & signatures Error, an error was shown in the gitpod.io terminal &  Stripe Dash board : 400 error.
+    This error was determinded to be a bad request error.
+    After many code checks,  test, research & 2 sessions with code institute toutouring it was finaly determined that the error was been generated via git enviroment variables. For what ever reason unknow to us all the git was determined to pull the walkthrough Boutique Ado secret keys only . After several attempts to overides this via all means available.
+    The Final solution was decided that all secret keys would have to go into the  env.py file.
+    This was done and settings.py was set up to accomodate this change.
+    Please find the 3 screen shots of the error & print testing to resolve this.
+
+    ![StripeWebhook Terminal Error](assets/readmme-images/Bugs/stripewebhook-error.png)
+
+    ![Stripe Dash Webhook Error](assets/readmme-images/Bugs/stripedashwebhook-error.png)
+
+    ![Stripe webhook no signatures Error](assets/readmme-images/Bugs/stripewebhook-nosignatures-error.png)
+
+7.  Profiles crispy_form error , an error was shown in the gitpod.io terminal ModuleNotFoundError.
+    It was determined after inspecting the terminal error & doing a trace back to my last bit of code that the erro originated in the settings.py file under installed apps.
+    Error occured due to forgetting to put a , after Profiles and then puttin in crispy_forms. Resolved by correcting htis oversight.
+
+    ![Profiles crispy_form error](assets/readmme-images/Bugs/profiles-error.png)       
+  
 ## Manual Testing
 
 * User Testing
