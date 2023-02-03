@@ -762,7 +762,23 @@ List of Bugs / Errors During Development
     Error occured due to forgetting to put a , after Profiles and then puttin in crispy_forms. Resolved by correcting htis oversight.
 
     ![Profiles crispy_form error](assets/readme-images/Bugs/profiles-error.png)       
-  
+
+8. Deployment Db Erros , during deployment migrations to db & heroku 2 differetn errors got shown in the gitpod.io terminal.
+    
+    The 1st been a django.db.utils.IntegrityError: Problem installing fixtures.
+    This error was traced back to via reading the terminal error and research as well as turouring suport to make sure I had the right idea before procceding to the fact that I had added fields to my Products Model after I had made the loaddata and original model.
+    This was corrected by running a python3 manage.py dumpdata products > products.jsonit was run to find how changes will appear in the Json Files.
+    After identifying the changes I added them to the Json files and ran loaddata agian.
+    
+    ![Deployment Integrity Error](assets/readme-images/Bugs/deployment-Integrity-error.png)
+
+    The 2nd Error been django.db.utils.DataError: Problem installing fixtures.
+    This error was traced back to via reading the terminal error and research via google as per the error main hint :vale too long for type charcater varying(100) to the fact that I had not put a max_lenth onto my image field in the Products Model. 
+    This was correct by adding max_lenth to the products model image field and running migrations.
+    
+    ![Products Migration Fixtures Error](assets/readme-images/Bugs/productsmigration-fixtures-error.png)
+    
+
 ## Manual Testing
 
 * User Testing
