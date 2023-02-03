@@ -1,1034 +1,1378 @@
 [
    {
-      "pk":1,
-      "model":"products.product",
-      "fields":{
-         "sku":"cb0000001",
-         "name":"Wide Awake Classic Roast",
-         "description":"Wide Awake Classic Roast is a round, smooth and versatile coffee bean blend, which appeals to most people. The high-quality blend contains 70 % Arabica and 30 % Robusta. Enjoy as standard coffee or as espresso. The coffee has a pleasant, smooth taste with a delicate fine flavour that is full bodied with hints of chocolate and sweetness in the taste.",
-         "price":7.23,
-         "category":1,         
-         "image":"wide-awake-coffee-beans-classic-roast.jpg"
-      }
-   },
-   {
-      "pk":2,
-      "model":"products.product",
-      "fields":{
-         "sku":"cb0000002",
-         "name":"Lazy Bones Smooth Roast",
-         "description":"Lazy Bones Smooth Roast is a deliciously smooth, full-flavoured coffee that has a rich coffee flavour and enticing aroma. An exquisite blend of 55 % Central and 45 % South Tanzanian beans, this bold, boisterous coffee bean is perfect for any occasion an easy smooth coffee suitable for all day drinking & will be sure to give you the delicate, satisfying coffee experience.",
-         "price":6.16,
-         "category":1,         
-         "image":"lazy-bones-coffee-beans-smooth-roast.jpg"
-      }
-   },
-   {
-      "pk":3,
-      "model":"products.product",
-      "fields":{
-         "sku":"cb0000003",         
-         "name":"Rearing To Go Robust Roast",
-         "description":"Rearing To Go Robust Roast has a specific individual flavour dominated by a rich earthiness which is smooth and moderate acidity and medium in body. This single source rich earthy bean is 100% Brazilian robust roast, this amazing earthy coffee is an easy drink and the perfect ready to go coffee can be use as either standard coffee or as espresso.",
-         "price":5.99,
-         "category":1,         
-         "image":"rearing-to-go-coffee-beans-robust-roast.jpg"
-      }
-   },
-   {
-      "pk":4,
-      "model":"products.product",
-      "fields":{
-         "sku":"cb0000004",
-         "name":"Gray Day Pick-Up Fine Roast",
-         "description":"Gray Day Pick-Up Fine Roast brining a smooth subtle flavour with hints of nuts and cocoa. This single source bean is 100% Arabica coffee is finely roasted to a glistening, dark chestnut colour and is wonderfully smooth and globally renowned for its high-quality. Perfect for those Gray days to lift and warm the spirits coffee can be use as either standard coffee or as espresso.",
-         "price":6.54,
-         "category":1,         
-         "image":"gray-day-pick-up-coffee-beans-fine-roast.jpg"
-      }
-   },
-   {
-      "pk":5,
-      "model":"products.product",
-      "fields":{
-         "sku":"cb0000005",
-         "name":"Perky Pink Hand Roast",
-         "description":"Perky Pink Hand Roast a fantastic flavour of a bold taste without the bitterness with a sweet balanced espresso that has intense dominant dark chocolate notes, a treacle sweetness that gives a deep complexity to your coffee. Hand Roasted with Love this speciality grade is 100% Arabica. A perfect all-rounder coffee bean that will Perk Up your Day especially used as an espresso ",
-         "price":9.20,
-         "category":1,         
-         "image":"perky-pink-coffee-beans-hand-roast.jpg"
-      }
-   },
-   {
-      "pk":6,
-      "model":"products.product",
-      "fields":{
-         "sku":"cb0000006",
-         "name":"Out Of This World Organic Roast",
-         "description":"Out Of This World Organic Roast brining to you an amazing earthly rich flavour with hints of nuts. This high-quality blend contains 80 % Caribbean and 20 % Robusta is organically grown, hand-picked and hand roasted. This speciality Coffee bean can be used as an all-rounder and is fantastic as a little goes a long way with Love of the plant this adds to the earthy richness.",
-         "price":10.15,
-         "category":1,         
-         "image":"out-of-this-world-coffee-beans-organic-roast.jpg"
-      }
-   },
-   {
-      "pk":7,
-      "model":"products.product",
-      "fields":{
-         "sku":"cb0000007",
-         "name":"All About You Medium Roast",
-         "description":"All About You Medium Roast is a full flavour rich tasting coffee bean with slight hints of vanilla. The coffee is created from 100% Columbian beans, that make a harmonious and full-bodied coffee giving a balanced and round aftertaste. This coffee is still on top after decades with good reason - the taste been right on the money. This coffee is for all moments in a day.",
-         "price":4.26,
-         "category":1,         
-         "image":"all-about-you-coffee-beans-medium-roast.jpg"
-      }
-   },
-   {
-      "pk":8,
-      "model":"products.product",
-      "fields":{
-         "sku":"cb0000008",
-         "name":"Mildly Blue Light Roast",
-         "description":"Mildly Blue Light Roast comes to you as an all-day every day coffee bean with a Light & Subtle flavour. This coffee is 100% Jamaica Blue Mountain coffee this well cared for and loved coffee is 'put to sleep' for 3-4 months giving it the greenish blue colour. This is the coffee lover's choice for every day drinking in any form drip, perc or espresso and perfect to keep those blues away.",
-         "price":5.16,
-         "category":1,         
-         "image":"mildly-blue-coffee-beans-light-roast.jpg"
-      }
-   },
-   {
-      "pk":9,
-      "model":"products.product",
-      "fields":{
-         "sku":"cb0000009",
-         "name":"Golden Goddess Medium-Dark Roast",
-         "description":"Golden Goddess Medium-Dark Roast is a well-balance coffee with a rich dark flavour that is not overpowering slight hints of orange citrus. This golden coloured coffee bean blend is 75% Arabica from Central America and 25% Robust Caribbean a perfect blend. This is a well-rounded all-purpose coffee and is great for everyday use, but also perfect for guests and festive occasions. Adding a golden glow to all occasions",
-         "price":6.19,
-         "category":1,         
-         "image":"golden-goddess-coffe-beans-medium-dark-roast.jpg"
-      }
-   },
-   {
-      "pk":10,
-      "model":"products.product",
-      "fields":{
-         "sku":"cb0000010",
-         "name":"Dangerous Dark Blue Dark Roast",
-         "description":"Dangerous Dark Blue Dark Roast comes to you with a smoky, dark, complex flavour that is simply wonderful with a smooth aftertaste leaving you wanting more. This rick dark coloured coffee bean is 100% Kenyan Coffee from the highest mountain regions and spring water grown brining its unique flavours to your home. Especially good as espresso but more than able to handle everyday use making you want to live dangerously it's that good",
-         "price":5.29,
-         "category":1,         
-         "image":"dangerous-darkblue-coffee-bean-dark-roast.jpg"
-      }
-   },
-   {
-      "pk":11,
-      "model":"products.product",
-      "fields":{
-         "sku":"cg0000011",
-         "name":"All About You Medium Roast Grounds",
-         "description":"All About You Medium Roast is a full flavour rich tasting coffee ground with slight hints of vanilla. The coffee is created from 100% Columbian beans, that make a harmonious and full-bodied coffee giving a balanced and round aftertaste. This coffee is still on top after decades with good reason - the taste been right on the money. This coffee is for all moments in a day.",
-         "price":3.89,
-         "category":2,         
-         "image":"all-about-you-coffee-ground-medium-roast.jpg"
-      }
-   },
-   {
-      "pk":12,
-      "model":"products.product",
-      "fields":{
-         "sku":"cg0000012",
-         "name":"Golden Goddess Medium-Dark Roast Grounds",
-         "description":"Golden Goddess Medium-Dark Roast is a well-balance coffee with a rich dark flavour that is not overpowering slight hints of orange citrus. This golden coloured coffee ground blend is 75% Arabica from Central America and 25% Robust Caribbean a perfect blend. This is a well-rounded all-purpose coffee and is great for everyday use, but also perfect for guests and festive occasions. Adding a golden glow to all occasions",
-         "price":5.79,
-         "category":2,         
-         "image":"golden-goddess-coffe-ground-medium-dark-roast.jpg"
-      }
-   },
-   {
-      "pk":13,
-      "model":"products.product",
-      "fields":{
-         "sku":"cg0000013",
-         "name":"Gray Day Pick-Up Fine Roast Grounds",
-         "description":"Gray Day Pick-Up Fine Roast brining a smooth subtle flavour with hints of nuts and cocoa. This single source coffee ground is 100% Arabica coffee is finely roasted to a glistening, dark chestnut colour and is wonderfully smooth and globally renowned for its high-quality. Perfect for those Gray days to lift and warm the spirits coffee can be use as either standard coffee or as espresso.",
-         "price":5.89,
-         "category":2,         
-         "image":"gray-day-pick-up-coffee-ground-fine-roast.jpg"
-      }
-   },
-   {
-      "pk":14,
-      "model":"products.product",
-      "fields":{
-         "sku":"cg0000014",
-         "name":"Mildly Blue Light Roast Grounds",
-         "description":"Mildly Blue Light Roast comes to you as an all-day every day coffee ground with a Light & Subtle flavour. This coffee is 100% Jamaica Blue Mountain coffee this well cared for and loved coffee is 'put to sleep' for 3-4 months giving it the greenish blue colour. This is the coffee lover's choice for every day drinking in any form drip, perc or espresso and perfect to keep those blues away.",
-         "price":4.68,
-         "category":2,         
-         "image":"mildly-blue-coffee-ground-light-roast.jpg"
-      }
-   },
-   {
-      "pk":15,
-      "model":"products.product",
-      "fields":{
-         "sku":"cg0000015",
-         "name":"Perky Pink Hand Roast Grounds",
-         "description":"Perky Pink Hand Roast a fantastic flavour of a bold taste without the bitterness with a sweet balanced espresso that has intense dominant dark chocolate notes, a treacle sweetness that gives a deep complexity to your coffee. Hand Roasted with Love this speciality grade is 100% Arabica. A perfect all-rounder coffee ground that will Perk Up your Day especially used as an espresso.",
-         "price":8.52,
-         "category":2,         
-         "image":"perky-pink-coffee-ground-hand-roast.jpg"
-      }
-   },
-   {
-      "pk":16,
-      "model":"products.product",
-      "fields":{
-         "sku":"cg0000016",
-         "name":"Rambunctious Red Medium-Dark Roast Grounds",
-         "description":"Rambunctious Red Medium-Dark Roast is a balanced coffee with a full dark flavour and slight hints of hazel nuts. This rich bronze coffee ground blend is 65% Tanzanian and 35% Robust Caribbean an amazing blend. This is a well-balanced but checky all-rounder coffee and is great for everyday use. This is a rambunctiously cheeky coffee that you can't get enough off.",
-         "price":5.12,
-         "category":2,         
-         "image":"rambunctious-red-coffee-ground-medium-dark-roast.jpg"
-      }
-   },
-   {
-      "pk":17,
-      "model":"products.product",
-      "fields":{
-         "sku":"cg0000017",
-         "name":"Cheeky Moco Fine Roast Grounds",
-         "description":"Cheeky Moco Fine Roast brining a smooth Moco Chocolate and Vanilla flavour. This blend ground is 80% Arabica and 20% Columbian coffee is finely roasted to a glistening, dark chestnut colour and is smooth with a high-quality after taste. Perfect for those checky occasion and treat days can be use as either standard coffee or as espresso but is especially good as a flat white.",
-         "price":6.18,
-         "category":2,         
-         "image":"cheeky-moco-coffee-ground-fine-roast.jpg"
-      }
-   },
-   {
-      "pk":18,
-      "model":"products.product",
-      "fields":{
-         "sku":"cg0000018",
-         "name":"Brazen Bronze Dark Roast Grounds",
-         "description":"Brazen Bronze Dark Roast is has a dark complex full-bodied flavour that is amazing with a smooth aftertaste leaving you so very satisfied. This rick dark coloured coffee ground is 100% Indonesian Coffee from the rainforest regions and spring water grown giving it a fantastically unique flavours right to your home. Especially good as espresso but more than able to handle everyday use be Brazen and Enjoy.",
-         "price":5.16,
-         "category":2,         
-         "image":"brazen-bronze-coffee-grounds-dark-roast.jpg"
-      }
-   },
-   {
-      "pk":19,
-      "model":"products.product",
-      "fields":{
-         "sku":"cg0000019",
-         "name":"Vivaciously Vanilla Fine Roast Grounds",
-         "description":"Vivaciously Vanilla Fine Roast has a subtle but bold Vanilla flavour. This blend ground is 75% Ethiopian and 25% Vietnamese coffee is finely roasted to a dark rich chestnut colour and is smooth with a vanilla after taste. A lively animated carefree coffee can either standard coffee or as espresso but is especially good as a flat white.",
-         "price":4.28,
-         "category":2,         
-         "image":"vivaciously-vanilla-coffee-grounds-fine-roast.jpg"
-      }
-   },
-   {
-      "pk":20,
-      "model":"products.product",
-      "fields":{
-         "sku":"cg0000020",
-         "name":"Wonderfully Wild Classic Roast Grounds",
-         "description":"Wonderfully Wild Classic Roast is a full bodied, smooth interesting coffee ground blend, which appeals to coffee lovers. The high-quality blend contains 60 % Tanzanian and 40 % Robusta giving it it's unbelievable wild flavour. This is the perfect all-rounder coffee enjoy any way you like, go wild with it.",
-         "price":5.38,
-         "category":2,         
-         "image":"wonderfully-wild-coffee-ground-classic-roast.jpg"
-      }
-   },
-   {
-      "pk":21,
-      "model":"products.product",
-      "fields":{
-         "sku":"ccp000021",
-         "name":"Classy Classic Capsule Pods",
-         "description":"Classy Classic Capsule Pods has a stylish high-classed superior coffee flavour. The high-quality blend contains 70 % Arabica and 30 % Robusta perfectly balance into your coffee pod made easy and quick for you. Enjoy this easy ready Coffee within minutes. The coffee has a pleasant, smooth taste with a delicate fine flavour that is full bodied. Sold in a pack of 12 for your Enjoyment.",
-         "price":4.49,
-         "category":3,         
-         "image":"classy-classic-coffee-capsule-pod.jpg"
-      }
-   },
-   {
-      "pk":22,
-      "model":"products.product",
-      "fields":{
-         "sku":"ccp000022",
-         "name":"In A Blink Blue Capsule Pods",
-         "description":"In A Blink Blue Capsule Pods comes to you as an all-day every day coffee capsule pod with a Light & Subtle flavour. This coffee is 100% Jamaica Blue Mountain coffee this well cared for and loved coffee is 'put to sleep' for 3-4 months giving it the greenish blue colour. This is the coffee lover's choice for every day drinking , made in the blind of an eye for coffee lover on the go. Sold in a pack of 12 for your Enjoyment.",
-         "price":5.32,
-         "category":3,         
-         "image":"in-a-blink-blue-coffee-capsule-pod.jpg"
-      }
-   },
-   {
-      "pk":23,
-      "model":"products.product",
-      "fields":{
-         "sku":"ccp000023",
-         "name":"Galloping Gold Capsule Pods",
-         "description":"Galloping Gold Capsule Pods brings to you a Medium-Dark Roast well-balance coffee with a rich dark flavour that is not overpowering slight hints of coco. This golden coloured coffee capsule pod is a blend of 75% Arabica from Central America and 25% Robust Caribbean a perfect blend. This is a well-rounded all-purpose coffee and is great for everyday use for those on the gallop. Sold in a pack of 12 for your Enjoyment.",
-         "price":4.99,
-         "category":3,         
-         "image":"galloping-gold-coffee-capsule-pod.png"
-      }
-   },
-   {
-      "pk":24,
-      "model":"products.product",
-      "fields":{
-         "sku":"ccp000024",
-         "name":"Galvanizing Green Capsule Pods",
-         "description":"Galvanizing Green Capsule Pods is a well round, smooth and versatile coffee capsule pod blend, which appeals to most people. The high-quality blend contains 70 % Arabica and 30 % Robusta. The coffee has a pleasant, smooth taste with a delicate fine flavour that is full bodied with hints of chocolate and sweetness in the taste. This coffee is sure to galvanize you into your fast passed day. Sold in a pack of 12 for your Enjoyment.",
-         "price":5.12,
-         "category":3,         
-         "image":"galvanizing-green-coffee-capsule-pod.png"
-      }
-   },
-   {
-      "pk":25,
-      "model":"products.product",
-      "fields":{
-         "sku":"ccp000025",
-         "name":"Blazing Blue Capsule Pods",
-         "description":"Blazing Blue Capsule Pods is a full flavour rich tasting coffee capsule pod with slight hints of vanilla. The coffee is created from 100% Columbian beans, that make a harmonious and full-bodied coffee giving a balanced and round aftertaste. This coffee is for all moments in a day. This coffee capsule will see you blazing throughout your day. Sold in a pack of 12 for your Enjoyment.",
-         "price":4.69,
-         "category":3,         
-         "image":"blazing-blue-coffee-capsule-pod.png"
-      }
-   },
-   {
-      "pk":26,
-      "model":"products.product",
-      "fields":{
-         "sku":"ccp000026",
-         "name":"Brazen Bronze Capsule Pods",
-         "description":"Brazen Bronze Capsule Pods has a dark complex full-bodied flavour that has an amazing smooth aftertaste leaving you so very satisfied. This rick dark coloured coffee is 100% Indonesian Coffee from the rainforest regions and spring water grown giving it a fantastically unique flavours right to your home. This is a strong brazen coffee to get you going and keep you going. Be your Brazen self and Enjoy. Sold in a pack of 12 for your Enjoyment.",
-         "price":5.23,
-         "category":3,         
-         "image":"brazen-bronze-coffee-capsule-pod.png"
-      }
-   },
-   {
-      "pk":27,
-      "model":"products.product",
-      "fields":{
-         "sku":"ccp000027",
-         "name":"Vibrant Vanilla Capsule Pod",
-         "description":"Vibrant Vanilla Capsule Pod has a subtle but bold Vanilla flavour. This blend ground is 75% Ethiopian and 25% Vietnamese coffee of a dark rich chestnut colour and is smooth with a vanilla after taste. A lively animated carefree coffee. Keeping you vibrant and on the go an absolute all-day coffee for those on the go that enjoy a hint of flavour. Sold in a pack of 12 for your Enjoyment.",
-         "price":6.15,
-         "category":3,         
-         "image":"vibrant-vanilla-coffee-capsule-pod.jpg"
-      }
-   },
-   {
-      "pk":28,
-      "model":"products.product",
-      "fields":{
-         "sku":"ccp000028",
-         "name":"Mighty Mochaccino Capsule Pod",
-         "description":"Mighty Mochaccino Capsule Pod brining a mighty flavour of our favour smoothy coffee chocolate. This single source bean is 100% Arabica coffee finely roasted to a glistening, dark chestnut colour and is wonderfully smooth and globally renowned for its high-quality. Perfect for those days when been mighty is a must and just because well, we all love a coffee with chocolate. Sold in a pack of 12 for your Enjoyment.",
-         "price":6.12,
-         "category":3,         
-         "image":"mighty-mochaccino-coffee-capsule-pod.jpg"
-      }
-   },
-   {
-      "pk":29,
-      "model":"products.product",
-      "fields":{
-         "sku":"ccp000029",
-         "name":"Charging Cappuccino Capsule Pod",
-         "description":"Charging Cappuccino Capsule Pod is an espresso-based coffee with a full dark flavour coffee presented to you with the milky foam to form our Cappuccino. This rich bronze coffee blend is 65% Tanzanian and 35% Robust Caribbean an amazing blend. This smooth creamy cappuccino will get you charge up for your busy day. Sold in a pack of 12 for your Enjoyment.",
-         "price":5.11,
-         "category":3,         
-         "image":"charging-cappuccino-coffee-capsule-pod.jpg"
-      }
-   },
-   {
-      "pk":30,
-      "model":"products.product",
-      "fields":{
-         "sku":"ccp000030",
-         "name":"Cheeky Cherry Choco Capsule Pod",
-         "description":"Cheeky Cherry Choco Capsule Pod brining a delightful hint of Cherry and Chocolate flavour. This blend coffee capsule is 80% Arabica and 20% Columbian coffee this is a high-quality taste for those seeking something a little different than the standard flavoured coffee a not to be missed. Perfect for those checky occasion and treat days. Sold in a pack of 12 for your Enjoyment.",
-         "price":6.11,
-         "category":3,         
-         "image":"cheeky-cherry-choco-coffee-capsule-pod.jpg"
-      }
-   },
-   {
-      "pk":31,
-      "model":"products.product",
-      "fields":{
-         "sku":"dw0000031",
-         "name":"Diamond & Triangle Design Black & White Ceramic Cup & Plate",
-         "description":"Diamond & Triangle Design Black & White Ceramic Cup & Plate made of high-quality ceramic with a modern look & feel having a Diamond and Triangle design into the structure of the cup itself. The choice for a modern look & feel. Sold as a set of 2 , 1 white & 1 black.",
-         "price":6.45,
-         "category":4,         
-         "image":"diamond-triangle-patern-black-ceramic-cup-black-plate-white-ceramic-cup-white-plate-on-warm-wooden-table.jpg"
-      }
-   },
-   {
-      "pk":32,
-      "model":"products.product",
-      "fields":{
-         "sku":"dw0000032",
-         "name":"Espresso glass steel base and handle",
-         "description":"Espresso glass steel base and handle made of the very best quality glass and presented to you with stainless steel base and handle. These elegant espresso cups are adding a modern yet classy look to serve espresso. Sold as a set of 3.",
-         "price":4.56,
-         "category":4,         
-         "image":"espresso-glass-steel-base-and-handle-white-background-coffeebeans.jpg"
-      }
-   },
-   {
-      "pk":33,
-      "model":"products.product",
-      "fields":{
-         "sku":"dw0000033",
-         "name":"Black Coffee Cup & Plate with White Inner",
-         "description":"Black Coffee Cup with White Inner made from our high-quality ceramic this elegant looking coffee cup is a lovely addition to you home. The white inside allows you to showcase your excellent coffee against this background. Sold as a single unit Cup & plate",
-         "price":1.46,
-         "category":4,         
-         "image":"black-coffee-cup-white-inner-white-background-coffeebeans.jpg"
-      }
-   },
-   {
-      "pk":34,
-      "model":"products.product",
-      "fields":{
-         "sku":"dw0000034",
-         "name":"White Coffee Cup & Plate",
-         "description":"White Coffee Cup & Plate made from our high-quality ceramic this elegant but classic looking coffee cup is a lovely addition to you home. The classic white we all know and love adds that restaurant feel to your home. Sold as a single unit Cup & plate",
-         "price":1.12,
-         "category":4,         
-         "image":"white-coffee-cup-plate-on-wooden-table.jpg"
-      }
-   },
-   {
-      "pk":35,
-      "model":"products.product",
-      "fields":{
-         "sku":"dw0000035",
-         "name":"Coffee Mugs Blue & Green",
-         "description":"Coffee Mugs Blue & Green made of high-quality ceramic. These lovely coffee mugs are a fun blue and green adding a bit of light colour to your day. Sold as a set of 2 , 1 Blue & 1 Green.",
-         "price":2.26,
-         "category":4,         
-         "image":"two-mugs-one-blue-one-green-on-white-background.jpg"
-      }
-   },
-   {
-      "pk":36,
-      "model":"products.product",
-      "fields":{
-         "sku":"dw0000036",
-         "name":"Artistic Cream, Green & Black Coffee Mug",
-         "description":"Artistic Cream, Green & Black Coffee Mug hand crafted from our locally artist source using only the finest materials and glazing. This is a beautiful coffee mug offering a cozy feel. Sold as a single Unit.",
-         "price":2.69,
-         "category":4,         
-         "image":"artistic-cream-green-black-coffee-mug.jpg"
-      }
-   },
-   {
-      "pk":37,
-      "model":"products.product",
-      "fields":{
-         "sku":"dw0000037",
-         "name":"Esprsso Sea shell Decorated Cups",
-         "description":"Espresso Seas shell Decorated ceramic cups made from the finest ceramic and decorated with sea shells these fantastic mini mug espresso cups are a must have for beach homes or to bring that holiday beach feel into your home. Sold as a set of 3.",
-         "price":3.26,
-         "category":4,         
-         "image":"three-cups-espresso-sea-shell-decorated-on-wooden-board.jpg"
-      }
-   },
-   {
-      "pk":38,
-      "model":"products.product",
-      "fields":{
-         "sku":"dw0000038",
-         "name":"Traditional Bronze Turkish Arabic Coffee Glass",
-         "description":"Traditional Bronze Turkish Arabic Coffee Glass this is a unique Coffee serving glass to and an exotic touch to your home. Made from high quality glass &  bronze. Sold as a single Unit.",
-         "price":3.16,
-         "category":4,         
-         "image":"traditional-bronze-turkish-arabic-coffee-glass-one-wooden-desk.jpg"
-      }
-   },
-   {
-      "pk":39,
-      "model":"products.product",
-      "fields":{
-         "sku":"dw0000039",
-         "name":"Hello Friday White Coffee Mug",
-         "description":"Hello Friday White Coffee Mug made from our high-quality ceramic with the fun message Hello Friday. A fantastic gift to a friend, work college or for yourself. Sold as a single Unit.",
-         "price":1.43,
-         "category":4,         
-         "image":"white-coffee-mug-with-hello-friday-on-wooden-table-green-plant.jpg"
-      }
-   },
-   {
-      "pk":40,
-      "model":"products.product",
-      "fields":{
-         "sku":"dw0000040",
-         "name":"Rise Up & Attack the Day White Coffee Mug",
-         "description":"Rise Up & Attack the Day White Coffee Mug made from our high-quality ceramic with the fun message Rise Up & Attack the Day with Enthusiasm. A fantastic gift to a friend, work college or for yourself. Sold as a single Unit.",
-         "price":1.43,
-         "category":4,         
-         "image":"white-coffee-mug-with-saying-rise-up-and-attack-the-day-with-enthusiasm-wooden-table-with-chocolate-filled-pastry.jpg"
-      }
-   },
-   {
-      "pk":41,
-      "model":"products.product",
-      "fields":{
-         "sku":"mcm000041",
-         "name":"Glass & Chrome Manual Drip Coffee Pot Brewer ,400ml",
-         "description":"1.Premium coffee dripper: Enjoy the prfect cup of coffee, precisely brewed fore better and fresher taste; premium coffee pot brewing tool for a superior coffee experience that makes every cup special. 2.Coffee Pot with Gorgeous Artisan Design: Brilliant design is attractive and functional; gorgeous looks for sophisticated kitchens. 3.Ultimate Brewing Control: This clever coffee dripper allows you to customize every cup of coffee: control the taste, strength, temperature, water ratio; pinpoint control for true coffee lovers. 4.Mesh Micro Filter: Our best quality stainless steel coffee filter with holes in the metal and mesh micro filter, will not let even fine ground coffee through so you can enjoy the perfectly brewed cup of coffee. 5.Brew Better Coffee with coffee dripper: If you really want to enjoy a good cup of coffee, normal kettles probably aren't going to get the job done. The long neck of our 1-liter electric gooseneck design gives you a slow, controlled and precise flow of water that is optimal for extracting the most flavor when you brew coffee or tea using the pour-over method.",
-         "price":39.95,
-         "category":5,         
-         "image":"beautiful-side-transparent-chrome-drip-coffee-maker-with-roasted-filtered-coffee-isolated-thick-wooden-table-cafe-shop-white-weights-steam-brutal.jpg"
-      }
-   },
-   {
-      "pk":42,
-      "model":"products.product",
-      "fields":{
-         "sku":"mcm000042",
-         "name":"Moka Pot Red & Silver, Stovetop, 300ml",
-         "description":"EASY-TO-USE - Simply fill the lower chamber with water, fill the filter with ground coffee, and place on stovetop. Within minutes, delicious, bubbling cups of espresso will fill your pot. Remove from heat and enjoy. Works on all electric, ceramic and gas stovetops including propane making it the perfect camping accessory. DURABLE AND INNOVATIVE DESIGN Carefully crafted with strong, long-lasting aluminum. Provides thorough and even heat distribution for enhanced flavor and aroma. The durable flip-top lid features a temperature resistant knob and handle that allows for easy, safe pouring. The safety-release valve controls the pressure at which water is delivered to coffee grounds at a set, pre-determined level for perfectly extracted espresso, every time. Hand wash with soap to ensure long-lasting quality. ENDLESS POSSIBILITIES - Craft any coffee recipe you like. While traditionally used for high-quality espresso, cuban coffee or mocha; it can also be used as a stovetop coffee percolator for traditional American coffee. You can also add steamed or frothed milk to craft cappuccinos, lattes, americanos, macchiato, mochas and more. SAVES YOU MONEY - Enjoy the craft coffee experience from the convenience of your home at a fraction of the price. Make quality espresso quickly, without the hassle of electric espresso machines or single-use pods. SPACE SAVER- Replace your large electric machine with this space-saving, multi-purpose coffee maker.",
-         "price":34.99,
-         "category":5,         
-         "image":"coffee-moka-pot-aluminium-top-red-bottom-silver-with-three-red-blue-yellow-cups-on-table.jpg"
-      }
-   },
-   {
-      "pk":43,
-      "model":"products.product",
-      "fields":{
-         "sku":"mcm000043",
-         "name":"Moka Pot Green Aluminium, Stovetop, 300ml",
-         "description":"EASY-TO-USE - Simply fill the lower chamber with water, fill the filter with ground coffee, and place on stovetop. Within minutes, delicious, bubbling cups of espresso will fill your pot. Remove from heat and enjoy. Works on all electric, ceramic and gas stovetops including propane making it the perfect camping accessory. DURABLE AND INNOVATIVE DESIGN Carefully crafted with strong, long-lasting aluminum. Provides thorough and even heat distribution for enhanced flavor and aroma. The durable flip-top lid features a temperature resistant knob and handle that allows for easy, safe pouring. The safety-release valve controls the pressure at which water is delivered to coffee grounds at a set, pre-determined level for perfectly extracted espresso, every time. Hand wash with soap to ensure long-lasting quality. ENDLESS POSSIBILITIES - Craft any coffee recipe you like. While traditionally used for high-quality espresso, cuban coffee or mocha; it can also be used as a stovetop coffee percolator for traditional American coffee. You can also add steamed or frothed milk to craft cappuccinos, lattes, americanos, macchiato, mochas and more. SAVES YOU MONEY - Enjoy the craft coffee experience from the convenience of your home at a fraction of the price. Make quality espresso quickly, without the hassle of electric espresso machines or single-use pods. SPACE SAVER- Replace your large electric machine with this space-saving, multi-purpose coffee maker.",
-         "price":34.99,
-         "category":5,         
-         "image":"coffee-moka-pot-green-aluminium-lid-open.jpg"
-      }
-   },
-   {
-      "pk":44,
-      "model":"products.product",
-      "fields":{
-         "sku":"mcm000044",
-         "name":"Moka Pot Red Aluminium, Stovetop, 300ml",
-         "description":"EASY-TO-USE - Simply fill the lower chamber with water, fill the filter with ground coffee, and place on stovetop. Within minutes, delicious, bubbling cups of espresso will fill your pot. Remove from heat and enjoy. Works on all electric, ceramic and gas stovetops including propane making it the perfect camping accessory. DURABLE AND INNOVATIVE DESIGN Carefully crafted with strong, long-lasting aluminum. Provides thorough and even heat distribution for enhanced flavor and aroma. The durable flip-top lid features a temperature resistant knob and handle that allows for easy, safe pouring. The safety-release valve controls the pressure at which water is delivered to coffee grounds at a set, pre-determined level for perfectly extracted espresso, every time. Hand wash with soap to ensure long-lasting quality. ENDLESS POSSIBILITIES - Craft any coffee recipe you like. While traditionally used for high-quality espresso, cuban coffee or mocha; it can also be used as a stovetop coffee percolator for traditional American coffee. You can also add steamed or frothed milk to craft cappuccinos, lattes, americanos, macchiato, mochas and more. SAVES YOU MONEY - Enjoy the craft coffee experience from the convenience of your home at a fraction of the price. Make quality espresso quickly, without the hassle of electric espresso machines or single-use pods. SPACE SAVER- Replace your large electric machine with this space-saving, multi-purpose coffee maker.",
-         "price":34.99,
-         "category":5,         
-         "image":"coffee-moka-pot-red-aluminium.jpg"
-      }
-   },
-   {
-      "pk":45,
-      "model":"products.product",
-      "fields":{
-         "sku":"mcm000045",
-         "name":"French Press Glass & Bronze , 1000ml",
-         "description":"Features MAKES THE BEST-TASTING COFFEE: double-layered filter system filter the coffee effectively without leaving sludge or coffee grounds to yields a richly flavored, full-bodied coffee. LARGE CAPACITY: 1000 ml/34 fl oz capacity; serves up to 8 cups or 4 mugs of coffee in just one pressing; also ideal for serving iced tea, espresso beverages, frothed milk, water and more. MADE TO LAST: made with grade 304 stainless steel plunger and frame, heat resistant borosilicate glass body, withstands years of daily use; stainless steel cut-out frame adds a touch of elegance to any space. SAFE MATERIALS: both food-grade borosilicate glass body and filter-plunger system are approved by FDA and LFGB, toxic-free, BPA free, safe for your health; stainless steel plunger won’t leave a metallic taste in your coffee. EASY TO USE & CLEAN: gently stir coffee with a spoon in a circular motion while slowly and evenly pouring hot (not boiling) water by following the brewing guide; rinse the glass body or the lid (with plunger and filter) with water after each use. Description Result in a fantastic mellow coffee every time with this Rackphile French Press Coffee Maker! Its double-layered filter system helps produce a richly flavored, full-bodied coffee with no excess grinds. Leave nothing but the pure coffee extract from your beloved coffee grounds. Specifications Material: grade 304 stainless steel plunger and frame; borosilicate glass body. Overall Dimensions: 6.3 in W x 4.7 in D x 8.7 in H (16 cm W x 12 cm D x 22 cm H)",
-         "price":42.36,
-         "category":5,         
-         "image":"glass-brozen-french-press.jpg"
-      }
-   },
-   {
-      "pk":46,
-      "model":"products.product",
-      "fields":{
-         "sku":"mcm000046",
-         "name":"Glass Pour Manual Drip Coffee Drewer",
-         "description":"simple, easy to use with timeless, elegant design. ^All Coffeemakers are made of the highest quality, non-porous Borosilicate glass which will not absorb odors or chemical residues. ^The patented pour-over design allows coffee to be covered and refrigerated for reheating without losing flavor. ^All Coffeemakers are measured using 5 oz. as 1 cup. ^Use Bonded Filters FP-1, FC-100, FS-100, FSU-100.",
-         "price":34.95,
-         "category":5,         
-         "image":"glass-pour-coffee-maker-manual-drip-brewer.jpg"
-      }
-   },
-   {
-      "pk":47,
-      "model":"products.product",
-      "fields":{
-         "sku":"mcm000047",
-         "name":"French Press Glass & Stainless Steel, 1000ml",
-         "description":"Made of Reliable Material:304 grade stainless steel is the cornerstone of our french coffee press maker. The carafe housing, filtration system, handle, and top lid are all designed to last a lifetime and create a coffee french press maker that fits the look of your kitchen. The french press stainless steel is super durable, so feel comfortable taking it with you while on the go.4 Level Filtration System: Poorly made filters often break which results in getting a mug filled with coffee grounds. This is why we developed a sophisticated double stainless-steel filter that ensures that no coffee grounds are getting in your coffee anymore. Experience an incomparable delicious, smooth and full-flavored coffee.Heat Resistant Borosilicate Glass:Glass that is too thin or cheaply made would let out the heat almost instantly, which would affect the taste of your coffee. Our carafe, however, is made of heat-resistant borosilicate glass which keeps the water hot during the brewing process. Also, the thickened glass bottom tremendously extends the product service life and our handle is secured with a stainless-steel frame to keep the beaker from falling out.100% BPA Free:We cares about the materials we use in our products. That's why all the individual materials surpass food and drink grade requirements and are backed by lab testing. All the materials contain no BPA, so you can enjoy your coffee knowing it's ready for a lifetime of use. And to help you on your coffee journey, we included a brewing guide, so you get use your manual coffee makerMake a Perfect Gift:This personal size french press coffee maker is a perfect gift for a friend or your family member who loves coffee or tea. Perfect for housewarmings, weddings, birthdays, holidays, Christmas, Thanksgiving, New Year, and Valentine's day.It is, hence, not just a great gadget for on the go but a nice addition to your kitchen at home.Capacity: 1000mlColour: Silver + TransparentMaterial: glass + stainless steelPackage Contents:1 x Coffee MakerOnly the above package content, other products are not included.Note: Light shooting and different displays may cause the color of the item in the picture a little different from the real thing. The measurement allowed error is +/- 1-3cm.",
-         "price":38.96,
-         "category":5,         
-         "image":"glass-stainless-steel-french-press.jpg"
-      }
-   },
-   {
-      "pk":48,
-      "model":"products.product",
-      "fields":{
-         "sku":"mcm000048",
-         "name":"French Press Glass & Maze Pattern Stainless Steel, 1000ml",
-         "description":"Made of Reliable Material:304 grade stainless steel is the cornerstone of our french coffee press maker. The carafe housing, filtration system, handle, and top lid are all designed to last a lifetime and create a coffee french press maker that fits the look of your kitchen. The french press stainless steel is super durable, so feel comfortable taking it with you while on the go.4 Level Filtration System: Poorly made filters often break which results in getting a mug filled with coffee grounds. This is why we developed a sophisticated double stainless-steel filter that ensures that no coffee grounds are getting in your coffee anymore. Experience an incomparable delicious, smooth and full-flavored coffee.Heat Resistant Borosilicate Glass:Glass that is too thin or cheaply made would let out the heat almost instantly, which would affect the taste of your coffee. Our carafe, however, is made of heat-resistant borosilicate glass which keeps the water hot during the brewing process. Also, the thickened glass bottom tremendously extends the product service life and our handle is secured with a stainless-steel frame to keep the beaker from falling out.100% BPA Free:We cares about the materials we use in our products. That's why all the individual materials surpass food and drink grade requirements and are backed by lab testing. All the materials contain no BPA, so you can enjoy your coffee knowing it's ready for a lifetime of use. And to help you on your coffee journey, we included a brewing guide, so you get use your manual coffee makerMake a Perfect Gift:This personal size french press coffee maker is a perfect gift for a friend or your family member who loves coffee or tea. Perfect for housewarmings, weddings, birthdays, holidays, Christmas, Thanksgiving, New Year, and Valentine's day.It is, hence, not just a great gadget for on the go but a nice addition to your kitchen at home.Capacity: 1000mlColour: Silver + TransparentMaterial: glass + stainless steelPackage Contents:1 x Coffee MakerOnly the above package content, other products are not included.Note: Light shooting and different displays may cause the color of the item in the picture a little different from the real thing. The measurement allowed error is +/- 1-3cm.",
-         "price":41.23,
-         "category":5,         
-         "image":"glass-stainless-steel-maze-pattern-french-press.jpg"
-      }
-   },
-   {
-      "pk":49,
-      "model":"products.product",
-      "fields":{
-         "sku":"mcm000049",
-         "name":"Mini Moka Pot High Gloss Stainless Steel, Stovetop, 150ml",
-         "description":"Description:This coffee maker is made of superior stainless steel material, easy to clean. Ergonomic plastic handle design, which fits in the hand comfortably. It is small size and exquisite appearance, makes your life more elegant. This product can be placed on any cooking appliance, and just in few minutes you will enjoy a superb coffee.Features- Color: As shown. Material: Stainless steel. Size: 9.5 x 20cm. This coffee maker is made of superior stainless steel material, easy to clean. Ergonomic plastic handle design, which fits in the hand comfortably. It is small size and exquisite appearance, makes your life more elegant. This product can be placed on any cooking appliance, and just in few minutes you will enjoy a superb coffee. Idea to serve at home, office or as a travel coffee maker.",
-         "price":28.56,
-         "category":5,         
-         "image":"mini-coffee-moka-pot-high-gloss-stainless-steel-coffee-beans-hesian-bag.jpg"
-      }
-   },
-   {
-      "pk":50,
-      "model":"products.product",
-      "fields":{
-         "sku":"mcm000050",
-         "name":"Mini Moka Pot Matted Stainless Steel, Stovetop, 150ml",
-         "description":"Description:This coffee maker is made of superior stainless steel material, easy to clean. Ergonomic plastic handle design, which fits in the hand comfortably. It is small size and exquisite appearance, makes your life more elegant. This product can be placed on any cooking appliance, and just in few minutes you will enjoy a superb coffee.Features- Color: As shown. Material: Stainless steel. Size: 9.5 x 20cm. This coffee maker is made of superior stainless steel material, easy to clean. Ergonomic plastic handle design, which fits in the hand comfortably. It is small size and exquisite appearance, makes your life more elegant. This product can be placed on any cooking appliance, and just in few minutes you will enjoy a superb coffee. Idea to serve at home, office or as a travel coffee maker.",
-         "price":28.56,
-         "category":5,         
-         "image":"mini-coffee-moka-pot-matted-stainless-steel.jpg"
-      }
-   },
-   {
-      "pk":51,
-      "model":"products.product",
-      "fields":{
-         "sku":"cpm000051",
-         "name":"Happy Pod Coffee Machine",
-         "description":"The space-saving Happy Pod Coffee Machine -Silver & Black. Is a must-have for smaller kitchens. With easy-to-use 1-button operation, this Tassimo coffee machine allows you to create a variety of your favourite hot drinks including Costa Coffee, Kenco Coffee and Cadbury Hot Chocolate. Patented Intellibrew Barcode technology identifies the correct drink from T-Disc, so the machine does all of the hard work for you! There's even an adjustable cup stand that allows for different mug sizes. The innovative flow heater system ensures a quick heat-up time, while the automatic cleaning and descaling program keeps maintenance to a minimum. Bar Pressure (in Bars): 3 Depth: 305 MM, Height: 265 MM, Width: 175 MM, Coffee Maker Type: Capsule / Pod, Digital Timer: N,Timer: N. Easy to use 1 button operation. Great variety of branded drinks including Costa Coffee, Kenco Coffee and Cadbury Hot Chocolate. Sleek compact design. Innovative Flow Heater system with minimal heat up time Automatic Cleaning and Descaling program. 0.7l Water Tank. Patended Intellibrew Barcode technology to identify correct drink from T-Disc. Descaling Pods available.  Adjustable Cup Stand to allow for different size cups.",
-         "price":43.69,
-         "category":6,         
-         "image":"happy-pod-coffee_capsule-pod-machine-silver-and-black.png"
-      }
-   },
-   {
-      "pk":52,
-      "model":"products.product",
-      "fields":{
-         "sku":"cpm000052",
-         "name":"My Way Pod Coffee Machine",
-         "description":"The My Way Pod Coffee Machine -Black. Brews perfect drinks using Intellibrew barcode technology. Offering fully automatic one touch operation and lots of personalised features, this impressive coffee machine from Tassimo is easy and intuitive to use. It enables you to select your preferred intensity, size and strength of drink, so that you can make all of your coffee shop favourites at the touch of a button. Using the Intellibrew system, simply pop in a T Disc (made with real ground coffee), press start and the drink's distinct barcode will give the coffee machine all of the information it needs to make your favourite drink. Choose from 40 big-brand hot drinks including Costa, L'Or, Kenco, Twinings, Cadburys and more! Bar Pressure (in Bars): 3.3, depth: 32.5 CM, Height: 29 CM, Width: 23 CM. Coffee Maker Type: Capsule / Pod. Digital Timer: N. Display Type: LCD Touchscreen. Drip Tray: N. Pods/Ground Beans: Pods. Timer: N.",
-         "price":68.12,
-         "category":6,         
-         "image":"my-way-pod-coffee-capsule-machine-black.png"
-      }
-   },
-   {
-      "pk":53,
-      "model":"products.product",
-      "fields":{
-         "sku":"cpm000053",
-         "name":"Vivy Pod Coffee Machine",
-         "description":"The Vivy Pod Coffee Machine -Silver. Your favourite drink at the touch of a button. Preparing delicious hot drinks can be so easy! Your TASSIMO makes it so easy, and with little effort required, to prepare a variety of delicious hot drinks. Simply insert a T DISC and start the fully automatic preparation using the practical one button operation. That is how easily you and your loved ones can indulge yourselves with specialities from TASSIMO and enjoy life! All of your favourite drinks and favourite brands. Espresso, caffè crema, filter coffee, latte macchiato, cappuccino, hot chocolate or tea. TASSIMO offers more than 40* speciality drinks from a range of popular brands.With TASSIMO, you can enjoy delicious hot drinks whatever your taste. For the whole family, for your friends and for you! Perfectly prepared just for you with INTELLIBREW™.Tassimo brews your favourite coffees at the touch of one button for quick, easy use. With a super fast scan of the barcode on the T-Disc, Intellibrew barcode technology automatically adjusts the brewing time, water and temperature to precision. Ensuring coffee shop quality every time. Just load a T DISC made with real ground coffee, press start and the system will automatically create the perfect drink. INTELLIBREW really does do all the work for you. Bar Pressure (in Bars): 3.3, Depth: 305 MM, Height: 265 MM, Width: 175 MM, Coffee Maker Type: Capsule / Pod.",
-         "price":136.48,
-         "category":6,         
-         "image":"vivy-pod-coffee-capsule-pod-machine-silver.png"
-      }
-   },
-   {
-      "pk":54,
-      "model":"products.product",
-      "fields":{
-         "sku":"cpm000054",
-         "name":"Gusto Pod Coffee Machine",
-         "description":"Gusto Pod Coffee Machine - Red. Inspired by the infinity shape, the NESCAFÉ Dolce Gusto Infinissima Black and White manual pod coffee machine by De'Longhi is slim and uniquely designed, with a 1.2L water tank to create infinite coffee possibilities. Depth: 28.5 CM, Height: 37.2 CM, Width: 15.5 CM, Coffee Maker Type: Capsule / Pod. Exclusively for Nescafe Dolce Gusto pods, the diverse capsules guarantee a new and exciting way to enjoy deliciously stylish coffee. Manual lever to personalise coffee length and select hot or cold beverages. Drip tray height adjustable by 3 positions for different sized cups and glasses (9 to 15cm). 17 bar automatic pressure regulation for coffee shop quality coffee. Economy mode: Switches off automatically after 5 minutes of inactivity",
-         "price":43.12,
-         "category":6,         
-         "image":"gusto-pod-coffee-capsule-pod-machine-red.png"
-      }
-   },
-   {
-      "pk":55,
-      "model":"products.product",
-      "fields":{
-         "sku":"cpm000055",
-         "name":"Genio Touch Pod Coffee Machine",
-         "description":"The Genio Touch Pod Coffee Machine is a compact redesign of its big brother - the Gusto Pod Coffee Machine. However, the Genio Touch is not just a copy, because under the soft shapes hides a capsule machine with its own distinctive personality. Genio Touch is designed to make optimal use of space. It is therefore lower and narrower than its predecessor, but in return it has a bit more depth. The drip tray is designed to be height-adjustable, so there is plenty of room for both a small espresso cup or a large coffee mug. The water tank is elegantly part of the curved design and has a capacity of 0.8 litres. As with other models, you will find the classic touch display of the Gusto machine on the rounded front panel. When your cup is brewed, the machine stops automatically and shuts itself off after 1 minute of inactivity. Even when the coffee brews with the maximum 15 bar pressure there is no need to worry about your electricity bill. The machine is classified as energy class A + . If you prefer an extra strong cup of coffee, you can brew it with Espresso Boost technology. For an extra large cup, you simply select the XL function. To brew, just insert your chosen capsule, and set the cup with the user-friendly Play & Select function, and in no time your coffee is ready. If you want to spoil the kids with a cup of hot cocoa or you fancy a hot tea on a cold winter evening, the Genio Touch will be happy to oblige. Maintenance and cleaning are straightforward. With its minimalist design, the easily removable parts can be put in the dishwasher, and the rest of the Genio Touch can be cleaned with a damp cloth. Of course, you have access to the entire large Dolce Gusto® capsule universe, where you can choose from up to 50 different varieties. Whether you are into coffee, tea or cocoa, or you feel like experimenting with more exotic drinks like a Cappuccino or Latte, you are not going to run out options very quickly. In short, you get a machine with a practical and user-friendly design that will easily fit in most places and, if we say so ourselves, doesn’t look half bad either. Product details: • Automatic control for faster brewing, • High pressure (up to 15 bar) for rich taste and high crema, • Supports over 50 varieties in different cup sizes (e.g. NESCAFÉ Dolce Gusto® ® & STARBUCKS, Tea, Cocoa). • Compact size: 27 x 12 x 28 cm (Height, width, length), • Energy saving: Turns off automatically after 1 minute of inactivity. • Energy class A +, • 2 years guarantee. When you buy this machine, you get a free adapter",
-         "price":113.35,
-         "category":6,         
-         "image":"genio-touch-pod-coffee-capsule-pod-machine.png"
-      }
-   },
-   {
-      "pk":56,
-      "model":"products.product",
-      "fields":{
-         "sku":"cmm000056",
-         "name":"Coffee Filter Pot Machine - LCD - permanent filter - 1.5 L",
-         "description":"Productive—with a generous volume of 1.5 L for up to 15 cups per brew. Powerful—900 W for rapid coffee enjoyment. Economical—permanent filter eliminates the need for paper filters, sparing both the environment and your wallet. Simple—LCD for easy operation and transparent water tank for safe filling. Stylish—modern design with stainless steel elements",
-         "price":91.36,
-         "category":7,         
-         "image":"coffee-filter-pot-machine-lcd-permanent-filter-silver-and-black-1.5l.png"
-      }
-   },
-   {
-      "pk":57,
-      "model":"products.product",
-      "fields":{
-         "sku":"cmm000057",
-         "name":"I Belong Filter Pot Machine - 10 Cups",
-         "description":"Enjoy the style and simplicity with an amazing filter coffee maker. I Belong Filter Pot MachineI Belong Filter Pot Machine can brew up to 10 cups of coffee due to the high-capacity carafe. With the aroma function, you can customise your coffee and get a rich taste and aroma. The coffee machine has an anti-drip system, descaling alarm, and water level indicator. Its advanced features will provide the best coffee-making experience.",
-         "price":51.16,
-         "category":7,         
-         "image":"coffee-filter-pot-machine-i-belong-black-10-cups.png"
-      }
-   },
-   {
-      "pk":58,
-      "model":"products.product",
-      "fields":{
-         "sku":"cmm000058",
-         "name":"Easy Me Filter Pot Machine - 10 Cups",
-         "description":"An easy-to-use one-button filter coffee machine with an amazing design will bring a unique touch to your kitchen. Easy Me Filter Pot Machine includes stainless steel detail. It can brew up to 10 cups of coffee due to the high-capacity carafe. Both the carafe and filter holder are dishwasher safe. The coffee machine will automatically shut off 40 minutes after your coffee brew. It has a water level indicator.",
-         "price":42.99,
-         "category":7,         
-         "image":"coffee-filter-pot-machine-easy-me-10-cups.png"
-      }
-   },
-   {
-      "pk":59,
-      "model":"products.product",
-      "fields":{
-         "sku":"cmm000059",
-         "name":"Nescafe Alergria Coffee Machine",
-         "description":"NESCAFÉ Alegria A860 is our proprietary flagship tabletop coffee system that has been designed with our beloved customers and their requirements in mind. This super easy-to-use, easy-to-clean and easy-to-maintain machine produces perfectly prepared beverages that will surely bring joy to you.NESCAFÉ Alegria A860 offers up to 8 quality beverage selections – ranging from premium NESCAFÉ soluble coffee to Singaporean’s most-loved brand MILO® and other local favourites! Features:Soluble Solution, Push button technology.6 canisters, if you can dream it this machine can do it. Dimensions: Height 60.0 cm,Depth 58.0 cm, Width 45.0 cm, Weight 35.0 kg",
-         "price":669.36,
-         "category":7,         
-         "image":"coffee-machine-nescafe-alergria-red-and-silver.png"
-      }
-   },
-   {
-      "pk":60,
-      "model":"products.product",
-      "fields":{
-         "sku":"cmm000060",
-         "name":"Cappuccino, Automatic Bean to Cup Coffee Machine, with Auto Milk",
-         "description":"Featuring an automatic cappucino system and milk carafe, you can create silky smooth lattes or a perfectly frothy cappucino, as well as high-quality espressos, caffe lattes, Americanos and other milk-based coffee drinks at just the touch of a button. There's also a hot water spout attachment for tea or infusion. Personalising your coffee has never been easier. Choose from short, medium or long; from extra mild to extra strong, enjoy it piping hot, medium or at a lower temperature when you're in a hurry. Use pre-ground coffee or grind your own beans to release the true flavour, with a choice of 13 grinding settings to ensure the perfect flavour. The soft touch control panel features 2 text lines display and 16 languages for using the machine in a clear and simple way. Other great features include auto rinse and descale functions for easy cleaning. You can prepare 2 cups of coffee in a single brewing cycle - perfect for sharing. Automatic cleaning is integrated into the froth regulating dial, so the milk carafe can be placed in the fridge after use.",
-         "price":529.69,
-         "category":7,         
-         "image":"coffee-machine-cappuccino-automatic-bean-to-cup-with-auto-milk-silver.png"
-      }
-   },
-   {
-      "pk":61,
-      "model":"products.product",
-      "fields":{
-         "sku":"cmm000061",
-         "name":"Just 4 U Next Gen Premium Class Coffee Machine - Silver",
-         "description":"The perfect combination of pleasure, versatility and luxury. The latest generation of Just 4 U most successful coffee machine model boasts a reinterpreted design and a range of benefits previously found only in the premium class. Bar Pressure (in Bars): 15, Depth: 460 MM, Height: 360 MM, Width: 300 MM, Coffee Maker Type: Bean to cup, Digital Timer: Y, Drip Tray: N, Timer: N. The Professional Aroma Grinder guarantees 12.2%* more aroma and consistently high grind quality. A 2.8'' colour display, six buttons and a completely new operating concept featuring artificial intelligence enable simple handling. The sophisticated milk system cleaning process takes place automatically at the touch of a button and is completed in no time. Just 4 U coffee machines feature a clean and expressive characteristic design",
-         "price":899.99,
-         "category":7,         
-         "image":"coffee-machine-Just-4-u-next-gen-premium-class-silver-two-milk-coffee-milk-cups.png"
-      }
-   },
-   {
-      "pk":62,
-      "model":"products.product",
-      "fields":{
-         "sku":"cmm000062",
-         "name":"Faema X30 MILKPS Single Step - Super-Auntomatic Esspresso Coffee Machine",
-         "description":"The new super-automatic Faema offers an unparalleled experience and, thanks to its distinctive features, encourages innovative interaction with the machine. The endless customization possibilities available through the revolutionary touch screen with a 10.4 inch display and the incredible variety of drinks make the X30 revolutionary in the world of super-automatic machines. Intuitive 10.4 inch touch screen interface, 48 programmable selections provide endless customization, Integrated bidirectional WiFi system allows remote monitoring, Dual titanium steel burr grinders, Perfect Grind System (PGS) continuously optimizes grinder performance, Large LED lit work area, Hot and cold one-touch milk system creates finely textured micro-foam, High efficiency dual boiler system equipped with Smart Boiler technology, Dual 2.5lb capacity bean hoppers, Automatic washing system, Direct emptying grounds system",
-         "price":17099.99,
-         "category":7,         
-         "image":"coffee-machine-faema-x30-milkps-single-step-super-automatic-espresso-machine-top-load-beans-chocolate-powder-digital-screen-interface-silver-and-black.png"
-      }
-   },
-   {
-      "pk":63,
-      "model":"products.product",
-      "fields":{
-         "sku":"cmm000063",
-         "name":"Full Touch Colorful Visual Screen Cappuccino Latte Fully Automatic Coffee Machine with Milk Frother",
-         "description":"New super-automatic cappuccino coffee machine with modern appearance design, with a 3.5'' color touch screen display for users to operate all functions. If you are a fan of cappuccino or latte, provides a perfect milk foam system, the milk never passes through the  automatic cappuccino coffee machine. With just one touch, Colet S8 one-touch cappuccino coffee machine will create a seamlessly layered cappuccino or latte macchiato with no need for any more operations. In addition, the whole milk system is easily disassembled to be washed by water directly, and easy to be assembled back by users after clean. Colet CLT-S8 is also open to users to set grinder size, coffee powder volume, water temperature, in order to create personalized beverages taste, and these coffee beverages taste setting will saved as your own favorite profile. ",
-         "price":356.98,
-         "category":7,         
-         "image":"coffee-machine-full-touch-colorful-visual-screen-cappuccino-latte-fully-automatic-with-milk-frother-silver.png"
-      }
-   },
-   {
-      "pk":64,
-      "model":"products.product",
-      "fields":{
-         "sku":"cmm000064",
-         "name":"Kalea Plus Coffee Machine",
-         "description":"High speed, high performance, top quality. Just a touch, and anybody can get a high quality drink with Kalea Plus. Kalea Plus uses cutting edge technology together with the heritage of Italian espresso, taste and culture. The outstanding throughput and speed will satisfy even the most demanding customers. Kalea Plus enables the creation of a personal customized coffee menu: a unique pleasure with enraptures. Version: Double Espresso, User interface: Capacitive 7'' inch touch screen, Number selection: up to 10 selections per scrennshot, Number canister: 3, Coffee brewer: Espresso Z4000, Width: 360 mm, Depth: 600 mm, Depth: open 600 mm, Weight: Approx 47 kg, Voltage: 220/240 V, Frequency: 50/60 Hz, Fresh milk: Yes, Display:Capacitive 7'' touch-screen, Steam wand: Yes, Lateral hotwater: Yes, Automatic cappuccinatore: Yes, Beans capacity: 1.2kg x 2, Soluble canister: 1.5lt x 2, Hourly output: 120cups/hour, Height delivery area: From 80 to 180 mm, Absorbed power: 3100W",
-         "price":2632.56,
-         "category":7,         
-         "image":"coffee-machine-kalea-plus-silver-and-black-3-top-loade-beans-chocolate-poweder-milk-powder.png"
-      }
-   },
-   {
-      "pk":65,
-      "model":"products.product",
-      "fields":{
-         "sku":"cmm000065",
-         "name":"DeLonghi La Specialista Prestigio, Bean to Cup Coffee Machine, Silver & Black",
-         "description":"La Specialista Prestigio offers an indulgent and aspirational experience. It has been created to enhance every coffee and milk preparation, from getting the best out of each type of beans to experiment milk creations and enjoy milk foamy drinks. Experiment to find your personal taste, controlling your grind, dose and temperature to extract the optimum flavours from your beans and finishing with silky smooth textured milk. Enjoy the ability to handcraft your perfect coffee. From start to finish, the process is enjoyable and straightforward, inviting hands-on creativity from grinding to latte art to unleashing your inner barista! You can also create incredible coffee in minutes thanks to 3 pre-set recipes. Sensor Grinding Technology - enjoy consistent grinding results, regardless of the dose settings, for maximum flavour from your beans. Smart Tamping Station - delivers a consistent tamp pressure and even level, all inside the machine without mess or guesswork. Active Temperature Control - provides the stability that's vital for optimised coffee extraction. Advanced Latte System - create that perfect velvety milk texture or hot milk, and get creative with your latte art. Bar Pressure (in Bars): 19, Depth: 370 MM, Height: 445 MM , Width: 380 MM, Coffee Maker Type: Pump espresso, Digital Timer: N, Drip Tray: N, Timer: N. The advanced grinder is equipped with a unique sensor technology to precisely deliver a consistent coffee dose. Bean sensor for great convenience. Smart Tamping Station: Craftsmanship becomes smart: just activate the lever to tamp the dose with the right pressure, without mistakes and mess. Thermoblock with controlled temperature system ensures maximum temperature stability and all the right conditions for a perfect coffee extraction. Fully manual milk preparation thanks to the dedicated steam wand. Experiment Latte Art, the microfoam used by the Barista to create wonderful milk decorations.",
-         "price":784.99,
-         "category":7,         
-         "image":"coffee-machine-delonghi-la-specialista-prestigio-bean-to-cup-silver-black.png"
-      }
-   },
-   {
-      "pk":66,
-      "model":"products.product",
-      "fields":{
-         "sku":"em0000066",
-         "name":"Russel Hobbs Espresso Coffee Machine - Milk Frother - Balck & Silver",
-         "description":"Coffee Machine's 15 Bar Pressure Pump to provide Authentic taste of coffee. 1250 Watt Powerful Machine brews excellent coffee. Ultra thermo block heating system ensures maintaining perfect temperature while delivering multi-cups of coffee. 1 Litre removal transparent water tank. Detachable drip tray for hassle free cleaning. Brew Coffee: Max 100 ml, min 50 ml. Attains temperature around 70-80 degree celsius in less than 35 seconds. Steam function to froth milk for cappuccino. Grade 304 Stainless Steel Filter with no additional requirement of paper filter. Use Pods and Ground Coffee with filter holder. Coffee Makers dry heat protection ensures safety",
-         "price":89.99,
-         "category":8,         
-         "image":"espresso-coffee-machine-russel-hobbs-milk-frother-black-and-silver.png"
-      }
-   },
-   {
-      "pk":67,
-      "model":"products.product",
-      "fields":{
-         "sku":"em0000067",
-         "name":"Rise & Shine Espresso Coffee Machine - Milk Frother - Silver - Black Trim",
-         "description":"1. Pump pressure (BAR): 20Bar2. Power: 1050W3. Voltage: 220V4. Net weight: 3.3KG5. Power cord length: 1M6.Water tank capacity: 1.2L7. Product size: 160*383*311mmFeatures:1. High-value design, retro style2. Select the temperature, make good coffee easily3. Visual temperature, real-time observation of temperature4. Four-speed adjustable steam milk froth, fun with fancy milk coffee5.20bar high pressure, extract mellow oil6.20s extraction, make coffee quickly7. Cup warming station, electronic button operation, double-layer filter screen, separate water storage box",
-         "price":129.99,
-         "category":8,         
-         "image":"espresso-coffee-machine-rise-and-shine-milk-frother-siler-black-trim.png"
-      }
-   },
-   {
-      "pk":68,
-      "model":"products.product",
-      "fields":{
-         "sku":"em0000068",
-         "name":"Gaggia Espresso Machine - Milk Frother - Stainless Steel",
-         "description":"Traditionally styled, the Gaggia espresso machine is a quintessential piece of equipment in any upscale kitchen. The Gaggia provides coffee aficionados with a cappuccino maker unmatched by many other manufacturers with its stainless steel housing and three-way solenoid valve. Its easy-to-use controls and 72oz water reservoir make this the perfect espresso maker for entertaining.",
-         "price":245.99,
-         "category":8,         
-         "image":"espresso-coffee-machine-gaggia-milk-frother-stainless-steel.png"
-      }
-   },
-   {
-      "pk":69,
-      "model":"products.product",
-      "fields":{
-         "sku":"em0000069",
-         "name":"Jura Espresso Machine - Milk Frother - Black - Silver Trim",
-         "description":"The Professional Aroma Grinder guarantees 12.2%* more aroma and consistently high grind quality so that flavours unfold to perfection throughout the entire service life of the grinder. The Pulse Extraction Process (P.E.P.®) ensures maximum flavour for short specialities, while intelligent preheating guarantees the ideal temperature right from the first cup. The sophisticated milk system cleaning process takes place automatically at the touch of a button and is completed in no time. The drip tray also meets the highest ergonomic standards. Its design prevents water from spilling and it can be removed conveniently with just one hand. JURA coffee machines feature a clean and expressive characteristic design. High-quality materials and precise craftsmanship underline the premium quality of the modern E8. Its styling alone is evidence of its quality, functionality and durability. Details such as the grooved water tank or the high-quality, chrome-plated cup grille perfectly complement the clean, harmonious design of the E8. ",
-         "price":329.99,
-         "category":8,         
-         "image":"espresso-coffee-machine-jura-milk-frother-black-with-silver-trim.png"
-      }
-   },
-   {
-      "pk":70,
-      "model":"products.product",
-      "fields":{
-         "sku":"em0000070",
-         "name":"Happiness Is Espresso Machine - Milk Frother - Silver - Balck Trim",
-         "description":"Craft your favourite coffee bar drinks at home with innovative professional barista technology. Enjoy a rich, smooth espresso - or finish your coffee with a velvety layer of milk using the Adjustable Cappuccino System. With its swing black body and stylish matt finish, the unique espresso maker adds a touch of authentic Italian design to any kitchen. Key Features: -Enjoy rich, smooth espresso with perfect crema using your favourite blend or pod, -Thermoblock technology crafts your espresso at the perfect temperature, -Brew a wide range of milk based beverages with the adjustable Cappuccino System, -Swing black with stylish matt finish",
-         "price":159.99,
-         "category":8,         
-         "image":"espresso-coffee-machine-happiness-is-milk-frother-silver-with-black-trim.png"
-      }
-   },
-   {
-      "pk":71,
-      "model":"products.product",
-      "fields":{
-         "sku":"gs0000071",
-         "name":"The Traditional - Coffee Beans - Hessian Bag",
-         "description":"The Traditional Gift set is a Rustic Beautiful Hessian sack bag filled with 500g of Golden Goddess Coffee Beans and finished off with a Gold Ribbon. A beautiful gift for the Coffee Lover.",
-         "price":23.95,
-         "category":9,         
-         "image":"gift-set-the-traditional-hessian-sack-bag-of-coffee-beans-with-scattered-coffee-beans.jpg"
-      }
-   },
-   {
-      "pk":72,
-      "model":"products.product",
-      "fields":{
-         "sku":"gs0000072",
-         "name":"On The Go - Travel Mug - Bag Ground Coffee",
-         "description":"On The Go Gift set comes in a strong fold down lid recyclable cardboard box consisting of a beautiful ceramic Travel Mug accompanied by a bag of our Vivaciously Vanilla Coffee Grounds. For that special person who is always On The Go.",
-         "price":23.95,
-         "category":9,         
-         "image":"gift-set-on-the-go-cardboard-fold-down-lid-box-white-with-design-bottom-of-bag-of coffee-beans-to-go-ceramic-white-mug-lid-milkly-coffee.jpg"
-      }
-   },
-   {
-      "pk":73,
-      "model":"products.product",
-      "fields":{
-         "sku":"gs0000073",
-         "name":"Grindingly Good - Wooden Coffe Grinder - Blue Coffee Cup",
-         "description":"Grindingly Good Gift set presented to you with our beautifully finished Wooden hand Coffee Grinder & 2 Blue Coffee Cups & plates made from the highest quality ceramic. The gift to give for those with a feel for  the traditional look & luxury.",
-         "price":85.99,
-         "category":9,         
-         "image":"gift-set-grindingly-good-blue-cup-on-plate-wooden-coffee-grinder-with-freshly-ground-coffee-scattered-coffee-beans.jpg"
-      }
-   },
-   {
-      "pk":74,
-      "model":"products.product",
-      "fields":{
-         "sku":"gs0000074",
-         "name":"Drippingly Grand - Small Metal Pot - Glass Drip Pot with Filter Drip Stand",
-         "description":"Drippingly Grand Gift set brings to your loved one a beautiful designed small metal coffee pot and elegant glass drip pot along with a clever nifty filter drip stand and a box of 20 filter papers. For the love a drip coffee. A stylishly thoughtful gift.",
-         "price":96.45,
-         "category":9,         
-         "image":"gift-set-drippingly-grand-small-metal-coffee-pot-glass-drip-pot-filter-drip-stand-wooden-bar-counter.jpg"
-      }
-   },
-   {
-      "pk":75,
-      "model":"products.product",
-      "fields":{
-         "sku":"gs0000075",
-         "name":"Moka Up - Stainless Steel Moka Pot - Metal Spoon - Bag of Ground Coffee - White Mug",
-         "description":"Moka Up Gift set a ready to brew set comes to you with our 300 ml Stainless steel Moka Pot , a beautiful metal spoon, 2 white coffee mugs and a bag of ground coffee of Gray Day Pick Up in a beautiful metallic bag. An elegant gift for all occasions.",
-         "price":114.99,
-         "category":9,         
-         "image":"gift-set-moka-up-bag-of-coffee-silver-spoon-metal-moka-coffee-brewer-white-mug.jpg"
-      }
-   },
-   {
-      "pk":76,
-      "model":"products.product",
-      "fields":{
-         "sku":"gs0000076",
-         "name":"Fully Loaded - Coffee Drip Pot Equipment",
-         "description":"Fully Loaded Gift set is the ultimate Coffee drip start up gift set. Consisting off : 1 Glass Drip pot & filter jolder,20 filter papers, 1 Bronze farm style Coffee Pot & milk jug, 1 Bronze Hand Coffee Grinder, 1 Measured air tight coffee grounds storage tube, 1 small wooden spoon, 6 glass cups, 6 wooden place holders, 6 white ceramic leaf small plates, 2 white ceramic ramekins. This is a Fully loaded start up kit. Giving a coffee lover the right start.",
-         "price":269.99,
-         "category":9,         
-         "image":"gift-set-fully-loaded-glass-drip-pot-bronze-coffe-pot-milk-jug-and-hand-grinder-glass-cup-white-ceramic-leaf-sauce-ramekin-wooden-cup-place-holder-small-wood-spoon-storage.jpg"
-      }
-   },
-   {
-      "pk":77,
-      "model":"products.product",
-      "fields":{
-         "sku":"ct0000077",
-         "name":"Cuppachino Cupcakes",
-         "description":"Cuppachino Cupcakes Treat delivered in white flip lid box these decadent delicious moist cupcakes are a must to go with your coffee date. Qty 6 per order.",
-         "price":6.39,
-         "category":10,         
-         "image":"treat-cuppachino-cupcakes-mixed-with-chocolate-chip-white-plate.jpg"
-      }
-   },
-   {
-      "pk":78,
-      "model":"products.product",
-      "fields":{
-         "sku":"ct0000078",
-         "name":"Chocolate Brownies",
-         "description":"Chocolate Brownies Treat delivered in white flip lid box these decadent delicious moist brownies as nothing goes so well with Coffee as Chocolate. Qty 6 per order.",
-         "price":7.46,
-         "category":10,         
-         "image":"treat-chocolate-brownies-sackcloth-coffee-beans-wooden-table.jpg"
-      }
-   },
-   {
-      "pk":79,
-      "model":"products.product",
-      "fields":{
-         "sku":"ct0000079",
-         "name":"Chocolate Chip Cookies",
-         "description":"Chocolate Chip Cookies Treat delivered in white flip lid box these large crunchy fully loaded chocolate chip cookies are never to be missed at a coffee date. Qty 6 per order.",
-         "price":5.46,
-         "category":10,         
-         "image":"treat-chocolate-chip-cookies-stacked-on-wooden-board.jpg"
-      }
-   },
-   {
-      "pk":80,
-      "model":"products.product",
-      "fields":{
-         "sku":"ct0000080",
-         "name":"French Coffee Macaroons",
-         "description":"French Coffee Macaroons Treat delivered in white flip lid box these classic macaroons are to die for with a lovely subtle coffee flavour and a dusky pink colour adding an elegant touch. Qty 6 per order.",
-         "price":9.69,
-         "category":10,         
-         "image":"treat-dusky-pink-french-coffee-macaroons-with-coffee-beans.jpg"
-      }
-   },
-   {
-      "pk":81,
-      "model":"products.product",
-      "fields":{
-         "sku":"ct0000081",
-         "name":"The Mixed Box Cookies",
-         "description":"The Mixed Box Cookies delivered in white flip lid box come the most amazing crunchy selction of cookies , oatmeal, chocolate and coffee. Qty 24 per order",
-         "price":25.96,
-         "category":10,         
-         "image":"treat-oatmeal-chocolate-coffee-cookies-mixture.jpg"
-      }
-   },
-   {
-      "pk":82,
-      "model":"products.product",
-      "fields":{
-         "sku":"ct0000082",
-         "name":"Chocolate Truffles",
-         "description":"Chocolate Truffles Treat delivered in white flip lid box these cocoa powdered melt in your mouth truffles are a definite must to treat yourself or a friend. Qty 24 per order.",
-         "price":16.95,
-         "category":10,         
-         "image":"treat-chocolate-truffles-cocoa-powder-top-view-plate.jpg"
-      }
-   },
-   {
-      "pk":83,
-      "model":"products.product",
-      "fields":{
-         "sku":"ct0000083",
-         "name":"Chocolate Covered Mini Coffee Cakes",
-         "description":"Chocolate Covered Mini Coffee Cakes delivered in white flip lid box these mini decadent cakes as simply out of this world. Qty 6 per order.",
-         "price":11.59,
-         "category":10,         
-         "image":"treat-chocolate-covered-mini-coffee-cakes.jpg"
-      }
-   },
-   {
-      "pk":84,
-      "model":"products.product",
-      "fields":{
-         "sku":"ct0000084",
-         "name":"Coffee Cruch Chocolate Coated Cookies",
-         "description":"Coffee Cruch Chocolate Coated Cookies Treat delivered in white flip lid box these coffee crunchy chocolate coated cookies are so good that a few are never enough. Qty 24 per order.",
-         "price":23.99,
-         "category":10,         
-         "image":"treat-coffee-crunch-chocolate-coated-cookies-overhead-shot-on-oven-tray.jpg"
-      }
-   },
-   {
-      "pk":85,
-      "model":"products.product",
-      "fields":{
-         "sku":"ct0000085",
-         "name":"Chocolate Assortment Box",
-         "description":"Chocolate Assortment Box Treat delivered in white flip lid box these melt in your mouth chocolates come in an assortment of coffee, caramel and hazelnut. Qty 24 per order.",
-         "price":17.96,
-         "category":10,         
-         "image":"treat-delicious-chocolate-assortment.jpg"
-      }
-   },
-   {
-      "pk":86,
-      "model":"products.product",
-      "fields":{
-         "sku":"ct0000086",
-         "name":"Choco chino Biscuit Bears",
-         "description":"Choco chino Biscuit Bears Treat delivered in white flip lid box these crunchy tasty cute bears add a wonderful touch of fun to any coffee occasion. Qty 6 per order.",
-         "price":8.65,
-         "category":10,         
-         "image":"treat-choco-chino-biscuit-bears-hot-chocolate-tray.jpg"
-      }
-   }   
+      "model": "products.product",
+      "pk": 1,
+      "fields": {
+        "category": 1,
+        "sku": "cb0000001",
+        "update_on": "2023-01-26T15:55:05.239Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Wide Awake Classic Roast Beans",
+        "description": "Wide Awake Classic Roast is a round, smooth and versatile coffee bean blend, which appeals to most people. The high-quality blend contains 70 % Arabica and 30 % Robusta. Enjoy as standard coffee or as espresso. The coffee has a pleasant, smooth taste with a delicate fine flavour that is full bodied with hints of chocolate and sweetness in the taste.",
+        "has_sizes": true,
+        "price": "7.23",
+        "image_url": null,
+        "image": "wide-awake-coffee-beans-classic-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 2,
+      "fields": {
+        "category": 1,
+        "sku": "cb0000002",
+        "update_on": "2023-01-26T15:55:05.243Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Lazy Bones Smooth Roast Beans",
+        "description": "Lazy Bones Smooth Roast is a deliciously smooth, full-flavoured coffee that has a rich coffee flavour and enticing aroma. An exquisite blend of 55 % Central and 45 % South Tanzanian beans, this bold, boisterous coffee bean is perfect for any occasion an easy smooth coffee suitable for all day drinking & will be sure to give you the delicate, satisfying coffee experience.",
+        "has_sizes": true,
+        "price": "6.16",
+        "image_url": null,
+        "image": "lazy-bones-coffee-beans-smooth-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 3,
+      "fields": {
+        "category": 1,
+        "sku": "cb0000003",
+        "update_on": "2023-01-26T15:55:05.245Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Rearing To Go Robust Roast Beans",
+        "description": "Rearing To Go Robust Roast has a specific individual flavour dominated by a rich earthiness which is smooth and moderate acidity and medium in body. This single source rich earthy bean is 100% Brazilian robust roast, this amazing earthy coffee is an easy drink and the perfect ready to go coffee can be use as either standard coffee or as espresso.",
+        "has_sizes": true,
+        "price": "5.99",
+        "image_url": null,
+        "image": "rearing-to-go-coffee-beans-robust-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 4,
+      "fields": {
+        "category": 1,
+        "sku": "cb0000004",
+        "update_on": "2023-01-26T15:55:05.251Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Gray Day Pick-Up Fine Roast Beans",
+        "description": "Gray Day Pick-Up Fine Roast brining a smooth subtle flavour with hints of nuts and cocoa. This single source bean is 100% Arabica coffee is finely roasted to a glistening, dark chestnut colour and is wonderfully smooth and globally renowned for its high-quality. Perfect for those Gray days to lift and warm the spirits coffee can be use as either standard coffee or as espresso.",
+        "has_sizes": true,
+        "price": "6.54",
+        "image_url": null,
+        "image": "gray-day-pick-up-coffee-beans-fine-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 5,
+      "fields": {
+        "category": 1,
+        "sku": "cb0000005",
+        "update_on": "2023-01-26T15:55:05.254Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Perky Pink Hand Roast Beans",
+        "description": "Perky Pink Hand Roast a fantastic flavour of a bold taste without the bitterness with a sweet balanced espresso that has intense dominant dark chocolate notes, a treacle sweetness that gives a deep complexity to your coffee. Hand Roasted with Love this speciality grade is 100% Arabica. A perfect all-rounder coffee bean that will Perk Up your Day especially used as an espresso ",
+        "has_sizes": true,
+        "price": "9.20",
+        "image_url": null,
+        "image": "perky-pink-coffee-beans-hand-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 6,
+      "fields": {
+        "category": 1,
+        "sku": "cb0000006",
+        "update_on": "2023-01-26T15:55:05.257Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Out Of This World Organic Roast Beans",
+        "description": "Out Of This World Organic Roast brining to you an amazing earthly rich flavour with hints of nuts. This high-quality blend contains 80 % Caribbean and 20 % Robusta is organically grown, hand-picked and hand roasted. This speciality Coffee bean can be used as an all-rounder and is fantastic as a little goes a long way with Love of the plant this adds to the earthy richness.",
+        "has_sizes": true,
+        "price": "10.15",
+        "image_url": null,
+        "image": "out-of-this-world-coffee-beans-organic-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 7,
+      "fields": {
+        "category": 1,
+        "sku": "cb0000007",
+        "update_on": "2023-01-26T15:55:05.260Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "All About You Medium Roast Beans",
+        "description": "All About You Medium Roast is a full flavour rich tasting coffee bean with slight hints of vanilla. The coffee is created from 100% Columbian beans, that make a harmonious and full-bodied coffee giving a balanced and round aftertaste. This coffee is still on top after decades with good reason - the taste been right on the money. This coffee is for all moments in a day.",
+        "has_sizes": true,
+        "price": "4.26",
+        "image_url": null,
+        "image": "all-about-you-coffee-beans-medium-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 8,
+      "fields": {
+        "category": 1,
+        "sku": "cb0000008",
+        "update_on": "2023-01-26T15:55:05.263Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Mildly Blue Light Roast Beans",
+        "description": "Mildly Blue Light Roast comes to you as an all-day every day coffee bean with a Light & Subtle flavour. This coffee is 100% Jamaica Blue Mountain coffee this well cared for and loved coffee is 'put to sleep' for 3-4 months giving it the greenish blue colour. This is the coffee lover's choice for every day drinking in any form drip, perc or espresso and perfect to keep those blues away.",
+        "has_sizes": true,
+        "price": "5.16",
+        "image_url": null,
+        "image": "mildly-blue-coffee-beans-light-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 9,
+      "fields": {
+        "category": 1,
+        "sku": "cb0000009",
+        "update_on": "2023-01-26T15:55:05.265Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Golden Goddess Medium-Dark Roast Beans",
+        "description": "Golden Goddess Medium-Dark Roast is a well-balance coffee with a rich dark flavour that is not overpowering slight hints of orange citrus. This golden coloured coffee bean blend is 75% Arabica from Central America and 25% Robust Caribbean a perfect blend. This is a well-rounded all-purpose coffee and is great for everyday use, but also perfect for guests and festive occasions. Adding a golden glow to all occasions",
+        "has_sizes": true,
+        "price": "6.19",
+        "image_url": null,
+        "image": "golden-goddess-coffe-beans-medium-dark-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 10,
+      "fields": {
+        "category": 1,
+        "sku": "cb0000010",
+        "update_on": "2023-01-26T15:55:05.267Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Dangerous Dark Blue Dark Roast Beans",
+        "description": "Dangerous Dark Blue Dark Roast comes to you with a smoky, dark, complex flavour that is simply wonderful with a smooth aftertaste leaving you wanting more. This rick dark coloured coffee bean is 100% Kenyan Coffee from the highest mountain regions and spring water grown brining its unique flavours to your home. Especially good as espresso but more than able to handle everyday use making you want to live dangerously it's that good",
+        "has_sizes": true,
+        "price": "5.29",
+        "image_url": null,
+        "image": "dangerous-darkblue-coffee-bean-dark-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 11,
+      "fields": {
+        "category": 2,
+        "sku": "cg0000011",
+        "update_on": "2023-01-26T15:55:05.270Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "All About You Medium Roast Grounds",
+        "description": "All About You Medium Roast is a full flavour rich tasting coffee ground with slight hints of vanilla. The coffee is created from 100% Columbian beans, that make a harmonious and full-bodied coffee giving a balanced and round aftertaste. This coffee is still on top after decades with good reason - the taste been right on the money. This coffee is for all moments in a day.",
+        "has_sizes": true,
+        "price": "3.89",
+        "image_url": null,
+        "image": "all-about-you-coffee-ground-medium-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 12,
+      "fields": {
+        "category": 2,
+        "sku": "cg0000012",
+        "update_on": "2023-01-26T15:55:05.272Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Golden Goddess Medium-Dark Roast Grounds",
+        "description": "Golden Goddess Medium-Dark Roast is a well-balance coffee with a rich dark flavour that is not overpowering slight hints of orange citrus. This golden coloured coffee ground blend is 75% Arabica from Central America and 25% Robust Caribbean a perfect blend. This is a well-rounded all-purpose coffee and is great for everyday use, but also perfect for guests and festive occasions. Adding a golden glow to all occasions",
+        "has_sizes": true,
+        "price": "5.79",
+        "image_url": null,
+        "image": "golden-goddess-coffe-ground-medium-dark-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 13,
+      "fields": {
+        "category": 2,
+        "sku": "cg0000013",
+        "update_on": "2023-01-26T15:55:05.274Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Gray Day Pick-Up Fine Roast Grounds",
+        "description": "Gray Day Pick-Up Fine Roast brining a smooth subtle flavour with hints of nuts and cocoa. This single source coffee ground is 100% Arabica coffee is finely roasted to a glistening, dark chestnut colour and is wonderfully smooth and globally renowned for its high-quality. Perfect for those Gray days to lift and warm the spirits coffee can be use as either standard coffee or as espresso.",
+        "has_sizes": true,
+        "price": "5.89",
+        "image_url": null,
+        "image": "gray-day-pick-up-coffee-ground-fine-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 14,
+      "fields": {
+        "category": 2,
+        "sku": "cg0000014",
+        "update_on": "2023-01-26T15:55:05.276Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Mildly Blue Light Roast Grounds",
+        "description": "Mildly Blue Light Roast comes to you as an all-day every day coffee ground with a Light & Subtle flavour. This coffee is 100% Jamaica Blue Mountain coffee this well cared for and loved coffee is 'put to sleep' for 3-4 months giving it the greenish blue colour. This is the coffee lover's choice for every day drinking in any form drip, perc or espresso and perfect to keep those blues away.",
+        "has_sizes": true,
+        "price": "4.68",
+        "image_url": null,
+        "image": "mildly-blue-coffee-ground-light-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 15,
+      "fields": {
+        "category": 2,
+        "sku": "cg0000015",
+        "update_on": "2023-01-26T15:55:05.278Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Perky Pink Hand Roast Grounds",
+        "description": "Perky Pink Hand Roast a fantastic flavour of a bold taste without the bitterness with a sweet balanced espresso that has intense dominant dark chocolate notes, a treacle sweetness that gives a deep complexity to your coffee. Hand Roasted with Love this speciality grade is 100% Arabica. A perfect all-rounder coffee ground that will Perk Up your Day especially used as an espresso.",
+        "has_sizes": true,
+        "price": "8.52",
+        "image_url": null,
+        "image": "perky-pink-coffee-ground-hand-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 16,
+      "fields": {
+        "category": 2,
+        "sku": "cg0000016",
+        "update_on": "2023-01-26T15:55:05.281Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Rambunctious Red Medium-Dark Roast Grounds",
+        "description": "Rambunctious Red Medium-Dark Roast is a balanced coffee with a full dark flavour and slight hints of hazel nuts. This rich bronze coffee ground blend is 65% Tanzanian and 35% Robust Caribbean an amazing blend. This is a well-balanced but checky all-rounder coffee and is great for everyday use. This is a rambunctiously cheeky coffee that you can't get enough off.",
+        "has_sizes": true,
+        "price": "5.12",
+        "image_url": null,
+        "image": "rambunctious-red-coffee-ground-medium-dark-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 17,
+      "fields": {
+        "category": 2,
+        "sku": "cg0000017",
+        "update_on": "2023-01-26T15:55:05.283Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Cheeky Moco Fine Roast Grounds",
+        "description": "Cheeky Moco Fine Roast brining a smooth Moco Chocolate and Vanilla flavour. This blend ground is 80% Arabica and 20% Columbian coffee is finely roasted to a glistening, dark chestnut colour and is smooth with a high-quality after taste. Perfect for those checky occasion and treat days can be use as either standard coffee or as espresso but is especially good as a flat white.",
+        "has_sizes": true,
+        "price": "6.18",
+        "image_url": null,
+        "image": "cheeky-moco-coffee-ground-fine-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 18,
+      "fields": {
+        "category": 2,
+        "sku": "cg0000018",
+        "update_on": "2023-01-26T15:55:05.285Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Brazen Bronze Dark Roast Grounds",
+        "description": "Brazen Bronze Dark Roast is has a dark complex full-bodied flavour that is amazing with a smooth aftertaste leaving you so very satisfied. This rick dark coloured coffee ground is 100% Indonesian Coffee from the rainforest regions and spring water grown giving it a fantastically unique flavours right to your home. Especially good as espresso but more than able to handle everyday use be Brazen and Enjoy.",
+        "has_sizes": true,
+        "price": "5.16",
+        "image_url": null,
+        "image": "brazen-bronze-coffee-grounds-dark-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 19,
+      "fields": {
+        "category": 2,
+        "sku": "cg0000019",
+        "update_on": "2023-01-26T15:55:05.287Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Vivaciously Vanilla Fine Roast Grounds",
+        "description": "Vivaciously Vanilla Fine Roast has a subtle but bold Vanilla flavour. This blend ground is 75% Ethiopian and 25% Vietnamese coffee is finely roasted to a dark rich chestnut colour and is smooth with a vanilla after taste. A lively animated carefree coffee can either standard coffee or as espresso but is especially good as a flat white.",
+        "has_sizes": true,
+        "price": "4.28",
+        "image_url": null,
+        "image": "vivaciously-vanilla-coffee-grounds-fine-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 20,
+      "fields": {
+        "category": 2,
+        "sku": "cg0000020",
+        "update_on": "2023-01-26T15:55:05.289Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Wonderfully Wild Classic Roast Grounds",
+        "description": "Wonderfully Wild Classic Roast is a full bodied, smooth interesting coffee ground blend, which appeals to coffee lovers. The high-quality blend contains 60 % Tanzanian and 40 % Robusta giving it it's unbelievable wild flavour. This is the perfect all-rounder coffee enjoy any way you like, go wild with it.",
+        "has_sizes": true,
+        "price": "5.38",
+        "image_url": null,
+        "image": "wonderfully-wild-coffee-ground-classic-roast.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 21,
+      "fields": {
+        "category": 3,
+        "sku": "ccp000021",
+        "update_on": "2023-01-27T11:12:02.980Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Classy Classic Capsule Pods",
+        "description": "Classy Classic Capsule Pods has a stylish high-classed superior coffee flavour. The high-quality blend contains 70 % Arabica and 30 % Robusta perfectly balance into your coffee pod made easy and quick for you. Enjoy this easy ready Coffee within minutes. The coffee has a pleasant, smooth taste with a delicate fine flavour that is full bodied. Sold in a pack of 12 for your Enjoyment.",
+        "has_sizes": false,
+        "price": "4.49",
+        "image_url": null,
+        "image": "classy-classic-coffee-capsule-pod.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 22,
+      "fields": {
+        "category": 3,
+        "sku": "ccp000022",
+        "update_on": "2023-01-27T11:12:16.286Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "In A Blink Blue Capsule Pods",
+        "description": "In A Blink Blue Capsule Pods comes to you as an all-day every day coffee capsule pod with a Light & Subtle flavour. This coffee is 100% Jamaica Blue Mountain coffee this well cared for and loved coffee is 'put to sleep' for 3-4 months giving it the greenish blue colour. This is the coffee lover's choice for every day drinking , made in the blind of an eye for coffee lover on the go. Sold in a pack of 12 for your Enjoyment.",
+        "has_sizes": false,
+        "price": "5.32",
+        "image_url": null,
+        "image": "in-a-blink-blue-coffee-capsule-pod.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 23,
+      "fields": {
+        "category": 3,
+        "sku": "ccp000023",
+        "update_on": "2023-01-27T11:13:15.415Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Galloping Gold Capsule Pods",
+        "description": "Galloping Gold Capsule Pods brings to you a Medium-Dark Roast well-balance coffee with a rich dark flavour that is not overpowering slight hints of coco. This golden coloured coffee capsule pod is a blend of 75% Arabica from Central America and 25% Robust Caribbean a perfect blend. This is a well-rounded all-purpose coffee and is great for everyday use for those on the gallop. Sold in a pack of 12 for your Enjoyment.",
+        "has_sizes": false,
+        "price": "4.99",
+        "image_url": null,
+        "image": "galloping-gold-coffee-capsule-pod.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 24,
+      "fields": {
+        "category": 3,
+        "sku": "ccp000024",
+        "update_on": "2023-01-27T11:20:35.547Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Galvanizing Green Capsule Pods",
+        "description": "Galvanizing Green Capsule Pods is a well round, smooth and versatile coffee capsule pod blend, which appeals to most people. The high-quality blend contains 70 % Arabica and 30 % Robusta. The coffee has a pleasant, smooth taste with a delicate fine flavour that is full bodied with hints of chocolate and sweetness in the taste. This coffee is sure to galvanize you into your fast passed day. Sold in a pack of 12 for your Enjoyment.",
+        "has_sizes": false,
+        "price": "5.12",
+        "image_url": null,
+        "image": "galvanizing-green-coffee-capsule-pod.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 25,
+      "fields": {
+        "category": 3,
+        "sku": "ccp000025",
+        "update_on": "2023-01-27T11:19:32.731Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Blazing Blue Capsule Pods",
+        "description": "Blazing Blue Capsule Pods is a full flavour rich tasting coffee capsule pod with slight hints of vanilla. The coffee is created from 100% Columbian beans, that make a harmonious and full-bodied coffee giving a balanced and round aftertaste. This coffee is for all moments in a day. This coffee capsule will see you blazing throughout your day. Sold in a pack of 12 for your Enjoyment.",
+        "has_sizes": false,
+        "price": "4.69",
+        "image_url": null,
+        "image": "blazing-blue-coffee-capsule-pod.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 26,
+      "fields": {
+        "category": 3,
+        "sku": "ccp000026",
+        "update_on": "2023-01-27T11:19:43.118Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Brazen Bronze Capsule Pods",
+        "description": "Brazen Bronze Capsule Pods has a dark complex full-bodied flavour that has an amazing smooth aftertaste leaving you so very satisfied. This rick dark coloured coffee is 100% Indonesian Coffee from the rainforest regions and spring water grown giving it a fantastically unique flavours right to your home. This is a strong brazen coffee to get you going and keep you going. Be your Brazen self and Enjoy. Sold in a pack of 12 for your Enjoyment.",
+        "has_sizes": false,
+        "price": "5.23",
+        "image_url": null,
+        "image": "brazen-bronze-coffee-capsule-pod.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 27,
+      "fields": {
+        "category": 3,
+        "sku": "ccp000027",
+        "update_on": "2023-01-27T11:18:45.832Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Vibrant Vanilla Capsule Pod",
+        "description": "Vibrant Vanilla Capsule Pod has a subtle but bold Vanilla flavour. This blend ground is 75% Ethiopian and 25% Vietnamese coffee of a dark rich chestnut colour and is smooth with a vanilla after taste. A lively animated carefree coffee. Keeping you vibrant and on the go an absolute all-day coffee for those on the go that enjoy a hint of flavour. Sold in a pack of 12 for your Enjoyment.",
+        "has_sizes": false,
+        "price": "6.15",
+        "image_url": null,
+        "image": "vibrant-vanilla-coffee-capsule-pod.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 28,
+      "fields": {
+        "category": 3,
+        "sku": "ccp000028",
+        "update_on": "2023-01-27T11:19:06.366Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Mighty Mochaccino Capsule Pod",
+        "description": "Mighty Mochaccino Capsule Pod brining a mighty flavour of our favour smoothy coffee chocolate. This single source bean is 100% Arabica coffee finely roasted to a glistening, dark chestnut colour and is wonderfully smooth and globally renowned for its high-quality. Perfect for those days when been mighty is a must and just because well, we all love a coffee with chocolate. Sold in a pack of 12 for your Enjoyment.",
+        "has_sizes": false,
+        "price": "6.12",
+        "image_url": null,
+        "image": "mighty-mochaccino-coffee-capsule-pod.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 29,
+      "fields": {
+        "category": 3,
+        "sku": "ccp000029",
+        "update_on": "2023-01-27T11:19:55.396Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Charging Cappuccino Capsule Pod",
+        "description": "Charging Cappuccino Capsule Pod is an espresso-based coffee with a full dark flavour coffee presented to you with the milky foam to form our Cappuccino. This rich bronze coffee blend is 65% Tanzanian and 35% Robust Caribbean an amazing blend. This smooth creamy cappuccino will get you charge up for your busy day. Sold in a pack of 12 for your Enjoyment.",
+        "has_sizes": false,
+        "price": "5.11",
+        "image_url": null,
+        "image": "charging-cappuccino-coffee-capsule-pod.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 30,
+      "fields": {
+        "category": 3,
+        "sku": "ccp000030",
+        "update_on": "2023-01-27T11:14:13.005Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Cheeky Cherry Choco Capsule Pod",
+        "description": "Cheeky Cherry Choco Capsule Pod brining a delightful hint of Cherry and Chocolate flavour. This blend coffee capsule is 80% Arabica and 20% Columbian coffee this is a high-quality taste for those seeking something a little different than the standard flavoured coffee a not to be missed. Perfect for those checky occasion and treat days. Sold in a pack of 12 for your Enjoyment.",
+        "has_sizes": false,
+        "price": "6.11",
+        "image_url": null,
+        "image": "cheeky-cherry-choco-coffee-capsule-pod.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 31,
+      "fields": {
+        "category": 4,
+        "sku": "dw0000031",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Diamond & Triangle Design Black & White Ceramic Cup & Plate",
+        "description": "Diamond & Triangle Design Black & White Ceramic Cup & Plate made of high-quality ceramic with a modern look & feel having a Diamond and Triangle design into the structure of the cup itself. The choice for a modern look & feel. Sold as a set of 2 , 1 white & 1 black.",
+        "has_sizes": false,
+        "price": "6.45",
+        "image_url": null,
+        "image": "diamond-triangle-patern-black-ceramic-cup-black-plate-white-ceramic-cup-white-plate-on-warm-wooden-table.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 32,
+      "fields": {
+        "category": 4,
+        "sku": "dw0000032",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Espresso glass steel base and handle",
+        "description": "Espresso glass steel base and handle made of the very best quality glass and presented to you with stainless steel base and handle. These elegant espresso cups are adding a modern yet classy look to serve espresso. Sold as a set of 3.",
+        "has_sizes": false,
+        "price": "4.56",
+        "image_url": null,
+        "image": "espresso-glass-steel-base-and-handle-white-background-coffeebeans.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 33,
+      "fields": {
+        "category": 4,
+        "sku": "dw0000033",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Black Coffee Cup & Plate with White Inner",
+        "description": "Black Coffee Cup with White Inner made from our high-quality ceramic this elegant looking coffee cup is a lovely addition to you home. The white inside allows you to showcase your excellent coffee against this background. Sold as a single unit Cup & plate",
+        "has_sizes": false,
+        "price": "1.46",
+        "image_url": null,
+        "image": "black-coffee-cup-white-inner-white-background-coffeebeans.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 34,
+      "fields": {
+        "category": 4,
+        "sku": "dw0000034",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "White Coffee Cup & Plate",
+        "description": "White Coffee Cup & Plate made from our high-quality ceramic this elegant but classic looking coffee cup is a lovely addition to you home. The classic white we all know and love adds that restaurant feel to your home. Sold as a single unit Cup & plate",
+        "has_sizes": false,
+        "price": "1.12",
+        "image_url": null,
+        "image": "white-coffee-cup-plate-on-wooden-table.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 35,
+      "fields": {
+        "category": 4,
+        "sku": "dw0000035",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Coffee Mugs Blue & Green",
+        "description": "Coffee Mugs Blue & Green made of high-quality ceramic. These lovely coffee mugs are a fun blue and green adding a bit of light colour to your day. Sold as a set of 2 , 1 Blue & 1 Green.",
+        "has_sizes": false,
+        "price": "2.26",
+        "image_url": null,
+        "image": "two-mugs-one-blue-one-green-on-white-background.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 36,
+      "fields": {
+        "category": 4,
+        "sku": "dw0000036",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Artistic Cream, Green & Black Coffee Mug",
+        "description": "Artistic Cream, Green & Black Coffee Mug hand crafted from our locally artist source using only the finest materials and glazing. This is a beautiful coffee mug offering a cozy feel. Sold as a single Unit.",
+        "has_sizes": false,
+        "price": "2.69",
+        "image_url": null,
+        "image": "artistic-cream-green-black-coffee-mug.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 37,
+      "fields": {
+        "category": 4,
+        "sku": "dw0000037",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Esprsso Sea shell Decorated Cups",
+        "description": "Espresso Seas shell Decorated ceramic cups made from the finest ceramic and decorated with sea shells these fantastic mini mug espresso cups are a must have for beach homes or to bring that holiday beach feel into your home. Sold as a set of 3.",
+        "has_sizes": false,
+        "price": "3.26",
+        "image_url": null,
+        "image": "three-cups-espresso-sea-shell-decorated-on-wooden-board.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 38,
+      "fields": {
+        "category": 4,
+        "sku": "dw0000038",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Traditional Bronze Turkish Arabic Coffee Glass",
+        "description": "Traditional Bronze Turkish Arabic Coffee Glass this is a unique Coffee serving glass to and an exotic touch to your home. Made from high quality glass &  bronze. Sold as a single Unit.",
+        "has_sizes": false,
+        "price": "3.16",
+        "image_url": null,
+        "image": "traditional-bronze-turkish-arabic-coffee-glass-one-wooden-desk.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 39,
+      "fields": {
+        "category": 4,
+        "sku": "dw0000039",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Hello Friday White Coffee Mug",
+        "description": "Hello Friday White Coffee Mug made from our high-quality ceramic with the fun message Hello Friday. A fantastic gift to a friend, work college or for yourself. Sold as a single Unit.",
+        "has_sizes": false,
+        "price": "1.43",
+        "image_url": null,
+        "image": "white-coffee-mug-with-hello-friday-on-wooden-table-green-plant.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 40,
+      "fields": {
+        "category": 4,
+        "sku": "dw0000040",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Rise Up & Attack the Day White Coffee Mug",
+        "description": "Rise Up & Attack the Day White Coffee Mug made from our high-quality ceramic with the fun message Rise Up & Attack the Day with Enthusiasm. A fantastic gift to a friend, work college or for yourself. Sold as a single Unit.",
+        "has_sizes": false,
+        "price": "1.43",
+        "image_url": null,
+        "image": "white-coffee-mug-with-saying-rise-up-and-attack-the-day-with-enthusiasm-wooden-table-with-chocolate-filled-pastry.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 41,
+      "fields": {
+        "category": 5,
+        "sku": "mcm000041",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Glass & Chrome Manual Drip Coffee Pot Brewer ,400ml",
+        "description": "1.Premium coffee dripper: Enjoy the prfect cup of coffee, precisely brewed fore better and fresher taste; premium coffee pot brewing tool for a superior coffee experience that makes every cup special. 2.Coffee Pot with Gorgeous Artisan Design: Brilliant design is attractive and functional; gorgeous looks for sophisticated kitchens. 3.Ultimate Brewing Control: This clever coffee dripper allows you to customize every cup of coffee: control the taste, strength, temperature, water ratio; pinpoint control for true coffee lovers. 4.Mesh Micro Filter: Our best quality stainless steel coffee filter with holes in the metal and mesh micro filter, will not let even fine ground coffee through so you can enjoy the perfectly brewed cup of coffee. 5.Brew Better Coffee with coffee dripper: If you really want to enjoy a good cup of coffee, normal kettles probably aren't going to get the job done. The long neck of our 1-liter electric gooseneck design gives you a slow, controlled and precise flow of water that is optimal for extracting the most flavor when you brew coffee or tea using the pour-over method.",
+        "has_sizes": false,
+        "price": "39.95",
+        "image_url": null,
+        "image": "beautiful-side-transparent-chrome-drip-coffee-maker-with-roasted-filtered-coffee-isolated-thick-wooden-table-cafe-shop-white-weights-steam-brutal.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 42,
+      "fields": {
+        "category": 5,
+        "sku": "mcm000042",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Moka Pot Red & Silver, Stovetop, 300ml",
+        "description": "EASY-TO-USE - Simply fill the lower chamber with water, fill the filter with ground coffee, and place on stovetop. Within minutes, delicious, bubbling cups of espresso will fill your pot. Remove from heat and enjoy. Works on all electric, ceramic and gas stovetops including propane making it the perfect camping accessory. DURABLE AND INNOVATIVE DESIGN Carefully crafted with strong, long-lasting aluminum. Provides thorough and even heat distribution for enhanced flavor and aroma. The durable flip-top lid features a temperature resistant knob and handle that allows for easy, safe pouring. The safety-release valve controls the pressure at which water is delivered to coffee grounds at a set, pre-determined level for perfectly extracted espresso, every time. Hand wash with soap to ensure long-lasting quality. ENDLESS POSSIBILITIES - Craft any coffee recipe you like. While traditionally used for high-quality espresso, cuban coffee or mocha; it can also be used as a stovetop coffee percolator for traditional American coffee. You can also add steamed or frothed milk to craft cappuccinos, lattes, americanos, macchiato, mochas and more. SAVES YOU MONEY - Enjoy the craft coffee experience from the convenience of your home at a fraction of the price. Make quality espresso quickly, without the hassle of electric espresso machines or single-use pods. SPACE SAVER- Replace your large electric machine with this space-saving, multi-purpose coffee maker.",
+        "has_sizes": false,
+        "price": "34.99",
+        "image_url": null,
+        "image": "coffee-moka-pot-aluminium-top-red-bottom-silver-with-three-red-blue-yellow-cups-on-table.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 43,
+      "fields": {
+        "category": 5,
+        "sku": "mcm000043",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Moka Pot Green Aluminium, Stovetop, 300ml",
+        "description": "EASY-TO-USE - Simply fill the lower chamber with water, fill the filter with ground coffee, and place on stovetop. Within minutes, delicious, bubbling cups of espresso will fill your pot. Remove from heat and enjoy. Works on all electric, ceramic and gas stovetops including propane making it the perfect camping accessory. DURABLE AND INNOVATIVE DESIGN Carefully crafted with strong, long-lasting aluminum. Provides thorough and even heat distribution for enhanced flavor and aroma. The durable flip-top lid features a temperature resistant knob and handle that allows for easy, safe pouring. The safety-release valve controls the pressure at which water is delivered to coffee grounds at a set, pre-determined level for perfectly extracted espresso, every time. Hand wash with soap to ensure long-lasting quality. ENDLESS POSSIBILITIES - Craft any coffee recipe you like. While traditionally used for high-quality espresso, cuban coffee or mocha; it can also be used as a stovetop coffee percolator for traditional American coffee. You can also add steamed or frothed milk to craft cappuccinos, lattes, americanos, macchiato, mochas and more. SAVES YOU MONEY - Enjoy the craft coffee experience from the convenience of your home at a fraction of the price. Make quality espresso quickly, without the hassle of electric espresso machines or single-use pods. SPACE SAVER- Replace your large electric machine with this space-saving, multi-purpose coffee maker.",
+        "has_sizes": false,
+        "price": "34.99",
+        "image_url": null,
+        "image": "coffee-moka-pot-green-aluminium-lid-open.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 44,
+      "fields": {
+        "category": 5,
+        "sku": "mcm000044",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Moka Pot Red Aluminium, Stovetop, 300ml",
+        "description": "EASY-TO-USE - Simply fill the lower chamber with water, fill the filter with ground coffee, and place on stovetop. Within minutes, delicious, bubbling cups of espresso will fill your pot. Remove from heat and enjoy. Works on all electric, ceramic and gas stovetops including propane making it the perfect camping accessory. DURABLE AND INNOVATIVE DESIGN Carefully crafted with strong, long-lasting aluminum. Provides thorough and even heat distribution for enhanced flavor and aroma. The durable flip-top lid features a temperature resistant knob and handle that allows for easy, safe pouring. The safety-release valve controls the pressure at which water is delivered to coffee grounds at a set, pre-determined level for perfectly extracted espresso, every time. Hand wash with soap to ensure long-lasting quality. ENDLESS POSSIBILITIES - Craft any coffee recipe you like. While traditionally used for high-quality espresso, cuban coffee or mocha; it can also be used as a stovetop coffee percolator for traditional American coffee. You can also add steamed or frothed milk to craft cappuccinos, lattes, americanos, macchiato, mochas and more. SAVES YOU MONEY - Enjoy the craft coffee experience from the convenience of your home at a fraction of the price. Make quality espresso quickly, without the hassle of electric espresso machines or single-use pods. SPACE SAVER- Replace your large electric machine with this space-saving, multi-purpose coffee maker.",
+        "has_sizes": false,
+        "price": "34.99",
+        "image_url": null,
+        "image": "coffee-moka-pot-red-aluminium.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 45,
+      "fields": {
+        "category": 5,
+        "sku": "mcm000045",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "French Press Glass & Bronze , 1000ml",
+        "description": "Features MAKES THE BEST-TASTING COFFEE: double-layered filter system filter the coffee effectively without leaving sludge or coffee grounds to yields a richly flavored, full-bodied coffee. LARGE CAPACITY: 1000 ml/34 fl oz capacity; serves up to 8 cups or 4 mugs of coffee in just one pressing; also ideal for serving iced tea, espresso beverages, frothed milk, water and more. MADE TO LAST: made with grade 304 stainless steel plunger and frame, heat resistant borosilicate glass body, withstands years of daily use; stainless steel cut-out frame adds a touch of elegance to any space. SAFE MATERIALS: both food-grade borosilicate glass body and filter-plunger system are approved by FDA and LFGB, toxic-free, BPA free, safe for your health; stainless steel plunger won’t leave a metallic taste in your coffee. EASY TO USE & CLEAN: gently stir coffee with a spoon in a circular motion while slowly and evenly pouring hot (not boiling) water by following the brewing guide; rinse the glass body or the lid (with plunger and filter) with water after each use. Description Result in a fantastic mellow coffee every time with this Rackphile French Press Coffee Maker! Its double-layered filter system helps produce a richly flavored, full-bodied coffee with no excess grinds. Leave nothing but the pure coffee extract from your beloved coffee grounds. Specifications Material: grade 304 stainless steel plunger and frame; borosilicate glass body. Overall Dimensions: 6.3 in W x 4.7 in D x 8.7 in H (16 cm W x 12 cm D x 22 cm H)",
+        "has_sizes": false,
+        "price": "42.36",
+        "image_url": null,
+        "image": "glass-brozen-french-press.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 46,
+      "fields": {
+        "category": 5,
+        "sku": "mcm000046",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Glass Pour Manual Drip Coffee Drewer",
+        "description": "simple, easy to use with timeless, elegant design. ^All Coffeemakers are made of the highest quality, non-porous Borosilicate glass which will not absorb odors or chemical residues. ^The patented pour-over design allows coffee to be covered and refrigerated for reheating without losing flavor. ^All Coffeemakers are measured using 5 oz. as 1 cup. ^Use Bonded Filters FP-1, FC-100, FS-100, FSU-100.",
+        "has_sizes": false,
+        "price": "34.95",
+        "image_url": null,
+        "image": "glass-pour-coffee-maker-manual-drip-brewer.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 47,
+      "fields": {
+        "category": 5,
+        "sku": "mcm000047",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "French Press Glass & Stainless Steel, 1000ml",
+        "description": "Made of Reliable Material:304 grade stainless steel is the cornerstone of our french coffee press maker. The carafe housing, filtration system, handle, and top lid are all designed to last a lifetime and create a coffee french press maker that fits the look of your kitchen. The french press stainless steel is super durable, so feel comfortable taking it with you while on the go.4 Level Filtration System: Poorly made filters often break which results in getting a mug filled with coffee grounds. This is why we developed a sophisticated double stainless-steel filter that ensures that no coffee grounds are getting in your coffee anymore. Experience an incomparable delicious, smooth and full-flavored coffee.Heat Resistant Borosilicate Glass:Glass that is too thin or cheaply made would let out the heat almost instantly, which would affect the taste of your coffee. Our carafe, however, is made of heat-resistant borosilicate glass which keeps the water hot during the brewing process. Also, the thickened glass bottom tremendously extends the product service life and our handle is secured with a stainless-steel frame to keep the beaker from falling out.100% BPA Free:We cares about the materials we use in our products. That's why all the individual materials surpass food and drink grade requirements and are backed by lab testing. All the materials contain no BPA, so you can enjoy your coffee knowing it's ready for a lifetime of use. And to help you on your coffee journey, we included a brewing guide, so you get use your manual coffee makerMake a Perfect Gift:This personal size french press coffee maker is a perfect gift for a friend or your family member who loves coffee or tea. Perfect for housewarmings, weddings, birthdays, holidays, Christmas, Thanksgiving, New Year, and Valentine's day.It is, hence, not just a great gadget for on the go but a nice addition to your kitchen at home.Capacity: 1000mlColour: Silver + TransparentMaterial: glass + stainless steelPackage Contents:1 x Coffee MakerOnly the above package content, other products are not included.Note: Light shooting and different displays may cause the color of the item in the picture a little different from the real thing. The measurement allowed error is +/- 1-3cm.",
+        "has_sizes": false,
+        "price": "38.96",
+        "image_url": null,
+        "image": "glass-stainless-steel-french-press.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 48,
+      "fields": {
+        "category": 5,
+        "sku": "mcm000048",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "French Press Glass & Maze Pattern Stainless Steel, 1000ml",
+        "description": "Made of Reliable Material:304 grade stainless steel is the cornerstone of our french coffee press maker. The carafe housing, filtration system, handle, and top lid are all designed to last a lifetime and create a coffee french press maker that fits the look of your kitchen. The french press stainless steel is super durable, so feel comfortable taking it with you while on the go.4 Level Filtration System: Poorly made filters often break which results in getting a mug filled with coffee grounds. This is why we developed a sophisticated double stainless-steel filter that ensures that no coffee grounds are getting in your coffee anymore. Experience an incomparable delicious, smooth and full-flavored coffee.Heat Resistant Borosilicate Glass:Glass that is too thin or cheaply made would let out the heat almost instantly, which would affect the taste of your coffee. Our carafe, however, is made of heat-resistant borosilicate glass which keeps the water hot during the brewing process. Also, the thickened glass bottom tremendously extends the product service life and our handle is secured with a stainless-steel frame to keep the beaker from falling out.100% BPA Free:We cares about the materials we use in our products. That's why all the individual materials surpass food and drink grade requirements and are backed by lab testing. All the materials contain no BPA, so you can enjoy your coffee knowing it's ready for a lifetime of use. And to help you on your coffee journey, we included a brewing guide, so you get use your manual coffee makerMake a Perfect Gift:This personal size french press coffee maker is a perfect gift for a friend or your family member who loves coffee or tea. Perfect for housewarmings, weddings, birthdays, holidays, Christmas, Thanksgiving, New Year, and Valentine's day.It is, hence, not just a great gadget for on the go but a nice addition to your kitchen at home.Capacity: 1000mlColour: Silver + TransparentMaterial: glass + stainless steelPackage Contents:1 x Coffee MakerOnly the above package content, other products are not included.Note: Light shooting and different displays may cause the color of the item in the picture a little different from the real thing. The measurement allowed error is +/- 1-3cm.",
+        "has_sizes": false,
+        "price": "41.23",
+        "image_url": null,
+        "image": "glass-stainless-steel-maze-pattern-french-press.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 49,
+      "fields": {
+        "category": 5,
+        "sku": "mcm000049",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Mini Moka Pot High Gloss Stainless Steel, Stovetop, 150ml",
+        "description": "Description:This coffee maker is made of superior stainless steel material, easy to clean. Ergonomic plastic handle design, which fits in the hand comfortably. It is small size and exquisite appearance, makes your life more elegant. This product can be placed on any cooking appliance, and just in few minutes you will enjoy a superb coffee.Features- Color: As shown. Material: Stainless steel. Size: 9.5 x 20cm. This coffee maker is made of superior stainless steel material, easy to clean. Ergonomic plastic handle design, which fits in the hand comfortably. It is small size and exquisite appearance, makes your life more elegant. This product can be placed on any cooking appliance, and just in few minutes you will enjoy a superb coffee. Idea to serve at home, office or as a travel coffee maker.",
+        "has_sizes": false,
+        "price": "28.56",
+        "image_url": null,
+        "image": "mini-coffee-moka-pot-high-gloss-stainless-steel-coffee-beans-hesian-bag.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 50,
+      "fields": {
+        "category": 5,
+        "sku": "mcm000050",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Mini Moka Pot Matted Stainless Steel, Stovetop, 150ml",
+        "description": "Description:This coffee maker is made of superior stainless steel material, easy to clean. Ergonomic plastic handle design, which fits in the hand comfortably. It is small size and exquisite appearance, makes your life more elegant. This product can be placed on any cooking appliance, and just in few minutes you will enjoy a superb coffee.Features- Color: As shown. Material: Stainless steel. Size: 9.5 x 20cm. This coffee maker is made of superior stainless steel material, easy to clean. Ergonomic plastic handle design, which fits in the hand comfortably. It is small size and exquisite appearance, makes your life more elegant. This product can be placed on any cooking appliance, and just in few minutes you will enjoy a superb coffee. Idea to serve at home, office or as a travel coffee maker.",
+        "has_sizes": false,
+        "price": "28.56",
+        "image_url": null,
+        "image": "mini-coffee-moka-pot-matted-stainless-steel.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 51,
+      "fields": {
+        "category": 6,
+        "sku": "cpm000051",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Happy Pod Coffee Machine",
+        "description": "The space-saving Happy Pod Coffee Machine -Silver & Black. Is a must-have for smaller kitchens. With easy-to-use 1-button operation, this Tassimo coffee machine allows you to create a variety of your favourite hot drinks including Costa Coffee, Kenco Coffee and Cadbury Hot Chocolate. Patented Intellibrew Barcode technology identifies the correct drink from T-Disc, so the machine does all of the hard work for you! There's even an adjustable cup stand that allows for different mug sizes. The innovative flow heater system ensures a quick heat-up time, while the automatic cleaning and descaling program keeps maintenance to a minimum. Bar Pressure (in Bars): 3 Depth: 305 MM, Height: 265 MM, Width: 175 MM, Coffee Maker Type: Capsule / Pod, Digital Timer: N,Timer: N. Easy to use 1 button operation. Great variety of branded drinks including Costa Coffee, Kenco Coffee and Cadbury Hot Chocolate. Sleek compact design. Innovative Flow Heater system with minimal heat up time Automatic Cleaning and Descaling program. 0.7l Water Tank. Patended Intellibrew Barcode technology to identify correct drink from T-Disc. Descaling Pods available.  Adjustable Cup Stand to allow for different size cups.",
+        "has_sizes": false,
+        "price": "43.69",
+        "image_url": null,
+        "image": "happy-pod-coffee_capsule-pod-machine-silver-and-black.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 52,
+      "fields": {
+        "category": 6,
+        "sku": "cpm000052",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "My Way Pod Coffee Machine",
+        "description": "The My Way Pod Coffee Machine -Black. Brews perfect drinks using Intellibrew barcode technology. Offering fully automatic one touch operation and lots of personalised features, this impressive coffee machine from Tassimo is easy and intuitive to use. It enables you to select your preferred intensity, size and strength of drink, so that you can make all of your coffee shop favourites at the touch of a button. Using the Intellibrew system, simply pop in a T Disc (made with real ground coffee), press start and the drink's distinct barcode will give the coffee machine all of the information it needs to make your favourite drink. Choose from 40 big-brand hot drinks including Costa, L'Or, Kenco, Twinings, Cadburys and more! Bar Pressure (in Bars): 3.3, depth: 32.5 CM, Height: 29 CM, Width: 23 CM. Coffee Maker Type: Capsule / Pod. Digital Timer: N. Display Type: LCD Touchscreen. Drip Tray: N. Pods/Ground Beans: Pods. Timer: N.",
+        "has_sizes": false,
+        "price": "68.12",
+        "image_url": null,
+        "image": "my-way-pod-coffee-capsule-machine-black.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 53,
+      "fields": {
+        "category": 6,
+        "sku": "cpm000053",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Vivy Pod Coffee Machine",
+        "description": "The Vivy Pod Coffee Machine -Silver. Your favourite drink at the touch of a button. Preparing delicious hot drinks can be so easy! Your TASSIMO makes it so easy, and with little effort required, to prepare a variety of delicious hot drinks. Simply insert a T DISC and start the fully automatic preparation using the practical one button operation. That is how easily you and your loved ones can indulge yourselves with specialities from TASSIMO and enjoy life! All of your favourite drinks and favourite brands. Espresso, caffè crema, filter coffee, latte macchiato, cappuccino, hot chocolate or tea. TASSIMO offers more than 40* speciality drinks from a range of popular brands.With TASSIMO, you can enjoy delicious hot drinks whatever your taste. For the whole family, for your friends and for you! Perfectly prepared just for you with INTELLIBREW™.Tassimo brews your favourite coffees at the touch of one button for quick, easy use. With a super fast scan of the barcode on the T-Disc, Intellibrew barcode technology automatically adjusts the brewing time, water and temperature to precision. Ensuring coffee shop quality every time. Just load a T DISC made with real ground coffee, press start and the system will automatically create the perfect drink. INTELLIBREW really does do all the work for you. Bar Pressure (in Bars): 3.3, Depth: 305 MM, Height: 265 MM, Width: 175 MM, Coffee Maker Type: Capsule / Pod.",
+        "has_sizes": false,
+        "price": "136.48",
+        "image_url": null,
+        "image": "vivy-pod-coffee-capsule-pod-machine-silver.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 54,
+      "fields": {
+        "category": 6,
+        "sku": "cpm000054",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Gusto Pod Coffee Machine",
+        "description": "Gusto Pod Coffee Machine - Red. Inspired by the infinity shape, the NESCAFÉ Dolce Gusto Infinissima Black and White manual pod coffee machine by De'Longhi is slim and uniquely designed, with a 1.2L water tank to create infinite coffee possibilities. Depth: 28.5 CM, Height: 37.2 CM, Width: 15.5 CM, Coffee Maker Type: Capsule / Pod. Exclusively for Nescafe Dolce Gusto pods, the diverse capsules guarantee a new and exciting way to enjoy deliciously stylish coffee. Manual lever to personalise coffee length and select hot or cold beverages. Drip tray height adjustable by 3 positions for different sized cups and glasses (9 to 15cm). 17 bar automatic pressure regulation for coffee shop quality coffee. Economy mode: Switches off automatically after 5 minutes of inactivity",
+        "has_sizes": false,
+        "price": "43.12",
+        "image_url": null,
+        "image": "gusto-pod-coffee-capsule-pod-machine-red.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 55,
+      "fields": {
+        "category": 6,
+        "sku": "cpm000055",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Genio Touch Pod Coffee Machine",
+        "description": "The Genio Touch Pod Coffee Machine is a compact redesign of its big brother - the Gusto Pod Coffee Machine. However, the Genio Touch is not just a copy, because under the soft shapes hides a capsule machine with its own distinctive personality. Genio Touch is designed to make optimal use of space. It is therefore lower and narrower than its predecessor, but in return it has a bit more depth. The drip tray is designed to be height-adjustable, so there is plenty of room for both a small espresso cup or a large coffee mug. The water tank is elegantly part of the curved design and has a capacity of 0.8 litres. As with other models, you will find the classic touch display of the Gusto machine on the rounded front panel. When your cup is brewed, the machine stops automatically and shuts itself off after 1 minute of inactivity. Even when the coffee brews with the maximum 15 bar pressure there is no need to worry about your electricity bill. The machine is classified as energy class A + . If you prefer an extra strong cup of coffee, you can brew it with Espresso Boost technology. For an extra large cup, you simply select the XL function. To brew, just insert your chosen capsule, and set the cup with the user-friendly Play & Select function, and in no time your coffee is ready. If you want to spoil the kids with a cup of hot cocoa or you fancy a hot tea on a cold winter evening, the Genio Touch will be happy to oblige. Maintenance and cleaning are straightforward. With its minimalist design, the easily removable parts can be put in the dishwasher, and the rest of the Genio Touch can be cleaned with a damp cloth. Of course, you have access to the entire large Dolce Gusto® capsule universe, where you can choose from up to 50 different varieties. Whether you are into coffee, tea or cocoa, or you feel like experimenting with more exotic drinks like a Cappuccino or Latte, you are not going to run out options very quickly. In short, you get a machine with a practical and user-friendly design that will easily fit in most places and, if we say so ourselves, doesn’t look half bad either. Product details: • Automatic control for faster brewing, • High pressure (up to 15 bar) for rich taste and high crema, • Supports over 50 varieties in different cup sizes (e.g. NESCAFÉ Dolce Gusto® ® & STARBUCKS, Tea, Cocoa). • Compact size: 27 x 12 x 28 cm (Height, width, length), • Energy saving: Turns off automatically after 1 minute of inactivity. • Energy class A +, • 2 years guarantee. When you buy this machine, you get a free adapter",
+        "has_sizes": false,
+        "price": "113.35",
+        "image_url": null,
+        "image": "genio-touch-pod-coffee-capsule-pod-machine.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 56,
+      "fields": {
+        "category": 7,
+        "sku": "cmm000056",
+        "update_on": "2023-01-27T11:21:46.613Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Coffee Filter Pot Machine - LCD - permanent filter - 1.5 L",
+        "description": "Productive—with a generous volume of 1.5 L for up to 15 cups per brew. Powerful—900 W for rapid coffee enjoyment. Economical—permanent filter eliminates the need for paper filters, sparing both the environment and your wallet. Simple—LCD for easy operation and transparent water tank for safe filling. Stylish—modern design with stainless steel elements",
+        "has_sizes": false,
+        "price": "91.36",
+        "image_url": null,
+        "image": "coffee-filter-pot-machine-lcd-permanent-filter-silver-and-black-1.5l.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 57,
+      "fields": {
+        "category": 7,
+        "sku": "cmm000057",
+        "update_on": "2023-01-27T11:16:33.284Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "I Belong Filter Pot Machine - 10 Cups",
+        "description": "Enjoy the style and simplicity with an amazing filter coffee maker. I Belong Filter Pot MachineI Belong Filter Pot Machine can brew up to 10 cups of coffee due to the high-capacity carafe. With the aroma function, you can customise your coffee and get a rich taste and aroma. The coffee machine has an anti-drip system, descaling alarm, and water level indicator. Its advanced features will provide the best coffee-making experience.",
+        "has_sizes": false,
+        "price": "51.16",
+        "image_url": null,
+        "image": "coffee-filter-pot-machine-i-belong-black-10-cups.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 58,
+      "fields": {
+        "category": 7,
+        "sku": "cmm000058",
+        "update_on": "2023-01-27T11:17:25.603Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Easy Me Filter Pot Machine - 10 Cups",
+        "description": "An easy-to-use one-button filter coffee machine with an amazing design will bring a unique touch to your kitchen. Easy Me Filter Pot Machine includes stainless steel detail. It can brew up to 10 cups of coffee due to the high-capacity carafe. Both the carafe and filter holder are dishwasher safe. The coffee machine will automatically shut off 40 minutes after your coffee brew. It has a water level indicator.",
+        "has_sizes": false,
+        "price": "42.99",
+        "image_url": null,
+        "image": "coffee-filter-pot-machine-easy-me-10-cups.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 59,
+      "fields": {
+        "category": 7,
+        "sku": "cmm000059",
+        "update_on": "2023-01-27T11:15:41.113Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Nescafe Alergria Coffee Machine",
+        "description": "NESCAFÉ Alegria A860 is our proprietary flagship tabletop coffee system that has been designed with our beloved customers and their requirements in mind. This super easy-to-use, easy-to-clean and easy-to-maintain machine produces perfectly prepared beverages that will surely bring joy to you.NESCAFÉ Alegria A860 offers up to 8 quality beverage selections – ranging from premium NESCAFÉ soluble coffee to Singaporean’s most-loved brand MILO® and other local favourites! Features:Soluble Solution, Push button technology.6 canisters, if you can dream it this machine can do it. Dimensions: Height 60.0 cm,Depth 58.0 cm, Width 45.0 cm, Weight 35.0 kg",
+        "has_sizes": false,
+        "price": "669.36",
+        "image_url": null,
+        "image": "coffee-machine-nescafe-alergria-red-and-silver.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 60,
+      "fields": {
+        "category": 7,
+        "sku": "cmm000060",
+        "update_on": "2023-01-27T11:15:23.456Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Cappuccino, Automatic Bean to Cup Coffee Machine, with Auto Milk",
+        "description": "Featuring an automatic cappucino system and milk carafe, you can create silky smooth lattes or a perfectly frothy cappucino, as well as high-quality espressos, caffe lattes, Americanos and other milk-based coffee drinks at just the touch of a button. There's also a hot water spout attachment for tea or infusion. Personalising your coffee has never been easier. Choose from short, medium or long; from extra mild to extra strong, enjoy it piping hot, medium or at a lower temperature when you're in a hurry. Use pre-ground coffee or grind your own beans to release the true flavour, with a choice of 13 grinding settings to ensure the perfect flavour. The soft touch control panel features 2 text lines display and 16 languages for using the machine in a clear and simple way. Other great features include auto rinse and descale functions for easy cleaning. You can prepare 2 cups of coffee in a single brewing cycle - perfect for sharing. Automatic cleaning is integrated into the froth regulating dial, so the milk carafe can be placed in the fridge after use.",
+        "has_sizes": false,
+        "price": "529.69",
+        "image_url": null,
+        "image": "coffee-machine-cappuccino-automatic-bean-to-cup-with-auto-milk-silver.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 61,
+      "fields": {
+        "category": 7,
+        "sku": "cmm000061",
+        "update_on": "2023-01-27T11:16:17.634Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Just 4 U Next Gen Premium Class Coffee Machine - Silver",
+        "description": "The perfect combination of pleasure, versatility and luxury. The latest generation of Just 4 U most successful coffee machine model boasts a reinterpreted design and a range of benefits previously found only in the premium class. Bar Pressure (in Bars): 15, Depth: 460 MM, Height: 360 MM, Width: 300 MM, Coffee Maker Type: Bean to cup, Digital Timer: Y, Drip Tray: N, Timer: N. The Professional Aroma Grinder guarantees 12.2%* more aroma and consistently high grind quality. A 2.8'' colour display, six buttons and a completely new operating concept featuring artificial intelligence enable simple handling. The sophisticated milk system cleaning process takes place automatically at the touch of a button and is completed in no time. Just 4 U coffee machines feature a clean and expressive characteristic design",
+        "has_sizes": false,
+        "price": "899.99",
+        "image_url": null,
+        "image": "coffee-machine-Just-4-u-next-gen-premium-class-silver-two-milk-coffee-milk-cups.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 62,
+      "fields": {
+        "category": 7,
+        "sku": "cmm000062",
+        "update_on": "2023-01-27T11:17:06.801Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Faema X30 MILKPS Single Step - Super-Auntomatic Esspresso Coffee Machine",
+        "description": "The new super-automatic Faema offers an unparalleled experience and, thanks to its distinctive features, encourages innovative interaction with the machine. The endless customization possibilities available through the revolutionary touch screen with a 10.4 inch display and the incredible variety of drinks make the X30 revolutionary in the world of super-automatic machines. Intuitive 10.4 inch touch screen interface, 48 programmable selections provide endless customization, Integrated bidirectional WiFi system allows remote monitoring, Dual titanium steel burr grinders, Perfect Grind System (PGS) continuously optimizes grinder performance, Large LED lit work area, Hot and cold one-touch milk system creates finely textured micro-foam, High efficiency dual boiler system equipped with Smart Boiler technology, Dual 2.5lb capacity bean hoppers, Automatic washing system, Direct emptying grounds system",
+        "has_sizes": false,
+        "price": "1799.99",
+        "image_url": null,
+        "image": "coffee-machine-faema-x30-milkps-single-step-super-automatic-espresso-machine-top-load-beans-chocolate-powder-digital-screen-interface-silver-and-black.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 63,
+      "fields": {
+        "category": 7,
+        "sku": "cmm000063",
+        "update_on": "2023-01-27T11:16:50.325Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Full Touch Colorful Visual Screen Cappuccino Latte Fully Automatic Coffee Machine with Milk Frother",
+        "description": "New super-automatic cappuccino coffee machine with modern appearance design, with a 3.5'' color touch screen display for users to operate all functions. If you are a fan of cappuccino or latte, provides a perfect milk foam system, the milk never passes through the  automatic cappuccino coffee machine. With just one touch, Colet S8 one-touch cappuccino coffee machine will create a seamlessly layered cappuccino or latte macchiato with no need for any more operations. In addition, the whole milk system is easily disassembled to be washed by water directly, and easy to be assembled back by users after clean. Colet CLT-S8 is also open to users to set grinder size, coffee powder volume, water temperature, in order to create personalized beverages taste, and these coffee beverages taste setting will saved as your own favorite profile.",
+        "has_sizes": false,
+        "price": "356.98",
+        "image_url": null,
+        "image": "coffee-machine-full-touch-colorful-visual-screen-cappuccino-latte-fully-automatic-with-milk-frother-silver.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 64,
+      "fields": {
+        "category": 7,
+        "sku": "cmm000064",
+        "update_on": "2023-01-27T11:15:56.690Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Kalea Plus Coffee Machine",
+        "description": "High speed, high performance, top quality. Just a touch, and anybody can get a high quality drink with Kalea Plus. Kalea Plus uses cutting edge technology together with the heritage of Italian espresso, taste and culture. The outstanding throughput and speed will satisfy even the most demanding customers. Kalea Plus enables the creation of a personal customized coffee menu: a unique pleasure with enraptures. Version: Double Espresso, User interface: Capacitive 7'' inch touch screen, Number selection: up to 10 selections per scrennshot, Number canister: 3, Coffee brewer: Espresso Z4000, Width: 360 mm, Depth: 600 mm, Depth: open 600 mm, Weight: Approx 47 kg, Voltage: 220/240 V, Frequency: 50/60 Hz, Fresh milk: Yes, Display:Capacitive 7'' touch-screen, Steam wand: Yes, Lateral hotwater: Yes, Automatic cappuccinatore: Yes, Beans capacity: 1.2kg x 2, Soluble canister: 1.5lt x 2, Hourly output: 120cups/hour, Height delivery area: From 80 to 180 mm, Absorbed power: 3100W",
+        "has_sizes": false,
+        "price": "2632.56",
+        "image_url": null,
+        "image": "coffee-machine-kalea-plus-silver-and-black-3-top-loade-beans-chocolate-poweder-milk-powder.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 65,
+      "fields": {
+        "category": 7,
+        "sku": "cmm000065",
+        "update_on": "2023-01-27T11:17:42.475Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "DeLonghi La Specialista Prestigio, Bean to Cup Coffee Machine, Silver & Black",
+        "description": "La Specialista Prestigio offers an indulgent and aspirational experience. It has been created to enhance every coffee and milk preparation, from getting the best out of each type of beans to experiment milk creations and enjoy milk foamy drinks. Experiment to find your personal taste, controlling your grind, dose and temperature to extract the optimum flavours from your beans and finishing with silky smooth textured milk. Enjoy the ability to handcraft your perfect coffee. From start to finish, the process is enjoyable and straightforward, inviting hands-on creativity from grinding to latte art to unleashing your inner barista! You can also create incredible coffee in minutes thanks to 3 pre-set recipes. Sensor Grinding Technology - enjoy consistent grinding results, regardless of the dose settings, for maximum flavour from your beans. Smart Tamping Station - delivers a consistent tamp pressure and even level, all inside the machine without mess or guesswork. Active Temperature Control - provides the stability that's vital for optimised coffee extraction. Advanced Latte System - create that perfect velvety milk texture or hot milk, and get creative with your latte art. Bar Pressure (in Bars): 19, Depth: 370 MM, Height: 445 MM , Width: 380 MM, Coffee Maker Type: Pump espresso, Digital Timer: N, Drip Tray: N, Timer: N. The advanced grinder is equipped with a unique sensor technology to precisely deliver a consistent coffee dose. Bean sensor for great convenience. Smart Tamping Station: Craftsmanship becomes smart: just activate the lever to tamp the dose with the right pressure, without mistakes and mess. Thermoblock with controlled temperature system ensures maximum temperature stability and all the right conditions for a perfect coffee extraction. Fully manual milk preparation thanks to the dedicated steam wand. Experiment Latte Art, the microfoam used by the Barista to create wonderful milk decorations.",
+        "has_sizes": false,
+        "price": "784.99",
+        "image_url": null,
+        "image": "coffee-machine-delonghi-la-specialista-prestigio-bean-to-cup-silver-black.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 66,
+      "fields": {
+        "category": 8,
+        "sku": "em0000066",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Russel Hobbs Espresso Coffee Machine - Milk Frother - Balck & Silver",
+        "description": "Coffee Machine's 15 Bar Pressure Pump to provide Authentic taste of coffee. 1250 Watt Powerful Machine brews excellent coffee. Ultra thermo block heating system ensures maintaining perfect temperature while delivering multi-cups of coffee. 1 Litre removal transparent water tank. Detachable drip tray for hassle free cleaning. Brew Coffee: Max 100 ml, min 50 ml. Attains temperature around 70-80 degree celsius in less than 35 seconds. Steam function to froth milk for cappuccino. Grade 304 Stainless Steel Filter with no additional requirement of paper filter. Use Pods and Ground Coffee with filter holder. Coffee Makers dry heat protection ensures safety",
+        "has_sizes": false,
+        "price": "89.99",
+        "image_url": null,
+        "image": "espresso-coffee-machine-russel-hobbs-milk-frother-black-and-silver.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 67,
+      "fields": {
+        "category": 8,
+        "sku": "em0000067",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Rise & Shine Espresso Coffee Machine - Milk Frother - Silver - Black Trim",
+        "description": "1. Pump pressure (BAR): 20Bar2. Power: 1050W3. Voltage: 220V4. Net weight: 3.3KG5. Power cord length: 1M6.Water tank capacity: 1.2L7. Product size: 160*383*311mmFeatures:1. High-value design, retro style2. Select the temperature, make good coffee easily3. Visual temperature, real-time observation of temperature4. Four-speed adjustable steam milk froth, fun with fancy milk coffee5.20bar high pressure, extract mellow oil6.20s extraction, make coffee quickly7. Cup warming station, electronic button operation, double-layer filter screen, separate water storage box",
+        "has_sizes": false,
+        "price": "129.99",
+        "image_url": null,
+        "image": "espresso-coffee-machine-rise-and-shine-milk-frother-siler-black-trim.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 68,
+      "fields": {
+        "category": 8,
+        "sku": "em0000068",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Gaggia Espresso Machine - Milk Frother - Stainless Steel",
+        "description": "Traditionally styled, the Gaggia espresso machine is a quintessential piece of equipment in any upscale kitchen. The Gaggia provides coffee aficionados with a cappuccino maker unmatched by many other manufacturers with its stainless steel housing and three-way solenoid valve. Its easy-to-use controls and 72oz water reservoir make this the perfect espresso maker for entertaining.",
+        "has_sizes": false,
+        "price": "245.99",
+        "image_url": null,
+        "image": "espresso-coffee-machine-gaggia-milk-frother-stainless-steel.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 69,
+      "fields": {
+        "category": 8,
+        "sku": "em0000069",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Jura Espresso Machine - Milk Frother - Black - Silver Trim",
+        "description": "The Professional Aroma Grinder guarantees 12.2%* more aroma and consistently high grind quality so that flavours unfold to perfection throughout the entire service life of the grinder. The Pulse Extraction Process (P.E.P.®) ensures maximum flavour for short specialities, while intelligent preheating guarantees the ideal temperature right from the first cup. The sophisticated milk system cleaning process takes place automatically at the touch of a button and is completed in no time. The drip tray also meets the highest ergonomic standards. Its design prevents water from spilling and it can be removed conveniently with just one hand. JURA coffee machines feature a clean and expressive characteristic design. High-quality materials and precise craftsmanship underline the premium quality of the modern E8. Its styling alone is evidence of its quality, functionality and durability. Details such as the grooved water tank or the high-quality, chrome-plated cup grille perfectly complement the clean, harmonious design of the E8. ",
+        "has_sizes": false,
+        "price": "329.99",
+        "image_url": null,
+        "image": "espresso-coffee-machine-jura-milk-frother-black-with-silver-trim.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 70,
+      "fields": {
+        "category": 8,
+        "sku": "em0000070",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Happiness Is Espresso Machine - Milk Frother - Silver - Balck Trim",
+        "description": "Craft your favourite coffee bar drinks at home with innovative professional barista technology. Enjoy a rich, smooth espresso - or finish your coffee with a velvety layer of milk using the Adjustable Cappuccino System. With its swing black body and stylish matt finish, the unique espresso maker adds a touch of authentic Italian design to any kitchen. Key Features: -Enjoy rich, smooth espresso with perfect crema using your favourite blend or pod, -Thermoblock technology crafts your espresso at the perfect temperature, -Brew a wide range of milk based beverages with the adjustable Cappuccino System, -Swing black with stylish matt finish",
+        "has_sizes": false,
+        "price": "159.99",
+        "image_url": null,
+        "image": "espresso-coffee-machine-happiness-is-milk-frother-silver-with-black-trim.png"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 71,
+      "fields": {
+        "category": 9,
+        "sku": "gs0000071",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "The Traditional - Coffee Beans - Hessian Bag",
+        "description": "The Traditional Gift set is a Rustic Beautiful Hessian sack bag filled with 500g of Golden Goddess Coffee Beans and finished off with a Gold Ribbon. A beautiful gift for the Coffee Lover.",
+        "has_sizes": false,
+        "price": "23.95",
+        "image_url": null,
+        "image": "gift-set-the-traditional-hessian-sack-bag-of-coffee-beans-with-scattered-coffee-beans.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 72,
+      "fields": {
+        "category": 9,
+        "sku": "gs0000072",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "On The Go - Travel Mug - Bag Ground Coffee",
+        "description": "On The Go Gift set comes in a strong fold down lid recyclable cardboard box consisting of a beautiful ceramic Travel Mug accompanied by a bag of our Vivaciously Vanilla Coffee Grounds. For that special person who is always On The Go.",
+        "has_sizes": false,
+        "price": "23.95",
+        "image_url": null,
+        "image": "gift-set-on-the-go-cardboard-fold-down-lid-box-white-with-design-bottom-of-bag-of coffee-beans-to-go-ceramic-white-mug-lid-milkly-coffee.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 73,
+      "fields": {
+        "category": 9,
+        "sku": "gs0000073",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Grindingly Good - Wooden Coffe Grinder - Blue Coffee Cup",
+        "description": "Grindingly Good Gift set presented to you with our beautifully finished Wooden hand Coffee Grinder & 2 Blue Coffee Cups & plates made from the highest quality ceramic. The gift to give for those with a feel for  the traditional look & luxury.",
+        "has_sizes": false,
+        "price": "85.99",
+        "image_url": null,
+        "image": "gift-set-grindingly-good-blue-cup-on-plate-wooden-coffee-grinder-with-freshly-ground-coffee-scattered-coffee-beans.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 74,
+      "fields": {
+        "category": 9,
+        "sku": "gs0000074",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Drippingly Grand - Small Metal Pot - Glass Drip Pot with Filter Drip Stand",
+        "description": "Drippingly Grand Gift set brings to your loved one a beautiful designed small metal coffee pot and elegant glass drip pot along with a clever nifty filter drip stand and a box of 20 filter papers. For the love a drip coffee. A stylishly thoughtful gift.",
+        "has_sizes": false,
+        "price": "96.45",
+        "image_url": null,
+        "image": "gift-set-drippingly-grand-small-metal-coffee-pot-glass-drip-pot-filter-drip-stand-wooden-bar-counter.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 75,
+      "fields": {
+        "category": 9,
+        "sku": "gs0000075",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Moka Up - Stainless Steel Moka Pot - Metal Spoon - Bag of Ground Coffee - White Mug",
+        "description": "Moka Up Gift set a ready to brew set comes to you with our 300 ml Stainless steel Moka Pot , a beautiful metal spoon, 2 white coffee mugs and a bag of ground coffee of Gray Day Pick Up in a beautiful metallic bag. An elegant gift for all occasions.",
+        "has_sizes": false,
+        "price": "114.99",
+        "image_url": null,
+        "image": "gift-set-moka-up-bag-of-coffee-silver-spoon-metal-moka-coffee-brewer-white-mug.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 76,
+      "fields": {
+        "category": 9,
+        "sku": "gs0000076",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Fully Loaded - Coffee Drip Pot Equipment",
+        "description": "Fully Loaded Gift set is the ultimate Coffee drip start up gift set. Consisting off : 1 Glass Drip pot & filter jolder,20 filter papers, 1 Bronze farm style Coffee Pot & milk jug, 1 Bronze Hand Coffee Grinder, 1 Measured air tight coffee grounds storage tube, 1 small wooden spoon, 6 glass cups, 6 wooden place holders, 6 white ceramic leaf small plates, 2 white ceramic ramekins. This is a Fully loaded start up kit. Giving a coffee lover the right start.",
+        "has_sizes": false,
+        "price": "269.99",
+        "image_url": null,
+        "image": "gift-set-fully-loaded-glass-drip-pot-bronze-coffe-pot-milk-jug-and-hand-grinder-glass-cup-white-ceramic-leaf-sauce-ramekin-wooden-cup-place-holder-small-wood-spoon-storage.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 77,
+      "fields": {
+        "category": 10,
+        "sku": "ct0000077",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Cuppachino Cupcakes",
+        "description": "Cuppachino Cupcakes Treat delivered in white flip lid box these decadent delicious moist cupcakes are a must to go with your coffee date. Qty 6 per order.",
+        "has_sizes": false,
+        "price": "6.39",
+        "image_url": null,
+        "image": "treat-cuppachino-cupcakes-mixed-with-chocolate-chip-white-plate.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 78,
+      "fields": {
+        "category": 10,
+        "sku": "ct0000078",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Chocolate Brownies",
+        "description": "Chocolate Brownies Treat delivered in white flip lid box these decadent delicious moist brownies as nothing goes so well with Coffee as Chocolate. Qty 6 per order.",
+        "has_sizes": false,
+        "price": "7.46",
+        "image_url": null,
+        "image": "treat-chocolate-brownies-sackcloth-coffee-beans-wooden-table.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 79,
+      "fields": {
+        "category": 10,
+        "sku": "ct0000079",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Chocolate Chip Cookies",
+        "description": "Chocolate Chip Cookies Treat delivered in white flip lid box these large crunchy fully loaded chocolate chip cookies are never to be missed at a coffee date. Qty 6 per order.",
+        "has_sizes": false,
+        "price": "5.46",
+        "image_url": null,
+        "image": "treat-chocolate-chip-cookies-stacked-on-wooden-board.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 80,
+      "fields": {
+        "category": 10,
+        "sku": "ct0000080",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "French Coffee Macaroons",
+        "description": "French Coffee Macaroons Treat delivered in white flip lid box these classic macaroons are to die for with a lovely subtle coffee flavour and a dusky pink colour adding an elegant touch. Qty 6 per order.",
+        "has_sizes": false,
+        "price": "9.69",
+        "image_url": null,
+        "image": "treat-dusky-pink-french-coffee-macaroons-with-coffee-beans.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 81,
+      "fields": {
+        "category": 10,
+        "sku": "ct0000081",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "The Mixed Box Cookies",
+        "description": "The Mixed Box Cookies delivered in white flip lid box come the most amazing crunchy selction of cookies , oatmeal, chocolate and coffee. Qty 24 per order",
+        "has_sizes": false,
+        "price": "25.96",
+        "image_url": null,
+        "image": "treat-oatmeal-chocolate-coffee-cookies-mixture.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 82,
+      "fields": {
+        "category": 10,
+        "sku": "ct0000082",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Chocolate Truffles",
+        "description": "Chocolate Truffles Treat delivered in white flip lid box these cocoa powdered melt in your mouth truffles are a definite must to treat yourself or a friend. Qty 24 per order.",
+        "has_sizes": false,
+        "price": "16.95",
+        "image_url": null,
+        "image": "treat-chocolate-truffles-cocoa-powder-top-view-plate.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 83,
+      "fields": {
+        "category": 10,
+        "sku": "ct0000083",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Chocolate Covered Mini Coffee Cakes",
+        "description": "Chocolate Covered Mini Coffee Cakes delivered in white flip lid box these mini decadent cakes as simply out of this world. Qty 6 per order.",
+        "has_sizes": false,
+        "price": "11.59",
+        "image_url": null,
+        "image": "treat-chocolate-covered-mini-coffee-cakes.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 84,
+      "fields": {
+        "category": 10,
+        "sku": "ct0000084",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Coffee Cruch Chocolate Coated Cookies",
+        "description": "Coffee Cruch Chocolate Coated Cookies Treat delivered in white flip lid box these coffee crunchy chocolate coated cookies are so good that a few are never enough. Qty 24 per order.",
+        "has_sizes": false,
+        "price": "23.99",
+        "image_url": null,
+        "image": "treat-coffee-crunch-chocolate-coated-cookies-overhead-shot-on-oven-tray.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 85,
+      "fields": {
+        "category": 10,
+        "sku": "ct0000085",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Chocolate Assortment Box",
+        "description": "Chocolate Assortment Box Treat delivered in white flip lid box these melt in your mouth chocolates come in an assortment of coffee, caramel and hazelnut. Qty 24 per order.",
+        "has_sizes": false,
+        "price": "17.96",
+        "image_url": null,
+        "image": "treat-delicious-chocolate-assortment.jpg"
+      }
+   },
+   {
+      "model": "products.product",
+      "pk": 86,
+      "fields": {
+        "category": 10,
+        "sku": "ct0000086",
+        "update_on": "2023-01-26T15:04:58.732Z",
+        "created_on": "2023-01-26T15:04:58.706Z",
+        "name": "Choco chino Biscuit Bears",
+        "description": "Choco chino Biscuit Bears Treat delivered in white flip lid box these crunchy tasty cute bears add a wonderful touch of fun to any coffee occasion. Qty 6 per order.",
+        "has_sizes": false,
+        "price": "8.65",
+        "image_url": null,
+        "image": "treat-choco-chino-biscuit-bears-hot-chocolate-tray.jpg"
+      }
+   }
 ]
