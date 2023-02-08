@@ -7,7 +7,8 @@ class Review(models.Model):
     """Product Review Model"""
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    review = models.TextField(max_length=500, blank=True)
+    review = models.TextField(max_length=250, blank=True)
+    rate = models.IntegerField(default=0)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
 
