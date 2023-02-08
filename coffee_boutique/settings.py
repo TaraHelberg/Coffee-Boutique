@@ -31,8 +31,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['coffee-boutique.herokuapp.com', 'localhost']
 
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -51,6 +49,7 @@ INSTALLED_APPS = [
     'cart',
     'checkout',
     'profiles',
+    'reviews',
     'crispy_forms',
 ]
 
