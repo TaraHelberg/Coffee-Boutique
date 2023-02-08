@@ -778,6 +778,10 @@ List of Bugs / Errors During Development
     
     ![Products Migration Fixtures Error](assets/readme-images/Bugs/productsmigration-fixtures-error.png)
     
+9.  Reviews Model Error , an error was shown in the gitpod.io terminalNameError when doing  migrations.
+    This error was traced back to via reading the terminal error to the spelling of the Products which should not have had an s on the end of it this was corrected and coding procceded.
+
+    ![Reviews Model Error](assets/readme-images/Bugs/reviewsmodel-error.png)
 
 ## Manual Testing
 
@@ -920,7 +924,7 @@ This project was deployed using Github and Heroku.
 
 - ## Django and Heroku
 
-    To get the Django framework installed and set up I followed the Code institutes [Django I Think Therefore I Blog cheatsheet](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/edit). & Revisited the Walkthrough to assist.
+    To get the Django framework installed and set up I followed the Code institutes . & Revisited the Walkthrough to assist.
     However due to changes made by Heroku changes were made when this occurred & information received from Code Institute.
     
     #### Final Deployment 
@@ -933,6 +937,9 @@ This project was deployed using Github and Heroku.
 
     Go to Deploy Tab & Deploy Branch
    
+   + Note : Safety & Security : From the start of this PP I have had an env.py file that I have kept the secret key's in particular the Django Secret Key however after deployment I felt that for saftery & security although my secret key's had been kept in an env.py file, I could not be 100% sure that the secret key had not been pushed through to git due to the manner in which I had use the env.py file and settings.py file at the start of the App. I decided to use a Django key generator & add a new Django secret key to my env.py file & to heroku config vars to sensure that should the key have been push by accident that it was now an invalid key.
+     
+
 - ## Clone Project 
 
     * Cloning of Project was made possible by GitHub
@@ -961,6 +968,7 @@ I would like to take the time to Acknowledge & give credit to all the main assis
    * Balsamiq used to build the wireframes for my project. https://balsamiq.com   
    * Stack Overflow  for all the information to assist with my project .https://stackoverflow.com
    * Django Documentation for all the invaluable information on how to use the features .https://docs.djangoproject.com/en/4.1/
+   * Django Secret Key Generator for a new secret key for safety & security .https://miniwebtool.com/django-secret-key-generator/
    * I am Responsive for a fantastic spot to see a visual of responsiveness. https://ui.dev/amiresponsive?msclkid=400b1adabe5b11ecbc48938198bb87b4
    * Lighthouse testing system whom I can't find a webpage link for but am grateful for been able to use.
 
