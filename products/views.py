@@ -158,7 +158,7 @@ def delete_product(request, product_id):
 
 
 def add_review(request, product_id):
-    """Adds a product review"""
+    """Add a product Review"""
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ReviewForm(request.POST)
@@ -169,7 +169,7 @@ def add_review(request, product_id):
             data.user_id = request.user.id
             data.save()
             messages.success(request,
-                             'Thank you! Your Review has been submitted.')
+                             'Your Review has been added Successfully !')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request,
@@ -178,6 +178,38 @@ def add_review(request, product_id):
     else:
         form = ReviewForm()
 
-    template = 'products/product_details.html'
+    template = 'products/product_detail.html'
 
     return render(request, template)
+
+
+def edit_review(request, review_id):
+    """Edit a Product Review"""
+
+    review = get_object_or_404(Review, pk=review_id)
+    product = review.product
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, request.FILES, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Review has successfully updated!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request,
+                           'Failed to update this Review. \
+                            Please ensure the form is valid.'
+                           )
+    else:
+        form = ReviewForm(instance=review)
+        messages.info(request, 'You are editing your review')
+
+    template = 'products/edit_review.html'
+
+    context = {
+        'form': form,
+        'review': review,
+        'product': product,
+    }
+
+    return render(request, template, context)

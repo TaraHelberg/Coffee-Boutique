@@ -125,19 +125,24 @@
             </div>
             <div class="row">
                 {% for review in reviews %}
-                <article class="box mb-3">
-                    <div>
-                        <span class="text-muted small">{{review.created_on}}</span>
-                        <h6 class="mb-1">{{ review.user }}</h6>
-                    </div>
-                    <div class="mt-2">
-                        <p>
-                            {{review.review}}
-                        </p>
-                    </div>
-                </article>
-            {% endfor %}
-            </div> 
+                <div class="col">
+                    <article class="box mb-3">
+                        <div>
+                            <span class="text-muted small">{{review.created_on}}</span>
+                            <h6 class="mb-1">{{ review.user }}</h6>
+                        </div>
+                        <div class="mt-2">
+                            <p>
+                                {{review.review}}
+                            </p>
+                        </div>
+                    </article>
+                    <a class="text-info" href="{% url 'edit_review' review.id %}">
+                        Edit <i class="fa-solid fa-pencil"></i>
+                    </a>  
+                </div>                                                           
+            {% endfor %}                              
+            </div>            
         </div>       
     </div>
 {% endblock %}

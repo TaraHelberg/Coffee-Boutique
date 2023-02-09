@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<section>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <!-- Page Title -->
+            <h2 class="">
+                <strong>Update Review</strong>
+            </h2>
+        </div>
+        <hr>
+        <div class="col">
+            <form action="{% url 'edit_review' review.id %}" method="POST">
+                {% csrf_token %}
+                {{ form | crispy }}                
+                <a href="{% url 'product_detail' product.id %}" class="btn rounded-1">
+                    <span>
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    Return to Product
+                </a>
+                <input type="submit" value="Update" class="btn">
+            </form>
+        </div>
+  </div>
+</section>
+{% endblock %}
