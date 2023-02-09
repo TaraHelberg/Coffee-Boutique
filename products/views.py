@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Review
+from .forms import ProductForm, ReviewForm
 
 
 def all_products(request):
@@ -66,9 +67,14 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.filter(product_id=product.id,
+                                    status=True).order_by('-created_on')
+    total_reviews = reviews.count()
 
     context = {
         'product': product,
+        'reviews': reviews,
+        'total_reviews': total_reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -88,7 +94,10 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request,
+                           f'Failed to add product.'
+                           f'Please ensure the form is valid.'
+                           )
     else:
         form = ProductForm()
 
@@ -115,7 +124,10 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request,
+                           f'Failed to update product.'
+                           f'Please ensure the form is valid.'
+                           )
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -144,3 +156,29 @@ def delete_product(request, product_id):
         return redirect(reverse('products'))
 
     return render(request, 'products/delete_product.html')
+
+
+def add_review(request, product_id):
+    """Adds a product review"""
+    product = get_object_or_404(Products, pk=product_id)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            data = Review()
+            data.review = form.cleaned_data['review']
+            data.product = product
+            data.user_id = request.user.id
+            data.save()
+            messages.success(request,
+                             'Thank you! Your Review has been submitted.')
+            return redirect(reverse('product_details', args=[product.id]))
+        else:
+            messages.error(request,
+                           "Sorry your Review could not be submitted.")
+            return redirect(reverse('product_details', args=[product.id]))
+    else:
+        form = ReviewForm()
+
+    template = 'products/product_details.html'
+
+    return render(request, template)
