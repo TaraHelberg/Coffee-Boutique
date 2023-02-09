@@ -44,7 +44,7 @@ class Product(models.Model):
 
 
 class Review(models.Model):
-    """Rating and Review Model"""
+    """Review Model"""
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     review = models.TextField(max_length=250, blank=True)
