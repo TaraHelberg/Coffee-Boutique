@@ -91,10 +91,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
-                                    <div class="row">
-                                        <div class="col text-right">
-                                            <a href="{% url 'reviews' %}">Reviews <i class="fa-solid fa-magnifying-glass"></i></a>
-                                        </div>
+                                    <div class="row">                                        
                                         {% if request.user.is_superuser %}
                                         <!-- Edit and Delete buttons is user is Superuser -->
                                         <div class="col edit-product">

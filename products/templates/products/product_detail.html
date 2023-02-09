@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% load static %}
 
 <!-- Block Page Header -->
@@ -29,8 +30,7 @@
                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                         </a>
                     {% endif %}
-                </div>
-                <a href="{% url 'reviews' %}">Reviews <i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>                                
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
