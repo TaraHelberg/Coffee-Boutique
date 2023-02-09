@@ -67,8 +67,7 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    reviews = Review.objects.filter(product_id=product.id,
-                                    status=True).order_by('-created_on')
+    reviews = Review.objects.filter(product_id=product.id).order_by('-created_on')  # noqa
     total_reviews = reviews.count()
 
     context = {
@@ -160,7 +159,7 @@ def delete_product(request, product_id):
 
 def add_review(request, product_id):
     """Adds a product review"""
-    product = get_object_or_404(Products, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ReviewForm(request.POST)
         if form.is_valid():
@@ -171,11 +170,11 @@ def add_review(request, product_id):
             data.save()
             messages.success(request,
                              'Thank you! Your Review has been submitted.')
-            return redirect(reverse('product_details', args=[product.id]))
+            return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request,
                            "Sorry your Review could not be submitted.")
-            return redirect(reverse('product_details', args=[product.id]))
+            return redirect(reverse('product_detail', args=[product.id]))
     else:
         form = ReviewForm()
 
