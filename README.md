@@ -783,6 +783,45 @@ List of Bugs / Errors During Development
 
     ![Reviews Model Error](assets/readme-images/Bugs/reviewsmodel-error.png)
 
+    Note: This model was done as a independant app Review. However app was delete and the same model was done in Porducts App.
+
+10. Add Review Error , an error was shown in the Django 404 yellow error page, NoReverseMatch.
+    Error was trace to Url & url was ammended to fix this error.
+
+    ![Add Review Error](assets/readme-images/Bugs/addreview-error.png) 
+    
+11. Delete Review Errors , displayed in the he Django 404 yellow error page.
+    The delete review pose a problem that originated in the redirect as I wish to redirect the shopper from the delete page back to the original product the review had been on .
+    I found that the redirect was causing problems as it would not redirect with a simple delete_review view.
+    I had to use the form method very similar to the edit_review view in order for this to worok.
+    Each error was solved some by myself & others with the assistace for Tutor support.
+
+    Error 1 : NoReverseMatch - Unlike a lot of simple url errors this one cause a lot of problems until I update the view to use the form similar to the edit_review view. Herdal number 1 solved. This error was caused due to trying to redirect back to the product that had the review on it & was the start of the bugs for this Delete review.
+
+    ![Delete Review Error 1](assets/readme-images/Bugs/deletereview-noreversematch-error.png)
+
+    Error 2 : Attribute Error - This error was made by not calling the delete into the delete_review form and was correct by calling the review.delete() into the form.
+
+    ![Delete Review Error 2](assets/readme-images/Bugs/deletereview-atribute-error.png)
+
+    Error 3 : Unbound Local Error - This error was made due to calling the review = review.delete() only withough getting the object first causing the error local variable 'review' referenced before assignment.
+    This was corrected by calling the review = get_object_or_404(Review, pk=review_id) first.
+
+    ![Delete Review Error 3](assets/readme-images/Bugs/deletereview-unboundlocal-error.png)
+
+    Error 4 : Attribute tuple product Error - This error was made due to calling the review = review.delete() above the product = review.product.
+    This was corrected by moving the review = review.delete() into the if statement as you can not call it from outside of the if statement.
+
+    ![Delete Review Error 4](assets/readme-images/Bugs/deletereview-atribute-tuple-product-error.png)
+
+    Error 5 : Attribute tuple _meta Error - This error was made due to calling the review = review.delete() in the if statement.
+    This was corrected by removing the review = as it should be called as only review.delete().
+    This error was resloved with the assistance of Tutoring.
+    Delete Review now redirect the Shopper back to the product assosciated with the review. 
+
+    ![Delete Review Error 5](assets/readme-images/Bugs/deletereview-atribute-tupple-meta-error.png)
+    
+
 ## Manual Testing
 
 * User Testing
