@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<section>
+  <div class="container-fluid">
+    <div class="row">      
+      <div class="col">
+        <h1 class="text-coffee">Delete Review</h1>
+          <h4>
+            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Shop Now</a>
+          </h4>
+      </div>
+      <hr>
+        <div class="col">
+            <form action="{% url 'delete_review' review.id %}" method="POST">
+                {% csrf_token %}
+                <p>Are you sure you wish to Delete this Review ?</p>
+                <p><strong>Deletion Is Permanent !</strong></p>         
+                                
+                <a href="{% url 'product_detail' product.id %}" class="btn rounded-1">
+                    <span>
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    Return to Product
+                </a>
+                <input type="submit" value="Delete" class="btn">
+            </form>
+        </div>    
+    </div> 
+  </div>
+</section>
+{% endblock %}

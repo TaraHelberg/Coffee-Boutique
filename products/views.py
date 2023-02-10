@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -223,7 +222,22 @@ def delete_review(request, review_id):
 
     if request.method == 'POST':
         review.delete()
-        messages.success(request, 'Your Review has been deleted!')
-        return redirect(reverse_lazy('product_detail', args=[product.id]))
+        form = ReviewForm(request.POST, request.FILES, instance=review)
+        if form.is_valid():
+            messages.success(request, 'Review has successfully been Deleted!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to Delete this Review.')
+    else:
+        form = ReviewForm(instance=review)
+        messages.info(request, 'You are Deleting your review')
 
-    return render(request, 'products/delete_review.html')
+    template = 'products/delete_review.html'
+
+    context = {
+        'form': form,
+        'review': review,
+        'product': review.product,
+    }
+
+    return render(request, template, context)
