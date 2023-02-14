@@ -5,6 +5,11 @@ from products.models import Product
 
 class Favourites(models.Model):
     """Shopper Favourites Products model"""
+
+    class Meta:
+        """Removes extra 's' from Model name"""
+        verbose_name_plural = 'Favourites'
+
     product = models.ManyToManyField(Product, blank=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
