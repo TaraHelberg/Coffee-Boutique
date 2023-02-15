@@ -790,7 +790,7 @@ List of Bugs / Errors During Development
 
     ![Add Review Error](assets/readme-images/Bugs/addreview-error.png) 
     
-11. Delete Review Errors , displayed in the he Django 404 yellow error page.
+11. Delete Review Errors , displayed in the the Django 404 yellow error page.
     The delete review pose a problem that originated in the redirect as I wish to redirect the shopper from the delete page back to the original product the review had been on .
     I found that the redirect was causing problems as it would not redirect with a simple delete_review view.
     I had to use the form method very similar to the edit_review view in order for this to worok.
@@ -821,6 +821,23 @@ List of Bugs / Errors During Development
 
     ![Delete Review Error 5](assets/readme-images/Bugs/deletereview-atribute-tupple-meta-error.png)
     
+12. Image Rendering Error - errors for all images 404 was shown in the gitpod.io terminal.
+    I had added a products folder to the Media folder as the folder was getting very full and had other images in it.
+    The error was traced to the image pather been /media/ without been able to pick up the /products/ folder.
+    This was resolved by adding the upload_to='products/' to the Products model running migrations & from the admin backend putting all the images back in.
+
+    ![Image Rendering Error 5](assets/readme-images/Bugs/allimagesrendering-error.png)
+
+13.  Favourite Products model errors - displayed in the the Django 404 yellow error page & in the gitpod.io terminal.
+     I had planned on having a model for Favourites . However after numberous try's & delete's & redos the favourites became part of the products model.
+     I felt that I was not getting anywhere after 3/4 days of codeing and that I needed to move on in order to complete the PP but still have the user story in place.
+     Beklow are 2 examples of the error's I had gotten .
+     They are resolved by exluding the model & making a diffrent plan to show the favourites, in oder to keep the user story favourites.
+
+     ![Favourites Error 1](assets/readme-images/Bugs/addfavourites-error.png)
+
+     ![Favourites Error 2](assets/readme-images/Bugs/addfavourites-terminal-error.png)
+
 
 ## Manual Testing
 
