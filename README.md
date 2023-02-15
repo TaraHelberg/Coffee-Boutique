@@ -388,14 +388,27 @@ Wireframes are extremely basic and did not incorporate all App pages. Wireframes
 
 <details><summary>Balsamiq Wireframes</summary>
 
-Home Page ![ Home Page ]()
+Home Page ![ Home Page ](assets/readme-images/wireframes/Home_page.png)
 
-Register ![ Register ]()
+Register ![ Register ](assets/readme-images/wireframes/RegisterForm_page.png)
 
-Login ![ Login ]()
+Login ![ Login ](assets/readme-images/wireframes/Login_page.png)
 
-LogOut ![ LogOut ]()
+LogOut ![ LogOut ](assets/readme-images/wireframes/Logout_page.png)
 
+Products Page ![ Products Page ](assets/readme-images/wireframes/Products_page.png)
+
+Product Detail Page ![ Product Detail Page ](assets/readme-images/wireframes/ProductDetail_page.png)
+
+Add Product Page ![ Add Product Page ](assets/readme-images/wireframes/AddProduct_page.png)
+
+Edit Product Page ![ Edit Product Page ](assets/readme-images/wireframes/EditProduct_page.png)
+
+Favourites Page ![ Favourites Page ](assets/readme-images/wireframes/Favourites_page.png)
+
+ShoppingCart Page ![ Shopping Cart Page ](assets/readme-images/wireframes/ShoppingCart_page.png)
+
+CheckOut Page ![ Check Out Page ](assets/readme-images/wireframes/CheckOut_page.png)
 
 </details>
 
@@ -711,38 +724,50 @@ This is part of the Django Framework and supplies a simple form area requesting 
 
 Debug was kept on True in order to make use of Django's error page which came in use more often than not as a new Django Developer.
 
-List of Bugs / Errors During Development 
+<details><summary>Bugs / Errors </summary>
+
 
 1. Loaddata products using Fixtures, an error was shown in the gitpod.io terminal.
    It was determined after searching alka "googleing" that the error was generated due to having to few decimal places allocated withing the Products model on the Pricing.
 
+
    ![Loaddata Products Error](assets/readme-images/Bugs/loaddata-products-error.png)
 
+
    [Article Credited for Solution](https://code.djangoproject.com/ticket/24636) 
+
 
 2. Product has_size error, an error was shown in the gitpod.io terminal AttributeError.
    It was determined after inspecting the terminal error that the s was left off the objects.
    Error resloved by correcting the spelling .
 
+
    ![Product has_size Error](assets/readme-images/Bugs/has_sizes-attribute-error.png)
+
 
 3. Toast Success error, an error was shown in the Django 404 yellow error page Template Syntac Error.
    It was determined after inspecting the error message from Django 404 yellow page, that the error was due to the unused 'grand_total' at the end of an if expression.
    The error was correct by removing an extra % sign & lining up the 'grand_total' correctly.
 
+
    ![Toast Success error](assets/readme-images/Bugs/toast_success-error.png)
+
 
 4. Checkout Cart error, an error was shown in the Django 404 yellow error page NameError.
    It was determined after inspecting the error message from Django 404 yellow page, that the error was due to the cart name error had a capital C in views.py line 11.
    The error was correct by using lower case c.
 
+
    ![Checkout Cart error](assets/readme-images/Bugs/checkout-error.png)
+
 
 5. Products add_to_cart error, an error was shown in the Django 404 yellow error page NoReverseMatch.
    It was determined after inspecting the error message from Django 404 yellow page, that the error was due to a bad url path.
    This error was correct by inspecting all add_to_cart urls and found that a syntax error had occured, corrected and url become functional.
 
+
    ![Products add_to_cart](assets/readme-images/Bugs/noReverseMatch-at-products-error.png)
+
 
 6.  Stipe Webhook & signatures Error, an error was shown in the gitpod.io terminal &  Stripe Dash board : 400 error.
     This error was determinded to be a bad request error.
@@ -751,17 +776,23 @@ List of Bugs / Errors During Development
     This was done and settings.py was set up to accomodate this change.
     Please find the 3 screen shots of the error & print testing to resolve this.
 
+
     ![StripeWebhook Terminal Error](assets/readme-images/Bugs/stripewebhook-error.png)
+
 
     ![Stripe Dash Webhook Error](assets/readme-images/Bugs/stripedashwebhook-error.png)
 
+
     ![Stripe webhook no signatures Error](assets/readme-images/Bugs/stripewebhook-nosignatures-error.png)
+
 
 7.  Profiles crispy_form error , an error was shown in the gitpod.io terminal ModuleNotFoundError.
     It was determined after inspecting the terminal error & doing a trace back to my last bit of code that the erro originated in the settings.py file under installed apps.
     Error occured due to forgetting to put a , after Profiles and then puttin in crispy_forms. Resolved by correcting htis oversight.
 
+
     ![Profiles crispy_form error](assets/readme-images/Bugs/profiles-error.png)       
+
 
 8. Deployment Db Erros , during deployment migrations to db & heroku 2 differetn errors got shown in the gitpod.io terminal.
     
@@ -770,26 +801,35 @@ List of Bugs / Errors During Development
     This was corrected by running a python3 manage.py dumpdata products > products.jsonit was run to find how changes will appear in the Json Files.
     After identifying the changes I added them to the Json files and ran loaddata agian.
     
+
     ![Deployment Integrity Error](assets/readme-images/Bugs/deployment-Integrity-error.png)
+
 
     The 2nd Error been django.db.utils.DataError: Problem installing fixtures.
     This error was traced back to via reading the terminal error and research via google as per the error main hint :vale too long for type charcater varying(100) to the fact that I had not put a max_lenth onto my image field in the Products Model. 
     This was correct by adding max_lenth to the products model image field and running migrations.
     
+
     ![Products Migration Fixtures Error](assets/readme-images/Bugs/productsmigration-fixtures-error.png)
     
+
 9.  Reviews Model Error , an error was shown in the gitpod.io terminalNameError when doing  migrations.
     This error was traced back to via reading the terminal error to the spelling of the Products which should not have had an s on the end of it this was corrected and coding procceded.
 
+
     ![Reviews Model Error](assets/readme-images/Bugs/reviewsmodel-error.png)
 
+
     Note: This model was done as a independant app Review. However app was delete and the same model was done in Porducts App.
+
 
 10. Add Review Error , an error was shown in the Django 404 yellow error page, NoReverseMatch.
     Error was trace to Url & url was ammended to fix this error.
 
+
     ![Add Review Error](assets/readme-images/Bugs/addreview-error.png) 
     
+
 11. Delete Review Errors , displayed in the the Django 404 yellow error page.
     The delete review pose a problem that originated in the redirect as I wish to redirect the shopper from the delete page back to the original product the review had been on .
     I found that the redirect was causing problems as it would not redirect with a simple delete_review view.
@@ -798,35 +838,47 @@ List of Bugs / Errors During Development
 
     Error 1 : NoReverseMatch - Unlike a lot of simple url errors this one cause a lot of problems until I update the view to use the form similar to the edit_review view. Herdal number 1 solved. This error was caused due to trying to redirect back to the product that had the review on it & was the start of the bugs for this Delete review.
 
+
     ![Delete Review Error 1](assets/readme-images/Bugs/deletereview-noreversematch-error.png)
+
 
     Error 2 : Attribute Error - This error was made by not calling the delete into the delete_review form and was correct by calling the review.delete() into the form.
 
+
     ![Delete Review Error 2](assets/readme-images/Bugs/deletereview-atribute-error.png)
+
 
     Error 3 : Unbound Local Error - This error was made due to calling the review = review.delete() only withough getting the object first causing the error local variable 'review' referenced before assignment.
     This was corrected by calling the review = get_object_or_404(Review, pk=review_id) first.
 
+
     ![Delete Review Error 3](assets/readme-images/Bugs/deletereview-unboundlocal-error.png)
+
 
     Error 4 : Attribute tuple product Error - This error was made due to calling the review = review.delete() above the product = review.product.
     This was corrected by moving the review = review.delete() into the if statement as you can not call it from outside of the if statement.
 
+
     ![Delete Review Error 4](assets/readme-images/Bugs/deletereview-atribute-tuple-product-error.png)
+
 
     Error 5 : Attribute tuple _meta Error - This error was made due to calling the review = review.delete() in the if statement.
     This was corrected by removing the review = as it should be called as only review.delete().
     This error was resloved with the assistance of Tutoring.
     Delete Review now redirect the Shopper back to the product assosciated with the review. 
 
+
     ![Delete Review Error 5](assets/readme-images/Bugs/deletereview-atribute-tupple-meta-error.png)
     
+
 12. Image Rendering Error - errors for all images 404 was shown in the gitpod.io terminal.
     I had added a products folder to the Media folder as the folder was getting very full and had other images in it.
     The error was traced to the image pather been /media/ without been able to pick up the /products/ folder.
     This was resolved by adding the upload_to='products/' to the Products model running migrations & from the admin backend putting all the images back in.
 
+
     ![Image Rendering Error 5](assets/readme-images/Bugs/allimagesrendering-error.png)
+
 
 13.  Favourite Products model errors - displayed in the the Django 404 yellow error page & in the gitpod.io terminal.
      I had planned on having a model for Favourites . However after numberous try's & delete's & redos the favourites became part of the products model.
@@ -834,10 +886,14 @@ List of Bugs / Errors During Development
      Beklow are 2 examples of the error's I had gotten .
      They are resolved by exluding the model & making a diffrent plan to show the favourites, in oder to keep the user story favourites.
 
+
      ![Favourites Error 1](assets/readme-images/Bugs/addfavourites-error.png)
+
 
      ![Favourites Error 2](assets/readme-images/Bugs/addfavourites-terminal-error.png)
 
+
+</details>
 
 ## Manual Testing
 
