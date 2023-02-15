@@ -66,11 +66,16 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    is_favourite = False
     reviews = Review.objects.filter(product_id=product.id).order_by('-created_on')  # noqa
     total_reviews = reviews.count()
 
+    if product.favourites.filter(id=request.user.id).exists():
+        is_favourite = True
+
     context = {
         'product': product,
+        'is_favourite': is_favourite,
         'reviews': reviews,
         'total_reviews': total_reviews,
     }

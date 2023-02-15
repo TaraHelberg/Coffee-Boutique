@@ -15,8 +15,16 @@
 <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <a href="#" aria-label="add product to favourites" class="text-danger"><i class="far fa-heart"> Add To Favourites</i></a>
+            <div>
+                {% if is_favourite%}
+                  <a href="{% url 'favourites' product.id %}">
+                    <i class="fas fa-heart fa-lg text-danger"></i>
+                  </a>
+                {% else %}
+                <a href="{% url 'favourites' product.id %}">
+                    <i class="far fa-heart fa-lg text-danger"></i>
+                  </a>
+                {% endif %}
             </div>
         </div>
         <!--Product with Full details-->
