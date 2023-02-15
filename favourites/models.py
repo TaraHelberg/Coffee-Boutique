@@ -10,8 +10,8 @@ class Favourites(models.Model):
         """Removes extra 's' from Model name"""
         verbose_name_plural = 'Favourites'
 
-    product = models.ManyToManyField(Product, blank=True)
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         """Return object string"""
