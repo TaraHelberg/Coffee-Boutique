@@ -14,7 +14,18 @@
   <div class="container-fluid">
     <div class="row">      
         <h1 class="text-coffee">Contact Us</h1>   
-    </div> 
+    </div>
+    <br>
+    <div class="row justify-content-center ">
+        <div class="col-11 col-md-8 col-lg-6 mt-3">
+            <form method="post">
+                {{ contact_form | crispy }}
+                {% csrf_token %}
+                <button type="submit" class="btn btn-outline-dark border-gold rounded-0">Submit</button>
+                <a class="btn btn btn-outline-dark border-gold rounded-0 m-2" href="{%  url 'home' %}">Cancel</a>
+            </form>
+        </div>
+    </div>
   </div>
 </section>
 {% endblock %}
