@@ -29,3 +29,9 @@ def contact_us(request, *args, **kwargs):
         form = ContactUsForm()
 
     return render(request, 'company_info/contact_us.html', {'form': form})
+
+
+def copyright(request):
+    """ A view to return the index page """
+
+    return render(request, 'company_info/copyright.html')
