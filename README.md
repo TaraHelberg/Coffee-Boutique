@@ -794,7 +794,7 @@ Debug was kept on True in order to make use of Django's error page which came in
     ![Profiles crispy_form error](assets/readme-images/Bugs/profiles-error.png)       
 
 
-8. Deployment Db Erros , during deployment migrations to db & heroku 2 differetn errors got shown in the gitpod.io terminal.
+8. Deployment Db Erros , during deployment migrations to db & heroku 2 different errors got shown in the gitpod.io terminal.
     
     The 1st been a django.db.utils.IntegrityError: Problem installing fixtures.
     This error was traced back to via reading the terminal error and research as well as turouring suport to make sure I had the right idea before procceding to the fact that I had added fields to my Products Model after I had made the loaddata and original model.
@@ -883,7 +883,7 @@ Debug was kept on True in order to make use of Django's error page which came in
 13.  Favourite Products model errors - displayed in the the Django 404 yellow error page & in the gitpod.io terminal.
      I had planned on having a model for Favourites . However after numberous try's & delete's & redos the favourites became part of the products model.
      I felt that I was not getting anywhere after 3/4 days of codeing and that I needed to move on in order to complete the PP but still have the user story in place.
-     Beklow are 2 examples of the error's I had gotten .
+     Below are 2 examples of the error's I had gotten .
      They are resolved by exluding the model & making a diffrent plan to show the favourites, in oder to keep the user story favourites.
 
 
@@ -892,6 +892,16 @@ Debug was kept on True in order to make use of Django's error page which came in
 
      ![Favourites Error 2](assets/readme-images/Bugs/addfavourites-terminal-error.png)
 
+
+14. Contact Us Error - displayed in the the Django 404 yellow error page ,TemplateDoesNot Exist.
+    It was determined after inspecting the error message from Django 404 yellow page, that the error was due to a bad path to the template.
+    Research was done and found that due to the templates/company_info/ folders used that the conact_us.html file was not been picked up from the views as the path was currently rendering from return render(request, 'contact_us.html', {'form': form}).
+    Error was corrected by putting the company_info/ into the render.
+
+    This was assisted by reading the following froms tack over flow : https://stackoverflow.com/questions/1926049/django-templatedoesnotexist.
+
+
+     ![Conact Us Error ](assets/readme-images/Bugs/contact_us-error.png)
 
 </details>
 
