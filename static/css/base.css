@@ -16,8 +16,17 @@ body {
 
 /* Delivery Banner Style */
 .bg-gold {
-    background: #d4af37 !important;
+    background: radial-gradient(
+        farthest-corner at right bottom,
+        #814E01 0,
+        #CB9B51 22%,
+        #F6E27A 45%,
+        #F6F2C0 50%,
+        #F6E27A 55%,
+        #CB9B51 78%,
+        #814E01 100%);
 }
+ 
 
 /*Video Style */
 #coffeecup {       
