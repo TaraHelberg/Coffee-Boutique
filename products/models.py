@@ -1,7 +1,5 @@
 from django.db import models
-from django.core.validators import MaxValueValidator, MinValueValidator
 from django.contrib.auth.models import User
-from django.db.models import Avg
 
 
 class Category(models.Model):
