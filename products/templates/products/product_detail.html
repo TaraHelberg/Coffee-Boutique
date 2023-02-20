@@ -46,7 +46,7 @@
                 <div>
                     <h4 class="text-coffee">Leave a Review</h4>
                     <form method="POST" action="{% url 'add_review' product.id %}">
-                        {{ form | crispy }}
+                        {{ form | crispy }}                
                         <textarea name="review" id="review" class="form-control review-box" cols="10" rows="5" required></textarea>
                         {% csrf_token %}
                     <!--Page Links to Submit Recipe or Cancel to Leave page Redirect's to Browse-->
