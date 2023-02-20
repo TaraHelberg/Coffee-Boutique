@@ -43,11 +43,8 @@ class Product(models.Model):
     favourites = models.ManyToManyField(User, related_name='favourites',
                                         blank=True)
 
-    def average_rating(self) -> float:
-        return Rating.objects.filter(product=self).aggregate(Avg("rating"))["rating__avg"] or 0    # noqa
-
     def __str__(self):
-        return f"{self.name}: {self.average_rating()}"
+        return f"{self.name}"
 
 
 class Review(models.Model):
@@ -60,12 +57,3 @@ class Review(models.Model):
 
     def __str__(self):
         return self.review
-
-
-class Rating(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    rating = models.IntegerField(default=0)
-
-    def __str__(self):
-        return f"{self.product.name}: {self.rating}"

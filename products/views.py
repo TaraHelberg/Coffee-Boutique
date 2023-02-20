@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, Review, Rating
+from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
 
 
@@ -246,17 +246,3 @@ def delete_review(request, review_id):
     }
 
     return render(request, template, context)
-
-
-def rate(request, product_id: int, rating: int):
-    """Add / Remove a product Review"""
-    product = get_object_or_404(Product, pk=product_id)
-    if request.method == 'POST':
-        for product in products:
-            rating = Rating.objects.filter(product=product, user=request.user).first()
-            products.user_rating = rating.rating if rating else 0
-    else:
-        Rating.objects.filter(product=product, user=request.user).delete()
-        product.rating_set.create(user=request.user, rating=rating)
-
-    return redirect(reverse('product_detail', args=[product.id]))
