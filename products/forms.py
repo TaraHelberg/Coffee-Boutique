@@ -27,4 +27,6 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         """Form model and Fields"""
         model = Review
-        fields = ['review']
+        fields = ['review', 'star_rating']
+        widgets = {
+            'star_rating': forms.NumberInput(attrs={'min': 1, 'max': '5', })}
