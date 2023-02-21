@@ -243,7 +243,7 @@ def delete_review(request, review_id):
     context = {
         'form': form,
         'review': review,
-        'product': review.product,
+        'product': product,
     }
 
     return render(request, template, context)

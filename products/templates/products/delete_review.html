@@ -21,10 +21,11 @@
       </div>
       <hr>
         <div class="col">
-            <form action="{% url 'delete_review' review.id %}" method="POST">
+            <form method="POST">
                 {% csrf_token %}
+                {{ form | crispy }}
                 <p>Are you sure you wish to Delete this Review ?</p>
-                <p><strong>Deletion Is Permanent !</strong></p>         
+                <p class="text-danger text text-center"><strong>Deletion Is Permanent !</strong></p>   
                                 
                 <a href="{% url 'product_detail' product.id %}" class="btn rounded-1">
                     <span>
