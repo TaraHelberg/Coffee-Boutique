@@ -1,0 +1,17 @@
+/*Video Style */
+#coffeecup-video {            
+    width: 100%;
+    height: auto;      
+} 
+
+.overlay-text {
+    position:absolute;
+    top:50%;
+    left:20%;
+    z-index:1;
+   }
+   
+.top-text {
+     color: white;     
+     align-self: center;
+   }

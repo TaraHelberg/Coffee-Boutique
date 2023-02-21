@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'home/css/index.css' %}">
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -10,22 +14,22 @@
 {% endblock %}
 
 {% block content %}
-<section>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col" role="tooltip" aria-label="A black cup of steaming coffee sitting on scattered coffee beans">
-        <video id="coffeecup" src="{{ MEDIA_URL }}video/a-steaming-cup-of-coffee-43935.mp4"  muted loop autoplay></video> 
+<section>  
+    <video id="coffeecup-video" src="{{ MEDIA_URL }}video/a-steaming-cup-of-coffee.mp4"  muted loop autoplay width="400"></video>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 sm-6 overlay-text">
+          <h3 class="top-text"> The New Collections Are Here !</h3>      
+          <p class="top-text">
+           <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Shop Now</a>
+          </P>
+        </div>
       </div>
-      <div class="col">
-        <h1 class="text-coffee">Coffee</h1>
-          <h4>
-            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Shop Now</a>
-          </h4>
-      </div>    
-    </div> 
-  </div>
+    </div>   
 </section>
 <section>
+  
  
 </section>
+
 {% endblock %}

@@ -28,12 +28,6 @@ body {
 }
  
 
-/*Video Style */
-#coffeecup {       
-    width: 100%;    
-    height: 20em;       
-} 
-
 /*All main Titles style*/
 
 /*Title Font Case Style*/
@@ -60,9 +54,14 @@ body {
     width: fit-content;
 }
 
+.shop-now-button {
+    background: #5f2f02;
+    color: white;   
+}
+
 /* Button style */
 .btn-coffee {
-    background: #5f2f02;
+    background: #4e2702;
     color: #ffffed;
 }
 
