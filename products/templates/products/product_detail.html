@@ -1,6 +1,9 @@
 {% extends "base.html" %}
-
 {% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
 
 <!-- Block Page Header -->
 {% block page_header %}
@@ -48,6 +51,20 @@
                     <form method="POST" action="{% url 'add_review' product.id %}">
                         {{ form | crispy }}                
                         <textarea name="review" id="review" class="form-control review-box" cols="10" rows="5" required></textarea>
+                        <br>
+                        <h6>Rate:</h6>
+                        <div class="rate">
+                            <input type="radio" name="rating" id="rating10" value="5" required checked="checked"><label for="rating10" title="5"></label>
+                            <input type="radio" name="rating" id="rating9" value="4.5" required><label for="rating9" title="4.5" class="half"></label>
+                            <input type="radio" name="rating" id="rating8" value="4" required><label for="rating8" title="4"></label>
+                            <input type="radio" name="rating" id="rating7" value="3.5" required><label for="rating7" title="3.5" class="half"></label>
+                            <input type="radio" name="rating" id="rating6" value="3" required><label for="rating6" title="3"></label>
+                            <input type="radio" name="rating" id="rating5" value="2.5" required><label for="rating5" title="2.5" class="half"></label>
+                            <input type="radio" name="rating" id="rating4" value="2" required><label for="rating4" title="2"></label>
+                            <input type="radio" name="rating" id="rating3" value="1.5" required><label for="rating3" title="1.5" class="half"></label>
+                            <input type="radio" name="rating" id="rating2" value="1" required><label for="rating2" title="1"></label>
+                            <input type="radio" name="rating" id="rating1" value="0.5" required><label for="rating1" title="0.5" class="half"></label>
+                        </div>
                         {% csrf_token %}
                     <!--Page Links to Submit Recipe or Cancel to Leave page Redirect's to Browse-->
                     <button type="submit" class="btn">Submit</button>
@@ -147,6 +164,15 @@
                             <p>
                                 {{review.review}}
                             </p>
+                        </div>
+                        <div class="rating-star">
+                            <span>
+                                <i class="fa fa-star{% if review.rating == 0.5 %}-half-o{% elif review.rating < 1 %}-o {% endif %}" aria-hidden="true"></i>
+                                <i class="fa fa-star{% if review.rating == 1.5 %}-half-o{% elif review.rating < 2 %}-o {% endif %}" aria-hidden="true"></i>
+                                <i class="fa fa-star{% if review.rating == 2.5 %}-half-o{% elif review.rating < 3 %}-o {% endif %}" aria-hidden="true"></i>
+                                <i class="fa fa-star{% if review.rating == 3.5 %}-half-o{% elif review.rating < 4 %}-o {% endif %}" aria-hidden="true"></i>
+                                <i class="fa fa-star{% if review.rating == 4.5 %}-half-o{% elif review.rating < 5 %}-o {% endif %}" aria-hidden="true"></i>
+                            </span>
                         </div>
                     </article>
                     <a class="text-info" href="{% url 'edit_review' review.id %}">

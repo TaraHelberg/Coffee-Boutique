@@ -169,6 +169,7 @@ def add_review(request, product_id):
         if form.is_valid():
             data = Review()
             data.review = form.cleaned_data['review']
+            data.rating = form.cleaned_data['rating']
             data.product = product
             data.user_id = request.user.id
             data.save()
