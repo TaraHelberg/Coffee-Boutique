@@ -62,22 +62,23 @@ body {
     color: white;   
 }
 
-/* Button style */
+/* Button styles */
+
 .btn-coffee {
     background: #4e2702;
     color: #ffffed;
 }
 
-.btn-outline-black {
+.btn-outline-coffee {
     background: white;
     color: #4e2702 !important; /* use important to override link colors for <a> elements */
     border: 1px solid #4e2702;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
+.btn-outline-coffee:hover,
+.btn-outline-coffee:active,
+.btn-outline-coffee:focus {
+    background: #4e2702;
     color: white !important;
 }
 
