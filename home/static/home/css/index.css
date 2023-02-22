@@ -1,17 +1,17 @@
 /*Video Style */
-#coffeecup-video {            
+#coffeecup-video {              
     width: 100%;
-    height: auto;      
-} 
+    height: auto;         
+}
 
-.overlay-text {
-    position:absolute;
-    top:50%;
-    left:20%;
-    z-index:1;
-   }
-   
-.top-text {
-     color: white;     
-     align-self: center;
-   }
+.box{
+    position:relative;
+}
+  
+.video-title{
+    position: absolute;
+    color: #fff;    
+    left: 10%;
+    right: 0;
+    top: 10%;   
+}

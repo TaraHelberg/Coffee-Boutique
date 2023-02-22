@@ -9,7 +9,7 @@ html {
 }
 
 /*general body style*/
-body {
+body {    
     font-family: 'Noto Serif Toto', sans-serif;
     font-weight: 300;        
 }
@@ -54,6 +54,9 @@ body {
     width: fit-content;
 }
 
+/*Button Style*/
+
+/*Shop Now Button*/
 .shop-now-button {
     background: #5f2f02;
     color: white;   

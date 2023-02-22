@@ -1,9 +1,12 @@
+<!--Home Page-->
 {% extends "base.html" %}
 {% load static %}
 
+<!--Css for this page only-->
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'home/css/index.css' %}">
 {% endblock %}
+
 
 {% block page_header %}
     <div class="container header-container">
@@ -15,21 +18,17 @@
 
 {% block content %}
 <section>  
+  <div class="box">
     <video id="coffeecup-video" src="{{ MEDIA_URL }}video/a-steaming-cup-of-coffee.mp4"  muted loop autoplay width="400"></video>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 sm-6 overlay-text">
-          <h3 class="top-text"> The New Collections Are Here !</h3>      
-          <p class="top-text">
-           <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Shop Now</a>
-          </P>
-        </div>
-      </div>
-    </div>   
+    <div class="video-title">
+      <h3>THE NEW COLLECTIONS ARE HERE !</h3>
+      <p>Discover the best Coffee's & exclusive products</p>
+      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Shop Now</a>
+    </div>
+  </div>  
 </section>
 <section>
-  
- 
+
 </section>
 
 {% endblock %}
