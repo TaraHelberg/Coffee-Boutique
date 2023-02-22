@@ -10,17 +10,21 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
-<div id="delete" class="h-100">
-    <div class="row">
+<div class="container">
+    <h2 class="title-font text-coffee text-center">Product Management</h2>
+    <hr>
+    <h4 class="text-muted text-coffee text-center">Delete a Product</h4>                
+    <hr>
+    <div class="row justify-content-center mt-5">               
         <!-- Delete Confirmation Box -->
-        <div id="delete-confirm" class="col-md-6 h-100">
+        <div class="col-md-6 h-100">
             <form method="post">
                 {% csrf_token %}
                 <p>Are you sure you want to delete this product?</p>
-                <p>Deletion is permanent.</p>
-                <input type="submit" value="Delete Product" class="btn btn-danger btn-del">
-                <a href="{% url 'products' %}" class="btn btn-dark dlt-btn btn-cancel">Cancel</a>
+                <p class="text-danger">! DELETION IS PERMANENT !</p>
+                <!--Page Links to Delete Product or Cancel to Leave page Redirect's Back to Products-->
+                <input type="submit" value="Delete Product" class="btn btn-danger">
+                <a href="{% url 'products' %}" class="btn btn-coffee">Cancel</a>
             </form>
         </div>
     </div>
