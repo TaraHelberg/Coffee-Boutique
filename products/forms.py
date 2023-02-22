@@ -4,6 +4,7 @@ from .models import Product, Category, Review
 
 
 class ProductForm(forms.ModelForm):
+    """Admin Add product form. Code from Boutique Ado"""
 
     class Meta:
         model = Product
@@ -23,7 +24,7 @@ class ProductForm(forms.ModelForm):
 
 
 class ReviewForm(forms.ModelForm):
-    """Review Form"""
+    """Review & Rating Form"""
     class Meta:
         """Form model and Fields"""
         model = Review

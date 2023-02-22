@@ -24,7 +24,7 @@ class Category(models.Model):
 class Product(models.Model):
     """
     Model for the Product
-    Used & Modified slightly from Boutique Ado
+    Used & Modified from Boutique Ado
     Credit to Code Institute
     """
     category = models.ForeignKey('Category', null=True, blank=True,

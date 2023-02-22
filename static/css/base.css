@@ -70,8 +70,8 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    color: #4e2702 !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #4e2702;
 }
 
 .btn-outline-black:hover,
@@ -111,7 +111,7 @@ body {
 
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
+    background: #5f2f02 !important;
     color: #fff !important;
 }
 

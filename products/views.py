@@ -161,6 +161,7 @@ def delete_product(request, product_id):
     return render(request, 'products/delete_product.html')
 
 
+@login_required
 def add_review(request, product_id):
     """Add a product Review"""
     product = get_object_or_404(Product, pk=product_id)
@@ -188,6 +189,7 @@ def add_review(request, product_id):
     return render(request, template)
 
 
+@login_required
 def edit_review(request, review_id):
     """Edit a Product Review"""
 
@@ -220,6 +222,7 @@ def edit_review(request, review_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_review(request, review_id):
     """ Delete a Product Review """
 
