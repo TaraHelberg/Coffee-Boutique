@@ -12,21 +12,21 @@
 
 {% block content %}
 <section>
-  <div class="container-fluid">
-    <div class="row justify-content-center">      
-        <h1 class="text-coffee">Contact Us</h1>   
-    </div>
-    <br>
-    <div class="row justify-content-center ">
-        <div class="col-11 col-md-8 col-lg-6 mt-3">
-            <form method="post">
-                {% csrf_token %}
-                {{ form|crispy }}
-                <button type="submit" class="btn btn-outline-dark border-gold rounded-0">Submit</button>
-                <a class="btn btn btn-outline-dark border-gold rounded-0 m-2" href="{%  url 'home' %}">Cancel</a>
-            </form>
+    <div class="container">        
+        <h4 class="title-font text-coffee text-center">Contact Us</h4>                
+        <hr>        
+        <div class="row justify-content-center mt-5">
+            <!--Contact Us From-->
+            <div class="col-12 col-md-6 text-coffee">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <!--Page Links to Submit Contact Us From or Cancel to Leave page Redirect's Back to Home Page-->
+                    <button type="submit" class="btn btn-coffee rounded-1">Submit</button>
+                    <a class="btn btn-coffee rounded-1" href="{%  url 'home' %}">Cancel</a>
+                </form>
+            </div>
         </div>
     </div>
-  </div>
 </section>
 {% endblock %}
