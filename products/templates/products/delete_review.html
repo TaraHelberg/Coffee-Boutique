@@ -11,31 +11,27 @@
 
 {% block content %}
 <section>
-  <div class="container-fluid">
-    <div class="row">      
-      <div class="col">
-        <h1 class="text-coffee">Delete Review</h1>
-          <h4>
-            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Shop Now</a>
-          </h4>
-      </div>
-      <hr>
-        <div class="col">
+  <div class="container">        
+    <h4 class="title-font text-coffee text-center">Delete Review</h4>                
+    <hr>
+    <div class="row justify-content-center mt-5">
+      <!--Delete Review From-->
+      <div class="col-12 col-md-6 text-coffee">
             <form method="POST">
                 {% csrf_token %}
                 {{ form | crispy }}
                 <p>Are you sure you wish to Delete this Review ?</p>
-                <p class="text-danger text text-center"><strong>Deletion Is Permanent !</strong></p>   
-                                
-                <a href="{% url 'product_detail' product.id %}" class="btn rounded-1">
+                <p class="text-danger"><strong>! DELETION IS PERMANENT !</strong></p>
+                <!--Page Links to Delete Review or Cancel to Leave page Redirect's Back to the Product Review selected for deletetion -->                                 
+                <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-coffee rounded-1">
                     <span>
                         <i class="fas fa-chevron-left"></i>
                     </span>
                     Return to Product
                 </a>
-                <input type="submit" value="Delete" class="btn">
+                <input type="submit" value="Delete Review" class="btn btn-danger">
             </form>
-        </div>    
+      </div>   
     </div> 
   </div>
 </section>
