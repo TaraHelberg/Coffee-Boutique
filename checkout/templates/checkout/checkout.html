@@ -14,20 +14,19 @@
     </div>
 {% endblock %}
 
-{% block content %}
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="title-font mb-4">Checkout</h2>
-                <hr>
-            </div>
+{% block content %}    
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <hr>
+            <h2 class="title-font text-coffee mb-4">Check Out</h2>
+            <hr>
         </div>
-
+    </div>
         <div class="row">
+            <!-- Summary of order -->
             <div class="col-12 col-lg-6 order-lg-last mb-5">
-                <p class="text-muted">Order Summary ({{ product_count }})</p>
+                <p class="text-coffee">Order Summary ({{ product_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
                         <p class="mb-1 mt-0 small text-muted">Item</p>
@@ -71,8 +70,9 @@
                     </div>
                 </div>
             </div>
+            <!-- Check Out Details Form -->
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Please fill out the form below to complete your order</p>
+                <p class="text-coffee">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
@@ -103,7 +103,7 @@
                     </fieldset>
                     <fieldset class="px-3">
                         <legend class="fieldset-label small text-coffee px-2 w-auto">Payment</legend>
-                        <!-- A Stripe card element will go here -->
+                        <!-- A Stripe card element-->
                         <div class="mb-3" id="card-element"></div>
                         <!-- Used to display form errors -->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
@@ -111,20 +111,22 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
-                    <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_cart' %}" class="btn btn-outline-black rounded-0">
+                    <div class="submit-button text-right mt-5 mb-2">
+                        <!-- Return to Shopping Cart Button-->                    
+						<a href="{% url 'view_cart' %}" class="btn btn-outline-coffee rounded-1">
 							<span class="icon">
 								<i class="fas fa-chevron-left"></i>
 							</span>
 							<span class="font-weight-bold">Adjust Shopping Cart</span>
 						</a>
-						<button id="submit-button" class="btn btn-black rounded-0">
+                        <!-- Complete Checkout Order Button -->
+						<button id="submit-button" class="btn btn-coffee rounded-1">
 							<span class="font-weight-bold">Complete Order</span>
 							<span class="icon">
 								<i class="fas fa-lock"></i>
 							</span>
 						</button>
-						<p class="small text-danger my-0">
+						<p class="small text-danger my-2">
 							<span class="icon">
 								<i class="fas fa-exclamation-circle"></i>
 							</span>
