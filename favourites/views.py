@@ -20,7 +20,7 @@ def favourites(request, product_id):
 
 def favourite_list(request):
     """
-    Favourite product List
+    Favourite Product List
     """
     user = request.user
     favourite_products = user.favourites.all()

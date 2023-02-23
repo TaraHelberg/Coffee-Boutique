@@ -11,43 +11,56 @@
 
 {% block content %}
 <section>
-  <div class="container-fluid">    
-      <div class="row">
-        <h1 class="text-coffee">Favourites</h1>          
-      </div>
+  <div class="container-fluid">
+    <h1 class="title-font text-coffee text-center">Favourites</h1>
+    <hr>
+    <!--Favourite Products-->
+    <div class="product-container col-10 offset-1">
       <div class="row">
         {% for product in is_favourite %}
-        <div class="col-sm-6 col-md-4 col-lg-3">        
-          <div class="card product-card border-1">
-            {% if product.image %}
-            <a href="{% url 'product_detail' product.id %}"><img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}"/>
-            </a>
-            {% else %}
-            <a href="{% url 'product_detail' product.id %}"><img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"/>
-            </a>
-            {% endif %}
-            <div class="card-body pb-0">
-              <p class="mb-0 products-name">{{ product.name }}</p>
-            </div>
-            <div class="card-footer bg-white pt-0 border-0 text-start">
-              <div class="row">
-                  <div class="col">
-                    <p class="lead mb-0 text-start fw-bold product-price">£{{ product.price }}</p>
-                    {% if product.category %}
-                    <p class="small mt-1 mb-0">
-                      <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                              <i class="fas fa-tag me-2"></i>{{product.category.friendly_name }}
-                      </a>
-                    </p>
-                    {% endif %}
-                  </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-5">
+            <div class="card h-100">
+              <!--Product Image-->
+              {% if product.image %}
+              <a href="{% url 'product_detail' product.id %}"><img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}"/>
+              </a>
+              {% else %}
+              <!--Product No image -->
+              <a href="{% url 'product_detail' product.id %}"><img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"/>
+              </a>
+              {% endif %}
+              <!-- Product Name -->
+              <div class="card-body pb-0">
+              <p class="mb-0 text-center"><strong>{{ product.name }}</strong></p>
               </div>
-            </div>            
+              <div class="card-footer bg-white pt-0 border-0 text-left">
+                <div class="row">
+                  <div class="col">
+                      <!-- Product Price -->
+                      <p class="lead mb-0 text-left"><strong>€ {{ product.price }}</strong></p>
+                      <!-- Product Category -->
+                      {% if product.category %}
+                      <p class="small mt-1 mb-2">
+                          <a class="text-coffee" href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fa-solid fa-tags mr-2"></i>{{ product.category.friendly_name }}
+                          </a>
+                      </p>
+                      {% endif %}
+                  </div>                                        
+                </div>
+                <!--Page Link to Remove Favourite Product , Redirects back to the Produt Removed-->
+                <div class="col">                 
+                    <a href="{% url 'favourites' product.id %}">
+                      <i class="fas fa-heart fa-lg text-danger"> Remove</i>
+                    </a>                 
+                </div>
+              </div>   
+            </div>
           </div>
-        </div> 
-        {% endfor %}  
-      </div>        
-    </div> 
-  </div>
+          {% endfor %}  
+      </div>
+    </div>        
+  </div> 
+</div>
 </section>
 {% endblock %}
