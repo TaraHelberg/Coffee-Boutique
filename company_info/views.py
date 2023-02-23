@@ -19,11 +19,17 @@ def contact_us(request, *args, **kwargs):
             send_mail({subject}, f'{name}, {email}, {message}',
                       settings.EMAIL_HOST_USER, [settings.EMAIL_HOST_USER],
                       fail_silently=False)
-            messages.success(request, 'Thank you for contacting us we will reply within 24 hours!')
+            messages.success(request,
+                             f'Thank you for Contacting Us.'
+                             f'we will reply within 24 hrs!'
+                             )
 
             return redirect(reverse('home'))
         else:
-            messages.error(request, 'Something went wrong with your submission. Please try again.')
+            messages.error(request,
+                           f'Something went wrong with your Submission.'
+                           f'Please try again.'
+                           )
 
     else:
         form = ContactUsForm()
