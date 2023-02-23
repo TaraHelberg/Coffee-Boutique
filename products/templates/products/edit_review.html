@@ -11,28 +11,26 @@
 
 {% block content %}
 <section>
-  <div class="container-fluid">
-    <div class="row">
-        <div class="col text-center mt-3">
-            <!-- Page Title -->
-            <h2 class="">
-                <strong>Update Review</strong>
-            </h2>
+    <div class="container">        
+        <h4 class="title-font text-coffee text-center">Update Review</h4>                
+        <hr>        
+        <div class="row justify-content-center mt-5">
+            <!--Update Review From-->
+            <div class="col-12 col-md-6 text-coffee">
+                <form action="{% url 'edit_review' review.id %}" method="POST">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <!--Page Links to Update Review or Cancel to Leave page Redirect's Back to the Product Review that is been edited-->                
+                    <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-coffee rounded-1">
+                        <span>
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        Return to Product
+                    </a>
+                    <input type="submit" value="Update" class="btn btn-coffee rounded-1">
+                </form>
+            </div>
         </div>
-        <hr>
-        <div class="col">
-            <form action="{% url 'edit_review' review.id %}" method="POST">
-                {% csrf_token %}
-                {{ form | crispy }}                
-                <a href="{% url 'product_detail' product.id %}" class="btn rounded-1">
-                    <span>
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    Return to Product
-                </a>
-                <input type="submit" value="Update" class="btn">
-            </form>
-        </div>
-  </div>
+    </div>
 </section>
 {% endblock %}
