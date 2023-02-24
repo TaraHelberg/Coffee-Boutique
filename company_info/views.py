@@ -5,6 +5,12 @@ from django.conf import settings
 from .forms import ContactUsForm
 
 
+def blog(request):
+    """ A view to return the blog page """
+
+    return render(request, 'company_info/blog.html')
+
+
 def contact_us(request, *args, **kwargs):
     """ A view to return the conact_us page """
     if request.method == 'POST':
