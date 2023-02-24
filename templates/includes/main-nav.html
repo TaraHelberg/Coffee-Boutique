@@ -2,12 +2,12 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item ">
-            <a class="title-font font-weight-bold nav-link text-coffee mr-5" href="{% url 'home' %}" aria-label="Go to the product management page">
+            <a class="title-font font-weight-bold nav-link text-coffee mr-4" href="{% url 'home' %}" aria-label="Go to the product management page">
                 Home
             </a>            
         </li>
         <li class="nav-item dropdown">
-            <a class="title-font font-weight-bold nav-link text-coffee mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="title-font font-weight-bold nav-link text-coffee mr-4" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -16,9 +16,8 @@
                 <a href="{% url 'products' %}?sort=price&direction=asc" aria-label="Go to Product by Price" class="dropdown-item">By Price</a>               
             </div>
         </li>
-
         <li class="nav-item dropdown">
-            <a class="title-font font-weight-bold nav-link text-coffee mr-5" href="#" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="title-font font-weight-bold nav-link text-coffee mr-4" href="#" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Coffee
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="coffee-link">
@@ -28,9 +27,8 @@
                 <a href="{% url 'products' %}?category=coffee_capsule_pods" class="dropdown-item">Coffee Capsule Pods</a>                
             </div>
         </li>
-
         <li class="nav-item dropdown">
-            <a class="title-font font-weight-bold nav-link text-coffee mr-5" href="#" id="coffeemachines-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="title-font font-weight-bold nav-link text-coffee mr-4" href="#" id="coffeemachines-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Coffee Machines
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="coffeemachines-link">
@@ -40,9 +38,8 @@
                 <a href="{% url 'products' %}?category=espresso_machines" class="dropdown-item">Espresso</a>
             </div>
         </li>
-
         <li class="nav-item dropdown">
-            <a class="title-font font-weight-bold nav-link text-coffee mr-5" href="#" id="accessories-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="title-font font-weight-bold nav-link text-coffee mr-4" href="#" id="accessories-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
@@ -51,15 +48,25 @@
                 <a href="{% url 'products' %}?category=manual_coffee_makers" class="dropdown-item">Manual Coffee Makers</a>                
             </div>
         </li>
-
         <li class="nav-item dropdown">
-            <a class="title-font font-weight-bold nav-link text-coffee" href="#" id="gifts&treats-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="title-font font-weight-bold nav-link text-coffee mr-4" href="#" id="gifts&treats-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Gifts & Treats
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="gifts&treats-link">
                 <a href="{% url 'products' %}?category=gift_sets,coffee_treats" class="dropdown-item">All Gift Sets & Treats</a>
                 <a href="{% url 'products' %}?category=gift_sets" class="dropdown-item">Gift Sets</a>
                 <a href="{% url 'products' %}?category=coffee_treats" class="dropdown-item">Treats</a>                
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="title-font font-weight-bold nav-link text-coffee mr-4" href="#" id="about-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="about-link">
+                <a href="#" class="dropdown-item">Blog</a>
+                <a href="{% url 'contact_us' %}" class="dropdown-item">Contact Us</a>
+                <a href="{% url 'faq' %}" class="dropdown-item">FAQ's</a>
+                <a href="{% url 'copyright' %}" class="dropdown-item">Copy Right</a>                 
             </div>
         </li>                
     </ul>
