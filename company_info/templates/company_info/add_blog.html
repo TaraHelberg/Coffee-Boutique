@@ -1,0 +1,36 @@
+<!--Add Blog Page-->
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="title-font text-coffee text-center">Product Management</h2>
+    <hr>
+    <h4 class="text-muted text-coffee text-center">Add a Product</h4>                
+    <hr>
+    <div class="row justify-content-center mt-5">
+        <!--Add Blog From-->
+        <div class="col-12 col-md-6 text-coffee">
+            <form method="POST" action="{% url 'add_blog' %}" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <!--Page Links to Add Product or Cancel to Leave page Redirect's to Products-->
+                <div class="text-right">
+                    <a class="btn btn-coffee rounded-1" href="{% url 'blog' %}">Cancel</a>
+                    <button class="btn btn-coffee rounded-1" type="submit">Add Blog</button>
+                </div>
+            </form>
+        </div>            
+    </div>   
+</div>    
+
+{% endblock %}
