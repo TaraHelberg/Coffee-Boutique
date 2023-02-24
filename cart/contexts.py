@@ -5,7 +5,10 @@ from products.models import Product
 
 
 def cart_contents(request):
-
+    """
+    Shows the content within the users Cart
+    Credit : Code Institutes Boutique Ado project
+    """
     cart_items = []
     total = 0
     product_count = 0
