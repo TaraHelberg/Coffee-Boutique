@@ -200,3 +200,13 @@ else:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SUMMERNOTE_CONFIG = {
+    'toolbar': [
+            ['font', ['bold', 'underline', 'italic', 'clear', 'fontsize',
+                      'color']],
+            ['para', ['style', 'ul', 'ol', 'paragraph', 'height']],
+        ],
+    'height': 300,
+    'width': '100%',
+}
