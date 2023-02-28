@@ -47,3 +47,20 @@ def add_blog(request):
     }
 
     return render(request, template, context)
+
+
+def blog_detail(request, slug):
+    """
+    View Full Blog Post
+    """
+    context = {}
+    blog = Blog.objects.get(slug=slug)
+
+    context['blog'] = blog
+
+    template = 'blog/blog_detail.html'
+    context = {
+        'blog': blog,
+    }
+
+    return render(request, template, context)

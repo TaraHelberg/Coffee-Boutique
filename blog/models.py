@@ -36,3 +36,11 @@ class Blog(models.Model):
         Returns a string method "AKA :The Magic method""
         """
         return self.title
+
+    def save(self, *args, **kwargs):
+        """
+        Generate unique slug
+        """
+        if not self.slug:
+            self.slug = slugify(self.title)
+        return super().save(*args, **kwargs)
