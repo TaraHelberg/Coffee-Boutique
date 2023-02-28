@@ -32,7 +32,7 @@
                     </a>
                     {% else %}
                     <!-- Blog No image --> 
-                    <a href="{% url 'blog_detail' blog.slug %}">
+                    <a href="">
                         <img class="card-img-top img-responsive" src="{{ MEDIA_URL }}noimage.png"  alt="{{ blog.title }}">
                     </a>
                     {% endif %}
@@ -45,7 +45,7 @@
                 {% if request.user.is_superuser %}
                 <!-- Edit and Delete buttons is user is Superuser -->                
                 <a href="{% url 'edit_blog' blog.slug %}" class="text-dark my-4 mr-4">Edit <i class="fa-solid fa-pencil"></i></a>                     
-                <a class="text-danger my-4 mr-4" href="#">Delete <i class="fa-solid fa-trash-can"></i></a>
+                <a class="text-danger my-4 mr-4" href="{% url 'delete_blog' blog.slug %}">Delete <i class="fa-solid fa-trash-can"></i></a>
                 {% endif %}
                 <!-- Link to go back Blog -->  
                 <a href="{% url 'blog' %}" class="btn btn-outline-coffee rounded-1 my-4">

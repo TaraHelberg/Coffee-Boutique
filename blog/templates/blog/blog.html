@@ -50,7 +50,7 @@
                                             <a href="{% url 'edit_blog' blog.slug %}" class="text-dark">Edit <i class="fa-solid fa-pencil"></i></a>
                                         </div>
                                         <div class="col text-right del-product">
-                                            <a class="text-danger" href="#">Delete <i class="fa-solid fa-trash-can"></i></a>
+                                            <a class="text-danger" href="{% url 'delete_blog' blog.slug %}">Delete <i class="fa-solid fa-trash-can"></i></a>
                                         </div>
                                         {% endif %}                                        
                                     </div>

@@ -100,3 +100,25 @@ def edit_blog(request, slug):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_blog(request, slug):
+    """
+    View Delete a Blog Post
+    """
+    blog = Blog.objects.get(slug=slug)
+    user = request.user
+    if blog.author == user:
+        blog.delete()
+        messages.success(request, f'You have deleted {blog.title}')
+        return redirect(reverse('blog'))
+    else:
+        messages.error(request, "Unable to Delete Blog.")
+
+    template = 'blog/delete_blog.html'
+    context = {
+        'blog': blog,
+    }
+
+    return render(request, template, context)
