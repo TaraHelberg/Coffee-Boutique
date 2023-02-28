@@ -64,3 +64,39 @@ def blog_detail(request, slug):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_blog(request, slug):
+    """
+    View Add a Blog Post
+    """
+    blog = Blog.objects.get(slug=slug)
+    user = request.user
+
+    if request.method == "POST":
+        form = BlogForm(request.POST or None,
+                        request.FILES or None, instance=blog)
+        if user == blog.author:
+            if form.is_valid():
+                obj = form.save(commit=False)
+                obj.save()
+                blog = obj
+                messages.success(request, "Successfully Edited your Blog Post")
+                return redirect(reverse('blog_detail', args=[obj.slug]))
+            else:
+                messages.error(request, "Failed to Update Blog Post.")
+        else:
+            messages.info(request, 'You are not allowed to do that as you are \
+                not the Blog Author!')
+    else:
+        form = BlogForm(instance=blog)
+        messages.info(request, f'You are Editing {blog.title}')
+
+    template = 'blog/edit_blog.html'
+    context = {
+        'blog': blog,
+        'form': form,
+    }
+
+    return render(request, template, context)
