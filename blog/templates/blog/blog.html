@@ -16,8 +16,70 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="title-font text-coffee text-center">Blog</h2>
+            <h2 class="title-font text-coffee text-center"><i class="fa-solid fa-mug-hot"></i> Coffee Boutique Blog <i class="fa-solid fa-mug-hot"></i></h2>
             <hr>
+            <h4 class="text-coffee text-center">Popular Coffee Articles</h4>   
+            <hr>
+        </div>
+        <!--Blog Post -->
+        <div class="container col-10 offset-1">
+            <div class="row">
+                {% for blog in blogs %}
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card h-100">
+                                <!--Blog Image-->
+                                {% if blog.image %}
+                                <a href="{% url 'blog_detail' blog.slug %}">
+                                    <img class="card-img-top img-responsive" src="{{ blog.image.url }}" alt="{{ blog.title }}">
+                                </a>
+                                {% else %}
+                                <!-- Blog No image --> 
+                                <a href="{% url 'blog_detail' blog.slug %}">
+                                    <img class="card-img-top img-responsive" src="{{ MEDIA_URL }}noimage.png"  alt="{{ blog.title }}">
+                                </a>
+                                {% endif %}
+                                <!-- Blog Title -->
+                                <div class="card-body pb-0">
+                                    <p class="mb-0 text-center"><strong>{{ blog.title }}</strong></p>
+                                </div>                                
+                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                    <div class="row">                                        
+                                        {% if request.user.is_superuser %}
+                                        <!-- Edit and Delete buttons is user is Superuser -->
+                                        <div class="col edit-product">
+                                            <a href="#" class="text-dark">Edit <i class="fa-solid fa-pencil"></i></a>
+                                        </div>
+                                        <div class="col text-right del-product">
+                                            <a class="text-danger" href="#">Delete <i class="fa-solid fa-trash-can"></i></a>
+                                        </div>
+                                        {% endif %}                                        
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        {% if forloop.counter|divisibleby:1 %}
+                            <div class="col-12 d-sm-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}                        
+                        {% if forloop.counter|divisibleby:2 %}
+                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:3 %}
+                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                        {% if forloop.counter|divisibleby:4 %}
+                            <div class="col-12 d-none d-xl-block mb-5">
+                                <hr>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
 </div>    

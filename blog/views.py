@@ -1,33 +1,43 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.conf import settings
 
+from .models import Blog
 from .forms import BlogForm
 
 
 def blog(request):
-    """View Blog Posts"""
+    """
+    View all Blog Posts
+    """
+    blogs = Blog.objects.all()
+    template = 'blog/blog.html'
+    context = {
+        'blogs': blogs
+    }
+    return render(request, template, context)
 
-    return render(request, 'blog/blog.html')
 
-
+@login_required
 def add_blog(request):
-    """Add Blog"""
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
-
-    if request.method == 'POST':
-        form = BlogForm(request.POST or None)
+    """
+    View Add a Blog Post
+    """
+    if request.method == "POST":
+        form = BlogForm(request.POST or None, request.FILES or None)
         if form.is_valid():
-            blog = form.save()
-            messages.success(request, 'Successfully added Blog Post!')
-            return redirect(reverse('blog'))
+            obj = form.save(commit=False)
+            author = request.user
+            obj.author = author
+            obj.save()
+
+            messages.success(request, "Successfully added your Blog post")
+            return redirect(reverse('blog_detail', args=[obj.slug]))
         else:
-            messages.error(request,
-                           f'Failed to add blog.'
-                           f'Please ensure the form is valid.'
-                           )
+            messages.error(
+                request, "Failed to add Blog post, please check the form is \
+                    valid")
     else:
         form = BlogForm()
 
