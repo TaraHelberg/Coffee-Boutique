@@ -42,6 +42,12 @@ class Product(models.Model):
     favourites = models.ManyToManyField(User, related_name='favourites',
                                         blank=True)
 
+    class Meta:
+        """
+        Orders the Products in Descending order.
+        """
+        ordering = ['-created_on']
+
     def __str__(self):
         return f"{self.name}"
 
@@ -55,6 +61,12 @@ class Review(models.Model):
         max_digits=5, decimal_places=2, null=True, blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        """
+        Orders the Reviews in Ascending order.
+        """
+        ordering = ['created_on']
 
     def __str__(self):
         return self.review
