@@ -50,8 +50,28 @@
                                             <a href="{% url 'edit_blog' blog.slug %}" class="text-dark">Edit <i class="fa-solid fa-pencil"></i></a>
                                         </div>
                                         <div class="col text-right del-product">
-                                            <a class="text-danger" href="{% url 'delete_blog' blog.slug %}">Delete <i class="fa-solid fa-trash-can"></i></a>
+                                            <button type="button" class="btn btn-danger my-4 mr-4" data-toggle="modal" data-target="#deleteModal">Delete <i class="fa-solid fa-trash-can"></i></button>
                                         </div>
+                                        <!-- Modal for Delete Confirmation-->
+                                        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <div class="container d-flex pl-0"><h5 class="modal-title ml-2 text-coffee" id="deleteModalLabel">DELETE BLOG POST</h5></div>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p class="text-danger">If you Delete this Blog Post will be gone forever! Are you sure you want to proceed?! </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-coffee" data-dismiss="modal">Cancel</button>
+                                                        <a class="btn btn-danger my-4 mr-4" href="{% url 'delete_blog' blog.slug %}">Delete <i class="fa-solid fa-trash-can"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                
                                         {% endif %}                                        
                                     </div>
                                 </div>                                
