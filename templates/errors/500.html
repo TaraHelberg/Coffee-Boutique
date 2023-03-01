@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %} 
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-7 col-md-6 my-auto">
+            <h1 class="display-4 logo-font text-coffee">500 Error</h1>
+            <h2 class="display-4 logo-font text-coffee">Server Error</h2>
+            <hr>
+            <h3 class="display-4 logo-font text-coffee">Coffee Boutique Applogise</h3>
+            <p>We are currently unable to handle this request</p>
+            <P>Please return to Our Shop</p>
+            <div class="my-5">
+                <h4>
+                    <a href="{% url 'home' %}" class="btn btn-outline-coffee rounded-1 mt-5">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Return to Shop</span>
+                    </a>            
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
