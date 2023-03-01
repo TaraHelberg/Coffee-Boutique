@@ -8,15 +8,10 @@ class ProductAdmin(admin.ModelAdmin):
     Used & Modified slightly from Boutique Ado
     Credit to Code Institute
     """
-    list_display = (
-        'sku',
-        'name',
-        'category',
-        'price',
-        'image',
-    )
-
-    ordering = ('sku',)
+    list_display = ('sku', 'name', 'category', 'price', 'image')
+    search_fields = ['name', 'category']
+    list_filter = ('created_on',)
+    ordering = ('sku', 'created_on',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
