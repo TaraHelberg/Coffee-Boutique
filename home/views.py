@@ -1,9 +1,16 @@
 from django.shortcuts import render
-
-# Create your views here.
+from products.models import Product
 
 
 def index(request):
-    """ A view to return the index page """
+    """
+    Index / Home page
+    Return View with carousel 4 Products Recently Added
+    """
+    products = Product.objects.filter().order_by('-created_on')[:4]
+    template = 'home/index.html'
+    context = {
+        'products': products
+    }
 
-    return render(request, 'home/index.html')
+    return render(request, template, context)

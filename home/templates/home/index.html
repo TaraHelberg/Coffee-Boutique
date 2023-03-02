@@ -17,6 +17,7 @@
 {% endblock %}
 
 {% block content %}
+<!--Coffee Video & Welcome & Shopping Button Encouragement-->
 <section>  
   <div class="box">
     <video id="coffeecup-video" src="{{ MEDIA_URL }}video/a-steaming-cup-of-coffee.mp4"  muted loop autoplay width="400"></video>
@@ -28,7 +29,103 @@
   </div>  
 </section>
 <section>
-
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <!--New Products Added Title & Bootstrap Carousel-->            
+    <div class="col-md-5 mt-5">
+      <h3 class="title-font text-center text-coffee">New Products</h3>
+      <div class="col-6 offset-3">
+        <hr>                        
+      </div>
+      <!--Boostrap Carousel 4 Most Recent Recipes-->
+      <div id="myIndicators" class="carousel slide" data-ride="carousel">
+          <!--Carousel Indicators-->
+          <ol class="carousel-indicators">
+            <li data-bs-target="#myIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1"></li>
+            <li data-bs-target="#myIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
+            <li data-bs-target="#myIndicators" data-bs-slide-to="2" aria-label="Slide 3"></li>
+            <li data-bs-target="#myIndicators" data-bs-slide-to="3" aria-label="Slide 4"></li>
+          </ol>
+          <!--Carousel Inner displays 4 Most Recent Products-->
+          <div class="carousel-inner">
+              {% for product in products %}                                 
+              <div class="carousel-item {% if forloop.first%}active{% endif %}">
+                  <!--Product Image-->
+                  {% if product.image %}
+                  <a href="{% url 'product_detail' product.id %}">
+                      <img class="card-img-top img-responsive" src="{{ product.image.url }}" alt="{{ product.name }}">
+                  </a>
+                  {% else %}
+                  <!-- Product No image --> 
+                  <a href="{% url 'product_detail' product.id %}">
+                      <img class="card-img-top img-responsive" src="{{ MEDIA_URL }}noimage.png"  alt="{{ product.name }}">
+                  </a>
+                  {% endif %}
+                  <div class="carousel-caption text-white">
+                    <h4>{{ product.name }}</h4>
+                    <!-- Product Price -->
+                    <p><strong>€ {{ product.price }}</strong></p>
+                    <!-- Product Category -->
+                    {% if product.category %}
+                    <p>
+                      <a class="text-white" href="{% url 'products' %}?category={{ product.category.name }}">
+                        <i class="fa-solid fa-tags mr-2"></i>{{ product.category.friendly_name }}
+                      </a>
+                    </p>
+                    {% endif %}
+                   </div>                  
+              </div>
+              {% endfor %}                                            
+          </div>
+          <!--Carousel Control Button Pre & Next-->
+          <a class="carousel-control-prev" href="#myIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+    </div>
+    <!--What We Do Title & Lists of App functions-->
+    <div class="col-md-5 mt-5 text-coffee">
+      <h3 class="title-font text-center">What We Do</h3>                         
+      <div class="col-6 offset-3">
+          <hr>                        
+      </div>
+      <!--Products with link to Products Pg-->
+      <div class="col-6 offset-3">                    
+          <h3><i class="fa-solid fa-mug-hot"></i><a class="text-coffee" style="text-decoration: none" href="{% url 'products' %}"> Products</a></h3>
+          <p>Browse through our Fantastic Range of Products</p>
+      </div>
+      <!--We Deliver-->
+      <div class="col-6 offset-3">
+          <h3><i class="fa-solid fa-truck-arrow-right"></i> We Deliver</h3>
+          <p>Get your Products Delivered to your Door</p>          
+      </div>
+       <!--Sign Up-->
+      <div class="col-6 offset-3">
+          <h3><i class="fa-solid fa-user-plus"></i><a class="text-coffee" style="text-decoration: none" href="{% url 'account_signup' %}"> Sign Up</a></h3>
+          <p>Register for an Account</p>
+          <p>To have your own Profile & Make Shopping Easier</p>
+          <p>Review our Products</p>
+      </div>
+      <!--Blog-->
+      <div class="col-6 offset-3">
+        <h3><i class="fa-solid fa-feather"></i><a class="text-coffee" style="text-decoration: none" href="{% url 'blog' %}"> Blog</a></h3>
+        <p>Read our Blog</p>
+        <p>Fantastic Tips & Links for Coffee Lovers</p>        
+      </div>
+      <!--News Letter-->
+      <div class="col-6 offset-3">
+          <h3><i class="fa-brands fa-mailchimp"></i> News Letter</h3>
+          <p>Subscribe to Our News Letter</p>
+          <p>Discover exclusive & New products, offers & Discounts</p>
+          <p>See Page Footer</p>
+      </div>
+    </div>                            
+  </div>
+</div>
 </section>
-
 {% endblock %}

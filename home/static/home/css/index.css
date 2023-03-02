@@ -15,3 +15,29 @@
     right: 0;
     top: 10%;   
 }
+
+/*Carasoule style*/
+.carousel-caption {
+    background-color:  rgba(0, 0, 0, 0.4);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+
+@media (max-width: 991px) {
+    h3 {
+        font-size: .9rem;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
+    .shop-now-button {
+        padding: .375rem .375rem;
+        font-size: .75rem;                     
+    }
+}
