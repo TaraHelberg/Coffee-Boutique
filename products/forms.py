@@ -1,5 +1,6 @@
 from django import forms
 from .widgets import CustomClearableFileInput
+from django_summernote.widgets import SummernoteWidget
 from .models import Product, Category, Review
 
 
@@ -9,6 +10,11 @@ class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         fields = '__all__'
+
+        widgets = {
+            'name': SummernoteWidget(),
+            'description': SummernoteWidget(),
+        }
 
     image = forms.ImageField(label='Image', required=False,
                              widget=CustomClearableFileInput)

@@ -1,8 +1,9 @@
 from django.contrib import admin
+from django_summernote.admin import SummernoteModelAdmin
 from .models import Product, Category, Review
 
 
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(SummernoteModelAdmin):
     """
     Product Admin Class
     Used & Modified slightly from Boutique Ado
@@ -12,6 +13,7 @@ class ProductAdmin(admin.ModelAdmin):
     search_fields = ['name', 'category']
     list_filter = ('created_on',)
     ordering = ('sku', 'created_on',)
+    summernote_fields = ('name', 'description')
 
 
 class CategoryAdmin(admin.ModelAdmin):
