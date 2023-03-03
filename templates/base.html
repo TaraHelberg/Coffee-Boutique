@@ -54,7 +54,7 @@
         <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
         <!--Mail Chimp Link-->
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>        
     {% endblock %}
 
     <!-- Extra JavaScript Block, for all JS not contained within the root static -->
@@ -158,14 +158,14 @@
     {% if messages %}
         <div class="message-container">
             {% for message in messages %}
-                 {% with message.level as level %}
+                {% with message.level as level %}
                     {% if level == 40 %}
                         {% include 'includes/toasts/toast_error.html' %}
                     {% elif level == 30 %}
                         {% include 'includes/toasts/toast_warning.html' %}
                     {% elif level == 25 %}
                         {% include 'includes/toasts/toast_success.html' %}
-                     {% else %}
+                    {% else %}
                         {% include 'includes/toasts/toast_info.html' %}
                     {% endif %}
                 {% endwith %}
@@ -182,12 +182,16 @@
     {% include "includes/footer.html" %}    
    
     {% block postloadjs %}
-    <script type="text/javascript">
-        $('.toast').toast('show');
+    <!--Toast Js-->
+    <script type="text/javascript" defer>
+       $(document).ready(function(){
+            $('.toast').toast('show');
+        })
     </script>
+    {% endblock %}
     
-    <!--Mail Chimp JS-->
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    {% block postloadjs2 %}
+    <!--Mail Chimp JS-->    
     <script type='text/javascript'>
         (function($) {
             window.fnames = new Array(); 
@@ -206,8 +210,7 @@
             ftypes[5]='birthday';
         }(jQuery));
         var $mcj = jQuery.noConflict(true);
-    </script>
-    
+    </script>    
     {% endblock %}
     
 </body>
