@@ -72,13 +72,15 @@
                                         </div>
                                     </div>
                                 </div>                
-                                {% endif %}                                        
+                                {% endif %}
+                                <div class="col text-center">
+                                    <a class="btn btn-coffee my-4 mr-4 text-decoration-none" href="{% url 'edit_blog' blog.slug %}">Read More</a>
+                                </div>                                        
                             </div>
                         </div>                                
                     </div>
                 </div>                       
-                {% endfor %}
-                </div>
+                {% endfor %}                
             </div>
         </div>
     </div>

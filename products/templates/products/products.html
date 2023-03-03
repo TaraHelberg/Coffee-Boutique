@@ -100,7 +100,10 @@
                                         <div class="col text-right del-product">
                                             <a class="btn-sm btn-danger my-2" href="{% url 'delete_product' product.id %}">Delete <i class="fa-solid fa-trash-can"></i></a>
                                         </div>
-                                        {% endif %}                                        
+                                        {% endif %}
+                                        <div class="col text-center my-2">
+                                            <a class="btn-sm btn-coffee my-2 text-decoration-none" href="{% url 'product_detail' product.id %}">View</a>
+                                        </div>                                        
                                     </div>
                                 </div>                                
                             </div>
