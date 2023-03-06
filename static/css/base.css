@@ -8,10 +8,11 @@ html {
     height: 100%;
 }
 
-/*general body style*/
+/* General Body Style */
 body {    
     font-family: 'Noto Serif Toto', sans-serif;
-    font-weight: 300;        
+    font-weight: 300;
+    background-color: #ffffed;        
 }
 
 /* Delivery Banner Style */
@@ -28,19 +29,19 @@ body {
 }
  
 
-/*All main Titles style*/
+/* All Main Titles style */
 
-/*Title Font Case Style*/
+/* Title Font Case Style */
 .title-font {
     text-transform: uppercase;    
 }
 
-/*Title Font Color*/
+/* Title Font Color */
 .text-coffee {
     color: #5f2f02 !important;
 }
 
-/* from Bulma - Icon stsyles */ 
+/* From Bulma - Icon stsyles */ 
 .icon {
     align-items: center;
     display: inline-flex;
@@ -49,14 +50,14 @@ body {
     width: 1.5em;
 }
 
-/*Main Title Link Header Style*/
+/* Main Title Link Header Style */
 .main-title-link {
     width: fit-content;
 }
 
-/*Button Style*/
+/* All Button Styles */
 
-/*Shop Now Button*/
+/* Shop Now Button */
 .shop-now-button {
     background: #5f2f02;
     color: white;   
@@ -100,22 +101,23 @@ body {
     color: #5f2f02;
 }
 
-/* Search Input Style*/
+/* Search Input Style */
 .border-coffee {
     border: 0.1em solid #5f2f02 !important;
 }
 
-/* Main-Naviagtion Style*/
+/* Main-Naviagtion Style */
 .dropdown-menu > a {
     color: #5f2f02 !important;
 }
 
-
+/* Category Badge Style */
 a.category-badge > span.badge:hover {
     background: #5f2f02 !important;
     color: #fff !important;
 }
 
+/* Category btt Style */
 .btt-button {
     height: 42px;
     width: 42px;
@@ -131,7 +133,7 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* ------------------------------- bootstrap toasts */
+/* --------- Bootstrap Toasts Style */
 
 .message-container {
     position: fixed;
@@ -148,7 +150,7 @@ a.category-badge > span.badge:hover {
     height: 2px;
 }
 
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+/* From CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
     height: 0; 
@@ -211,13 +213,16 @@ input[name='q']::placeholder {
 
 /* Mail Chimp Css Style */
 #mc_embed_signup {
-    background:#fff;
+    background:#ffffed;
     clear:left; 
     font:1em Helvetica,Arial,sans-serif;
-    width:22em;
+    width:20em;
     color: #5f2f02;
 }
 
+#brandingLogo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -228,6 +233,9 @@ input[name='q']::placeholder {
   }
 
   /* Allauth form formatting */
+  /* Allauth form formatting */
+
+/* Allauth form formatting */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
@@ -266,7 +274,7 @@ input[name='q']::placeholder {
     line-height: 1.5;
     border-radius: 0;
 
-    /* standard bootstrap btn transitions */
+    /* Standard Bootstrap btn Transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -309,7 +317,7 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-/* fixed top navbar only on medium and up */
+/* Fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -324,16 +332,16 @@ input[name='q']::placeholder {
     }
 }
   
-/* pad the top a bit when navbar is collapsed on mobile */
+/* Pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
+    body {
+        height: calc(100vh - 9em);
+    }
+    
     .header-container {
         padding-top: 9em;
     }
   
-    body {
-        height: calc(100vh - 9em);
-    }
-
     .display-4.title-font.text-coffee {
         font-size: 2rem;
     }
@@ -369,5 +377,5 @@ input[name='q']::placeholder {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
-
+    
 }

@@ -23,8 +23,10 @@
     <video id="coffeecup-video" src="{{ MEDIA_URL }}video/a-steaming-cup-of-coffee.mp4"  muted loop autoplay width="400"></video>
     <div class="video-title">
       <h3>THE NEW COLLECTIONS ARE HERE !</h3>
-      <p>Discover the best Coffee's & exclusive products</p>
-      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Shop Now</a>
+      <div class="d-none d-md-block">      
+        <p>Discover the best Coffee's & exclusive products</p>
+      </div>
+      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-1 text-uppercase py-3">Shop Now</a>       
     </div>
   </div>  
 </section>

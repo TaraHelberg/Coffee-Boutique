@@ -53,9 +53,9 @@
             <!-- Displays the total cost of items in the basket with 2 decimal points -->
             <p class="my-0">
                 {% if grand_total %}
-                    ${{ grand_total|floatformat:2 }}
+                    € {{ grand_total|floatformat:2 }}
                 {% else %}
-                    $0.00
+                    € 0.00
                 {% endif %}
             </p>
         </div>
