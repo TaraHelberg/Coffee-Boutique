@@ -22,10 +22,10 @@
             <hr>
         </div>
         <!--Blog Post -->
-        <div class="container col-10 offset-1">
+        <div class="container offset-1">
             <div class="row">
                 {% for blog in blogs %}
-                <div class="col-auto col-xl-6 mt-5">
+                <div class="col-auto col-md-5 mt-5">
                     <div class="card h-100">
                         <!--Blog Image-->
                         {% if blog.image %}
@@ -41,16 +41,17 @@
                         <!-- Blog Title -->
                         <div class="card-body pb-0">
                             <p class="mb-0 text-center"><strong>{{ blog.title }}</strong></p>
-                        </div>                                
+                        </div>
+                        <hr>                                
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">                                    
                                 {% if request.user.is_superuser %}
                                 <!-- Edit and Delete buttons is user is Superuser -->
                                 <div class="col edit-product">
-                                    <a href="{% url 'edit_blog' blog.slug %}" class="btn btn-success my-4 mr-4">Edit <i class="fa-solid fa-pencil"></i></a>
+                                    <a href="{% url 'edit_blog' blog.slug %}" class="btn-sm btn-success my-4 mr-2">Edit <i class="fa-solid fa-pencil"></i></a>
                                 </div>
                                 <div class="col text-right del-product">
-                                    <button type="button" class="btn btn-danger my-4 mr-4" data-toggle="modal" data-target="#deleteModal">Delete <i class="fa-solid fa-trash-can"></i></button>
+                                    <button type="button" class="btn-sm btn-danger my-1 mr-2" data-toggle="modal" data-target="#deleteModal">Delete <i class="fa-solid fa-trash-can"></i></button>
                                 </div>
                                 <!-- Modal for Delete Confirmation-->
                                 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
@@ -67,16 +68,16 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-coffee" data-dismiss="modal">Cancel</button>
-                                                <a class="btn btn-danger my-4 mr-4" href="{% url 'delete_blog' blog.slug %}">Delete <i class="fa-solid fa-trash-can"></i></a>
+                                                <a class="btn btn-danger my-3 mr-2" href="{% url 'delete_blog' blog.slug %}">Delete <i class="fa-solid fa-trash-can"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>                
-                                {% endif %}
-                                <div class="col text-center">
-                                    <a class="btn btn-coffee my-4 mr-4 text-decoration-none" href="{% url 'blog_detail' blog.slug %}">Read More</a>
-                                </div>                                        
+                                {% endif %}                                                                       
                             </div>
+                            <div class="col text-center">
+                                <a class="btn-sm btn-coffee mt-4 mr-2 text-decoration-none" href="{% url 'blog_detail' blog.slug %}">Read More <i class="fa-solid fa-book-open-reader"></i></a>
+                            </div> 
                         </div>                                
                     </div>
                 </div>                       
