@@ -48,3 +48,9 @@ def faq(request):
     """ A view to return the index page """
 
     return render(request, 'company_info/faq.html')
+
+
+def privacy_policy(request):
+    """ A view to return the privacy_policy page """
+
+    return render(request, 'company_info/privacy_policy.html')

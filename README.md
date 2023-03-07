@@ -2,9 +2,9 @@
 
 ![amiresponsive]()
 
-Live App link : [Coffee Boutique]()
+Live App link : [Coffee Boutique](https://coffee-boutique.herokuapp.com/)
 
-Git Hub Repository : [Coffee Boutique Repository]()
+Git Hub Repository : [Coffee Boutique Repository](https://github.com/TaraHelberg/Coffee-Boutique)
 
 Coffee Boutique is a online E-commerce website engaged in the selling of Coffee & associated Coffee Product. The store offers it's shoppers a wide range of Coffee as well as Coffee product such as machines, manual coffee makers, gift sets and even some treats for those with a sweet tooth.
 The App is aimed at all Coffee Lovers and shows it love of Coffee in its design and colour choice.
