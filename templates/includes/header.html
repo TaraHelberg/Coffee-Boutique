@@ -6,8 +6,8 @@
        <div class="col bg-gold">
            <h4 class="title-font text-coffee my-2"><strong>Free delivery on orders over  € {{ free_delivery_threshold }}!</strong></h4>                
        </div>            
-   </div>
-   <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">            
+    </div>
+    <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">            
        <!-- Products Search Form -->
        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">               
            <form method="GET" action="{% url 'products' %}">
@@ -43,12 +43,12 @@
                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
                        {% if request.user.is_authenticated %}
                            {% if request.user.is_superuser %}
-                               <a href="{% url 'add_product' %}" aria-label="Go to the product management Add Products page"class="dropdown-item">Add Product</a>
+                               <a href="{% url 'add_product' %}" aria-label="Go to the product management Add Products page" class="dropdown-item">Add Product</a>
                                <a href="{% url 'add_blog' %}" aria-label="Go to the product management Add Blogs page" class="dropdown-item">Add Blog</a>
                            {% endif %}
                            <a href="{% url 'profile' %}" aria-label="Go to the profile page" class="dropdown-item">My Profile</a>
                            <a href="{% url 'favourites' %}" class="dropdown-item">Favourites</a>
-                           <a href="{% url 'account_logout' %}" aria-label="Go to the accout logout page"class="dropdown-item">Logout</a>
+                           <a href="{% url 'account_logout' %}" aria-label="Go to the accout logout page" class="dropdown-item">Logout</a>
                        {% else %}
                            <a href="{% url 'account_signup' %}" aria-label="Go to the sign up page" class="dropdown-item">Register</a>
                            <a href="{% url 'account_login' %}" aria-label="Go to the login page" class="dropdown-item">Login</a>
@@ -73,9 +73,9 @@
                </li>
            </ul>
        </div>
-   </div>
-   <!-- Products Navigation -->
-   <div class="row bg-white">
+    </div>
+    <!-- Products Navigation -->
+    <div class="row bg-white">
        <nav class="navbar navbar-expand-lg navbar-light w-100">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -87,5 +87,5 @@
            {% include 'includes/main-nav.html' %}
            <!-- End of Main Navbar Includes -->
        </nav>
-   </div>       
+    </div>       
 </header>

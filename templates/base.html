@@ -62,9 +62,8 @@
     <title>Coffee Boutique {% block extra_title %}{% endblock %}</title>
 </head>
 <body>
-    
-     <!-- Include header -->
-     {% include 'includes/header.html' %}
+    <!-- Include header -->
+    {% include 'includes/header.html' %}
 
     <!-- Messages, linked to Toasts. Code From Boutique Ado -->
     {% if messages %}
@@ -94,36 +93,8 @@
     {% include "includes/footer.html" %}    
    
     {% block postloadjs %}
-    <!--Toast Js-->
-    <script type="text/javascript" defer>
-       $(document).ready(function(){
-            $('.toast').toast('show');
-        })
-    </script>
-    {% endblock %}
-    
-    {% block postloadjs2 %}
-    <!--Mail Chimp JS-->    
-    <script type='text/javascript'>
-        (function($) {
-            window.fnames = new Array(); 
-               window.ftypes = new Array();
-            fnames[0]='EMAIL';
-            ftypes[0]='email';
-            fnames[1]='FNAME';
-            ftypes[1]='text';
-            fnames[2]='LNAME';
-            ftypes[2]='text';
-            fnames[3]='ADDRESS';
-            ftypes[3]='address';
-            fnames[4]='PHONE';
-            ftypes[4]='phone';
-            fnames[5]='BIRTHDAY';
-            ftypes[5]='birthday';
-        }(jQuery));
-        var $mcj = jQuery.noConflict(true);
-    </script>    
-    {% endblock %}
+        {% include "includes/toast_mailchimp_js.html" %} 
+    {% endblock %} 
     
 </body>
 </html>
