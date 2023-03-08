@@ -17,7 +17,7 @@
 {% block content %}
     <div class="container-fluid">
         <!--Add & Remove Favourite Product -->
-        <div class="row">
+        <div class="row mt-5">
             {% if user.is_authenticated %}            
             <div class="col">
                 <h3 class="text-coffee">Am I a Favourite</h3>
@@ -71,9 +71,11 @@
                             <input type="radio" name="rating" id="rating1" value="0.5" required><label for="rating1" title="0.5" class="half"></label>
                         </div>
                         {% csrf_token %}
-                    <!--Page Links to Submit Recipe or Cancel to Leave page Redirect's to Browse-->
-                    <button type="submit" class="btn btn-coffee rounded-1">Submit</button>
-                    <button type="reset"  class="btn btn-coffee rounded-1">Cancel</button>                    
+                        <!--Page Links to Submit Recipe or Cancel to Leave page Redirect's to Browse-->
+                        <div class="justify-contenet-center">
+                            <button type="submit" class="btn btn-coffee rounded-1">Submit</button>
+                            <button type="reset"  class="btn btn-coffee rounded-1">Cancel</button>
+                        </div>                   
                     </form>                     
                     {% else %}
                     <!--If User not logged in-->
