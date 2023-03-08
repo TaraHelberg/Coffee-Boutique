@@ -36,7 +36,7 @@
                 <a href="{% url 'add_product' %}" aria-label="Go to the product management Add Products page" class="dropdown-item">Add Product</a>
                 <a href="{% url 'add_blog' %}" aria-label="Go to the product management Add Blogs page" class="dropdown-item">Add Blog</a>
             {% endif %}
-            <a href="#" class="dropdown-item">My Profile</a>
+            <a href="{% url 'profile' %}" aria-label="Go to the profile page" class="dropdown-item">My Profile</a>
             <a href="{% url 'favourites' %}" class="dropdown-item">Favourites</a>
             <a href="{% url 'account_logout' %}"  aria-label="Go to the accout logout page" class="dropdown-item">Logout</a>
         {% else %}

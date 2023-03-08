@@ -2,7 +2,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-<!--Css for this page only-->
+<!--Extra Css Home Page-->
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'home/css/index.css' %}">
 {% endblock %}
@@ -39,14 +39,14 @@
       <div class="col-6 offset-3">
         <hr>                        
       </div>
-      <!--Boostrap Carousel 4 Most Recent Recipes-->
+      <!--Boostrap Carousel 4 Most Recent Products Added-->
       <div id="myIndicators" class="carousel slide" data-ride="carousel">
           <!--Carousel Indicators-->
           <ol class="carousel-indicators">
-            <li data-bs-target="#myIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1"></li>
-            <li data-bs-target="#myIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
-            <li data-bs-target="#myIndicators" data-bs-slide-to="2" aria-label="Slide 3"></li>
-            <li data-bs-target="#myIndicators" data-bs-slide-to="3" aria-label="Slide 4"></li>
+            <li data-bs-target="#myIndicators" data-bs-slide-to="0" class="active" aria-label="{{ product.name }}"></li>
+            <li data-bs-target="#myIndicators" data-bs-slide-to="1" aria-label="{{ product.name }}"></li>
+            <li data-bs-target="#myIndicators" data-bs-slide-to="2" aria-label="{{ product.name }}"></li>
+            <li data-bs-target="#myIndicators" data-bs-slide-to="3" aria-label="{{ product.name }}"></li>
           </ol>
           <!--Carousel Inner displays 4 Most Recent Products-->
           <div class="carousel-inner">
