@@ -90,60 +90,105 @@ As an App Developer & Designer, I have tried to incorporate the needs of the Sho
 
 I have used the Agile method starting with the Epics from which the User Stories are propagated and Task required to complete the User Stories.
 
-### Epic : Navigation & Viewing 
+### Epic 1 : Navigation & Viewing 
 
-1.	Navigate around the site with ease .
-2.	Navigate to & view a list of Coffee products and choose accordingly.
-3.	Click on a Coffee product to read and view the details
-4.  Find Specific Category of Products to quickly find products interested in
-5.	View Coffee product Reviews so that I can read other Shopper opinions.
+As a Website Owner I require my Website to Have Navigation & the ability to view my products in a list form & detail. I additionally require my website to show my product Reviews, my shoppers should also have access to a Shopper Profile & shopper favourites page so that the Shoppers visiting my Website can navigate the site easily , see the products both as a list & in detail & view the product Reviews in order to make informed decisions about their purchases, Manage there personal details from a Profile page and be able to keep track of their favourite products
 
-### Epic : Registration & User Accounts
+1.	As a Shopper I can easily navigate around the website so that I can make use of the website to it's fullest. 
+2.	As a Shopper I can Navigate to & view a list of Coffee products & be able to choose accordingly so that I can see what is on offer and select what I want to purchase.
+3.	As a Shopper I can Click on a Coffee product to read and view the details so that I can make an informed decision as to if this is the coffee product I want to purchase.
+4.  As a Shopper I can navigate to & view specific category's of products so that quickly find products that I am interested in without looking through all the products.
+5.	As a Shopper I can navigate to Coffee product Reviews so that I can read other Shopper opinions.
+6.  As a Shopper I can navigate to My Favourite Products page with ease so that I can view My Favourite Products.
+7.  As a Shopper I can have a Favourite Products Page so that I can see my favourite products without having to search for them again.
+8.  As a Shopper I can Navigate to & View my User Profile so that I can manage my own details on & from this. - Done with User Accounts.
+9.  As a user / shopper I can easily find & get to the contact page so that I can fill out a contact form.
+10. As a Shopper / User I can find / navigate with ease to the frequently asked questions section so that I can find answers to common questions.
+11. As a Shop Owner I can give access / navigate to the copy right statement to users so that this information is available to them for the protection of my company. 
+12. Be able to  Navigate to &  Select & Read More of the Blog Post. - Epic 57 Blog Post 
 
-1.	Register for an account to avail of the services offered to members
-2.	Login & Logout of the website.
-3.	Recover my password easily if case I forget it .
-4.	Receive confirmation of my registration via email
-5.	Be given a personal profile that I can manage my own details on & from.
 
-### Epic : Review & Rate Products
+### Epic 2 : Registration & User Accounts
 
-1.	Review the Coffee Products .
-2.	Delete my Previous reviews.
-3.	Edit my Previous reviews.
-4.	Rate / change my rating on a Coffee Product.
+As a Website Owner I require my Website to have a Registration Account, login & out for those accounts a password recover system the ability to send confirmation of Registration and a personal profile for those that have Registered so that shoppers visiting my Website can Register for an account , login & out of that account receive confirmation of their registration and have a personal profile to add their own details to after registration so that they may use my Website to its fullest in order to Purchase my products
 
-### Epic : Sorting & Searching 
 
-1.	Search for Coffee products via name to find a specific product.
-2.	Sort through a list of available products
-3.	Sort via Categories for coffee products
-4.	Know easily what I have searched for & how many results I have gotten 
+1.	As a Shopper I can Register for an Account so that I am able to avail of the services offered to Registered members.
+2.	As a shopper I can easily Login & Logout of my Account so that I may able able to make use off my Registered Account.
+3.	As a Shopper I can Recover my Account Password easily so that should I forget it. I am able to recover it and login to my Account.
+4.	As a Shopper I can receive Confirmation of my Registration via email so that I know that I have registered properly and all is in order.
+5.	As a Shopper I can have a User Profile so that I can manage my own details on & from this
 
-### Epic : Purchasing & Check Out
 
-1.	Easily select a product size & quantity.
-2.	View what I have chosen in my shopping Cart
-3.	Be able to adjust quantity of my purchase in my shopping Cart.
-4.	Easily fill out the payment information & use the checkout system provided
-5.	Feel that my details are safe & secure
-6.	Get confirmation that my order has been processed after checkout.
-7.	Receive a Confirmation email for my order after I have checked out . 
+### Epic 3 : Review & Rate Products
 
-### Epic : Favourite Products
+As a Website Owner I require a Review section for my Products that can be updated or deleted & a rating system for my products so that shoppers can write Reviews, update and delete them should they chose to as well as been able to leave a rating of a product so that other shoppers can see what my existing customers thing of my products in order for me to see what they think , make alterations if necessary and in this way increase my product sales
 
-1.	Have a Favourite Products section so I can find them again
-2.	Have easy access to my Favourite Products – navigate to 
-3.	Easily add my favourite products
-4.	Easily delete products that I no longer favour
+1.	As a Shopper I can make a review on a Product so that I can let other shoppers know about the product I have previously brought.
+2.	As a Shopper I can delete a product review I have made so that I have more control over what I review & in case I picked a wrong product or change my mind about reviewing the product.
+3.	As a Shopper I can edit a product review I have made so that I have more control over what I review & in case I wish to change my mind on how I have worded my review or spot a mistake.
+4.	As a Shopper I can rate & un rate a product so that I can share my view of the product as a rating as this is quicker than writing a review.
 
-### Epic : Admin & Store Management
 
-1.	Login & Log out and have access to an Admin section via website
-2.	Add new product.
-3.	Edit a product.
-4.	Delete a product
-5.	Be able to add / update / delete a Discount Coupon
+### Epic 4 : Sorting & Searching
+
+As a Website Owner I require shoppers to be able to search for a product , sort through a list of products & product categories and see what they have searched for and how many results they have gotten so that shoppers can find the product they are looking for with ease in order to make their purchases 
+
+1.	As a Shopper I can Search for Coffee products via name so that I can find a specific product
+2.	As a Shopper I can sort through a list of available products so that I can easily & quickly find the product I am looking for.
+3.	As a Shopper I can sort through the Products via categories so that I can search for the product I want under its respective category to quickly & easily find the product I want.
+4.	As a Shopper I can easily what I have searched for & how many results I have gotten so that I can see the available products I have searched for and quickly find the product I want.
+
+
+### Epic 5 : Purchasing & Check Out
+
+As a Website Owner I require shoppers to have the option of selecting a product size & quantity, view what they have chosen to purchase, be able to adjust the qty of that purchase should they choose to be able to add payment information & checkout whilst feeling secure and sale. Confirmation of their order been processed and receive a confirmation email after check out so that shoppers on my website have control over the product they wish to purchase and adjust accordingly should they wish pay and checkout the items feeling safe and getting confirmation of what is happening with their purchase so that they can feel secure and happy with the process so that the shopper has control , feels safe and understands what is happening.
+
+1.	As a Shopper I can easily select a product size & quantity so that I can chose the size & quantity of the product I wish to purchase.
+2.	As a Shopper I can view what I have chosen in my shopping Cart so that I can keep track of my purchase before checkout.
+3.	As a Shopper I can adjust quantity of my purchase in my shopping Cart so that I have more control over my purchase before checkout.
+4.	As a Shopper I can easily fill out the payment information & use the checkout system provided so that I can purchase my selected product without any problems or undue stress.
+5.	As a Shopper I can feel that my details are safe & secure so that I can give my details without worrying & complete my purchase.
+6.	As a Shopper I can get confirmation that my order has been processed after checkout so that I know that the order has gone through & my purchase was successful.
+7.	As a Shopper I can receive a Confirmation email for my order after I have checked out so that I know that the purchase was successful & that I have proof of purchase. 
+
+
+### Epic 6 : Favourite Products
+
+As a Website Owner I require a place for my shoppers to add / store previously purchased favourite products be able to find those again and delete products from there should they find something they like better so that my shoppers can easily find what they like from a previous shopping experience and thus purchase the product again with ease.
+
+1.	As a Shopper I can navigate to My Favourite Products page with ease so that I can view My Favourite Products. - Navigation & Viewing Epic 1
+2.  As a Shopper I can have a Favourite Products Page so that I can see my favourite products without having to search for them again. - Navigation & Viewing Epic 1
+3.	As a Shopper I can easily add my favourite products so that I can find them again with ease.
+4.	As a Shopper I can delete a Favourite Product so that I have more control over my favourite products and am able to make adjustments as I wish to.
+
+### Epic 7 : Admin & Store Management
+
+As a Website Owner I require access login & out to Admin section from the Website so that the Admin can add, update or delete products as require.
+
+1.	As a Admin I can Login & Log out of the Admin section so that have access to an Admin section via website to perform Admin duties.
+2.	As a Admin I can Add new product so that I can keep the website Products up to date.
+3.	As a Admin I can Edit a Product so that I can update / edit any products on the website that might need it.
+4.	As a Admin I can Delete a Product so that I can delete any products on the website that are no longer needed to keep the website up to date.
+5.	Be able to add / edit / delete a Blog Post. - Epic 57 Blog Post 
+
+### Epic 8 : Company Info
+
+As a user / shopper I can easily find all relevant company information so that when I information from or about the company I can access it
+
+1.  As a user / shopper I can have a contact page & fill out a contact form for Coffee Boutique so that that I can request information or assistance as need.
+2.  As a user / shopper I can easily find & get to the contact page so that I can fill out a contact form.  - Epic 1 : Navigation & Viewing 
+3.  As a Shop Owner I can have a company copy right statement so that my company website content is secure.
+4.  As a Shop Owner I can give access / navigate to the copy right statement to users so that this information is available to them for the protection of my company - Epic 1 : Navigation & Viewing 
+5.  As a Shop Admin / User I can have a list of frequently asked questions so that shoppers / users can get answers to questions that are asked often.
+6.  As a Shopper / User I can find / navigate with ease to the frequently asked questions section so that I can find answers to common questions.  - Epic 1 : Navigation & Viewing 
+
+### Epic 9 : Blog Post 
+
+As a Shop Admin I can Add , Update & Delete articles Blog Post so that I can keep my customers engaged, supply updates and direct them to interesting coffee information
+
+1. As a Shop Admin I can Add , Update & Delete articles Blog Post so that I can keep my customers engaged, supply updates and direct them to interesting coffee information.
+2. Be able to  Navigate to &  Select & Read More of the Blog Post.
 
 
 [Back to top ⇧](#contents)
