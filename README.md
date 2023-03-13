@@ -195,9 +195,10 @@ As a Shop Admin I can Add , Update & Delete articles Blog Post so that I can kee
 
 ## Agile Method Git Projects
 
-GitHub projects was used to manage the development process using an agile approach. Please see link to project [Kanban Board]()
+GitHub projects was used to manage the development process using an agile approach. Please see link to project [Kanban Board](https://github.com/TaraHelberg/Coffee-Boutique/issues?q=is%3Aissue+is%3Aclosed)
 
 Not all Epics have made it into the project using the MSCW Method you will find on the Kanban Must have’s, Should Have’s, Could Have's and Won’t have labels. 
+The won’t have labelled sections are those that did not make it into the App due to time constraint
 
 ## Future Features
 
