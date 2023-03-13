@@ -210,6 +210,14 @@ The won’t have labelled sections are those that did not make it into the App d
 
 ## Colour Scheme
 
+As I decided to do my e-commerce app on Coffee & Coffee Products as a Coffee Lover myself I decided to go with tradional colours that are associated with coffee and complement each other natrualy.
+Chooseing to got with a Main text color of Coffee , Background colour of cream and for enhancment and effect Gold for the Deliver Banner and hover / button colour changes.
+White text has been used where applicable for visablity.
+
+It was decided that when in use the Shopping cart icon had a very distinct in use color.
+
+It was also decide that in the Blog for external links & content credit links that they have a color of there own so as to be more visabile.
+
 ## Images
 
 ### Images Credit for Project
