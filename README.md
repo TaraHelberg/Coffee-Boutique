@@ -1,6 +1,6 @@
 # Coffee Boutique 
 
-![amiresponsive]()
+![amiresponsive](assets/readme-images/amiresponsive.png)
 
 Live App link : [Coffee Boutique](https://coffee-boutique.herokuapp.com/)
 
