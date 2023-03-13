@@ -1,6 +1,8 @@
+<!--FAQ Page-->
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Page header block to pushing down below Delivery Banner & Navigation -->
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -12,20 +14,26 @@
 {% block content %}
 <section>
   <div class="container">
+    <!-- Page Title -->
     <hr>        
     <h4 class="title-font text-coffee text-center mt-5">Contact Us</h4>                
     <hr> 
      <!-- Frequently Asked Questions -->       
     <div class="text-coffee px-4" id="accordion">
+        <!-- Card Holds Question - Head & Drops Down to Answer - Body -->
         <div class="card mt-5">
+          <!--Card Header Holds Question-->
           <div class="card-header bg-gold" id="headingOne">
             <h5 class="mb-0">
+              <!--Question Button Collaspse-->
               <button class="btn btn-link text-coffee" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Do I need to register to place an order ?
               </button>
             </h5>
-          </div>      
+          </div>
+          <!--Collapsable Card Holding Answer -->      
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <!--Card Body Holds Answer-->
             <div class="card-body">
               <p>You don't need to register or sign in to order. Instead you can checkout as a
                 'Guest'</p>
@@ -38,30 +46,40 @@
             </div>
           </div>
         </div>
+        <!-- Card Holds Question & Drops Down to Answer -->
         <div class="card mt-4">
+          <!--Card Header Holds Question-->
           <div class="card-header bg-gold" id="headingTwo">
+            <!--Question Button Collaspse-->
             <h5 class="mb-0">
               <button class="btn btn-link collapsed text-coffee" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 How much does delivery cost ?
               </button>
             </h5>
           </div>
+          <!--Collapsable Card Holding Answer -->  
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <!--Card Body Holds Answer-->
             <div class="card-body">
                 <p>Delivery is <strong>free</strong> when you spend over € 50.</p>
                 <p> Otherwise it is 10% of your total purchase.</p>
             </div>
           </div>
         </div>
+        <!-- Card Holds Question & Drops Down to Answer -->
         <div class="card mt-4">
+          <!--Card Header Holds Question-->
           <div class="card-header bg-gold" id="headingThree">
             <h5 class="mb-0">
+              <!--Question Button Collaspse-->
               <button class="btn btn-link collapsed text-coffee" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 When will I receive my order ?
               </button>
             </h5>
           </div>
+          <!--Collapsable Card Holding Answer -->  
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <!--Card Body Holds Answer-->
             <div class="card-body">
                 <p class="card-text"> If your order is 2kg or less it will be sent using .. post service
                     Services, if over 2kg via ... courier service.</p>
@@ -69,16 +87,21 @@
                 <p>For international orders this might take up to 2 weeks or longer depending on where you have placed your order from</p>    
             </div>
           </div>
-        </div>        
+        </div>
+        <!-- Card Holds Question & Drops Down to Answer -->        
         <div class="card mt-4">
+            <!--Card Header Holds Question-->
             <div class="card-header bg-gold" id="headingFour">
+              <!--Question Button Collaspse-->
               <h5 class="mb-0">
                 <button class="btn btn-link collapsed text-coffee" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     Can I make changes to my order ?
                 </button>
               </h5>
             </div>
+            <!--Collapsable Card Holding Answer -->  
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <!--Card Body Holds Answer-->
               <div class="card-body">
                 <p>Before check out Yes you can </p>
                 <p> Once an order has been paid for and processed, we are unable to change it.
@@ -88,15 +111,20 @@
               </div>
             </div>
         </div>
+        <!-- Card Holds Question & Drops Down to Answer -->
         <div class="card mt-4">
+            <!--Card Header Holds Question-->
             <div class="card-header bg-gold" id="headingFive">
               <h5 class="mb-0">
+                <!--Question Button Collaspse-->
                 <button class="btn btn-link collapsed text-coffee" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     Is your website secure ?
                 </button>
               </h5>
             </div>
+            <!--Collapsable Card Holding Answer -->  
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <!--Card Body Holds Answer-->
               <div class="card-body">
                 <p> Yes. The Coffee Boutique is committed to protecting your privacy and
                     promises not to share any information we collect with any third party.</p>
@@ -106,15 +134,20 @@
               </div>
             </div>
         </div>
+        <!-- Card Holds Question & Drops Down to Answer -->
         <div class="card mt-4">
+            <!--Card Header Holds Question-->
             <div class="card-header bg-gold" id="headingSix">
               <h5 class="mb-0">
+                <!--Question Button Collaspse-->
                 <button class="btn btn-link collapsed text-coffee" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                     I'm having issues logging into my account 
                 </button>
               </h5>
             </div>
+            <!--Collapsable Card Holding Answer -->  
             <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+              <!--Card Body Holds Answer-->
               <div class="card-body">
                 <p>If is possible you have checked out as a 'Guest' in which case you will need to
                    register for an account  .. link account registration here !!</p>

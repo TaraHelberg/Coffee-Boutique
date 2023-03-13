@@ -1,11 +1,14 @@
+<!-- Code from Institute Boutique Ado follow along project slightly modified -->
 <!-- Main Navigation -->
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <!-- Link Home Pg -->
         <li class="nav-item ">
             <a class="title-font font-weight-bold nav-link text-coffee mr-3" href="{% url 'home' %}" aria-label="Go to the product management page">
                 Home
             </a>            
         </li>
+        <!-- Link Drop Down Products by All, Category, Price Pgs -->
         <li class="nav-item dropdown">
             <a class="title-font font-weight-bold nav-link text-coffee mr-3" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
@@ -16,6 +19,7 @@
                 <a href="{% url 'products' %}?sort=price&direction=asc" aria-label="Go to Product by Price" class="dropdown-item">By Price</a>               
             </div>
         </li>
+        <!-- Link Drop Down Coffee Products Pgs -->
         <li class="nav-item dropdown">
             <a class="title-font font-weight-bold nav-link text-coffee mr-3" href="#" id="coffee-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Coffee
@@ -27,6 +31,7 @@
                 <a href="{% url 'products' %}?category=coffee_capsule_pods" class="dropdown-item">Coffee Capsule Pods</a>                
             </div>
         </li>
+        <!-- Link Drop Down Coffee Machines Products Pgs -->
         <li class="nav-item dropdown">
             <a class="title-font font-weight-bold nav-link text-coffee mr-3" href="#" id="coffeemachines-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Coffee Machines
@@ -38,6 +43,7 @@
                 <a href="{% url 'products' %}?category=espresso_machines" class="dropdown-item">Espresso</a>
             </div>
         </li>
+        <!-- Link Drop Down Accessories Products Pgs -->
         <li class="nav-item dropdown">
             <a class="title-font font-weight-bold nav-link text-coffee mr-3" href="#" id="accessories-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Accessories
@@ -48,6 +54,7 @@
                 <a href="{% url 'products' %}?category=manual_coffee_makers" class="dropdown-item">Manual Coffee Makers</a>                
             </div>
         </li>
+        <!-- Link Drop Down Gifts & Treats Products Pgs -->
         <li class="nav-item dropdown">
             <a class="title-font font-weight-bold nav-link text-coffee mr-3" href="#" id="gifts&treats-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Gifts & Treats
@@ -58,6 +65,7 @@
                 <a href="{% url 'products' %}?category=coffee_treats" class="dropdown-item">Treats</a>                
             </div>
         </li>
+        <!-- Link Drop About Pgs -->
         <li class="nav-item dropdown">
             <a class="title-font font-weight-bold nav-link text-coffee mr-3" href="#" id="about-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About

@@ -1,3 +1,4 @@
+<!-- Product Deatil Page -->
 {% extends "base.html" %}
 {% load static %}
 
@@ -5,14 +6,13 @@
     <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
 {% endblock %}
 
-<!-- Block Page Header -->
+<!-- Page header block to pushing down below Delivery Banner & Navigation -->
 {% block page_header %}
     <div class="container header-container">
         <div class="row">            
         </div>
     </div>
 {% endblock %}
-<!-- End Block Page Header -->
 
 {% block content %}
     <div class="container-fluid">
@@ -33,9 +33,10 @@
             </div>
             {% endif %}
         </div>
-        <!--Product with Full details-->
+        <!--Product with Full details,Review & Add to Cart-->
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <!-- Product Image -->
                 <div class="image-container my-5">
                     <!--Product Image-->
                     {% if product.image %}
@@ -49,14 +50,17 @@
                         </a>
                     {% endif %}
                 </div>
+                <!-- Product Review -->
                 <div>                    
                     <h4 class="text-coffee">Leave a Review</h4>
                     <!--If User is Logged In-->
                     {% if user.is_authenticated %}
+                    <!--Review & Rating Form-->
                     <form method="POST" action="{% url 'add_review' product.id %}">
                         {{ form | crispy }}                
                         <textarea name="review" id="review" class="form-control review-box" cols="10" rows="5" required></textarea>
                         <br>
+                        <!-- Rating From Rathan Kumar's YouTube Tutorial.-->
                         <h6>Rate:</h6>
                         <div class="rate">
                             <input type="radio" name="rating" id="rating10" value="5" required checked="checked"><label for="rating10" title="5"></label>
@@ -71,7 +75,7 @@
                             <input type="radio" name="rating" id="rating1" value="0.5" required><label for="rating1" title="0.5" class="half"></label>
                         </div>
                         {% csrf_token %}
-                        <!--Page Links to Submit Recipe or Cancel to Leave page Redirect's to Browse-->
+                        <!--Page Links to Submit Review or Cancel-->
                         <div class="justify-contenet-center">
                             <button type="submit" class="btn btn-coffee rounded-1">Submit</button>
                             <button type="reset"  class="btn btn-coffee rounded-1">Cancel</button>
@@ -85,7 +89,8 @@
                     </div>
                     {% endif %}                  
                 </div>                                               
-            </div>                  
+            </div>
+            <!-- Product Details & Add to Cart-->                  
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <!-- Product Name -->
@@ -120,8 +125,9 @@
                                     </select>
                                 </div>
                             {% endif %}
+                            <!-- Qty Control -->
                             <div class="col-12">
-                                <!--Qty Control-->
+                                <!--Qty Control Form-->
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group input-group-{{ product.id }}">
@@ -147,6 +153,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Keep Shopping and Add to Cart buttons -->
                             <div class="col{% if s %}-12 mt-2{% endif %}">                                
                                 <a href="{% url 'products' %}" class="btn btn-outline-coffee rounded-1 mt-5">
                                     <span class="icon">
@@ -164,24 +171,29 @@
             </div>            
         </div>               
         <hr>
-        <!--Customer Reviews of Products-->
+        <!--Displays Customer Reviews of Products-->
         <div class="container-fluid">
+            <!--Shows Total Number of Reviews -->
             <div class="row">                
                 <h4 class="text-coffee">Customer Reviews : {{total_reviews}}</h4>              
             </div>
+            <!--Shows Full Review/s -->
             <div class="row">
                 {% for review in reviews %}
                 <div class="col">
                     <article class="box mb-3">
+                        <!--Shows Review Created On Date & Who wrote Review-->
                         <div>
                             <span class="text-muted small">{{review.created_on}}</span>
                             <h6 class="mb-1">{{ review.user }}</h6>
                         </div>
+                        <!--Shows Review Writen by User-->
                         <div class="mt-2">
                             <p>
                                 {{review.review}}
                             </p>
                         </div>
+                        <!--Shows Star rating done by User-->
                         <div class="rating-star">
                             <span>
                                 <i class="fa fa-star{% if review.rating == 0.5 %}-half-o{% elif review.rating < 1 %}-o {% endif %}" aria-hidden="true"></i>
@@ -207,7 +219,7 @@
                         There are Currently No Reviews for this Product.
                     </div>  
                 </div>                                                           
-            {% endfor %}                              
+                {% endfor %}                              
             </div>                   
         </div>       
     </div>

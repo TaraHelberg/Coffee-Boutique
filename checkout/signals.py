@@ -8,6 +8,7 @@ from .models import OrderLineItem
 def update_on_save(sender, instance, created, **kwargs):
     """
     Update order total on lineitem update/create
+    Credit : Code Institutes Boutique Ado project
     """
     instance.order.update_total()
 
@@ -16,5 +17,6 @@ def update_on_save(sender, instance, created, **kwargs):
 def update_on_delete(sender, instance, **kwargs):
     """
     Update order total on lineitem delete
+    Credit : Code Institutes Boutique Ado project
     """
     instance.order.update_total()

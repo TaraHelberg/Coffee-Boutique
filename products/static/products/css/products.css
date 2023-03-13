@@ -13,6 +13,7 @@
     float: right;
 }
 
+/* Rating From Rathan Kumar's YouTube Tutorial.*/
 /* Showing the stars */
 .rate > label:before {
     display: inline-block;

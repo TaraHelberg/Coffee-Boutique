@@ -1,6 +1,8 @@
+<!-- Edit Product Page -->
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Page header block to pushing down below Delivery Banner & Navigation -->
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -11,6 +13,7 @@
 
 {% block content %}    
     <div class="container">
+        <!-- Page Title & Sub Title-->      
         <h2 class="title-font text-coffee text-center mt-5">Product Management</h2>
         <hr>
         <h4 class="text-muted text-coffee text-center">Edit a Product</h4>                
@@ -40,7 +43,9 @@
 
 {% block postloadjs %}
     {{ block.super }}
+    <!--Code Institute Boutique Ado credit JS--> 
     <script type="text/javascript">
+         // Shows Image Changed / Added
         $('#new-image').change(function() {
             var file = $('#new-image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);

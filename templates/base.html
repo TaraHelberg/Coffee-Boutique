@@ -19,7 +19,7 @@
 
      
 
-     <!-- Core CSS Links, -->
+    <!-- Core CSS Links, -->
     {% block corecss %}
         <!-- Bootstrap CSS Link -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -62,7 +62,7 @@
     <title>Coffee Boutique {% block extra_title %}{% endblock %}</title>
 </head>
 <body>
-    <!-- Include header -->
+    <!-- Include Header -->
     {% include 'includes/header.html' %}
 
     <!-- Messages, linked to Toasts. Code From Boutique Ado -->
@@ -84,14 +84,18 @@
         </div>
     {% endif %}
 
+    <!-- Header Block -->
     {% block page_header %}
     {% endblock %}
 
+    <!-- Block content Templates extended into -->    
     {% block content %}
     {% endblock %}
 
+    <!-- Include Footer -->
     {% include "includes/footer.html" %}    
-   
+
+    <!-- Include Javascript html -->
     {% block postloadjs %}
         {% include "includes/toast_mailchimp_js.html" %} 
     {% endblock %} 

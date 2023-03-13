@@ -1,10 +1,13 @@
+<!-- Profile Page -->
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Additional CSS -->
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
+<!-- Page header block to pushing down below Delivery Banner & Navigation -->
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -16,6 +19,7 @@
 {% block content %}    
     <div class="container">
         <div class="row">
+            <!-- Page Title -->
             <div class="col text-center">
                 <hr>
                 <h2 class="title-font text-coffee mb-4">My Profile</h2>

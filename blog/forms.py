@@ -4,6 +4,9 @@ from .models import Blog
 
 
 class BlogForm(forms.ModelForm):
+    """
+    Blog Post Form
+    """
     class Meta:
         model = Blog
         fields = [

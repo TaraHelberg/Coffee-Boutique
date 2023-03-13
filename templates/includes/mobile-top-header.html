@@ -1,3 +1,4 @@
+<!-- Code from Institute Boutique Ado follow along project slightly modified -->
 <!-- Mobile Top Header with Navbar, Search, Account & Shopping Cart -->
 <!-- Products Search Form -->
 <ul class="mt-3">
@@ -34,7 +35,9 @@
             </div>
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="user-options">
+            <!--If User is Logged In-->
             {% if request.user.is_authenticated %}
+                <!--If User is Admin / Superuser-->
                 {% if request.user.is_superuser %}
                     <a href="{% url 'add_product' %}" aria-label="Go to the product management Add Products page" class="dropdown-item">Add Product</a>
                     <a href="{% url 'add_blog' %}" aria-label="Go to the product management Add Blogs page" class="dropdown-item">Add Blog</a>
@@ -42,6 +45,7 @@
                 <a href="{% url 'profile' %}" aria-label="Go to the profile page" class="dropdown-item">My Profile</a>
                 <a href="{% url 'favourites' %}" class="dropdown-item">Favourites</a>
                 <a href="{% url 'account_logout' %}"  aria-label="Go to the accout logout page" class="dropdown-item">Logout</a>
+            <!--If User is Not Logged In-->    
             {% else %}
                 <a href="{% url 'account_signup' %}" aria-label="Go to the sign up page" class="dropdown-item">Register</a>
                 <a href="{% url 'account_login' %}" aria-label="Go to the login page" class="dropdown-item">Login</a>

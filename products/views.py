@@ -11,7 +11,7 @@ from .forms import ProductForm, ReviewForm
 def all_products(request):
     """
     A view to show all products, including sorting and search queries
-    Credit : Code Institutes Boutique Ado project
+    Credit : Code Institutes Boutique Ado project used & modified
     """
 
     products = Product.objects.all()

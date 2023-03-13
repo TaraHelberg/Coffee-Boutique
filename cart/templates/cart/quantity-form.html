@@ -3,6 +3,7 @@
     {% csrf_token %}
     <div class="form-group">
         <div class="input-group input-group-{{ item.item_id }}">
+            <!-- Takes a Item off -->
             <div class="input-group-prepend">
                 <button class="decrement-qty btn btn-sm btn-coffee rounded-1 decrement-qty_{{ item.item_id }} 
                     {% if item.size %}decrement-size_{{ item.item_id }}_{{ item.size }}{% endif %}" 
@@ -11,11 +12,12 @@
                         <i class="fas fa-minus fa-sm"></i>
                     </span>
                 </button>
-            </div>
+            </div>           
             <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }} 
                 {% if item.size %}size_{{ item.item_id }}_{{ item.size }}{% endif %}" type="number"
                 name="quantity" value="{{ item.quantity }}" min="1" max="99"
                 data-item_id="{{ item.item_id }}" data-size="{{ item.size }}">
+            <!-- Adss a Item  -->                    
             <div class="input-group-append">
                 <button class="increment-qty btn btn-sm btn-coffee rounded-1 increment-qty_{{ item.item_id }} 
                     {% if item.size %}increment-size_{{ item.item_id }}_{{ item.size }}{% endif %}"
@@ -31,5 +33,6 @@
         </div>
     </div>
 </form>
+<!-- Update Qty or Remove Item from Cart -->
 <a class="update-link text-info"><small>Update</small></a>
 <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>

@@ -1,8 +1,9 @@
+<!-- Log Out Page -->
 {% extends "account/base.html" %}
 
 {% load i18n %}
 
-<!--To push down below nav-->
+<!-- Page header block to pushing down below Delivery Banner & Navigation -->
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -16,18 +17,21 @@
 {% block content %}
 <div class="container-fluid text-coffee">
   <div class="row justify-contenet-center">
+    <!-- Page Title & Redirect Link & question  -->
     <div class="col-md-8 offset-md-2 text-center">
       <hr>
       <h2 class="title-font mb-4">{% trans "Sign Out" %}</h2>
       <hr>
       <p>{% trans 'Are you sure you want to <i class="fa-solid fa-user-minus"></i> Sign Out?' %}</p>
     </div>
+    <!-- Log Out Form -->
     <div class="col-md-8 offset-md-5">
       <form method="post" action="{% url 'account_logout' %}">
         {% csrf_token %}
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
         {% endif %}
+        <!-- Links redirect to Home or Submit Log Out -->
         <a class="btn btn-outline-coffee rounded-1" href="{% url 'home' %}">Cancel</a>
         <button class="btn btn-coffee rounded-1" type="submit">{% trans 'Sign Out' %}</button>
       </form>

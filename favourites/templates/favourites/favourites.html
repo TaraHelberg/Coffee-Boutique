@@ -1,6 +1,8 @@
+<!--Favourites Page-->
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Page header block to pushing down below Delivery Banner & Navigation -->
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -12,6 +14,7 @@
 {% block content %}
 <section>
   <div class="container-fluid">
+    <!-- Page Title -->   
     <h1 class="title-font text-coffee text-center mt-5">Favourites</h1>
     <hr>
     <!--Favourite Products-->
@@ -19,6 +22,7 @@
       <div class="row">
         {% for product in is_favourite %}
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-5">
+            <!--Displays Favourite Products-->
             <div class="card h-100">
               <!--Product Image-->
               {% if product.image %}

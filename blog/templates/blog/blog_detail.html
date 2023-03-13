@@ -2,7 +2,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-
+<!-- Page header block to pushing down below Delivery Banner & Navigation -->
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -14,6 +14,7 @@
 {% block content %}
 <div class="container mb-2">
     <div class="row">
+        <!-- Page Title & Sub Title -->
         <div class="col">
             <hr>
             <h2 class="title-font text-coffee text-center"><i class="fa-solid fa-mug-hot"></i> Coffee Boutique Blog <i class="fa-solid fa-mug-hot"></i></h2>
@@ -37,10 +38,12 @@
                     </a>
                     {% endif %}
                 </div>
+                <!-- Blog Post Content -->
                 <div class="col-auto">
                     {{ blog.content | safe }}
                 </div>               
             </div>
+            <!--  Edit and Delete buttons is user is Superuser & Link Button to go back Blog -->
             <div class="row justify-content-center mt-5">                                                              
                 {% if request.user.is_superuser %}
                 <!-- Edit and Delete buttons is user is Superuser -->                
@@ -67,7 +70,7 @@
                   </div>
                 </div>                
                 {% endif %}
-                <!-- Link to go back Blog -->  
+                <!-- Link Button to go back Blog -->  
                 <a href="{% url 'blog' %}" class="btn btn-outline-coffee rounded-1 my-4">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>

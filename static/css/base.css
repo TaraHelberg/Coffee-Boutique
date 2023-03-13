@@ -28,7 +28,6 @@ body {
         #814E01 100%);
 }
  
-
 /* All Main Titles style */
 
 /* Title Font Case Style */
@@ -55,7 +54,7 @@ body {
     width: fit-content;
 }
 
-/* All Button Styles */
+/* Button Styles */
 
 /* Shop Now Button */
 .shop-now-button {
@@ -126,7 +125,7 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-
+/* Cusrosr style */
 .btt-link,
 .update-link,
 .remove-item {
@@ -220,9 +219,6 @@ input[name='q']::placeholder {
     color: #5f2f02;
 }
 
-#brandingLogo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -231,9 +227,6 @@ input[name='q']::placeholder {
       max-width: 80%;
     }
   }
-
-  /* Allauth form formatting */
-  /* Allauth form formatting */
 
 /* Allauth form formatting */
 
@@ -290,7 +283,6 @@ input[name='q']::placeholder {
 }
 
 /* Product Form */
-
 .btn-file {
     position: relative;
     overflow: hidden;
