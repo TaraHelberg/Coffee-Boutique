@@ -509,9 +509,14 @@ The diagram below details the <details><summary>Database Flow Chart:</summary>
 
 ## User Authentication
 
+Django's Login Required has been used to make sure that any requests to access secure pages by non-authenticated users / Authors are redirected. Django's Login Required have been used to limit access based on permissions. Eg: To ensure Admin can only Add / Update / Delete Produts & Blogs or Logged In Shoppers can Add / Update / Delete Reviews & Ratings for which they are the User / Shopper.
+
+If the User /Author doesn't pass the test they are shown to the 403 Forbidden Error.
     
 ## Form Validation
-    
+
+If incorrect or empty information / data is added to a From, the Form won't submit and a warning will appear to the User / Shopper informing them what field raised the error
+
 
 ## Database Security
 
@@ -519,15 +524,21 @@ The Database URL and secret key are stored in the env.py file to prevent unwante
 
 Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App.
     
-## Custom error pages:
+## Custom error pages: 
 
-Custom Error Pages have been created to give the User / Author more information and help redirect them when an should an Error occur. These pages are provided with Redirect Buttons to appropriate areas of the App.
+Custom Error Pages have been created to give the User / Shopper more information and help redirect them when an should an Error occur. These pages are provided with Redirect Buttons to appropriate areas of the App.
 
 403 Error page shown as an Example of what the Error pages present to the User / Author.
 
 <details><summary>Error Page Example Imagery</summary>
 
+![400]()
+
 ![403]()
+
+![404]()
+
+![500]()
 
 </details>
 
