@@ -25,6 +25,12 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
       * [Font](#fonts)
       * [Wireframes(Balsamiq Wireframes)](#balsamiq-wireframes)
       * [Data Modal](#data-modal)
+   * [Web Marketing Strategy](#web-marketing-strategy) 
+      * [Search Engine Optimisation(SEO)](#search-engine-optimisation-seo)
+      * [XML Sitemap](#xml-sitemap)
+      * [Robots](#robots)
+      * [MailChimp Newsletter](#mailchimp-newsletter)
+      * [Facebook Page](#facebook-page)
    * [Security Features and Defensive Design](#security-features-and-defensive-design)
       * [User Authentication](#user-authentication)
       * [Form Validation](#form-validation)
@@ -502,6 +508,78 @@ Django AllAuth was used for the user authentication system.
 The diagram below details the <details><summary>Database Flow Chart:</summary>
 ![Database Flow Chart ](assets/readme-images/imagefile_name.png)
 </details>
+
+[Back to top ⇧](#contents)
+
+# Web Marketing Strategy
+
+Web Marketing Strategy was used in the building of this App using the insights gained as part of the Design Thinking phase, Keyword research, SEO , Xml Sitempap , Robots.txt file, Mail Chimp & Facebook. I have introduced these specific features to aid in the marketing of the Buisness.  
+
+## Search Engine Optimisation (SEO)
+
+SEO was carried out for this business idea in order to start to understand how most people would find this website app via a search engine. As this is the most common way to find a business online it’s good practice to cover SEO to make sure the site is accessible by search engines by finding & useing Keywords
+
+Brainstorming of the general topic of Coffee , at the start of this Brainstorming it was understood from the business model that it was to be based on a B2C strategy and this helped with the focus and direction of keyword searching.
+The process followed the recommend steps of a general topic brain storm followed by a Brain dump of possible keywords for each general topic and using the google search.
+The Keywords selection was made by tracking what is trending and  looking into what keywords competitors are using. 
+
+* Keywords
+
+  Keyword research was carried out for the business idea and is an ongoing task that involves checking Google results/tools as well as keeping an eye out when searching for the helpful hints such as what most people searched for and auto typing in the search bar, [wordtracker.com](https://www.wordtracker.com/) I evaluated which would be competitive, relevant, authoritative and trustworthy. 
+
+  Giving us a selection of both the Short-Tail Keywords & Long-Tail Keywords that are relevant , will assist the customer in finding our Business online and help with the Websites search ranking.
+
+  Using the information gathered to ensure our meta tags and descriptions have relevant information and keywords as well as using our chosen keywords within the flow of the content of our website. 
+
+  A list of suggested Short-Tail & Long tail Keywords - These are but a few as an example as Coffe is such a common and well Loved Product the list is extensive and covers most if not all that I have used within my App. 
+
+**_Short-tail Keywords_**
+* Coffee bean/s
+* Coffee Pods
+* Ground coffee
+* Coffee machines
+* Coffee mug
+* Coffee cup
+* Coffee grinder
+
+**_Long-tail Keywords_**
+* Hand Roasted coffee beans 1kg
+* Organic coffee beans
+* Arabica coffee ground
+* Drip coffee maker
+* coffee machine esspresso, all rounder ,
+* Fresh coffee beans near me
+* How to brew the perfect coffee
+* Buy coffee beans online
+
+## XML Sitemap
+
+The website App also has a sitemap file with a list of important URLs was in order to help the  search engines spiderbots to crawl the business website faster and fetch all relevant content.
+
+## Robots 
+
+The use of robots.txt file has been applied to allow search engine spiderbots  where not to go on the website and increase the quality of the site, ultimately improving the SEO rating.
+
+## MailChimp Newsletter
+
+MailChimp Newsletter was used to encouraged to signup for newsletters, discounts and information about the products sold at Coffee Boutique. The signup form is available on the website footer and is present on any page. The email subscription service is run through Mailchimp, allowing the website admin to send marketing emails through the platform, increasing engagement within the site. Those who subscribe can unsubsribe with ease should they choose to.
+
+## Facebook Page
+
+When it came to social media marketing a Facebook & Instagram where chosen as the start for a social media campagin.
+
+A Facebook page was created in order to Market the Website Buisness online & an Instagram is still pending for development.
+
+Both Social media are accessed from the Footer and are present on all pages of the App.
+
+It was decided that this was and is quite possibly one of the leading means of Social media marketing in the world and has a large target audience.
+
+<details><summary>Coffee Boutique FaceBook Page </summary>
+
+FaceBook Page ![ FaceBook Page ](assets/readme-images/FaceBook-pg.jpeg)
+
+</details>
+
 
 [Back to top ⇧](#contents)
 
