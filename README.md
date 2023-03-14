@@ -500,7 +500,7 @@ Django AllAuth was used for the user authentication system.
 
 
 The diagram below details the <details><summary>Database Flow Chart:</summary>
-![Database Flow Chart ]()
+![Database Flow Chart ](assets/readme-images/imagefile_name.png)
 </details>
 
 [Back to top ⇧](#contents)
