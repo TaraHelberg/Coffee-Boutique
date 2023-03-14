@@ -188,7 +188,7 @@ As a user / shopper I can easily find all relevant company information so that w
 As a Shop Admin I can Add , Update & Delete articles Blog Post so that I can keep my customers engaged, supply updates and direct them to interesting coffee information
 
 1. As a Shop Admin I can Add , Update & Delete articles Blog Post so that I can keep my customers engaged, supply updates and direct them to interesting coffee information.
-2. Be able to  Navigate to &  Select & Read More of the Blog Post.
+2. Be able to  Navigate to & Select & Read More of the Blog Post.
 
 
 [Back to top ⇧](#contents)
@@ -197,10 +197,32 @@ As a Shop Admin I can Add , Update & Delete articles Blog Post so that I can kee
 
 GitHub projects was used to manage the development process using an agile approach. Please see link to project [Kanban Board](https://github.com/TaraHelberg/Coffee-Boutique/issues?q=is%3Aissue+is%3Aclosed)
 
-Not all Epics have made it into the project using the MSCW Method you will find on the Kanban Must have’s, Should Have’s, Could Have's and Won’t have labels. 
+Not all Epics / User Stories have made it into the project using the MSCW Method you will find on the Kanban Must have’s, Should Have’s, Could Have's and Won’t have labels. 
 The won’t have labelled sections are those that did not make it into the App due to time constraint
 
 ## Future Features
+
+Although only a few are represented in the Kanban the E-commerce store that I have made has loads of potential for numerous extra features and futher development and I will be honest and say that if I put in all my Future features in that I could think of this readme would be extensive :)
+
+1. User Story: Product Image to Expand on Hover Over
+
+   As a Shop Owner I can give my Shoppers a better look at the Product when they hover over the Product it expands and shows more detail so that my shoppers / users can see the product in more detail possibly making them purchase it as it gives them a better idea of the products.
+
+2. User Story: Product Price Change on Selection of Size
+
+   As a Shop Owner I can have the price of my products change if the product has a size & that size is selected the price either decreases or increases accordingly so that when a Shopper / User selects a size on the product they are given the accurate price according to size and my company gets paid the correct price for the product.
+
+ 3. Epics : Discount Coupon
+
+    As a Shop Owner I require to give Discount Coupons that a Shopper can see & use so that it encourages shoppers / user to make that first purchase.
+
+ Other Future Features include using Product variants to manage not only the change in Price for size difference but for product colour selection.
+
+ The abitity to make up your own Gift set by selecting from excisting Products.
+
+ Getting a weekly mailing list of Discounts , New products and interesting Blog Post to those who have subscribed to the mailing list.
+
+ This is to name just a few.   
 
 
 [Back to top ⇧](#contents)
@@ -434,11 +456,13 @@ The fixture json files are used and modified from the Walkthrough Boutique Ado a
 
 ## Fonts
 
+The font 'Noto Serif Toto' is used as our main Body Font for the App. The Font is imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
+
 [Back to top ⇧](#contents)
 
 # Balsamiq Wireframes
 
-Wireframes are extremely basic and did not incorporate all App pages. Wireframes were used as boiler plates to start the app design many updates and alterations made after the basic Wireframes were used to get started on the App.
+Wireframes are extremely basic and did not incorporate all App pages. Wireframes were used as boiler plates to start the app design many updates and alterations have been made after the basic Wireframes were used to get started on the App.
 
 <details><summary>Balsamiq Wireframes</summary>
 
@@ -470,10 +494,9 @@ CheckOut Page ![ Check Out Page ](assets/readme-images/wireframes/CheckOut_page.
 
 # Data Modal
 
-I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views.  
+I used principles of Object-Oriented Programming throughout this project and Django’s Function-Based Views.  
 
 Django AllAuth was used for the user authentication system.
-User Modal with the User_Id as the Primary Key
 
 
 The diagram below details the <details><summary>Database Flow Chart:</summary>
