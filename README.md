@@ -39,9 +39,15 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
 
 
 - [Features](#features)
-   * [HomePage](#home-page)
-   * [UserAccountPages](#user-account-pages)
-   
+   * [Home Page](#home-page)
+   * [User Account Pages](#user-account-pages)
+       * [Sign Up](#sign-up)
+       * [Sign In](#sign-in)
+       * [Password Reset](#password-rest)
+       * [Sign Out](#sign-out)
+   * [All Products Page](#all-products)
+   * [Product Detail Page](#product-detail)
+   * [Coffee](#coffee-1)
 
 - [AdminControl](#admin-control)
    * [AdminControlPanel](#admin-control-panel)
@@ -606,7 +612,7 @@ Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App.
 
 Custom Error Pages have been created to give the User / Shopper more information and help redirect them when an should an Error occur. These pages are provided with Redirect Buttons to appropriate areas of the App.
 
-403 Error page shown as an Example of what the Error pages present to the User / Author.
+404 Error page shown as an Example of what the Error pages. 
 
 <details><summary>Error Page Example Imagery</summary>
 
@@ -614,7 +620,7 @@ Custom Error Pages have been created to give the User / Shopper more information
 
 ![403]()
 
-![404]()
+![404](assets/readme-images/Error_Pg/404-Error-pg.jpeg)
 
 ![500]()
 
@@ -635,155 +641,335 @@ Custom Error Pages have been created to give the User / Shopper more information
 
 ## Home Page 
 
-<details><summary>Full Home Page Image :</summary>
+<details><summary>Full Home Page DeskTop :</summary>
 
-![HomePage]()
+![HomePage](assets/readme-images/App_Pgs/Home_Pg/Home_pg.jpeg)
+
+</details> 
+
+<details><summary>Full Home Page Mobile :</summary>
+
+![HomePage](assets/readme-images/App_Pgs/Home_Pg/Home_pg_mobile.jpeg)
 
 </details> 
 
 
 The Home Page of the App incorporates the Following :
 
+1. The Free Delivery Banner - Present on All pages of the App.
 
+<details><summary>Free Delivery Banner :</summary>
 
-### Image of Header and Navigation when User is not Logged In
-![]()
+![Free Delivery Banner](assets/readme-images/App_Pgs/Home_Pg/Delivery_Banner.png)
 
-### Image of Header and Navigation when User is Logged In
-![Naviagtion Logged In]()
+</details> 
 
+2. Header - Search Bar , App Title as well as a drop down Accounts Menu & Shopping Chart - Present on All pages of the App.
 
+<details><summary>Header :</summary>
 
-### Footer Image
+![Header](assets/readme-images/App_Pgs/Home_Pg/Header.png)
 
-![Footer]()
+</details> 
+
+3. Main Navigation Bar All of which are Drop down Menu's with the exception of the Home Navigation - Present on All pages of the App. 
+
+<details><summary>Main Navigation :</summary>
+
+![Main Navigation](assets/readme-images/App_Pgs/Home_Pg/Main_Navigation.png)
+
+</details> 
+
+4. A call to Action section features a Video of a cup of steaming coffee and an Sales pitch with an Action button of Shop Now.
+
+<details><summary>call to Action :</summary>
+
+![call to Action](assets/readme-images/App_Pgs/Home_Pg/Call_To_Action.png)
+
+</details> 
+
+5. The New Products section on a Bootstrap Carousel showing the 4 New Products if a User / Shopper clicks on any of the Products in the Carousel they are taken to a Detailed view of the New Product.
+Incorporated as a promotion idea & a way to keep Shoppers engaged as this would change as the Products inventory is updated.
+
+<details><summary>New Products :</summary>
+
+![New Products](assets/readme-images/App_Pgs/Home_Pg/New_Products.png)
+
+</details> 
+
+6. The What We Do section which gives the User / Shopper the overall information on what the App is about and its useful features . If a User clicks on the Products Icon the user is taken to the Products section of the App the Same is for the Sign Up & Blog Icons Present. 
+
+<details><summary>What We Do :</summary>
+
+![What We Do](assets/readme-images/App_Pgs/Home_Pg/What_We_Do.png)
+
+</details> 
+
+7. At the bottom of the App is the Footer section broken into 3 sections - Present on All pages of the App. 
+    1. Social Media links 2 have been chose as the main focus FaceBook which opens up to the Business Facebook account &  Instagram which is still underdevelopement and does not go to a Buisness instagram as of yet..both of which open on a separate tab outside of the App when Clicked on.
+
+    2. Contact Us - This displays the company contactinformation the The mail Icon when Click on will take the User / Shopper to the Contact Us page.
+
+    3. Subscribe - The Mail chimp news letter sign up.
+
+8. 3 Images of Cards just to indicate payment options to User / Shopers - Present on All pages of the App. 
+
+9. The All Rights Reserved right at the bottom of the App when Clicked on will take the User / Shopper to the Copy right Notice Page. - Present on All pages of the App.     
+
+<details><summary>Footer, Images of Cards &  All Rights Reserved:</summary>
+
+![What We Do](assets/readme-images/App_Pgs/Home_Pg/Footer.png)
+
+</details> 
+
 
 [Back to top ⇧](#contents)
 
-# User Account Pages
+## User Account Pages
 
-<details><summary>Full Sign Up Page Image :</summary>
+### Sign Up
 
-![SignUpPage]()
+The Sign Up page provides a Sign Up Form requesting the Username , Email and a Password that must be validated by inputting the password a second time . 
+A Sign Up button is provided & a redirect button for Login should the user already have an account.
+
+<details><summary>Sign Up Page :</summary>
+
+![Sign Up Page](assets/readme-images/App_Pgs/User_Account_Pgs/Sign_UP_pg.png)
+
+</details> 
+
+### Sign In
+
+The Sign In page provides the user with a Form requesting the Username & Password.
+A Sign In button is provided & a redirect button to go to the Home page.
+Below these is a Forgot Password ? which if a User / Shopper has forgotten their password will take them to the Password Reset page.
+
+<details><summary>Sign In :</summary>
+
+![Sign In Page](assets/readme-images/App_Pgs/User_Account_Pgs/Sign_In_pg.png)
+
+</details> 
+
+### Password Reset
+
+The Password Reset page provides the user with instructions & a Form requesting the email address .
+A Reset My Password button is provided & a redirect button to go to Back to Login page.
+
+<details><summary>Password Reset :</summary>
+
+![Password Reset](assets/readme-images/App_Pgs/User_Account_Pgs/Password_Reset_pg.png)
+
+</details> 
+
+### Sign Out
+
+The Sign Out page provides the user with the question of Are you sure you wanat to Sign out. 
+A Sign Out button is provided & a redirect button Cancel which goes to the Home page.
+
+<details><summary>Sign Out :</summary>
+
+![Sign Out](assets/readme-images/App_Pgs/User_Account_Pgs/Password_Reset_pg.png)
 
 </details> 
 
 
-<details><summary>Full Sign In Page Image :</summary>
+[Back to top ⇧](#contents)
 
-![SignInPage]()
+#  All Products 
+
+<details><summary> All Products Page DeskTop :</summary>
+
+![All Products](assets/readme-images/App_Pgs/All_Products_Pg/All_Products_pg.jpeg)
 
 </details> 
 
+<details><summary>All Products Page Mobile :</summary>
 
-<details><summary>Full Sign Out Page Image :</summary>
+![All Products](assets/readme-images/App_Pgs/All_Products_Pg/All_Products_pg_mobile.jpeg)
 
-![SignOutPage]()
+</details> 
+
+The All Products Drop Down Navigation
+
+Allows the User / Shopper to select how they would like to View All the Products.
+
+3 Options have been supplied
+
+All Products 
+
+By Catefory 
+
+By Price 
+
+<details><summary> All Products Drop Down Navigation :</summary>
+
+![All Products](assets/readme-images/App_Pgs/All_Products_Pg/All_Products_Drop_Down_Navigation.jpg)
+
+</details> 
+
+The All Products page shows all the products within the store shows the entire store Products list .
+Listing the number of Products in the store & supplying a Sort by .. bar that allows the User  / Shopper to sort by  Price, (Low to High) & (High to Low) , By Name (A - Z) & ( Z- A) & by Category (A - Z) & ( Z- A).
+
+Each product is represented in its own Product Card Showing an Image of the Product , Price Caterogy.
+
+Clicking on the Image will allow a User / Shopper to go to the Product Details Page.
+
+3 Buttons are present the View Button only to Users / Shoppers, Clicking on the View Button will allow a User / Shopper to go to the Product Details Page.
+The Edit & Delete Buttons which are only accessable & shown to the Admin Super User,Clicking on the Edit or Detele Button will allow a Admin Super User to go to the Product Edit or Delete Page.
+
+A back to Top Arrow Button is supplied for easy scroll to the top of the Products page.
+
+[Back to top ⇧](#contents)
+
+#  Product Detail 
+
+<details><summary> Product Detail Page DeskTop :</summary>
+
+![Product Detail](assets/readme-images/App_Pgs/Product_Detail_Pg/Product_Detail_pg.jpeg)
+
+</details> 
+
+<details><summary>Product Detail Page Mobile :</summary>
+
+![Product Detail](assets/readme-images/App_Pgs/Product_Detail_Pg/Product_Detail_pg_mobile.jpeg)
+
+</details> 
+
+The Product Detail Page of the App incorporates the Following :
+
+1. Am I a Favourite , This a Registered & Logged In User / Shopper can only see & provides that User / Shopper with the ability to click on the Heart to either Add or Remove a Product from their Favourites Page.
+
+<details><summary>Am I a Favourite Add :</summary>
+
+![Am I a Favourite](assets/readme-images/App_Pgs/Product_Detail_Pg/Am_I_A_Favourite_Add.jpeg)
+
+</details> 
+
+<details><summary>Am I a Favourite Remove :</summary>
+
+![Am I a Favourite](assets/readme-images/App_Pgs/Product_Detail_Pg/Am_I_A_Favourite_Remove.jpeg)
+
+</details> 
+
+The main Body of the Product Detail consists of a Product Image Next to which are the Product Name , Price , Category & Product Description.
+
+Under the Product Description a Size Drop Down Size selector is available if the Product has a Size it is set to a default size , if the product does not the Selector is not visable.
+
+Under this is a Quantity Selector that the User / Shopper can add / minus product qty. The Qty is set to a default Qty of 1 .
+
+Under the Quantity Selector are 2 Buttons Keep Shopping redirects to the All Products page & Add to Cart Button which adds the Item to the Shopping Cart.
+
+Adding an Item to the Cart via the Add to Cart Button will give you a Success Pop up.
+
+<details><summary>Add to Cart Success Pop Up :</summary>
+
+![Add to Cart Success Pop Up](assets/readme-images/App_Pgs/Product_Detail_Pg/Add_To_Cart_Success_Pop_Up.jpg)
+
+</details> 
+
+Add to Cart Success Pop Up gives the details of the item / Product added to your Shopping Cart .
+At the Bottom a Button Go To Secure Checkout is supplied and this will redirect you to the Shopping Cart page.
+
+Under the Product Image is a Leave a Review & Rate section .
+The Review section is blank by Default & The Rate Stars are Gold by Default.
+This is only avaialbe & Visable to a Registered & Logged In User / Shopper .
+
+<details><summary>Leave a Review Not Logged In :</summary>
+
+![Leave a Review](assets/readme-images/App_Pgs/Product_Detail_Pg/Leave_A_Review_Not_Logged_In.jpg)
+
+</details> 
+
+A Sumbit & Cancel Button are supplied to complete or Cancel the Review / Rateing . The User / Shopper will stay on the same page when Either Button is used.
+
+<details><summary>Leave a Review :</summary>
+
+![Leave a Review](assets/readme-images/App_Pgs/Product_Detail_Pg/Leave_A_Review.jpg)
+
+</details> 
+
+Under the Product Details & Review section is a Customer Reviews section showing the Customer Reviews of that Product.
+
+It will show the number of Reviews on the Product 
+
+Date & Time of the Review
+
+The Name of the User / Shopper who made the Review 
+
+Followed by the Review itself
+
+Under this are two options to Seelct either to Edit or to Delte the Review which redirect to either the Edit Review Page or Delete Review Page.
+
+<details><summary>Customer Reviews No Reviews :</summary>
+
+![Customer Reviews](assets/readme-images/App_Pgs/Product_Detail_Pg/Custmer_Reviews_No_Reviews.jpg)
+
+</details> 
+
+<details><summary>Customer Reviews With Review :</summary>
+
+![Customer Reviews](assets/readme-images/App_Pgs/Product_Detail_Pg/Custmer_Reviews_With_Review.jpg)
+
+</details> 
+
+[Back to top ⇧](#contents)
+
+#  Coffee
+
+<details><summary> Coffee Page DeskTop :</summary>
+
+![Coffee](assets/readme-images/App_Pgs/Coffee_Products_Pg/Coffee_pg.jpeg)
+
+</details> 
+
+<details><summary>Coffee Page Mobile :</summary>
+
+![Coffee](assets/readme-images/App_Pgs/Coffee_Products_Pg/Coffee_pg_mobile.jpeg)
+
+</details> 
+
+The Coffee Drop Down Navigation
+
+Allows the User / Shopper to select how they would like to View Coffee Products.
+
+4 Options have been supplied
+
+All Coffee 
+
+Coffee Beans 
+
+Coffee Grounds
+
+Coffee Capsule Pods 
+
+<details><summary> Coffee Drop Down Navigation :</summary>
+
+![Coffee](assets/readme-images/App_Pgs/Coffee_Products_Pg/Coffee_Drop_Down_Navigation.jpg)
 
 </details>
 
+The Coffee Products pages are the same as the All Products page with only one Noticable difference which are the Coffe Products Catergory Buttons under the Main Title of Products.
+The Coffee Products page has 3 of these Buttons as it is sepearted into 3 Categories.
 
-[Back to top ⇧](#contents)
+Coffee Beans 
 
+Coffee Grounds
 
+Coffee Capsule Pods 
 
-[Back to top ⇧](#contents)
+Clicking on any one of these will show only the Products of that Category & Only that Button will then be visable.
 
-#  Page
+<details><summary> Coffee Category Buttons :</summary>
 
-<details><summary> Page Image :</summary>
+![Coffee](assets/readme-images/App_Pgs/Coffee_Products_Pg/Coffee_Category_Buttons.jpg)
 
-![]()
+</details>
 
-</details> 
+<details><summary> Coffee Category 1 Button Selected :</summary>
 
+![Coffee](assets/readme-images/App_Pgs/Coffee_Products_Pg/Coffee_Category_1_Button_Selected.jpg)
 
-### Image
-
-![]()
-
-
-
-### Image
-
-![]()
-
-###  Image
-
-![]()
-
-
-### Image
-
-![]()
-
-
-### Image
-
-![]()
-
-[Back to top ⇧](#contents)
-
-## 
-
-
-### Image  
-
-![]()
-
-[Back to top ⇧](#contents)
-
-#  
-
-<details><summary> :</summary>
-
-![]()
-
-</details> 
-
-
-[Back to top ⇧](#contents)
-
-# 
-
-<details><summary> :</summary>
-
-![]()
-
-</details> 
-
-
-[Back to top ⇧](#contents)
-
-# 
-
-<details><summary> :</summary>
-
-![]()
-
-</details> 
-
-
-[Back to top ⇧](#contents)
-
-# 
-
-<details><summary> :</summary>
-
-![]()
-
-</details> 
-
-
-[Back to top ⇧](#contents)
-
-# 
-
-<details><summary> :</summary>
-
-![]()
-
-</details> 
+</details>
 
 [Back to top ⇧](#contents)
 
