@@ -1,6 +1,6 @@
 # Coffee Boutique 
 
-![amiresponsive](assets/readme-images/amiresponsive.png)
+![amiresponsive](assets/readme-images/App_Pgs/Amiresponsive/amiresponsive.png)
 
 Live App link : [Coffee Boutique](https://coffee-boutique.herokuapp.com/)
 
@@ -47,7 +47,17 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
        * [Sign Out](#sign-out)
    * [All Products Page](#all-products)
    * [Product Detail Page](#product-detail)
-   * [Coffee](#coffee-1)
+   * [Coffee Page](#coffee-1)
+   * [Coffee Machines Page](#coffee-machines-1)
+   * [Accessories Page](#accessories-1)
+   * [Gift Sets & Treats Page](#gift-sets--treats)
+   * [About Drop Down Navigation](#about)
+   * [Blog Page](#blog)
+   * [Contact Us Page](#contact-us)
+   * [FAQ's Page](#faqs---frequently-asked-questions)
+   * [Privacy Policy Page](#privacy-policy-page)
+   * [Copy Right Page](#copy-right-page)
+   
 
 - [AdminControl](#admin-control)
    * [AdminControlPanel](#admin-control-panel)
@@ -212,6 +222,8 @@ GitHub projects was used to manage the development process using an agile approa
 Not all Epics / User Stories have made it into the project using the MSCW Method you will find on the Kanban Must have’s, Should Have’s, Could Have's and Won’t have labels. 
 The won’t have labelled sections are those that did not make it into the App due to time constraint
 
+[Back to top ⇧](#contents)
+
 ## Future Features
 
 Although only a few are represented in the Kanban the E-commerce store that I have made has loads of potential for numerous extra features and futher development and I will be honest and say that if I put in all my Future features in that I could think of this readme would be extensive :)
@@ -251,6 +263,8 @@ White text has been used where applicable for visablity.
 It was decided that when in use the Shopping cart icon had a very distinct in use color.
 
 It was also decide that in the Blog for external links & content credit links that they have a color of there own so as to be more visabile.
+
+[Back to top ⇧](#contents)
 
 ## Images
 
@@ -365,6 +379,8 @@ It was also decide that in the Blog for external links & content credit links th
 
 Coffee - Beans, Grounds & Pods descriptions : Names of the Coffees are made up as are the descriptions, having re-searched, read and drunk a lot of Coffee myself, been an avid Coffee Lover. The descriptions use the standard format of how I have seen coffee described.
 
+[Back to top ⇧](#contents)
+
 ### Coffee Machines
 
 Coffee Machines - Capsule Pod, Coffee Makers & Espresso : Here I had to use product descriptions from a number of online resources as I felt for authenticity that a better description of the actual product was require than that which I could make up myself. I have tried to match the description as closely to the free product image I was able to obtain, however in some case the product image and the product description link are slightly different but as close as I could find. 
@@ -417,6 +433,8 @@ Please find below links to the descriptions I have used.
 
 </details>
 
+[Back to top ⇧](#contents)
+
 ### Accessories
 
 Drink Wears Products - Names & Descriptions are made up as to how I felt they should be described to my Shoppers.
@@ -450,6 +468,7 @@ Please find below links to the descriptions I have used.
 
 </details>
 
+[Back to top ⇧](#contents)
 
 ### Gifts & Treats
 
@@ -512,14 +531,16 @@ Django AllAuth was used for the user authentication system.
 
 
 The diagram below details the <details><summary>Database Flow Chart:</summary>
-![Database Flow Chart ](assets/readme-images/imagefile_name.png)
+![Database Flow Chart ](assets/readme-images/App_Pgs/Data_Base_Flow_Chart/Data_Base_Flow_Chart.png)
 </details>
 
 [Back to top ⇧](#contents)
 
 # Web Marketing Strategy
 
-Web Marketing Strategy was used in the building of this App using the insights gained as part of the Design Thinking phase, Keyword research, SEO , Xml Sitempap , Robots.txt file, Mail Chimp & Facebook. I have introduced these specific features to aid in the marketing of the Buisness.  
+Web Marketing Strategy was used in the building of this App using the insights gained as part of the Design Thinking phase, Keyword research, SEO , Xml Sitempap , Robots.txt file, Mail Chimp & Facebook. I have introduced these specific features to aid in the marketing of the Buisness. 
+
+[Back to top ⇧](#contents)
 
 ## Search Engine Optimisation (SEO)
 
@@ -558,17 +579,83 @@ The Keywords selection was made by tracking what is trending and  looking into w
 * How to brew the perfect coffee
 * Buy coffee beans online
 
+[Back to top ⇧](#contents)
+
 ## XML Sitemap
 
 The website App also has a sitemap file with a list of important URLs was in order to help the  search engines spiderbots to crawl the business website faster and fetch all relevant content.
+
+[Back to top ⇧](#contents)
 
 ## Robots 
 
 The use of robots.txt file has been applied to allow search engine spiderbots  where not to go on the website and increase the quality of the site, ultimately improving the SEO rating.
 
+[Back to top ⇧](#contents)
+
 ## MailChimp Newsletter
 
-MailChimp Newsletter was used to encouraged to signup for newsletters, discounts and information about the products sold at Coffee Boutique. The signup form is available on the website footer and is present on any page. The email subscription service is run through Mailchimp, allowing the website admin to send marketing emails through the platform, increasing engagement within the site. Those who subscribe can unsubsribe with ease should they choose to.
+MailChimp Newsletter was used to encouraged to Subscription to the Buisness newsletters, discounts and information about the products sold at Coffee Boutique.
+The signup form is available on the website footer and is present on any page.
+The email subscription service is run through Mailchimp, allowing the website admin to send marketing emails through the platform, increasing engagement within the site. Those who subscribe can unsubsribe with ease should they choose to.
+
+A MailChimp Subscribe is supplied to Users / Shopper in the App Footer
+
+<details><summary>MailChimp Subscribe :</summary>
+
+![MailChimp Subscribe](assets/readme-images/App_Pgs/MailChimp_pg/Mail_Chimp_Subscribe.jpg)
+
+</details> 
+
+The Users / Shopper will then get a MailChimp Subscription Confirmation
+
+<details><summary>MailChimp Subscription Confirmation :</summary>
+
+![MailChimp Subscription Confirmation](assets/readme-images/App_Pgs/MailChimp_pg/Mail_Chimp_Subscription_Confirmation.jpg.jpeg)
+
+</details> 
+
+The Users / Shopper will then get a MailChimp will be redirect to the Verify Your Email Address Page
+
+<details><summary>MailChimp Verify Your Email Address Page :</summary>
+
+![MailChimp Verify Your Email Address Page](assets/readme-images/App_Pgs/MailChimp_pg/Mail_Chimp_Verify_Your_Emailaddress_pg.jpeg)
+
+</details> 
+
+The Users / Shopper will then get recive an email from MailChimp with a Verify Your Email Address link the user will need to click on this link to Verify their email address
+
+<details><summary>MailChimp Verification Email Link :</summary>
+
+![MailChimp Verification Email Link](assets/readme-images/App_Pgs/MailChimp_pg/Email_Verification_Link.jpeg)
+
+</details> 
+
+The Users / Shopper on clicking on the email verification linl will then be redirect to the Confirm Email Address Page.
+
+<details><summary>MailChimp Confirm Email Address Page :</summary>
+
+![MailChimp Confirm Email Address Page](assets/readme-images/App_Pgs/MailChimp_pg/Confrim_Email_Address_pg.jpeg)
+
+</details> 
+
+On Clicking on the Confirm Button the User / SHoppers email will be confirmed and a Confirmed email address Success Pop up will be shown.
+
+<details><summary>Confirmed Email Success Pop up :</summary>
+
+![Confirmed Email Success Pop up](assets/readme-images/App_Pgs/MailChimp_pg/Confirmed_Email_Success_Pop_Up.jpg)
+
+</details>
+
+The Admin will then be able to see the Subsribed email address in the MailChimp Dash Baord & the subscriber wil then go onto the Buisness mailing list.
+
+<details><summary>MailChimp Dash Board :</summary>
+
+![MailChimp Dash Board](assets/readme-images/App_Pgs/MailChimp_pg/Mail_Chimp_DashBaord.jpg)
+
+</details>
+
+[Back to top ⇧](#contents)
 
 ## Facebook Page
 
@@ -582,7 +669,7 @@ It was decided that this was and is quite possibly one of the leading means of S
 
 <details><summary>Coffee Boutique FaceBook Page </summary>
 
-FaceBook Page ![ FaceBook Page ](assets/readme-images/FaceBook-pg.jpeg)
+![ FaceBook Page ](assets/readme-images/App_Pgs/Facebook_Pg/FaceBook_pg.jpeg)
 
 </details>
 
@@ -596,18 +683,23 @@ FaceBook Page ![ FaceBook Page ](assets/readme-images/FaceBook-pg.jpeg)
 Django's Login Required has been used to make sure that any requests to access secure pages by non-authenticated users / Authors are redirected. Django's Login Required have been used to limit access based on permissions. Eg: To ensure Admin can only Add / Update / Delete Produts & Blogs or Logged In Shoppers can Add / Update / Delete Reviews & Ratings for which they are the User / Shopper.
 
 If the User /Author doesn't pass the test they are shown to the 403 Forbidden Error.
-    
+
+[Back to top ⇧](#contents)
+
 ## Form Validation
 
 If incorrect or empty information / data is added to a From, the Form won't submit and a warning will appear to the User / Shopper informing them what field raised the error
 
+[Back to top ⇧](#contents)
 
 ## Database Security
 
 The Database URL and secret key are stored in the env.py file to prevent unwanted connections to the Database and this was done at the beginning of the App set up and pushed to GitHub.
 
 Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App.
-    
+
+[Back to top ⇧](#contents)
+
 ## Custom error pages: 
 
 Custom Error Pages have been created to give the User / Shopper more information and help redirect them when an should an Error occur. These pages are provided with Redirect Buttons to appropriate areas of the App.
@@ -672,6 +764,63 @@ The Home Page of the App incorporates the Following :
 
 </details> 
 
+  * Search Bar - for searching for products by name , or key word within product
+
+  * App Title - Can be Clicked on from other App pages & returns to Home page
+
+  * Account Drop Down :
+                      - Default Setting  -  2 Options Shown 
+                                         -  1. Register
+                                            2. Login 
+
+On Login a success message will be displayed.
+
+<details><summary>Login Success Pop Up :</summary>
+
+![Login Success Pop Up](assets/readme-images/App_Pgs/Home_Pg/Login_Success_Pop_Up.jpg)
+
+</details>   
+
+                      - Shopper Logged In - 3 Options Shown 
+                                          - 1. My Profile - To Profile Page
+                                            2. Favourites - To Favourites Page
+                                            3. Logout - Logout of Account Page
+
+On Logout a success message will be displayed.
+
+<details><summary>Logout Success Pop Up :</summary>
+
+![Logout Success Pop Up](assets/readme-images/App_Pgs/Home_Pg/Logout_Success_Pop_Up.jpg)
+
+</details>   
+
+                      - Admin Logged In  -  5 Options Shown
+                                         -  1. Add Prodcut - Takes Admin to Add Product Page
+                                            2. Add Blog - Takes Admin to Add Blog Page
+                                            3. My Profile - To Profile Page 
+                                            4. Favourites - To Favourites Page
+                                            5. Logout - Log out of Account Page
+
+<details><summary>Account Drop Down Default :</summary>
+
+![Account Drop Down](assets/readme-images/App_Pgs/Home_Pg/Account_Drop_Down_Default.jpg)
+
+</details> 
+
+<details><summary>Account Drop Down Shopper Logged In :</summary>
+
+![Account Drop Down](assets/readme-images/App_Pgs/Home_Pg/Account_Drop_Down_Shopper.jpg)
+
+</details> 
+
+<details><summary>Account Drop Down Admin Logged In :</summary>
+
+![Account Drop Down](assets/readme-images/App_Pgs/Home_Pg/Account_Drop_Down_Admin.jpg)
+
+</details> 
+
+  * Cart - Click on takes to Shopping Cart Page
+
 3. Main Navigation Bar All of which are Drop down Menu's with the exception of the Home Navigation - Present on All pages of the App. 
 
 <details><summary>Main Navigation :</summary>
@@ -711,6 +860,7 @@ Incorporated as a promotion idea & a way to keep Shoppers engaged as this would 
     2. Contact Us - This displays the company contactinformation the The mail Icon when Click on will take the User / Shopper to the Contact Us page.
 
     3. Subscribe - The Mail chimp news letter sign up.
+
 
 8. 3 Images of Cards just to indicate payment options to User / Shopers - Present on All pages of the App. 
 
@@ -797,7 +947,7 @@ Allows the User / Shopper to select how they would like to View All the Products
 
 All Products 
 
-By Catefory 
+By Category 
 
 By Price 
 
@@ -948,7 +1098,8 @@ Coffee Capsule Pods
 
 </details>
 
-The Coffee Products pages are the same as the All Products page with only one Noticable difference which are the Coffe Products Catergory Buttons under the Main Title of Products.
+The Coffee Products pages are the same as the All Products page with only one Noticable difference which are the Coffee Products Catergory Buttons under the Main Title of Products.
+The Coffee Products Page will also only show Coffee Products.
 The Coffee Products page has 3 of these Buttons as it is sepearted into 3 Categories.
 
 Coffee Beans 
@@ -972,6 +1123,294 @@ Clicking on any one of these will show only the Products of that Category & Only
 </details>
 
 [Back to top ⇧](#contents)
+
+#  Coffee Machines
+
+<details><summary> Coffee Machines Page DeskTop :</summary>
+
+![Coffee Machines](assets/readme-images/App_Pgs/Coffee_Machines_Products_Pg/Coffee_Machines_pg.jpeg)
+
+</details> 
+
+<details><summary>Coffee Machines Page Mobile :</summary>
+
+![Coffee Machines](assets/readme-images/App_Pgs/Coffee_Machines_Products_Pg/Coffee_Machines_pg_mobile.jpeg)
+
+</details> 
+
+The Coffee Machines Drop Down Navigation
+
+Allows the User / Shopper to select how they would like to View Coffee Machines Products.
+
+4 Options have been supplied
+
+All Coffee Machines 
+
+Capsule Pods
+
+Coffee Makers
+
+Espresso 
+
+<details><summary> Coffee Machines Drop Down Navigation :</summary>
+
+![Coffee Machines](assets/readme-images/App_Pgs/Coffee_Machines_Products_Pg/Coffee_Machines_Drop_Down_Navigation.jpg)
+
+</details>
+
+The Coffee Machines Products pages are the same as the All Products page with only one Noticable difference which are the Coffee Machines Products Catergory Buttons under the Main Title of Products.
+The Coffee Machines Products Page will also only show Coffee Machine Products.
+The Coffee Machines Products page has 3 of these Buttons as it is sepearted into 3 Categories.
+
+Capsule Pods
+
+Coffee Makers
+
+Espresso 
+
+Clicking on any one of these will show only the Products of that Category & Only that Button will then be visable.
+
+<details><summary> Coffee Machines Category Buttons :</summary>
+
+![Coffee](assets/readme-images/App_Pgs/Coffee_Machines_Products_Pg/Coffee_Machines_Category_Buttons.jpg)
+
+</details>
+
+<details><summary>Coffee Machines Category 1 Button Selected :</summary>
+
+![Coffee](assets/readme-images/App_Pgs/Coffee_Machines_Products_Pg/Coffee_Machines_Category_1_Button_Selected.jpg)
+
+</details>
+
+[Back to top ⇧](#contents)
+
+#  Accessories
+
+<details><summary> Accessories Page DeskTop :</summary>
+
+![Accessories](assets/readme-images/App_Pgs/)
+
+</details> 
+
+<details><summary>Accessories Page Mobile :</summary>
+
+![Accessories](assets/readme-images/App_Pgs/)
+
+</details> 
+
+The Accessories Drop Down Navigation
+
+Allows the User / Shopper to select how they would like to View Accessories Products.
+
+3 Options have been supplied
+
+All Accessories
+
+Drink Wears
+
+Manual Coffee Makers
+
+
+<details><summary> Accessories Drop Down Navigation :</summary>
+
+![Accessories](assets/readme-images/App_Pgs/)
+
+</details>
+
+The Accessories Products pages are the same as the All Products page with only one Noticable difference which are the Accessories Products Catergory Buttons under the Main Title of Products.
+The Accessories Products Page will also only show Accessories Products.
+The Accessories Products page has 2 of these Buttons as it is sepearted into 2 Categories.
+
+Drink Wears
+
+Manual Coffee Makers
+
+
+Clicking on any one of these will show only the Products of that Category & Only that Button will then be visable.
+
+<details><summary> Accessories Category Buttons :</summary>
+
+![Accessories](assets/readme-images/App_Pgs/)
+
+</details>
+
+<details><summary> Accessories Category 1 Button Selected :</summary>
+
+![Accessories](assets/readme-images/App_Pgs/)
+
+</details>
+
+[Back to top ⇧](#contents)
+
+#  Gift Sets & Treats
+
+<details><summary> Gift Sets & Treats Page DeskTop :</summary>
+
+![Gift Sets & Treats](assets/readme-images/App_Pgs/)
+
+</details> 
+
+<details><summary>Gift Sets & Treats Page Mobile :</summary>
+
+![Gift Sets & Treats](assets/readme-images/App_Pgs/)
+
+</details> 
+
+The Gift Sets & Treats Drop Down Navigation
+
+Allows the User / Shopper to select how they would like to View Gift Sets & Treats Products.
+
+3 Options have been supplied
+
+All Gift Sets & Treats
+
+Gift Sets
+
+Treats
+
+
+<details><summary> Gift Sets & Treats Drop Down Navigation :</summary>
+
+![Gift Sets & Treats](assets/readme-images/App_Pgs/)
+
+</details>
+
+The Gift Sets & Treats Products pages are the same as the All Products page with only one Noticable difference which are the Gift Sets & Treats Products Catergory Buttons under the Main Title of Products.
+The Gift Sets & Treats Products Page will also only show Gift Sets & Treats Products.
+The Gift Sets & Treats Products page has 2 of these Buttons as it is sepearted into 2 Categories.
+
+Gift Sets
+
+Treats
+
+Clicking on any one of these will show only the Products of that Category & Only that Button will then be visable.
+
+<details><summary> Gift Sets & Treats Category Buttons :</summary>
+
+![Gift Sets & Treats](assets/readme-images/App_Pgs/)
+
+</details>
+
+<details><summary> Gift Sets & Treats Category 1 Button Selected :</summary>
+
+![Gift Sets & Treats](assets/readme-images/App_Pgs/)
+
+</details>
+
+[Back to top ⇧](#contents)
+
+# About 
+
+The About Drop Down Navigation leads to a number of seperate App pages. 
+Giving the User / Shopper the oprion to Navigate to these Pages.
+
+5 Options have been supplied
+
+Blog
+
+Contact Us
+
+FAQ's - Frequently Asked Questions
+
+Privacy Policy 
+
+Copy Right
+
+<details><summary> About Drop Down Navigation :</summary>
+
+![About](assets/readme-images/App_Pgs/)
+
+</details>
+
+[Back to top ⇧](#contents)
+
+#  Blog
+
+<details><summary> Blog Page DeskTop :</summary>
+
+![Blog](assets/readme-images/App_Pgs/)
+
+</details> 
+
+<details><summary>Blog Page Mobile :</summary>
+
+![Blog](assets/readme-images/App_Pgs/)
+
+</details> 
+
+
+[Back to top ⇧](#contents)
+
+#  Contact Us
+
+<details><summary> Contact Us Page DeskTop :</summary>
+
+![Contact Us](assets/readme-images/App_Pgs/)
+
+</details> 
+
+<details><summary>Contact Us Page Mobile :</summary>
+
+![Contact Us](assets/readme-images/App_Pgs/)
+
+</details> 
+
+
+[Back to top ⇧](#contents)
+
+#  FAQ's - Frequently Asked Questions
+
+<details><summary> FAQ's Page DeskTop :</summary>
+
+![FAQ's](assets/readme-images/App_Pgs/)
+
+</details> 
+
+<details><summary>FAQ's Page Mobile :</summary>
+
+![FAQ's](assets/readme-images/App_Pgs/)
+
+</details> 
+
+
+[Back to top ⇧](#contents)
+
+#  Privacy Policy Page
+
+<details><summary> Privacy Policy Page DeskTop :</summary>
+
+![Privacy Policy](assets/readme-images/App_Pgs/)
+
+</details> 
+
+<details><summary>Privacy Policy Page Mobile :</summary>
+
+![Privacy Policy](assets/readme-images/App_Pgs/)
+
+</details> 
+
+
+[Back to top ⇧](#contents)
+
+#  Copy Right Page
+
+<details><summary> Copy Right Page DeskTop :</summary>
+
+![Copy Right](assets/readme-images/App_Pgs/)
+
+</details> 
+
+<details><summary>Copy Right Page Mobile :</summary>
+
+![Copy Right](assets/readme-images/App_Pgs/)
+
+</details> 
+
+
+[Back to top ⇧](#contents)
+
+
+
 
 #  Admin 
 
