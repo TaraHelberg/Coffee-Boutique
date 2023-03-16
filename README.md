@@ -45,8 +45,12 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
        * [Sign In](#sign-in)
        * [Password Reset](#password-rest)
        * [Sign Out](#sign-out)
+   * [My Profile](#my-profile)    
    * [All Products Page](#all-products)
-   * [Product Detail Page](#product-detail)
+   * [Product Detail Page](#product-detail)   
+   * [Favourites](#favourites-page)
+   * [Shopping Cart](#shopping-cart)
+   * [Secure Check Out](#secure-check-out) 
    * [Coffee Page](#coffee-1)
    * [Coffee Machines Page](#coffee-machines-1)
    * [Accessories Page](#accessories-1)
@@ -770,6 +774,7 @@ The Home Page of the App incorporates the Following :
   * App Title - Can be Clicked on from other App pages & returns to Home page
 
   * Account Drop Down :
+
                       - Default Setting  -  2 Options Shown 
                                          -  1. Register
                                             2. Login 
@@ -821,6 +826,7 @@ On Logout a success message will be displayed.
 </details> 
 
   * Cart - Click on takes to Shopping Cart Page
+         - The Shopping Cart will also update & display the amount when Products / Items are addedd to the Cart.   
 
 3. Main Navigation Bar All of which are Drop down Menu's with the exception of the Home Navigation - Present on All pages of the App. 
 
@@ -832,7 +838,7 @@ On Logout a success message will be displayed.
 
 4. A call to Action section features a Video of a cup of steaming coffee and an Sales pitch with an Action button of Shop Now.
 
-<details><summary>call to Action :</summary>
+<details><summary>Call to Action :</summary>
 
 ![call to Action](assets/readme-images/App_Pgs/Home_Pg/Call_To_Action.png)
 
@@ -920,6 +926,49 @@ A Sign Out button is provided & a redirect button Cancel which goes to the Home 
 <details><summary>Sign Out :</summary>
 
 ![Sign Out](assets/readme-images/App_Pgs/User_Account_Pgs/Password_Reset_pg.png)
+
+</details> 
+
+
+[Back to top ⇧](#contents)
+
+#  My Profile 
+
+<details><summary> My Profile Page DeskTop :</summary>
+
+![My Profile](assets/readme-images/App_Pgs/My_Profile_Pg/My_Profile_pg.jpeg)
+
+</details> 
+
+<details><summary>My Profile Page Mobile :</summary>
+
+![My Profile](assets/readme-images/App_Pgs/My_Profile_Pg/My_Profile_pg._mobile.jpeg)
+
+</details> 
+
+A Registered Logged In User / Shopper has access to a My Profile Page
+This Page has the ability to store the User / Shoppers Default Delivery Information & Order History.
+
+Default Delivery Information Form has place holder & can be updated.
+A Country Drop down bar is supplied so that it is easier to select the Country for the User / Shopper.
+
+Two Buttons are Supplied at the bottom of the Default Delivery Information Form
+
+Cancel - Redirects User / Shopper to the Products Page
+
+Update Information - This will update the User / SHopper Information & store it for fututer use.
+
+On clicking the Update Information Button a Success Pop Up Message is dispalyed.
+
+<details><summary>Update Information Success Pop Up Message :</summary>
+
+![My Profile](assets/readme-images/App_Pgs/My_Profile_Pg/My_Profile_Update_Information_Sucess_Pop_Up.jpg)
+
+</details> 
+
+<details><summary> My Profile After Order Page DeskTop :</summary>
+
+![My Profile](assets/readme-images/App_Pgs/My_Profile_Pg/My_Profile_pg_After_Order.jpeg)
 
 </details> 
 
@@ -1064,6 +1113,98 @@ Under this are two options to Seelct either to Edit or to Delte the Review which
 </details> 
 
 [Back to top ⇧](#contents)
+
+#  Favourites Page 
+
+<details><summary> Favourites Page DeskTop :</summary>
+
+![Favourites Page](assets/readme-images/App_Pgs/)
+
+</details> 
+
+<details><summary>Favourites Page Mobile :</summary>
+
+![Favourites Page](assets/readme-images/App_Pgs/)
+
+</details> 
+
+[Back to top ⇧](#contents)
+
+#  Shopping Cart 
+
+<details><summary> Shopping Cart Empty Page DeskTop :</summary>
+
+![Shopping Cart Page](assets/readme-images/App_Pgs/Shopping_Cart_Pg/Shopping_Cart_pg._Empty.jpeg)
+
+</details> 
+
+<details><summary> Shopping Cart With Products Page DeskTop :</summary>
+
+![Shopping Cart Page](assets/readme-images/App_Pgs/Shopping_Cart_Pg/Shopping_Cart_pg.jpeg)
+
+</details> 
+
+<details><summary>Shopping Cart Page Mobile :</summary>
+
+![Shopping Cart](assets/readme-images/App_Pgs/Shopping_Cart_Pg/Shopping_Cart_pg_mobile.jpeg)
+
+</details> 
+
+The Shopping Cart Supplies the user with an enviroment to see & control the Items / Products they have added to the Cart.
+
+Product information is supplied in the form of an Image , Product Name & Size If product has size or N/A if no size & the Products Sku number greyed out / muted.
+
+Next to this the Product / Item Unit Price is shown.
+
+A Qty control bar is available for the User / Shopper to either Add or Subtract the Qty of the Item / Product by clicking on the - or + button or using the little up & down toggle supplied within the Qty bar itself. Clicking the Update under the - button will update the Qty.
+Using the Remove under the + sign will Remove the Item / Product from the Cart.
+
+A Subtotal is supplied to give the User / Shopper the Total for the Amount for that Qty of Items / Products.
+
+<details><summary>Qty Control Bar Showing Additional Products , Shows Unit Price & Sub Total  :</summary>
+
+![Shopping Cart](assets/readme-images/App_Pgs/Shopping_Cart_Pg/Qty_Control_Bar.jpg)
+
+</details> 
+
+At the Bottom a Cart Total for all Items / Products is shown 
+              a Delivery Charge if the total is below the Free Delivery amount  if it is over a Delivery Charge of 0 is Shown
+              a Grand Total is Displayed 
+              a Message in Red to get the attention of the User / SHopper is Displayed if the Grand Total is less then the Free Delivery Amount. Nomessage is displayed if it is over the Free Delivery Amount.
+
+<details><summary>Free Delivery Warning / Information :</summary>
+
+![Shopping Cart](assets/readme-images/App_Pgs/Shopping_Cart_Pg/Free_Delivery_Warning_Info.jpg)
+
+</details> 
+
+Two Buttons are Supplied
+
+Keep Shopping - Redirects the User / Shopper back tot he Products Page
+
+Secure Checkout - To the Check Out Page 
+
+[Back to top ⇧](#contents)
+
+#  Secure Check Out
+
+<details><summary> Secure Check Out Page DeskTop :</summary>
+
+![Secure Check Out](assets/readme-images/App_Pgs/Secure_Checkout_Pg/Secure_Check_Out_pg.jpeg)
+
+</details> 
+
+<details><summary>Secure Check Out Page Mobile :</summary>
+
+![Secure Check Out](assets/readme-images/App_Pgs/Secure_Checkout_Pg/Secure_Check_Out_pg_mobile.jpeg)
+
+</details> 
+
+The Secure Check Out Page supplies the User / Shopper with a secure location to check out / pay form their Purchases.
+Stipe payment system is used to process the payments and is one of the biggest payment system available and offers securitY for processing sensitive information.
+
+A Order From is suplied where the User / Shopper can fill in 
+
 
 #  Coffee
 

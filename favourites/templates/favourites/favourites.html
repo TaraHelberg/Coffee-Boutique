@@ -60,8 +60,13 @@
                 </div>
               </div>   
             </div>
+            <!--If No Facourites-->
+            {% empty %}
+            <div class="text-coffee">
+                There are Currently No Favourite Products Selected.
+            </div>  
           </div>
-          {% endfor %}  
+        {% endfor %}  
       </div>
     </div>        
   </div> 
