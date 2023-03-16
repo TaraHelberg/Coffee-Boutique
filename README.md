@@ -53,6 +53,7 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
    * [Gift Sets & Treats Page](#gift-sets--treats)
    * [About Drop Down Navigation](#about)
    * [Blog Page](#blog)
+   * [Blog Detail Page](#blog-detail)
    * [Contact Us Page](#contact-us)
    * [FAQ's Page](#faqs---frequently-asked-questions)
    * [Privacy Policy Page](#privacy-policy-page)
@@ -1188,13 +1189,13 @@ Clicking on any one of these will show only the Products of that Category & Only
 
 <details><summary> Accessories Page DeskTop :</summary>
 
-![Accessories](assets/readme-images/App_Pgs/)
+![Accessories](assets/readme-images/App_Pgs/Accessories_Pg/Accessories_pg.jpeg)
 
 </details> 
 
 <details><summary>Accessories Page Mobile :</summary>
 
-![Accessories](assets/readme-images/App_Pgs/)
+![Accessories](assets/readme-images/App_Pgs/Accessories_Pg/Accessories_pg_mobile.jpeg)
 
 </details> 
 
@@ -1213,7 +1214,7 @@ Manual Coffee Makers
 
 <details><summary> Accessories Drop Down Navigation :</summary>
 
-![Accessories](assets/readme-images/App_Pgs/)
+![Accessories](assets/readme-images/App_Pgs/Accessories_Pg/Accessories_Drop_Down_Navigation.jpg)
 
 </details>
 
@@ -1225,18 +1226,17 @@ Drink Wears
 
 Manual Coffee Makers
 
-
 Clicking on any one of these will show only the Products of that Category & Only that Button will then be visable.
 
 <details><summary> Accessories Category Buttons :</summary>
 
-![Accessories](assets/readme-images/App_Pgs/)
+![Accessories](assets/readme-images/App_Pgs/Accessories_Pg/Accessories_Category_Buttons.jpg)
 
 </details>
 
 <details><summary> Accessories Category 1 Button Selected :</summary>
 
-![Accessories](assets/readme-images/App_Pgs/)
+![Accessories](assets/readme-images/App_Pgs/Accessories_Pg/Accessories_Category_1_Button_Selected.jpg)
 
 </details>
 
@@ -1246,13 +1246,13 @@ Clicking on any one of these will show only the Products of that Category & Only
 
 <details><summary> Gift Sets & Treats Page DeskTop :</summary>
 
-![Gift Sets & Treats](assets/readme-images/App_Pgs/)
+![Gift Sets & Treats](assets/readme-images/App_Pgs/Gift_Sets_%26_Treats_Pg/Gift_Sets_%26_Treats_pg.jpeg)
 
 </details> 
 
 <details><summary>Gift Sets & Treats Page Mobile :</summary>
 
-![Gift Sets & Treats](assets/readme-images/App_Pgs/)
+![Gift Sets & Treats](assets/readme-images/App_Pgs/Gift_Sets_%26_Treats_Pg/Gift_Sets_%26_Treats_pg_mobile.jpeg)
 
 </details> 
 
@@ -1271,7 +1271,7 @@ Treats
 
 <details><summary> Gift Sets & Treats Drop Down Navigation :</summary>
 
-![Gift Sets & Treats](assets/readme-images/App_Pgs/)
+![Gift Sets & Treats](assets/readme-images/App_Pgs/Gift_Sets_%26_Treats_Pg/Gift_Sets_%26_Treats_Drop_Down_Navigation.jpg)
 
 </details>
 
@@ -1287,13 +1287,13 @@ Clicking on any one of these will show only the Products of that Category & Only
 
 <details><summary> Gift Sets & Treats Category Buttons :</summary>
 
-![Gift Sets & Treats](assets/readme-images/App_Pgs/)
+![Gift Sets & Treats](assets/readme-images/App_Pgs/Gift_Sets_%26_Treats_Pg/Gift_Sets_%26_Treats_Category_Buttons.jpg)
 
 </details>
 
 <details><summary> Gift Sets & Treats Category 1 Button Selected :</summary>
 
-![Gift Sets & Treats](assets/readme-images/App_Pgs/)
+![Gift Sets & Treats](assets/readme-images/App_Pgs/Gift_Sets_%26_Treats_Pg/Gift_Sets_%26_Treats_Category_1_Button_Selected.jpg)
 
 </details>
 
@@ -1302,7 +1302,7 @@ Clicking on any one of these will show only the Products of that Category & Only
 # About 
 
 The About Drop Down Navigation leads to a number of seperate App pages. 
-Giving the User / Shopper the oprion to Navigate to these Pages.
+Giving the User / Shopper the option to Navigate to these Pages.
 
 5 Options have been supplied
 
@@ -1318,7 +1318,7 @@ Copy Right
 
 <details><summary> About Drop Down Navigation :</summary>
 
-![About](assets/readme-images/App_Pgs/)
+![About](assets/readme-images/App_Pgs/About_Drop_Down_Navigation/About_Drop_Down_Navigation.jpg)
 
 </details>
 
@@ -1328,33 +1328,88 @@ Copy Right
 
 <details><summary> Blog Page DeskTop :</summary>
 
-![Blog](assets/readme-images/App_Pgs/)
+![Blog](assets/readme-images/App_Pgs/Blog_Pg/Blog_pg.jpeg)
 
 </details> 
 
 <details><summary>Blog Page Mobile :</summary>
 
-![Blog](assets/readme-images/App_Pgs/)
+![Blog](assets/readme-images/App_Pgs/Blog_Pg/Blog_pg_mobile.jpeg)
 
 </details> 
 
+The Blog Page shows a Basic view of the Blog article with an Image & Title below the image.
+If the User / Shopper clicks on the image they will be redirect to the Blog Detail page
+
+There are also 3 Buttons present
+
+Read More Button - If the User / Shopper clicks on the button they will be redirect to the Blog Detail page.
+This Button is the only one visable to the User / Shopper and is available even if they are not Logged in .
+
+Edit & Delete Buttons are only visable to the Admin when Logged in & Respectavly when clicked on take the Admin to either the Edit or Delete Blog pages. 
+
 
 [Back to top ⇧](#contents)
+
+#  Blog Detail  
+
+<details><summary> Blog Detail Page DeskTop :</summary>
+
+![Blog Detail](assets/readme-images/App_Pgs/Blog_Detail_Pg/Blog_Detail_pg.jpeg)
+
+</details> 
+
+<details><summary>Blog Detail Page Mobile :</summary>
+
+![Blog Detail](assets/readme-images/App_Pgs/Blog_Detail_Pg/Blog_Detail_pg_mobile.jpeg)
+
+</details> 
+
+The Blog Detail Page shows the full Blog article with The Title at the top , Image below & Full article following.
+There are links within the Blog article that open in a seperte tab if clicked on.
+Credit has been given to all article information at the bottom of the the Main body of the Article with a link that will open in a new tab.
+
+Below 3 Buttons are supplied 
+
+Edit & Delete Buttons are only visable to the Admin when Logged in & Respectavly when clicked on take the Admin to either the Edit or Delete Blog pages. 
+
+Back to Blog Button If the User / Shopper clicks on the button they will be redirect to the Blog page.
+This Button is the only one visable to the User / Shopper and is available even if they are not Logged in .
+
+[Back to top ⇧](#contents)
+
 
 #  Contact Us
 
 <details><summary> Contact Us Page DeskTop :</summary>
 
-![Contact Us](assets/readme-images/App_Pgs/)
+![Contact Us](assets/readme-images/App_Pgs/Contact_Us_Pg/Contact_Us_pg.jpeg)
 
 </details> 
+
 
 <details><summary>Contact Us Page Mobile :</summary>
 
-![Contact Us](assets/readme-images/App_Pgs/)
+![Contact Us](assets/readme-images/App_Pgs/Contact_Us_Pg/Contact_Us_pg_mobile.jpeg)
 
 </details> 
 
+The Contact Us Page provides thr User / Shopper even if not logged in with a contact form to fill in.
+Form askes for : Name , Email , Subject & Message from the User / Shopper.
+
+2 Buttons are available 
+
+Cancel Button - Redirects User / Shopper to the Home page
+
+Submit - Sumbits the to Submit the Contact form.
+
+On Submitting the Contact form the User / Shopper will be presented with a Success Pop Up message.
+
+<details><summary>Contact Us Success POp Up :</summary>
+
+![Contact Us Success POp Up ](assets/readme-images/App_Pgs/Contact_Us_Pg/Contact_Us_Success_Pop_Up.jpeg)
+
+</details> 
 
 [Back to top ⇧](#contents)
 
@@ -1362,16 +1417,18 @@ Copy Right
 
 <details><summary> FAQ's Page DeskTop :</summary>
 
-![FAQ's](assets/readme-images/App_Pgs/)
+![FAQ's](assets/readme-images/App_Pgs/FAQ's_Pg/FAQ's_pg.jpeg)
 
 </details> 
 
 <details><summary>FAQ's Page Mobile :</summary>
 
-![FAQ's](assets/readme-images/App_Pgs/)
+![FAQ's](assets/readme-images/App_Pgs/FAQ's_Pg/FAQ's_pg._mobile.jpeg)
 
 </details> 
 
+The FAQ's page provides the User / Shopper with a list of Questions clicking on the Question will drop down & SHow the Answer.
+The First Question is open by default to give the User / Shopper the idea on how to use this section as it shows both the Question with the answers below it.
 
 [Back to top ⇧](#contents)
 
@@ -1379,15 +1436,21 @@ Copy Right
 
 <details><summary> Privacy Policy Page DeskTop :</summary>
 
-![Privacy Policy](assets/readme-images/App_Pgs/)
+![Privacy Policy](assets/readme-images/App_Pgs/Privacy_Policy_Pg/Privacy_Policy_pg.jpeg)
 
 </details> 
 
 <details><summary>Privacy Policy Page Mobile :</summary>
 
-![Privacy Policy](assets/readme-images/App_Pgs/)
+![Privacy Policy](assets/readme-images/App_Pgs/Privacy_Policy_Pg/Privacy_Policy_pg_mobile.jpeg)
 
 </details> 
+
+The Privacy Policy page is very simple and is just a document that shows the Buisness Privacy Policy.
+With in this Policy page we have show who generated out Privacy policy with a link that opens in a new tab.
+We have also supplied the online link to the Business Privacy policy via a link that opens in a new tab.
+
+See Credit in Credit section as well
 
 
 [Back to top ⇧](#contents)
@@ -1396,15 +1459,18 @@ Copy Right
 
 <details><summary> Copy Right Page DeskTop :</summary>
 
-![Copy Right](assets/readme-images/App_Pgs/)
+![Copy Right](assets/readme-images/App_Pgs/Copy_Right_Pg/Copy_Right_pg.jpeg)
 
 </details> 
 
 <details><summary>Copy Right Page Mobile :</summary>
 
-![Copy Right](assets/readme-images/App_Pgs/)
+![Copy Right](assets/readme-images/App_Pgs/Copy_Right_Pg/Copy_Right_pg_mobile.jpeg)
 
 </details> 
+
+The Copy Right page is very simple and is just a document that shows the Buisness Copy Right.
+This was generated by Disclaimer Generatore & is Credited in the Credits section of the Readme.
 
 
 [Back to top ⇧](#contents)
@@ -1878,21 +1944,22 @@ I would like to take the time to Acknowledge & give credit to all the main assis
    * Heroku for hosting my App . https://www.heroku.com/ 
    * Reuben Ferrante my mentor without all his great guidance I would be lost. A Huge Thanks. https://github.com/arex18
    * The Slack community - for someone always been there no matter the time and with advice or direction. https://slack.com
-   * Code Institute Tutoring ......
+   * Code Institute Tutoring for helping me Rubber Duck a lot & there patience & understanding.
    * Balsamiq used to build the wireframes for my project. https://balsamiq.com   
    * Stack Overflow  for all the information to assist with my project .https://stackoverflow.com
    * Django Documentation for all the invaluable information on how to use the features .https://docs.djangoproject.com/en/4.1/
    * Django Secret Key Generator for a new secret key for safety & security .https://miniwebtool.com/django-secret-key-generator/
    * I am Responsive for a fantastic spot to see a visual of responsiveness. https://ui.dev/amiresponsive?msclkid=400b1adabe5b11ecbc48938198bb87b4
    * Lighthouse testing system whom I can't find a webpage link for but am grateful for been able to use.
+   * Privacy Policy - Our Privacy Policy was created with the help of the TermFedd Privacy Policy Generator. https://www.termsfeed.com/privacy-policy-generator/
+   * Copy Right - Our Copy Right was create with the help of Disclaimer Generator. https://www.disclaimergenerator.net/#wizard 
 
 
 ## Copied Code / Code assistance  
 
-Code Institutes walkthrough: ........ paid a big part in the structure of my App as well as certain parts that are directly used and referred to in the code via comments. 
+Code Institutes walkthrough: Boutique Ado paid a big part in the structure of my App as well as certain parts that are directly used and referred to in the code via comments. 
 
-
- ### Note
+### Note
 
 All Recipes and information in this App are for Education purpose only.
 
