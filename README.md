@@ -1200,11 +1200,73 @@ Secure Checkout - To the Check Out Page
 
 </details> 
 
-The Secure Check Out Page supplies the User / Shopper with a secure location to check out / pay form their Purchases.
+The Secure Check Out Page supplies the User / Shopper with a secure location to check out / pay for their Purchases.
+
 Stipe payment system is used to process the payments and is one of the biggest payment system available and offers securitY for processing sensitive information.
 
-A Order From is suplied where the User / Shopper can fill in 
+A Order From is suplied where the User / Shopper can fill in personal details & Delivery Address information.
+A Save this delivery information to my profiile is supplied.
 
+Payment section to input card details to complete the payment.
+
+Next to the Order form is an Order Summary section that supplies the User / SHopper with the details of what theya are about to purchase.
+
+Item : Contains the Image , Item / Product Name , Size if Item / Prodcut has one or N/A if none & the Qty of that Item / Product .
+
+Subtotal - the Subtotal Amount per Item / Product listed on the Order Summary per Item / Products
+
+Under this is the Order Total , Deliver if any or 0 if none & the Grand Total .
+
+<details><summary>Secure Check Out Page In Use Form filled & Summary Order:</summary>
+
+![Secure Check Out](assets/readme-images/App_Pgs/Secure_Checkout_Pg/Secure_Check_Out_Form_pg.jpeg)
+
+</details> 
+
+Two Buttons are supplied
+
+Adjust Shopping Cart - Takes the User / SHopper back to their Shopping Cart 
+Complete Order - This will complete the order and proccess the Payment 
+
+Under these Buttons is a Red warn / info line informating the User / Shopper of the Amount their card will be charged.
+
+Using the Complete Order button will take the User / Shopper to a Order Information Page & A Success Pop Up will appear.
+
+This form will inform the User / Shopper that an Confirmation email will be sent.
+It contains an order number , Order Date ,Order Details , Delivering to Information & Order Total,Delivery Cost if any & The Grand Total .
+
+Under this a Button is supplied .
+
+Keep Shopping - Redirects back to Products Page.
+
+<details><summary>Secure Check Out Order Confirmation Page :</summary>
+
+![Secure Check Out](assets/readme-images/App_Pgs/Secure_Checkout_Pg/Secure_Check_Out_Confirmation_pg.jpeg)
+
+</details> 
+
+<details><summary>Confirmation email :</summary>
+
+![Secure Check Out](assets/readme-images/App_Pgs/Secure_Checkout_Pg/Secure_Check_Out_Confirmation__Email.jpeg)
+
+</details> 
+
+Stripe has been use for the Payment system .
+On the Stipe Dash Board one can see that the payment has been success full by checking on the Payment Inent / Payment Log 
+
+<details><summary>Stripe Payment Intenet Succeeded :</summary>
+
+![Secure Check Out](assets/readme-images/App_Pgs/Secure_Checkout_Pg/Stripe_Payment_intent.succeeded.jpeg)
+
+</details> 
+
+<details><summary>Stripe Payment Log Succeeded :</summary>
+
+![Secure Check Out](assets/readme-images/App_Pgs/Secure_Checkout_Pg/Stripe_Log_succeeded.jpeg)
+
+</details> 
+
+[Back to top ⇧](#contents)
 
 #  Coffee
 
