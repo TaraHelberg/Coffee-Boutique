@@ -13,5 +13,7 @@ class ContactUs(models.Model):
     date_submitted = models.DateTimeField(default=timezone.now)
 
     class Meta:
-
+        """ Set verbose name """
+        verbose_name_plural = 'Contact Us'
+        """ Set Ordering by """
         ordering = ['-date_submitted']
