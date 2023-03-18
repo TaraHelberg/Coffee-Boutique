@@ -1885,23 +1885,74 @@ The Admin has 2 other Access points from the Account when Logged in Add Product 
 
 ## Add Product 
 
-Admin can Add a Product from the Front End access is granted via been Logged In to the Account a drop down menu will supply the Add Product  - [Back to top ⇧](#home-page) 2. Header -  * Account Drop Down - Admin Logged In .
+Admin can Add a Product from the Front End access is granted via been Logged In to the Account a drop down menu will supply the Add Product  - [Back to top ⇧](#home-page) 2. Header -  Account Drop Down Admin Logged In
 
 <details><summary> Add Product  Page DeskTop :</summary>
 
-![Add Product ](assets/readme-images/App_Pgs/)
+![Add Product ](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_pg.jpeg)
 
 </details> 
 
 
 <details><summary>Add Product Page Mobile :</summary>
 
-![Add Product](assets/readme-images/App_Pgs/)
+![Add Product](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_pg_mobile.jpeg)
+
+</details> 
+
+The Form supplys the Admin / Super User with :
+    1.  Category - Drop Down menu shows all current Categories.
+    2. Sku number - Admin to input according to Category Chosen
+    3. Name - Rich Text Supplied
+    4. Discription - Rich Text Supplied
+    5. Has Size - Drop Down set to Default of No 
+    6. Price
+    7. Image Url & Select Image Button
+
+    Two Buttons are Supplied 
+    Cancel - Redirects To Product Page
+    Add Product - Adds the Product to the App
+
+    Success Pop Up Message supplied on Add Product
+
+<details><summary>Add Product Success Pop Up Message :</summary>
+
+![Add Product Success Pop Up Message](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_Success_Pop_Up.png)
+
+</details> 
+
+    Error Pop Up Message if an error occurred during Adding Product
+
+<details><summary>Add Product Error Pop Up Message  :</summary>
+
+![Add Product Error Pop Up Message](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_Error_Pop_Up.png)
+
+</details> 
+
+[Back to top ⇧](#contents)
+
+## Edit Product
+
+Admin can Add a Product from the Front End access is granted via the All Products or seperate Product Catergory lists on the Product display Card when Admin / SUper User is logged In the Edit Button is visable to Admin only .
+
+<details><summary> Edit Product  Page DeskTop :</summary>
+
+![Edit Product ](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_pg.jpeg)
 
 </details> 
 
 
+<details><summary>Edit Product Page Mobile :</summary>
 
+![EditProduct](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_pg_mobile.jpeg)
+
+</details> 
+
+The Edit Product form i sshown here the Admin / Super User Can Edit / Update the Product as needed .
+
+Two Buttons are supplied 
+Cancel - Returns to the All Products Page 
+Update Product - Update the Product information
 
 
 [Back to top ⇧](#contents)
