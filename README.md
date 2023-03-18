@@ -74,6 +74,7 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
         * [Admin Reviews Django](#admin-reviews-django)
    * [Admin Control Front End](#admin-control-front-end)
         * [Admin Front End Products](#admin-front-end-products)
+        * [Admin Front End Blog](#admin-front-end-blog)
 
 - [Technologies](#technologies)
    * [Programming Languages](#programming-languages)
@@ -1889,35 +1890,44 @@ Admin can Add a Product from the Front End access is granted via been Logged In 
 
 <details><summary> Add Product  Page DeskTop :</summary>
 
-![Add Product ](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_pg.jpeg)
+![Add Product ](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Products/Add_Product_pg.jpeg)
 
 </details> 
 
 
 <details><summary>Add Product Page Mobile :</summary>
 
-![Add Product](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_pg_mobile.jpeg)
+![Add Product](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Products/Add_Product_pg_mobile.jpeg)
 
 </details> 
 
 The Form supplys the Admin / Super User with :
+
     1.  Category - Drop Down menu shows all current Categories.
+
     2. Sku number - Admin to input according to Category Chosen
+
     3. Name - Rich Text Supplied
+
     4. Discription - Rich Text Supplied
+
     5. Has Size - Drop Down set to Default of No 
+
     6. Price
+
     7. Image Url & Select Image Button
 
     Two Buttons are Supplied 
+   
     Cancel - Redirects To Product Page
+   
     Add Product - Adds the Product to the App
 
     Success Pop Up Message supplied on Add Product
 
 <details><summary>Add Product Success Pop Up Message :</summary>
 
-![Add Product Success Pop Up Message](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_Success_Pop_Up.png)
+![Add Product Success Pop Up Message](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Products/Add_Product_Success_Pop_Up.png)
 
 </details> 
 
@@ -1925,7 +1935,7 @@ The Form supplys the Admin / Super User with :
 
 <details><summary>Add Product Error Pop Up Message  :</summary>
 
-![Add Product Error Pop Up Message](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_Error_Pop_Up.png)
+![Add Product Error Pop Up Message](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Products/Add_Product_Error_Pop_Up.png)
 
 </details> 
 
@@ -1933,29 +1943,175 @@ The Form supplys the Admin / Super User with :
 
 ## Edit Product
 
-Admin can Add a Product from the Front End access is granted via the All Products or seperate Product Catergory lists on the Product display Card when Admin / SUper User is logged In the Edit Button is visable to Admin only .
+Admin can Edit a Product from the Front End access is granted via the All Products or seperate Product Catergory lists on the Product display Card when Admin / Super User is logged In the Edit Button is visable to Admin only .
 
-<details><summary> Edit Product  Page DeskTop :</summary>
+On clicking on the Edit Button Adminis take to the Edit Product Form.
 
-![Edit Product ](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_pg.jpeg)
+A Alert Pop Message is shown.
+
+<details><summary> Edit Product Page DeskTop :</summary>
+
+![Edit Product ](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Edit_Products/Edit_Product_pg.jpeg)
 
 </details> 
 
 
 <details><summary>Edit Product Page Mobile :</summary>
 
-![EditProduct](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Add_Product_pg_mobile.jpeg)
+![Edit Product](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Edit_Products/Edit_Product_pg_mobile.jpeg)
 
 </details> 
 
-The Edit Product form i sshown here the Admin / Super User Can Edit / Update the Product as needed .
+The Edit Product form is shown here the Admin / Super User Can Edit / Update the Product as needed .
+The Edit form provides the same form fileds as the Add Product form.
 
 Two Buttons are supplied 
+
 Cancel - Returns to the All Products Page 
+
 Update Product - Update the Product information
 
+[Back to top ⇧](#contents)
+
+## Delete Product
+
+Admin can Delete a Product from the Front End access is granted via the All Products or seperate Product Catergory lists on the Product display Card when Admin / Super User is logged In the Delete Button is visable to Admin only .
+
+On clicking on the Delete Button Adminis take to the Delete Product Page.
+
+<details><summary> Delete Product Page DeskTop :</summary>
+
+![Delete Product ](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Edit_Products/Edit_Product_pg.jpeg)
+
+</details> 
+
+
+<details><summary>Delete Product Page Mobile :</summary>
+
+![Delete Product](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Products/Edit_Products/Edit_Product_pg_mobile.jpeg)
+
+</details> 
+
+The Delete Product Page is shown here the Admin / Super User Can Delete the Product if needed .
+The Delete Pages shows a Question and a Warning in Read about Deletion.
+
+Two Buttons are supplied 
+
+Cancel - Returns to the All Products Page 
+
+Delete Product - Delete the Product permanately
+
+Using the Delete Product Button will generate a Succes Pop Up of Deletion.
 
 [Back to top ⇧](#contents)
+
+## Admin Front End Blog
+
+## Add Blog 
+
+Admin can Add a Blog from the Front End access is granted via been Logged In to the Account a drop down menu will supply the Add Blog  - [Back to top ⇧](#home-page) 2. Header -  Account Drop Down Admin Logged In
+
+<details><summary> Add Blog Page DeskTop :</summary>
+
+![Add Blog ](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Blog/Add_Blog/Add_Blog.jpeg)
+
+</details> 
+
+
+<details><summary>Add Blog Page Mobile :</summary>
+
+![Add Blog](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Blog/Add_Blog/Add_Blog_mobile.jpeg)
+
+</details> 
+
+The Form supplys the Admin / Super User with :
+
+    1. Title - Input Blog Title
+
+    2. Contenet - Rich Text Supplied
+
+    3. Select File Image Button
+
+    Two Buttons are Supplied 
+   
+    Cancel - Redirects To Product Page
+   
+    Add Blog - Adds the Product to the App
+
+    Success Pop Up Message supplied on Add Blog
+
+<details><summary>Add Blog Success Pop Up Message :</summary>
+
+![Add Blog Success Pop Up Message](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Blog/Add_Blog/Add_Blog_Success_Pop_Up.png)
+
+</details> 
+
+[Back to top ⇧](#contents)
+
+## Edit Blog
+
+Admin can Edit a Blog from the Front End access is granted via the Blog Page & Blog Details AKA - Read More at the bottom of the Blog when Admin / Super User is logged In the Edit Button is visable to Admin only .
+
+On clicking on the Edit Button Adminis take to the Edit Blog Form.
+
+A Alert Pop Message is shown.
+
+<details><summary> Edit Blog Page DeskTop :</summary>
+
+![Edit Blog ](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Blog/Edit_Blog/Edit_Blog.jpeg)
+
+</details> 
+
+
+<details><summary>Edit Blog Page Mobile :</summary>
+
+![Edit Blog](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Blog/Edit_Blog/Edit_Blog_mobile.jpeg)
+
+</details> 
+
+The Edit Blog form is shown here the Admin / Super User Can Edit / Update the Blog as needed .
+The Edit form provides the same form fileds as the Add Blog form.
+
+Two Buttons are supplied 
+
+Cancel - Returns to the Blog that was about to be Edited Page 
+
+Update Blog - Update the Blog information
+
+[Back to top ⇧](#contents)
+
+## Delete Blog
+
+Admin can Delete a Blog from the Front End access is granted via the Blog Page & Blog Details AKA - Read More at the bottom of the Blog when Admin / Super User is logged In the Edit Button is visable to Admin only .
+
+On clicking on the Delete Button Admin a Delete Pop Up Modal is activated.
+
+<details><summary> Delete Product Page DeskTop :</summary>
+
+![Delete Product ](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Blog/Delete_Blog/Delete_Blog.jpeg)
+
+</details> 
+
+
+<details><summary>Delete Product Page Mobile :</summary>
+
+![Delete Product](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Blog/Delete_Blog/Delete_Blog_mobile.jpeg)
+
+</details> 
+
+The Delete Pop Up Modal will allow the Admin / Super User to Delete the Blog if needed .
+The Delete Pop Up Modal shows a Question and a Warning in Read about Deletion.
+
+Two Buttons are supplied 
+
+Cancel - Returns to the Blog that was about to be Deleted Page 
+
+Delete Blog -  Delete the bLOG permanately
+
+Using the Delete Blog Button will generate a Succes Pop Up of Deletion.
+
+[Back to top ⇧](#contents)
+
 
 # Technologies
 
