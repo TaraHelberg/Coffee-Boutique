@@ -72,7 +72,8 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
         * [Admin Categories Dajngo](#admin-categories-dajngo)
         * [Admin Products Django](#admin-products-django)
         * [Admin Reviews Django](#admin-reviews-django)
-
+   * [Admin Control Front End](#admin-control-front-end)
+        * [Admin Front End Products](#admin-front-end-products)
 
 - [Technologies](#technologies)
    * [Programming Languages](#programming-languages)
@@ -930,7 +931,7 @@ A Sign Out button is provided & a redirect button Cancel which goes to the Home 
 
 <details><summary>Sign Out :</summary>
 
-![Sign Out](assets/readme-images/App_Pgs/User_Account_Pgs/Password_Reset_pg.png)
+![Sign Out](assets/readme-images/App_Pgs/User_Account_Pgs/Sing_Out_pg.png)
 
 </details> 
 
@@ -1728,8 +1729,11 @@ This is part of the Django Framework and supplies a simple form area requesting 
 
 [Admin Login link](https://coffee-boutique.herokuapp.com/admin/login/?next=/admin/)
 
+<details><summary>Admin Login Django :</summary>
 
 ![Admin Login Django](assets/readme-images/App_Pgs/Admin_Control_Django/Django_Admin_Login.pg.jpeg)
+
+</details> 
 
 [Back to top ⇧](#contents)
 
@@ -1739,6 +1743,8 @@ This is part of the Django Framework and supplies a simple form area requesting 
 
 ![Admin Blog Django Control Panel](assets/readme-images/App_Pgs/Admin_Control_Django/Admin_Blog/Admin_Blog_Django.jpeg)
 
+</details>
+
 The Admin Blog Control Page in Django Administration, here Admin is are able to Add, Delete and Update Blogs via the Controls Supplied.
 
 Clicking on the Add Blog + button will bring Up a form to Add a Blog.
@@ -1747,6 +1753,8 @@ We have added rich text to the Conent of the Blog to give the Blogger a bit of a
 <details><summary>Admin Add Blog Django:</summary>
 
 ![Admin Add Blog Django](assets/readme-images/App_Pgs/Admin_Control_Django/Admin_Blog/Admin_Add_Blog_Django.jpeg)
+
+</details>
 
 Highlighting a Blog thick the block next to it, that you wish to select and using the drop-down arrow by the Action bar will give you the option to Delete.
 Clicking on Go will complete the action and delete the selected Blog.
@@ -1768,6 +1776,8 @@ Clicking on a Blog will open the Blog up for you to view the entire contents her
 <details><summary>Admin Products Django Control Panel:</summary>
 
 ![Admin Products Django Control Panel](assets/readme-images/App_Pgs/Admin_Control_Django/Admin_Products_Control/Admin_Products_Django_Control.jpeg)
+
+</details>
 
 The Admin Products Control Page in Django Administration, here Admin is are able to go to the Categories, Products & Reviews via the Controls Supplied.
 
@@ -1820,6 +1830,8 @@ We have added rich text to the Name & Disription of the Products to give the Adm
 
 ![Admin Add Product Django](assets/readme-images/App_Pgs/Admin_Control_Django/Admin_Products_Control/Admin_Products/Admin_Add_Product_Django.jpeg)
 
+</details>
+
 Clicking on a Product will open the Product up for you to view the entire Product Details here you can make update / edit the Product as you need.
 
 <details><summary>Admin Edit Product Django:</summary>
@@ -1848,6 +1860,8 @@ Clicking on the Add Reviews + button will bring Up a form to Add a Reviews.
 
 ![Admin Add Review Django](assets/readme-images/App_Pgs/Admin_Control_Django/Admin_Products_Control/Admin_Reviews/Admin_Add_Review_Django.jpeg)
 
+</details>
+
 Clicking on a Review will open the Review up for you to view the entire Review Details here you can make update / edit the Review as you need. However our Admin will be discourage from doing this unless the Review bleongs to Admin / the User / Shopper has been contacted & Informed of this action.
 
 <details><summary>Admin Edit Review Django:</summary>
@@ -1860,9 +1874,37 @@ Clicking on a Review will open the Review up for you to view the entire Review D
 
 ## Admin Control Front End 
 
+In this App we have granted Admin access front the Front end as well.
+
+Admin is able to Add , Edit & Delte Products , Product Reviews & Blogs.
+
+Admin is able to Login via Account in the Header - However unlike other standard Registered User /Shopper Admin is granted Access to not Only the My Profile, Favourites and Logout as is Standard.
+The Admin has 2 other Access points from the Account when Logged in Add Product & Add Blog.
+
+## Admin Front End Products
+
+## Add Product 
+
+Admin can Add a Product from the Front End access is granted via been Logged In to the Account a drop down menu will supply the Add Product  - [Back to top ⇧](#home-page) 2. Header -  * Account Drop Down - Admin Logged In .
+
+<details><summary> Add Product  Page DeskTop :</summary>
+
+![Add Product ](assets/readme-images/App_Pgs/)
+
+</details> 
+
+
+<details><summary>Add Product Page Mobile :</summary>
+
+![Add Product](assets/readme-images/App_Pgs/)
+
+</details> 
+
+
+
+
 
 [Back to top ⇧](#contents)
-
 
 # Technologies
 

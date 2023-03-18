@@ -27,7 +27,7 @@
                         {% if field.name != 'image' %}
                             {{ field | as_crispy_field }}
                         {% else %}
-                            {{ field }}
+                            {{ field | safe }}
                         {% endif %}
                     {% endfor %}           
                     <!--Page Links to Add Product or Cancel to Leave page Redirect's to Products-->
