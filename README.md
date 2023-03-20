@@ -96,7 +96,9 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
 
 - [Deployment](#deployment)
    * [Github](#github)
-   * [Django and Heroku](#django-and-heroku)   
+   * [ElephantSql](#elepahntsql)
+   * [Django and Heroku](#django-and-heroku)
+   * [Amazone AWS](#amazone-aws)   
    * [Clone Project](#clone-project)
 
 - [Acknowledgments](#acknowledgments)
@@ -2141,7 +2143,7 @@ Using the Delete Blog Button will generate a Succes Pop Up of Deletion.
 - [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
     - Used to help fix problem areas and identify bugs.
 - [Heroku](https://www.heroku.com/)
-    - To deploy the project.
+    - To Host deployed project.
 - [ElephantSQL](https://www.elephantsql.com/)
     - To Create an external database       
 - [Amazon AWS](https://aws.amazon.com/)
@@ -2516,7 +2518,11 @@ A selection of Error's encountered.
 
 # Deployment
 
-This project was deployed using Github and Heroku.
+This project was deployed using
+1.  Github - For storing code and deploying the site.
+2.  ElepahntSql.com - To Create an external database 
+3.  Django and Heroku - To Host deployed project.
+4.  Amazone AWS - Used to hosting for our static and media files 
 
 - ## Github 
 
@@ -2529,23 +2535,191 @@ This project was deployed using Github and Heroku.
         + Add repository name then clicked the green ‘create repository button’ at the bottom of the page.
         + Open the new repository and clicked the green ‘Gitpod’ button to create a workspace in Gitpod for editing.
 
+
+- ## ElepahntSql 
+
+    +  Log in to ElephantSQL.com to access your dashboard
+    +  Click “Create New Instance”
+    +  Set up your plan
+    +  Give your plan a Name (this is commonly the name of the project)
+    +  Select the Tiny Turtle (Free) plan
+    +  You can leave the Tags field blank
+    +  Select “Select Region”
+    +  Then click “Review”
+    +  Check your details are correct and then click “Create instance”
+    +  Return to the ElephantSQL dashboard and click on the database instance name for this project
+    +  In the URL section, clicking the copy icon will copy the database URL to your clipboard
+
 - ## Django and Heroku
 
-    To get the Django framework installed and set up I followed the Code institutes . & Revisited the Walkthrough to assist.
-    However due to changes made by Heroku changes were made when this occurred & information received from Code Institute.
+    To get the Django framework installed and set up I followed the Code institutes & Revisited the Walkthrough to assist.
+
+    +  Log into Heroku
+    +  Go to the Dashboard.
+    +  Click New to create a new app
+    +  Give your app a name and select the region closest to you
+    +  Click Create app to confirm
+    +  Open the Settings tab - Add the config var DATABASE_URL, and for the value, copy in your database url from ElephantSQL
+
+    With our database created, and an app ready on Heroku, we need to configure some things within our project code. We head back to Gitpod next.
+
+    +  In the terminal, install dj_database_url and psycopg2, both of these are needed to connect to your external database.
+
+    +  pip3 install dj_database_url==0.5.0 psycopg2
+    +  Update your requirements.txt file with the newly installed packages
+    +  pip freeze > requirements.txt
+    +  In your settings.py file, import dj_database_url underneath the import for os
+    +  import os
+    +  import dj_database_url
+
+    Scroll to the DATABASES section and update it to the following code, so that the original connection to sqlite3 is commented out and we connect to the new ElephantSQL database instead. Paste in your ElephantSQL database URL in the position indicated
+
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.sqlite3',
+    #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    #     }
+    # }
+     
+    DATABASES = {
+        'default': dj_database_url.parse('your-database-url-here')
+    }
+    
+    + DO NOT commit this file with your database string in the code, this is temporary so that we can connect to the new database and make migrations. We will remove it in a moment.
+
+    + In the terminal, run the showmigrations command to confirm you are connected to the external database
+
+    + python3 manage.py showmigrations
+    If you are, you should see a list of all migrations, but none of them are checked off
+    a terminal showing migrations that have not been applied
+
+    + Migrate your database models to your new database
+    + python3 manage.py migrate
+    + Load in the fixtures. Please note the order is very important here. We need to load categories first
+
+    + python3 manage.py loaddata categories
+    + Then products, as the products require a category to be set
+
+    + python3 manage.py loaddata products
+    + Create a superuser for your new database
+
+    + python3 manage.py createsuperuser
+    + Follow the steps to create a your superuser username and password. The email address can be left blank.
+
+    + Finally, to prevent exposing our database when we push to GitHub, we will delete it again from our settings.py - we’ll set it up again using an environment variable in the next video - and reconnect to our local sqlite database. For now, your DATABASE setting in the settings.py file should look like this
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }  
     
     #### Final Deployment 
-    DEBUG = False
 
-    X_FRAME_OPTIONS = 'SAMEORIGIN' 
-
-    In Heroku go to Reveal Congfig Vars  
-    Remove Disbable_Collectstatic
-
-    Go to Deploy Tab & Deploy Branch
-   
-   + Note : Safety & Security : From the start of this PP I have had an env.py file that I have kept the secret key's in particular the Django Secret Key however after deployment I felt that for saftery & security although my secret key's had been kept in an env.py file, I could not be 100% sure that the secret key had not been pushed through to git due to the manner in which I had use the env.py file and settings.py file at the start of the App. I decided to use a Django key generator & add a new Django secret key to my env.py file & to heroku config vars to sensure that should the key have been push by accident that it was now an invalid key.
+    DEBUG = 'DEVELOPMENT' in os.environ
+       
+    + Note : Safety & Security : From the start of this PP I have had an env.py file that I have kept the secret key's in particular the Django Secret Key however after deployment I felt that for saftery & security although my secret key's had been kept in an env.py file, I could not be 100% sure that the secret key had not been pushed through to git due to the manner in which I had use the env.py file and settings.py file at the start of the App. I decided to use a Django key generator & add a new Django secret key to my env.py file & to heroku config vars to sensure that should the key have been push by accident that it was now an invalid key.
      
+- ## Amazone AWS
+
+    To get the Amazone AWS set up I followed the Code institutes & Revisited the Walkthrough to assist.
+
+    Using the Following CI Video's 
+    1. https://youtu.be/uGdZeX319Q4
+
+    +  Log into Amazone AWS
+    +  Sign-in in the upper right by accessing the AWS management console under my account
+    +  All Services>Storage menu, click the link that says S3
+    +  Click the orange button that says 'Create Bucket'.
+    +  Name the bucket and select the closest region to you
+    +  Object Ownership I followed these steps supplied by CI https://codeinstitute.s3.amazonaws.com/fullstack/AWS%20changes%20sheet.pdf
+
+    ### Connecting Django to S3
+
+    Using the Following CI Video's 
+    2. https://youtu.be/r-HJv_MyOqw
+
+    +  Install two packages. Boto3 and Django storages
+        -  pip3 install boto3
+        -  pip3 install django-storages
+    +  pip3 freeze > requirements.txt
+    +  Add 'storages' to your installed apps section inside your settings.py     
+    +  Add some additional settings to the same file to let django know what bucket it's communicating with.
+        - Near the bottom of the file you should write an if statement to check if there is an environment variable called USE_AWS.
+        - if 'USE_AWS' in os.environ:
+         AWS_STORAGE_BUCKET_NAME = 'insert-your-bucket-name-here'
+         AWS_S3_REGION_NAME = 'insert-your-region-here'
+         AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+         AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    + In Heroku Add Config Vars - add the keys with values that were downloaded earlier in the CSV file. 
+                                - AWS_ACCESS_KEY_ID
+                                - AWS_SECRET_ACCESS_KEY
+                                - USE_AWS set to True
+    +  In Heroku remove the DISABLE_COLLECTSTAIC variable 
+    +  Go to settings.py file in your django project and head back to the if statement we wrote earlier and inside the statement add this line setting: 
+                                - AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com' 
+    +  Create a file - custom storages.py   
+                     - import your settings as well as the s3boto3 storage class. So at the top of the file insert the code:
+                     - from django.conf import settings
+                     - from storages.backends.s3boto3 import S3Boto3Storage
+                     - underneath the imports insert these two classes:
+                        - class StaticStorage(S3Boto3Storage):
+                                location = settings.STATICFILES_LOCATION
+                        - class MediaStorage(S3Boto3Storage):
+                                location = settings.MEDIAFILES_LOCATION
+    + In settings.py file, underneath the bucket config settings but still inside the if statement, add these lines:
+
+                    - STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+                    - STATICFILES_LOCATION = 'static'
+                    - DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+                    - MEDIAFILES_LOCATION = 'media'
+    +  You will also need to override and explicitly set the URLs for static and media files using your custom domain and new locations. To do this add these two lines inside the same if statement:
+
+                    - STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+                    - MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    + Save, add, commit and push your changes, you should see that your S3 bucket now has a static folder with all your static files inside.
+
+    ### Caching, Media Files & Stripe
+   
+    Using the Following CI Video's 
+    3. https://youtu.be/JPb82nILolU
+
+    + In settings.py add an if statement to handle the media files. This helps to speed things up by letting the browser know that its ok to cache static files for a long time:
+
+                    - AWS_S3_OBJECT_PARAMETERS = {
+                    - 'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+                    - 'CacheControl': 'max-age=94608000',
+                      }
+    + Save, add, commit and push your changes
+    + In Amazon AWS - in S3, go to your bucket and click 'Create folder'. Name the folder 'media' and click 'Save'.
+    + Inside the new media folder you just created, click 'Upload', 'Add files', and then select all the images that you are using on your site. Note your media folders must mirror your Media folders withing your Workspace gitpod.io
+    + Then under 'Permissions' select the option 'Grant public-read access' and click upload. You may need to also check an acknowledgment warning checkbox too.
+    + Once that is finished you're all set. All your static files and media files should be automatically linked from django to your S3 bucket.
+    + You will need to  confirmed the email address for our superuser on the Postgres database yet.
+    So we need to do that in the Django admin. Or by attempting to log in and
+    getting the email confirmation link from the Heroku app logs. DO this in your Django Admin.
+    Without doing this the user won't be able to log into the store.
+    + In Heroku Confi Vars Add your Stipe keys.
+    + In Stipe - Sign into your stripe account and click 'Developers' located in the top right of the navbar.
+        - Then in the side-nav under the Developers title, click on 'Webhooks', then 'Add endpoint'.
+        - On the next page you will need to input the link to your heroku app followed by /checkout/wh/. It should look something like this:
+                        -  https://your-app-name.herokuapp.com/checkout/wh/
+        - Then click '+ Select events' and check the 'Select all events' checkbox at the top before clicking 'Add events' at the bottom. Once this is done finish the form by clicking 'Add endpoint'.
+        - Your webhook is now created and you should see that it has generated a secret key. You will need this to add to your heroku config vars.
+        - Head over to your app in heroku and navigate to the config vars section under settings. You will need the secret key you just generated for your webhook, in addition to your Publishable key and secret key that you can find in the API keys section back in stripe.
+        - Add these values under these keys:
+
+                        - STRIPE_PUBLIC_KEY = 'insert your stripe publishable key'
+                        - STRIPE_SECRET_KEY = 'insert your secret key'
+                        - STRIPE_WH_SECRET = 'insert your webhooks secret key'
+        - Finally, back in your setting.py file in django, insert the following near the bottom of the file:
+
+                        - STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+                        - STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+                        - STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')    
+
+[Back to top ⇧](#contents)
 
 - ## Clone Project 
 
