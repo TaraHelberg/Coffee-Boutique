@@ -2086,14 +2086,14 @@ Admin can Delete a Blog from the Front End access is granted via the Blog Page &
 
 On clicking on the Delete Button Admin a Delete Pop Up Modal is activated.
 
-<details><summary> Delete Product Page DeskTop :</summary>
+<details><summary> Delete Blog Page DeskTop :</summary>
 
 ![Delete Product ](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Blog/Delete_Blog/Delete_Blog.jpeg)
 
 </details> 
 
 
-<details><summary>Delete Product Page Mobile :</summary>
+<details><summary>Delete Blog Page Mobile :</summary>
 
 ![Delete Product](assets/readme-images/App_Pgs/Admin_Front_End/Admin_Blog/Delete_Blog/Delete_Blog_mobile.jpeg)
 
@@ -2111,7 +2111,6 @@ Delete Blog -  Delete the bLOG permanately
 Using the Delete Blog Button will generate a Succes Pop Up of Deletion.
 
 [Back to top ⇧](#contents)
-
 
 # Technologies
 
@@ -2551,7 +2550,13 @@ I would like to take the time to Acknowledge & give credit to all the main assis
 
 ## Copied Code / Code assistance  
 
-Code Institutes walkthrough: Boutique Ado paid a big part in the structure of my App as well as certain parts that are directly used and referred to in the code via comments. 
+1. Code Institutes walkthrough: Boutique Ado paid a big part in the structure of my App as well as certain parts that are directly used and referred to in the code via comments. 
+
+2. The following videos were used to help create the Star Rating functionality:
+    - [Rathan Kumar - Review and Rating System in Django Python Part 1](https://www.youtube.com/watch?v=3KCBN7WJXMY)
+    - [Rathan Kumar - Review and Rating System in Django Python Part 2](https://www.youtube.com/watch?v=Zkmu93lMLPs)
+    - [Rathan Kumar - Review and Rating System in Django Python Part 3](https://www.youtube.com/watch?v=gDtsAWMA3Jo)
+    - [Rathan Kumar - Review and Rating System in Django Python Part 4](https://www.youtube.com/watch?v=eIN1nZCt7Ww)
 
 ### Note
 
