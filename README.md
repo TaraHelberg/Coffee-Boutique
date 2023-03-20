@@ -100,6 +100,7 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
    * [Django and Heroku](#django-and-heroku)
    * [Amazone AWS](#amazone-aws)   
    * [Clone Project](#clone-project)
+   * [Fork Project](#forking-project)
 
 - [Acknowledgments](#acknowledgments)
     * [Credits](#credits)
@@ -2535,6 +2536,7 @@ This project was deployed using
         + Add repository name then clicked the green ‘create repository button’ at the bottom of the page.
         + Open the new repository and clicked the green ‘Gitpod’ button to create a workspace in Gitpod for editing.
 
+[Back to top ⇧](#contents)
 
 - ## ElepahntSql 
 
@@ -2549,6 +2551,8 @@ This project was deployed using
     +  Check your details are correct and then click “Create instance”
     +  Return to the ElephantSQL dashboard and click on the database instance name for this project
     +  In the URL section, clicking the copy icon will copy the database URL to your clipboard
+
+[Back to top ⇧](#contents)
 
 - ## Django and Heroku
 
@@ -2574,15 +2578,22 @@ This project was deployed using
 
     Scroll to the DATABASES section and update it to the following code, so that the original connection to sqlite3 is commented out and we connect to the new ElephantSQL database instead. Paste in your ElephantSQL database URL in the position indicated
 
-    # DATABASES = {
-    #     'default': {
-    #         'ENGINE': 'django.db.backends.sqlite3',
-    #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    #     }
-    # }
+    DATABASES = {
+
+         'default': {
+
+             'ENGINE': 'django.db.backends.sqlite3',
+
+             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+         }
+
+     }
      
     DATABASES = {
+
         'default': dj_database_url.parse('your-database-url-here')
+
     }
     
     + DO NOT commit this file with your database string in the code, this is temporary so that we can connect to the new database and make migrations. We will remove it in a moment.
@@ -2609,10 +2620,15 @@ This project was deployed using
     + Finally, to prevent exposing our database when we push to GitHub, we will delete it again from our settings.py - we’ll set it up again using an environment variable in the next video - and reconnect to our local sqlite database. For now, your DATABASE setting in the settings.py file should look like this
 
     DATABASES = {
+
         'default': {
+
             'ENGINE': 'django.db.backends.sqlite3',
+
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
         }
+
     }  
     
     #### Final Deployment 
@@ -2620,13 +2636,17 @@ This project was deployed using
     DEBUG = 'DEVELOPMENT' in os.environ
        
     + Note : Safety & Security : From the start of this PP I have had an env.py file that I have kept the secret key's in particular the Django Secret Key however after deployment I felt that for saftery & security although my secret key's had been kept in an env.py file, I could not be 100% sure that the secret key had not been pushed through to git due to the manner in which I had use the env.py file and settings.py file at the start of the App. I decided to use a Django key generator & add a new Django secret key to my env.py file & to heroku config vars to sensure that should the key have been push by accident that it was now an invalid key.
-     
+
+[Back to top ⇧](#contents)
+
 - ## Amazone AWS
 
     To get the Amazone AWS set up I followed the Code institutes & Revisited the Walkthrough to assist.
 
     Using the Following CI Video's 
+
     1. https://youtu.be/uGdZeX319Q4
+
 
     +  Log into Amazone AWS
     +  Sign-in in the upper right by accessing the AWS management console under my account
@@ -2638,6 +2658,7 @@ This project was deployed using
     ### Connecting Django to S3
 
     Using the Following CI Video's 
+
     2. https://youtu.be/r-HJv_MyOqw
 
     +  Install two packages. Boto3 and Django storages
@@ -2647,25 +2668,34 @@ This project was deployed using
     +  Add 'storages' to your installed apps section inside your settings.py     
     +  Add some additional settings to the same file to let django know what bucket it's communicating with.
         - Near the bottom of the file you should write an if statement to check if there is an environment variable called USE_AWS.
-        - if 'USE_AWS' in os.environ:
-         AWS_STORAGE_BUCKET_NAME = 'insert-your-bucket-name-here'
-         AWS_S3_REGION_NAME = 'insert-your-region-here'
-         AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-         AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+         - if 'USE_AWS' in os.environ:
+         - AWS_STORAGE_BUCKET_NAME = 'insert-your-bucket-name-here'
+         - AWS_S3_REGION_NAME = 'insert-your-region-here'
+         - AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+         - AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     + In Heroku Add Config Vars - add the keys with values that were downloaded earlier in the CSV file. 
                                 - AWS_ACCESS_KEY_ID
+
                                 - AWS_SECRET_ACCESS_KEY
+                                
                                 - USE_AWS set to True
     +  In Heroku remove the DISABLE_COLLECTSTAIC variable 
     +  Go to settings.py file in your django project and head back to the if statement we wrote earlier and inside the statement add this line setting: 
+                                
                                 - AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com' 
     +  Create a file - custom storages.py   
+                     
                      - import your settings as well as the s3boto3 storage class. So at the top of the file insert the code:
+                     
                      - from django.conf import settings
+                     
                      - from storages.backends.s3boto3 import S3Boto3Storage
+                     
                      - underneath the imports insert these two classes:
+                     
                         - class StaticStorage(S3Boto3Storage):
                                 location = settings.STATICFILES_LOCATION
+                     
                         - class MediaStorage(S3Boto3Storage):
                                 location = settings.MEDIAFILES_LOCATION
     + In settings.py file, underneath the bucket config settings but still inside the if statement, add these lines:
@@ -2683,6 +2713,7 @@ This project was deployed using
     ### Caching, Media Files & Stripe
    
     Using the Following CI Video's 
+
     3. https://youtu.be/JPb82nILolU
 
     + In settings.py add an if statement to handle the media files. This helps to speed things up by letting the browser know that its ok to cache static files for a long time:
@@ -2732,7 +2763,16 @@ This project was deployed using
         + Clikced on Download and Zip
         + Clicked on Open with GitHubDesktop
  
- [Back to top ⇧](#contents)
+[Back to top ⇧](#contents)
+
+- ## Forking Project 
+
+    + Fork this project by following the steps:
+    + Open GitHub
+    + Find the "Fork" button at the top right of the page
+    + Once you click the button the fork will be in your repository
+
+[Back to top ⇧](#contents)
 
 # Acknowledgments
 
