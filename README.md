@@ -2358,25 +2358,26 @@ A selection of Error's encountered.
 
 ## Manual Testing
 
-* User Testing
+Manual Testing of All Epics / User stories was carried out throught the Developemnt of this App.
 
-  * Expectations
-     As a user I wanted the App to 
-    1.  
-    2. 
+Please also note that in Features images have been put in showing a number of manual Testing eg : Toast Pop Ups , Verification request & Sending & Receiving Verifications emails working etc.
+ 
+### Header 
 
-  * Result
-     As a user I was able to  
-    1. 
-    2.        
+<details><summary>Header - Search Bar, App Title, Account & Cart :</summary>
 
+| Feature             |  Expect                           | Action                  | Result    |
+| --------------------| --------------------------------- | ----------------------- | ----------|
+|    Search Bar       |  searching for products by name   | Type & Click / Enter    |   ✔       |
+|                     |   , or key word within product    |                         |   ✔       |
+|    App Title        |  Return to Home Page              | Click On                |   ✔       |  
+|    Account          |  Drop Down                        | Click On                |   ✔       | 
+|    Account Register |  Taken to Register Page           | Click On                |   ✔       |
+|    Account Login    |  Taken to Login Page              | Click On                |   ✔       |
+|    Cart             |  Taken to Shopping Cart           | Click On                |   ✔       |
+|    Cart Amount      |  Display 0 or Else Amount In Cart | N/A 0 & On adding Items |   ✔       |
 
-### Navigation Header
-
-
-| Feature            |  Expect                       | Action   | Result    |
-| ------------------ | ----------------------------- | -------- | ----------|
-|                    |                               | Click On |   ✔       | 
+</details> 
 
 
 ### Navigation Footer
@@ -2645,8 +2646,7 @@ This project was deployed using
 
     Using the Following CI Video's 
 
-    1. https://youtu.be/uGdZeX319Q4
-
+     1. https://youtu.be/uGdZeX319Q4
 
     +  Log into Amazone AWS
     +  Sign-in in the upper right by accessing the AWS management console under my account
@@ -2735,7 +2735,7 @@ This project was deployed using
     + In Stipe - Sign into your stripe account and click 'Developers' located in the top right of the navbar.
         - Then in the side-nav under the Developers title, click on 'Webhooks', then 'Add endpoint'.
         - On the next page you will need to input the link to your heroku app followed by /checkout/wh/. It should look something like this:
-                        -  https://your-app-name.herokuapp.com/checkout/wh/
+                        - https ://your-app-name.herokuapp.com/checkout/wh/
         - Then click '+ Select events' and check the 'Select all events' checkbox at the top before clicking 'Add events' at the bottom. Once this is done finish the form by clicking 'Add endpoint'.
         - Your webhook is now created and you should see that it has generated a secret key. You will need this to add to your heroku config vars.
         - Head over to your app in heroku and navigate to the config vars section under settings. You will need the secret key you just generated for your webhook, in addition to your Publishable key and secret key that you can find in the API keys section back in stripe.
@@ -2785,8 +2785,7 @@ I would like to take the time to Acknowledge & give credit to all the main assis
    * Heroku for hosting my App . https://www.heroku.com/ 
    * Reuben Ferrante my mentor without all his great guidance I would be lost. A Huge Thanks. https://github.com/arex18
    * The Slack community - for someone always been there no matter the time and with advice or direction. https://slack.com
-   * Code Institute Tutoring for helping me Rubber Duck a lot & there patience & understanding.
-   * Balsamiq used to build the wireframes for my project. https://balsamiq.com   
+   * Code Institute Tutoring for helping me Rubber Duck a lot & there patience & understanding.    
    * Stack Overflow  for all the information to assist with my project .https://stackoverflow.com
    * Django Documentation for all the invaluable information on how to use the features .https://docs.djangoproject.com/en/4.1/
    * Django Secret Key Generator for a new secret key for safety & security .https://miniwebtool.com/django-secret-key-generator/
@@ -2808,7 +2807,7 @@ I would like to take the time to Acknowledge & give credit to all the main assis
 
 ### Note
 
-All Recipes and information in this App are for Education purpose only.
+All Coffee Boutique information in this App is for Education purpose only.
 
 [Back to top ⇧](#contents)
   
