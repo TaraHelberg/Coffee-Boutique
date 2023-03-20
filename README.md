@@ -83,11 +83,18 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
 - [Testing](#testing)
    * [Bugs](#bugs)
    * [ManualTesting](#manual-testing)
-        * [NavigationHeader](#navigation-header)
-        * [NavigationFooter](#navigation-footer)
-      * [SignUpManualTesting](#sign-up-manual-testing)
-      * [SignInManualTesting](#sign-in-manual-testing)
-      * [SignOutManualTesting](#sign-out-manual-testing)  
+        * [Header](#header)
+        * [Main Navigation](#main-navigation)
+        * [Register](#resigter)
+        * [Login](#login)
+        * [Password Reset](#password-reset-1)
+        * [LogOut](#logout)
+        * [My Profile](#my-profile-1)  
+        * [Footer](#footer)
+        * [Home](#home)
+        * [All Products](#all-products-1)
+        * [Product Detail](#product-detail-1)
+      
       * [AdminControlMaualTesting](#admin-control-maual-testing)          
           * [AdminLoginMaualTest](#admin-login-maual-test)
           * [AdminControlPanelMaualTesting](#admin-control-panel-maual-testing)
@@ -1107,7 +1114,7 @@ The Name of the User / Shopper who made the Review
 
 Followed by the Review itself
 
-Under this are two options to Seelct either to Edit or to Delte the Review which redirect to either the Edit Review Page or Delete Review Page.
+Under this are two options to Select either to Edit or to Delte the Review which redirect to either the Edit Review Page or Delete Review Page.
 
 <details><summary>Customer Reviews No Reviews :</summary>
 
@@ -2360,11 +2367,15 @@ A selection of Error's encountered.
 
 Manual Testing of All Epics / User stories was carried out throught the Developemnt of this App.
 
+Header , Main Navigation & Fotter are shown on all pages throught the App.
+
 Please also note that in Features images have been put in showing a number of manual Testing eg : Toast Pop Ups , Verification request & Sending & Receiving Verifications emails working etc.
  
 ### Header 
 
 <details><summary>Header - Search Bar, App Title, Account & Cart :</summary>
+
+The Accounts Drop DOwn Menu will have different access depending on Standard User or Admin / Super User. All have been tested and shown in the Table Below.
 
 | Feature             |  Expect                           | Action                  | Result    |
 | --------------------| --------------------------------- | ----------------------- | ----------|
@@ -2374,35 +2385,316 @@ Please also note that in Features images have been put in showing a number of ma
 |    Account          |  Drop Down                        | Click On                |   ✔       | 
 |    Account Register |  Taken to Register Page           | Click On                |   ✔       |
 |    Account Login    |  Taken to Login Page              | Click On                |   ✔       |
+|    Add Product      |  Taken to Add Porduct Page        | Click On                |   ✔       |
+|    Add Blog         |  Taken to Add Blog Page           | Click On                |   ✔       |
+|    My Profile       |  Taken to Profile Page            | Click On                |   ✔       |
+|    Favourites       |  Taken to Favourites Page         | Click On                |   ✔       |
+|    Account Logout   |  Taken to Logout Page             | Click On                |   ✔       |
 |    Cart             |  Taken to Shopping Cart           | Click On                |   ✔       |
 |    Cart Amount      |  Display 0 or Else Amount In Cart | N/A 0 & On adding Items |   ✔       |
+
 
 </details> 
 
 
-### Navigation Footer
+### Main Navigation 
 
+<details><summary>Main Navigation :</summary>
+
+Main Navigation all except Home are Drop Down Menus - All Drop DOwn Menu's Drop On Click 
+
+| Feature             |  Expect                                    | Action      | Result    |
+| --------------------| ------------------------------------------ | ----------- | ----------|
+|    Home             |  Return to Home Page                       | Click On    |   ✔       |  
+|    All Products     |  Drop Down                                 | Click On    |   ✔       | 
+|    All Products     |  Taken to All Products Page                | Click On    |   ✔       |
+|    By Category      |  Display All Products Page By Category     | Click On    |   ✔       |
+|    By Price         |  Display All Products Page By Price        | Click On    |   ✔       |
+|    Coffee           |  Drop Down                                 | Click On    |   ✔       |
+|    All Coffee       |  Taken to All Coffee Page                  | Click On    |   ✔       |
+|    Coffee Beans     |  Display Coffee Page Coffee Beans only     | Click On    |   ✔       |
+|    Coffee Grounds   |  Display Coffee Page Coffee Grounds only   | Click On    |   ✔       |
+| Coffee Capsule Pods |  Display Coffee Page Coffee C Pods only    | Click On    |   ✔       |
+|    Coffee Machines  |  Drop Down                                 | Click On    |   ✔       |
+| All Coffee Machines |  Taken to All Coffee Manchines Page        | Click On    |   ✔       |
+|    Capsule Pods     |  Display Coffee Machines Page C Pods only  | Click On    |   ✔       |
+|    Coffee Makers    |  Display Coffee Machines Page C Makers only| Click On    |   ✔       |
+|    Espresso         |  Display Coffee Machines Page Espresso only| Click On    |   ✔       |
+|    Accessories      |  Drop Down                                 | Click On    |   ✔       |
+|    All Accessories  |  Taken to All Accessories Page             | Click On    |   ✔       |
+|    Drinks Wears     |  Display Accessories Page Drinks Wears only| Click On    |   ✔       |
+| Manual Coffee Makers|  Display Accessories Page M C Makers only  | Click On    |   ✔       |
+|    Gifts & Treats   |  Drop Down                                 | Click On    |   ✔       |
+| All Gifts & Treats  |  Taken to All Gifts & Treats Page          | Click On    |   ✔       |
+|    Gift Sets        |  Display Gifts & Treats Page Gift Sets only| Click On    |   ✔       |
+|    Treats           |  Display Gifts & Treats Page Treats only   | Click On    |   ✔       |
+|    About            |  Drop Down                                 | Click On    |   ✔       |
+|    Blog             |  Taken to Blog Page                        | Click On    |   ✔       |
+|    Contact Us       |  Taken to Contact Us Page                  | Click On    |   ✔       |
+|    FAQ's            |  Taken to FAQ's Page                       | Click On    |   ✔       |
+|    Privacy Policy   |  Taken to Privacy Policy Page              | Click On    |   ✔       |
+|    Copy Right       |  Taken to Copy Right Page                  | Click On    |   ✔       |
+
+</details> 
+
+### Resigter 
+
+<details><summary>Resigter :</summary>
+
+| Feature             |  Expect                                    | Action      | Result    |
+| --------------------| ------------------------------------------ | ----------- | ----------|
+|   Register          |  Taken to Sign Up Page                     | Click On    |   ✔       |  
+|   Sign Up Form      |  Input Fields                              | Type        |   ✔       | 
+|   Input Fields      |  Valid / Filled In Information REQUIRED    | Warning     |   ✔       |
+|   Sign Up button    |  Submits Sign Up Form                      | Click On    |   ✔       |
+|   Success Pop up    |  Displays on Submit Button Click           | Pops Up     |   ✔       |
+| Back to Login button|  Taken to Login Page                       | Click On    |   ✔       |
+
+</details> 
+
+### Login 
+
+<details><summary>Login :</summary>
+
+
+| Feature             |  Expect                                    | Action      | Result    |
+| --------------------| ------------------------------------------ | ----------- | ----------|
+|   Login             |  Taken to Sign In Page                     | Click On    |   ✔       |  
+|   Sign In Form      |  Input Fields                              | Type        |   ✔       | 
+|   Input Fields      |  Valid / Filled In Information REQUIRED    | Warning     |   ✔       |
+|   Remember Me       |  Remembers Log In Details                  | Tick Box    |   ✔       |
+|   Sign In button    |  Submits Sign Up Form                      | Click On    |   ✔       |
+|   Success Pop up    |  Displays on Sign In Button Click          | Pops Up     |   ✔       |
+|   Home button       |  Taken to Home Page                        | Click On    |   ✔       |
+|   Forgot Password   |  Taken to Password Rest Page               | Click On    |   ✔       |
+
+</details> 
+
+### Password Reset 
+check this !!!!
+
+<details><summary>Password Reset :</summary>
+
+From Login / Sign In Page if Forgot Password is Clicked on 
+
+| Feature               |  Expect                                    | Action      | Result    |
+| ----------------------| ------------------------------------------ | ----------- | ----------|
+|   Password Reset Form |  Input Fields                              | Type        |   ✔       | 
+|   Input Fields        |  Valid / Filled In Information REQUIRED    | Warning     |   ✔       |
+|   Reset button        |  Submits Password Reset Form               | Click On    |   ✔       |
+|   Home button         |  Taken to Home Page                        | Click On    |   ✔       |
+
+</details> 
+
+### Logout 
+
+<details><summary>Logout :</summary>
+
+
+| Feature             |  Expect                                    | Action      | Result    |
+| --------------------| ------------------------------------------ | ----------- | ----------|
+|   Logout            |  Taken to Sign Out Page                    | Click On    |   ✔       |  
+|   Sign Ou button    |  Log Out of Account                        | Click On    |   ✔       |
+|   Success Pop up    |  Displays on Sign Out Button Click         | Pops Up     |   ✔       |
+|   Cancel button     |  Taken to Home Page                        | Click On    |   ✔       |
+
+</details>
+
+### My Profile 
+
+<details><summary>My Profile :</summary>
+
+On clicking My Profile from Accounts Dropdown menu taken to My Profile Page.
+
+Sepearted into Two Sections Default Delivery Information & Order History.
+
+Default Delivery Information
+
+| Feature                     |  Expect                                | Action     | Result    |
+| ----------------------------| -------------------------------------- | ---------- | ----------|
+|   Default Delivery Form     |  Input Information                     | Type       |   ✔       |  
+|   Country Drop down bar     |  Drop Down shows Countries use arrow   | Click On   |   ✔       |
+|   Update Information button |  Submits Update Information            | Click On   |   ✔       |
+|   Success Pop up            |  Displays on Sign Out Button Click     | Pops Up    |   ✔       |
+|   Cancel button             |  Taken to All Products Page            | Click On   |   ✔       |
+
+Order History - Only has information in it after Shopper has place an Order as it is order History .
+
+After Order has been place information Oerder Number, Date, Item Details & Order Total Displayed - ✔ 
+
+</details> 
+
+### Footer 
+
+<details><summary>Footer :</summary>
+
+Footer is Seperated Into 3 Sections & has a All rights Reserved copy Right at the Very Bottom. 
+
+Follow Us
 
 | Feature           |  Expect                       | Action   | Result    |
 | ------------------| ----------------------------- | -------- | ----------|
 |  Icon Facebook    | Navigation Link - external Tab| Click On |   ✔       |
-|  Icon Twitter     | Navigation Link - external Tab| Click On |   ✔       | 
-|  Icon YouTube     | Navigation Link - external Tab| Click On |   ✔       |
 |  Icon  Instagram  | Navigation Link - external Tab| Click On |   ✔       |
-|  Icon  Linkedin   | Navigation Link - external Tab| Click On |   ✔       |
-|  Icon  GitHub     | Navigation Link - external Tab| Click On |   ✔       |
+
+Contact Us
+
+| Feature                     |  Expect                   | Action   | Result    |
+| ----------------------------| ------------------------- | -------- | ----------|
+|  Icon Envelop Contact Us    | Taken to Contact Us Page  | Click On |   ✔       |
 
 
-###  Maual Testing
+Subscribe - Mail Chimp
 
-####  Manual Test 
+| Feature                     |  Expect                    | Action   | Result    |
+| ------------------- --------| ---------------------------| -------- | ----------|
+|  Email Address              | Input Email address        | Type     |   ✔       |
+|  Subscribe Button           | Click to Sumbit Subsription| Click On |   ✔       |
+
+The Users / Shopper will then get a MailChimp Subscription Confirmation - ✔
+
+The Users / Shopper will then get a MailChimp will be redirect to the Verify Your Email Address Page - ✔
+
+The Users / Shopper will then get recive an email from MailChimp with a Verify Your Email Address link the user will need to click on this link to Verify their email address - ✔
+
+The Users / Shopper on clicking on the email verification linl will then be redirect to the Confirm Email Address Page. - ✔
+
+On Clicking on the Confirm Button the User / Shoppers email will be confirmed and a Confirmed email address Success Pop up will be shown. - ✔ 
+
+For Images of this please see [MailChimp Newsletter](#mailchimp-newsletter)
+
+All Rights Reserved
+
+| Feature                     |  Expect                               | Action   | Result    |
+| ------------------- --------| --------------------------------------| -------- | ----------|
+|  All Rights Reserved        | Taken to Copy Right Notice Page       | Click On |   ✔       |
+
+</details> 
+
+### Home 
+
+<details><summary>Home :</summary>
+
+Home Page has a 3 sections Call to Action , New Products & What We Do 
+
+Call to Action - Consisting of a Background video & Information with a Shop Now Button
+
+video - plays on loop & has no sound or controls for user as it is a silent background.
+
+| Feature           |  Expect                       | Action   | Result    |
+| ------------------| ----------------------------- | -------- | ----------|
+|  Shop Now Button  | Taken to All Products Page    | Click On |   ✔       |
 
 
-| Feature           |  Expect                           | Action   | Result    |
-| ------------------| --------------------------------- | -------- | ----------|
-|                   |                                   | N/A      |   ✔       |
-|  Sign Up Button   | Navigation Link                   | Click On |   ✔       |
-|  Sign Out Button  | Navigation Link                   | Click On |   ✔       | 
+New Products - a Bootstrap Carousel showing the 4 New Products
+
+| Feature             |  Expect                               | Action   | Result    |
+| --------------------| ------------------------------------- | -------- | ----------|
+|  4 Image Carousel   | Moves through Recently New Products   | N/A      |   ✔       |
+|  Arrow Controls     | Manual Moves through New Products     | N/A      |   ✔       |
+|  Arrow Controls     | Manual Moves through New Products     | N/A      |   ✔       |
+|  Product Detail     | Go to Porduct details View            | Click On |   ✔       |
+
+
+What We Do 
+
+| Feature                     |  Expect                    | Action   | Result    |
+| ------------------- --------| ---------------------------| -------- | ----------|
+|  Products Icon              | Navigation Link            | Click On |   ✔       |
+|  Sign Up Icon               | Navigation Link            | Click On |   ✔       |
+|  Blog  Icon                 | Navigation Link            | Click On |   ✔       |
+
+</details> 
+
+### All Products 
+
+<details><summary>All Products :</summary>
+
+The All Products Drop Down Navigation
+
+Allows the User / Shopper to select how they would like to View All the Products.
+
+3 Options have been supplied
+
+All Products
+
+By Category
+
+By Price
+
+Will display in the same page format however items / Products will be displayed by either All the Products , By Category or By Price depending on user/ shopper selection from Dropdown - On Click  ✔ 
+
+Number Of Products - Dispalyed on All Product Pages throught the App .
+
+Right at the Top of the Page The Number of Products for the entire shop is Displayed - ✔ 
+
+Note : This will change as the Items Amoutn Changes , it will also change per Product Page to indicate the amount of Products of the Particular Category - ✔
+
+Note : On All other Products Pages an Additional Products Home tag will appear - On Click will return to All Products Page -  ✔
+
+Sort Bar - Dispalyed on All Product Pages throught the App .
+
+| Feature               |  Expect                                     | Action   | Result    |
+| ----------------------| ------------------------------------------- | -------- | ----------|
+|  Sort By Bar          | Select from Drop down menu                  | Click On |   ✔       |
+|  Price, (Low to High) | Display Products by Price, (Low to High)    | Click On |   ✔       |
+|  Price, (High to Low) | Display Products by Price, (High to Low)    | Click On |   ✔       |
+|  Name (A - Z)         | Display Products by Name (A - Z)            | Click On |   ✔       |
+|  Name ( Z- A)         | Display Products by Name ( Z- A)            | Click On |   ✔       |
+|  Category (A - Z)     | Display Products by Category (A - Z)        | Click On |   ✔       |
+|  Category ( Z- A)     | Display Products by Category ( Z- A)        | Click On |   ✔       |
+
+Product Card
+
+Each product is represented in its own Product Card Showing an Image of the Product , Price Caterogy. - This format is represented on every Product Catergory Page throught the App .
+
+| Feature            |  Expect                                               |  Action | Result |
+|--------------------| ----------------------------------------------------- | -------- | ------|
+|  Product Details   | Viw that Products Details from Image                  | Click On |   ✔   |
+|  Catergory Tag     | View all Products in that Category Page               | Click On |   ✔   |
+|  View Button       | Viw that Products Details                             | Click On |   ✔   |
+|  Edit Button       | Go to Edit Product Page - Btn Visable By Admin Only   | Click On |   ✔   |
+|  Delete Button     | Go to Delete Product Page - Btn Visable By Admin Only | Click On |   ✔   |
+
+Note : Edit & Delete buttons are only Visiable to Admin if Admin is Logged In - ✔
+
+A back to Top Arrow Button is supplied for easy scroll to the top of the Products page. - On Click - ✔ 
+
+</details> 
+
+### Product Detail 
+
+<details><summary>Product Detail :</summary>
+
+
+
+| Feature                     |  Expect                                       | Action   | Result |
+| ----------------------------| ----------------------------------------------| -------- | -------|
+|  Am I a Favourite - Add     | Add to Favourite Page                         | Click On |   ✔    |
+|  Am I a Favourite - Remove  | Remove from Favourite Page                    | Click On |   ✔    |
+|  Catergory Tag              | View all Products in that Category Page       | Click On |   ✔    |
+|  Size                       | Drop Down selector Via Arrow Select Size      | Click On |   ✔    |
+|  Quantity Selector Add      | Add Number of Item Qty                        | Click On |   ✔    |
+|  Quantity Selector Subtract | Subtract Number of Item Qty                   | Click On |   ✔    |
+|  Keep Shopping Button       | Go to All Products page                       | Click On |   ✔    |
+|  Add to Cart Button         | Adds the Item to the Shopping Cart.           | Click On |   ✔    |
+|  Success Pop up             | Displays On Clicking the Add to Cart Btn      | Pops Up  |   ✔    |
+|  Secure Checkout Button     | Goes to Shopping Cart Page -Success Pop Up    | Click On |   ✔    |
+|  Leave A Review -Logged Out | No Access Message Displayed                   | N/A      |   ✔    |
+|  Login Here Button          | Goes to Login Page                            | Click On |   ✔    |
+|  Leave A Review - Logged In | Input Field                                   | Type     |   ✔    |
+|  Rate - Logged In           | Use Stars to Rate Color Change                | Click On |   ✔    |
+|  Submit Button              | Submits Review & Rating                       | Click On |   ✔    |
+|  Cancel Button              | Clears Review Input & Star Rating             | Click On |   ✔    |
+|  Customer Reviews           | Shows 0 if None Shows How many ratings        | N/A      |   ✔    |
+|  Customer Displayed         | Shows Date & Time & Name of Reviewer & Review | N/A      |   ✔    |
+|  Edit Button                | Goes to Edit Reivew Page - Only Reviewer      | Click On |   ✔    |
+|  Delete Button              | Goes to Delete Reivew Page - Only Reviewer    | Click On |   ✔    |
+
+Note : The Qty is set to a default Qty of 1 . - Can not go below Default of 1 -  ✔ 
+Note : Add to Cart Success Pop Up gives the details of the item / Product added to your Shopping Cart -  ✔ 
+
+</details> 
 
 
 ## Admin Control Maual Testing
