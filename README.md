@@ -47,7 +47,9 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
        * [Sign Out](#sign-out)
    * [My Profile](#my-profile)    
    * [All Products Page](#all-products)
-   * [Product Detail Page](#product-detail)   
+   * [Product Detail Page](#product-detail)
+   * [Edit Review](#edit-review)
+   * [Delete Review](#delete-review)   
    * [Favourites](#favourites-page)
    * [Shopping Cart](#shopping-cart)
    * [Secure Check Out](#secure-check-out) 
@@ -1127,6 +1129,59 @@ Under this are two options to Select either to Edit or to Delte the Review which
 ![Customer Reviews](assets/readme-images/App_Pgs/Product_Detail_Pg/Custmer_Reviews_With_Review.jpg)
 
 </details> 
+
+[Back to top ⇧](#contents)
+
+## Edit Review 
+
+<details><summary>Edit Review Page DeskTop :</summary>
+
+![Edit Review](assets/readme-images/App_Pgs/Review_Pg/Edit_Review_pg.jpeg)
+
+</details> 
+
+<details><summary>Edit Review Page Mobile :</summary>
+
+![Edit Review](assets/readme-images/App_Pgs/Review_Pg/Edit_Review_pg_mobile.jpeg)
+
+</details> 
+
+Edit Review is Accessable from the Cusomer Reviews section next to the Review made by the User / Shopper who made the review & Admin / Supper User however Admn / Supper User will be discouraged from editing User / Shoppers Reviews unless they have been contacted & informed in advance & or given consent.
+
+THe Review Form is available to Update / Edit the Review as is the Rating however the rating on Edit is presented as a number but can be adjusted by clicking on the arrows.
+
+Two Buttons Are supplied 
+
+Redurn To Product - Returns to the Product that the Review was writen about 
+Update - Updates the Review 
+
+[Back to top ⇧](#contents)
+
+## Delete Review 
+
+<details><summary>Delete Review Page DeskTop :</summary>
+
+![Delete Review](assets/readme-images/App_Pgs/Review_Pg/Delete_Review_pg.jpeg)
+
+</details> 
+
+<details><summary>Delete Review Page Mobile :</summary>
+
+![Delete Review](assets/readme-images/App_Pgs/Review_Pg/Delete_Review_pg_mobile.jpeg)
+
+</details> 
+
+Delete Review is Accessable from the Cusomer Reviews section next to the Review made by the User / Shopper who made the review & Admin / Supper User however Admn / Supper User will be discouraged from Deleteing User / Shoppers Reviews unless they have been contacted & informed in advance & or given consent.
+
+THe Delete Form is shown here so that the User / Shopper can see what they are about to Delete as is the Rating .No changes can be made from this form.
+
+A Quetsion is posed about Deleteion & A Red warning is suppled 
+
+Two Buttons Are supplied 
+
+Redurn To Product - Returns to the Product that the Review was writen about 
+Delete Review - Deletes the Review 
+
 
 [Back to top ⇧](#contents)
 
@@ -2546,10 +2601,10 @@ Contact Us
 
 Subscribe - Mail Chimp
 
-| Feature                     |  Expect                    | Action   | Result    |
-| ------------------- --------| ---------------------------| -------- | ----------|
-|  Email Address              | Input Email address        | Type     |   ✔       |
-|  Subscribe Button           | Click to Sumbit Subsription| Click On |   ✔       |
+| Feature                   |  Expect                    | Action   | Result   |
+|---------------------------| ---------------------------|----------|----------|
+|  Email Address            | Input Email address        | Type     |   ✔      |
+|  Subscribe Button         | Click to Sumbit Subsription| Click On |   ✔      |
 
 The Users / Shopper will then get a MailChimp Subscription Confirmation - ✔
 
@@ -2565,9 +2620,9 @@ For Images of this please see [MailChimp Newsletter](#mailchimp-newsletter)
 
 All Rights Reserved
 
-| Feature                     |  Expect                               | Action   | Result    |
-| ------------------- --------| --------------------------------------| -------- | ----------|
-|  All Rights Reserved        | Taken to Copy Right Notice Page       | Click On |   ✔       |
+| Feature                  |  Expect                              | Action   | Result   |
+|--------------------------|--------------------------------------|----------|----------|
+|  All Rights Reserved     | Taken to Copy Right Notice Page      | Click On |   ✔      |
 
 </details> 
 
@@ -2599,7 +2654,7 @@ New Products - a Bootstrap Carousel showing the 4 New Products
 What We Do 
 
 | Feature                     |  Expect                    | Action   | Result    |
-| ------------------- --------| ---------------------------| -------- | ----------|
+| ----------------------------| ---------------------------| -------- | ----------|
 |  Products Icon              | Navigation Link            | Click On |   ✔       |
 |  Sign Up Icon               | Navigation Link            | Click On |   ✔       |
 |  Blog  Icon                 | Navigation Link            | Click On |   ✔       |
