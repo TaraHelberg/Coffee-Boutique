@@ -110,10 +110,17 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
         * [Contact Us Page](#contact-us-1)
         * [FAQ's Page](#faqs)
       
-      * [AdminControlMaualTesting](#admin-control-maual-testing)          
-          * [AdminLoginMaualTest](#admin-login-maual-test)
-          * [AdminControlPanelMaualTesting](#admin-control-panel-maual-testing)
-                         
+    * [Admin Control Maual Testing](#admin-control-maual-testing)          
+        * [Admin Login Maual Testing](#admin-login-maual-test)
+        * [Admin Control Panel Maual Testing](#admin-control-panel-maual-testing)
+    * [Admin Control Front End](#admin-control-front-end-manual-testing)
+        * [Add Product](#add-product-1)
+        * [Edit Product](#edit-product-1)
+        * [Delete Product](#delete-product-1)
+        * [Add Blog](#add-blog-1)
+        * [Edit Blog](#edit-blog-1)
+        * [Delete Blog](#delete-blog-1)
+
     * [Validation](#validator-testing)
 
 - [Deployment](#deployment)
@@ -948,6 +955,23 @@ A Reset My Password button is provided & a redirect button to go to Back to Logi
 ![Password Reset](assets/readme-images/App_Pgs/User_Account_Pgs/Password_Reset_pg.png)
 
 </details> 
+
+After entering email User / Shopper is taken to Password Reste confirmation page.
+Email has been sent
+
+<details><summary>Password Reset confirmation email sent:</summary>
+
+![Password Reset](assets/readme-images/App_Pgs/User_Account_Pgs/Pasword_Rest_confirmation_pg.png)
+
+</details> 
+
+User / Shopper will receive email to reset password.
+
+<details><summary>Password Reset Email:</summary>
+
+![Password Reset](assets/readme-images/App_Pgs/User_Account_Pgs/Pasword_Rest_Email_pg.png)
+
+</details>
 
 ### Sign Out
 
@@ -2541,7 +2565,6 @@ Main Navigation all except Home are Drop Down Menus - All Drop DOwn Menu's Drop 
 </details> 
 
 ### Password Reset 
-check this !!!!
 
 <details><summary>Password Reset :</summary>
 
@@ -2925,7 +2948,6 @@ There are also 3 Buttons present
 |  Edit Button            | Goes to Edit Blog page - Visable only to Admin   | Click On |   ✔    |
 |  Delete Button          | Goes to Delete Blog page - Visable only to Admin | Click On |   ✔    |
 
-
 </details> 
 
 ### Blog Detail
@@ -2945,7 +2967,6 @@ There are also 3 Buttons present
 |  Edit Button            | Goes to Edit Blog page - Visable only to Admin   | Click On |   ✔    |
 |  Delete Button          | Goes to Delete Blog page - Visable only to Admin | Click On |   ✔    |
 
-
 </details> 
 
 ### Contact US
@@ -2962,7 +2983,6 @@ The Contact Us Page provides thr User / Shopper even if not logged in with a con
 |  Contact form           | Fill in Form              | Type     |   ✔    |
 |  Cancel Button          | Goes to  Home page        | Click On |   ✔    |
 |  Submit Button          | Submits the Contact form   | Click On |   ✔    |
-
 
 </details> 
 
@@ -2981,13 +3001,12 @@ The FAQ's page provides the User / Shopper with a list of Questions clicking on 
 </details> 
 
 
-
-
-
 ## Admin Control Maual Testing
 
 
 ### Admin Login Maual Test
+
+<details><summary>Admin Login :</summary>
 
 
 | Feature                        |  Expect                        | Action    | Result    |
@@ -2995,9 +3014,12 @@ The FAQ's page provides the User / Shopper with a list of Questions clicking on 
 |  Input Fields                  | Access to & Fill In            |  Type     |   ✔       |
 |  Log In Button                 | Log Into Django Admin          | Click On  |   ✔       |
 
+</details> 
+
 
 ### Admin Control Panel Maual Testing
 
+<details><summary>Admin Control Panel :</summary>
 
 | Feature                        |  Expect                        | Action    | Result    |
 | -------------------------------| ------------------------------ | --------- | ----------|
@@ -3005,6 +3027,107 @@ The FAQ's page provides the User / Shopper with a list of Questions clicking on 
 |  Access via selection          | Access to Selections           |  Click On |   ✔       |
 
 * From this panel the Admin has full C R U D functionality .
+
+</details> 
+
+## Admin Control Front End Manual Testing
+
+## Add Product 
+
+<details><summary>Add Product :</summary>
+
+Admin can Add a Product from the Front End access is granted via been Logged In to the Account a drop down menu will supply the Add Product  - [Back to top ⇧](#home-page) 2. Header -  Account Drop Down Admin Logged In
+
+| Feature                        |  Expect                                 | Action    | Result  |
+| -------------------------------| --------------------------------------- | --------- | --------|
+|  Add Category                  | Select from Drop Down use arrow         |  Click On |   ✔     |
+|  Add Product Form              | Add Blog & Rich Text Name & Description |  Type     |   ✔     |
+|  Has Size                      | Select from Drop Down use arrow         |  Click On |   ✔     |
+|  Iamge Url                     | Input Iamge Url                         | Type      |   ✔     |
+|  Select Image                  | Choose & Add Image                      |  Click On |   ✔     |
+|  Cancel Button                 | Goes to All Products Page               |  Click On |   ✔     |
+|  Add Product                   | Submits Add Product Form adds Product   |  Click On |   ✔     |
+
+</details>
+
+## Edit Product 
+
+<details><summary>Edit Product :</summary>
+
+Admin can Edit a Product from the Front End access is granted via the All Products or seperate Product Catergory lists on the Product display Card when Admin / Super User is logged In the Edit Button is visable to Admin only .
+
+| Feature                        |  Expect                                 | Action    | Result  |
+| -------------------------------| --------------------------------------- | --------- | --------|
+|  Add Category                  | Select from Drop Down use arrow         |  Click On |   ✔     |
+|  Add Product Form              | Add Product Rich Text Name & Description|  Type     |   ✔     |
+|  Has Size                      | Select from Drop Down use arrow         |  Click On |   ✔     |
+|  Remove                        | Removes current Iamge                   |  Check Box|   ✔     |
+|  Select Iamge                  | Choose & Add Image                      |  Click On |   ✔     |
+|  Cancel Button                 | Goes to All Products Page               |  Click On |   ✔     |
+|  Update Product                | Submits Updated Product Form Updates    |  Click On |   ✔     |
+
+</details>
+
+## Delete Product 
+
+<details><summary>Delete Product :</summary>
+
+Admin can Delete a Product from the Front End access is granted via the All Products or seperate Product Catergory lists on the Product display Card when Admin / Super User is logged In the Delete Button is visable to Admin only 
+
+| Feature                        |  Expect                          | Action    | Result  |
+| -------------------------------| ----------------------------- -- | --------- | --------|
+|  Cancel Button                 | Goes to All Products Page        |  Click On |   ✔     |
+|  Delete Product                | Deletes Product                  |  Click On |   ✔     |
+
+</details> 
+
+## Add Blog
+
+<details><summary>Add Blog :</summary>
+
+Admin can Add a Blog from the Front End access is granted via been Logged In to the Account a drop down menu will supply the Add Blog - Back to top ⇧ 2. Header - Account Drop Down Admin Logged In
+
+
+| Feature                        |  Expect                                 | Action    | Result  |
+| -------------------------------| --------------------------------------- | --------- | --------|
+|  Add Blog Form                 | Add Blog & Rich Text Contenet           |  Type     |   ✔     |
+|  Choose File                   | Choose & Add Image                      |  Click On |   ✔     |
+|  Cancel Button                 | Goes to Blog Page                       |  Click On |   ✔     |
+|  Add Blog                      | Submits Add Blog Form adds Blog         |  Click On |   ✔     |
+
+</details>
+
+## Edit Blog
+
+<details><summary>Edit Blog :</summary>
+
+Admin can Edit a Blog from the Front End access is granted via the Blog Page & Blog Details AKA - Read More at the bottom of the Blog when Admin / Super User is logged In the Edit Button is visable to Admin only .
+
+| Feature                        |  Expect                                 | Action    | Result  |
+| -------------------------------| --------------------------------------- | --------- | --------|
+|  Edit Blog Form                | Edit Blog & Rich Text Contenet          |  Type     |   ✔     |
+|  Clear                         | Removes current Iamge                   |  Check Box|   ✔     |
+|  Choose File                   | Choose & Add Image                      |  Click On |   ✔     |
+|  Cancel Button                 | Goes to Blog Detail Page                |  Click On |   ✔     |
+|  Update Blog                   | Submits Updates Blog                    |  Click On |   ✔     |
+
+</details>
+
+## Delete Blog
+
+<details><summary>Delete Blog :</summary>
+
+Admin can Delete a Blog from the Front End access is granted via the Blog Page & Blog Details AKA - Read More at the bottom of the Blog when Admin / Super User is logged In the Edit Button is visable to Admin only .
+
+On clicking on the Delete Button Admin a Delete Pop Up Modal is activated.
+
+| Feature                        |  Expect                                 | Action    | Result  |
+| -------------------------------| --------------------------------------- | --------- | --------|
+|  Cancel Button                 | Goes to Blog Detail Page                |  Click On |   ✔     |
+|  Delete Blog                   | Deletes Blog                            |  Click On |   ✔     |
+
+</details>
+
 
 ## Validator Testing
 
