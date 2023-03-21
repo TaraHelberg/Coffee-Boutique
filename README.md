@@ -47,10 +47,10 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
        * [Sign Out](#sign-out)
    * [My Profile](#my-profile)    
    * [All Products Page](#all-products)
-   * [Product Detail Page](#product-detail)
-   * [Edit Review](#edit-review)
-   * [Delete Review](#delete-review)   
+   * [Product Detail Page](#product-detail)      
    * [Favourites](#favourites-page)
+   * [Edit Review](#edit-review)
+   * [Delete Review](#delete-review)
    * [Shopping Cart](#shopping-cart)
    * [Secure Check Out](#secure-check-out) 
    * [Coffee Page](#coffee-1)
@@ -96,6 +96,19 @@ The App is aimed at all Coffee Lovers and shows it love of Coffee in its design 
         * [Home](#home)
         * [All Products](#all-products-1)
         * [Product Detail](#product-detail-1)
+        * [Favourites](#favourites)
+        * [Edit Review](#edit-review-1)
+        * [Delete Review](#delete-review-1)
+        * [Shopping Cart](#shopping-cart-1)
+        * [Secure Check Out](#secure-check-out-1)
+        * [Coffee](#coffee-2)
+        * [Coffee Machines Page](#coffee-machines-2)
+        * [Accessories Page](#accessories-2)
+        * [Gift Sets & Treats Page](#gift-sets--treats-1)
+        * [Blog Page](#blog-1)
+        * [Blog Detail Page](#blog-detail-1)
+        * [Contact Us Page](#contact-us-1)
+        * [FAQ's Page](#faqs)
       
       * [AdminControlMaualTesting](#admin-control-maual-testing)          
           * [AdminLoginMaualTest](#admin-login-maual-test)
@@ -1153,6 +1166,7 @@ THe Review Form is available to Update / Edit the Review as is the Rating howeve
 Two Buttons Are supplied 
 
 Redurn To Product - Returns to the Product that the Review was writen about 
+
 Update - Updates the Review 
 
 [Back to top ⇧](#contents)
@@ -1180,6 +1194,7 @@ A Quetsion is posed about Deleteion & A Red warning is suppled
 Two Buttons Are supplied 
 
 Redurn To Product - Returns to the Product that the Review was writen about 
+
 Delete Review - Deletes the Review 
 
 
@@ -1219,7 +1234,7 @@ The Favourites Page when in Use will show the User / Shopper, Favourites in card
 
 Clicking on the Image will take the User / Shopper to the Detail Page of that Item / Prodcut.
 
-A remove Heart Icon with the Word Remove is supplied to the Use / SHopper which when clicked on will Remove that Item / Product from the User / Shoppers Favourites Page.
+A remove Heart Icon with the Word Remove is supplied to the Use / Shopper which when clicked on will Remove that Item / Product from the User / Shoppers Favourites Page.
 
 [Back to top ⇧](#contents)
 
@@ -1697,11 +1712,11 @@ Form askes for : Name , Email , Subject & Message from the User / Shopper.
 
 Cancel Button - Redirects User / Shopper to the Home page
 
-Submit - Sumbits the to Submit the Contact form.
+Submit - Sumbits the Contact form.
 
 On Submitting the Contact form the User / Shopper will be presented with a Success Pop Up message.
 
-<details><summary>Contact Us Success POp Up :</summary>
+<details><summary>Contact Us Success Pop Up :</summary>
 
 ![Contact Us Success POp Up ](assets/readme-images/App_Pgs/Contact_Us_Pg/Contact_Us_Success_Pop_Up.jpeg)
 
@@ -2750,6 +2765,223 @@ Note : The Qty is set to a default Qty of 1 . - Can not go below Default of 1 - 
 Note : Add to Cart Success Pop Up gives the details of the item / Product added to your Shopping Cart -  ✔ 
 
 </details> 
+
+### Favourites 
+
+<details><summary>Favourites :</summary>
+
+On clicking Favourites from Accounts Dropdown menu taken to Favourites Page.
+Favourites Page is only accessable to a Logged In User / Shopper .
+Favourites Displayed are those for the Account of The User / Shopper that have been added via Product Details by that User / Shopper.
+
+If no Favourites have been added a Message is Dispayed saying : There are Currently No Favourite Products Selected. - ✔
+
+The Favourites Page when in Use will show the User / Shopper, Favourites in card format with An Image of that Item / Product , the Name under the image , Price & Catergory of that Item / Product. - ✔
+
+Heart Icon Remove - ✔
+
+| Feature                     |  Expect                                       | Action   | Result |
+| ----------------------------| ----------------------------------------------| -------- | -------|
+|  Product Card               | Taken to Product Details Page                 | Click On |   ✔    |
+|  Catergory Tag              | View all Products in that Category Page       | Click On |   ✔    |
+|  Heart Icon Remove          | Remove from Favourite Page                    | Click On |   ✔    |
+
+</details> 
+
+### Edit Review 
+
+<details><summary>Edit Review :</summary>
+
+On clicking Edit Review from Customer Reviews under the Review that was made menu taken to Edit Review Page.
+Edit Review  Page is only accessable to a Logged In User / Shopper & the one that Made the Review 
+Admin / Supper Users has access as well but is discourage from using this unless User / Shopper has been notified.
+
+| Feature                     |  Expect                                       | Action   | Result |
+| ----------------------------| ----------------------------------------------| -------- | -------|
+|  Review Input Field         | Type Update of Review in                      | Type     |   ✔    |
+|  Rating                     | Adjust Rating using arrows                    | Click On |   ✔    |
+|  Return to Product Button   | Returns to the smae Product / Review          | Click On |   ✔    |
+|  Update Button              | Updates the Review                            | Click On |   ✔    |
+
+</details> 
+
+### Delete Review 
+
+<details><summary>Delete Review :</summary>
+
+On clicking Delete Review from Customer Reviews under the Review that was made menu taken to Edit Delete Page.
+Delete Review Page is only accessable to a Logged In User / Shopper & the one that Made the Review 
+Admin / Supper Users has access as well but is discourage from using this unless User / Shopper has been notified.
+
+| Feature                     |  Expect                                       | Action   | Result |
+| ----------------------------| ----------------------------------------------| -------- | -------|
+|  Review Input Field         | No changes can be made                        | N/A      |   ✔    |
+|  Rating                     | No changes can be made                        | N/A      |   ✔    |
+|  Return to Product Button   | Returns to the smae Product / Review          | Click On |   ✔    |
+|  Delete Review Button       | Deletes the Review                            | Click On |   ✔    |
+
+</details> 
+
+### Shopping Cart
+
+<details><summary>Shopping Cart :</summary>
+
+The Shopping Cart Supplies the user with an enviroment to see & control the Items / Products they have added to the Cart.
+
+| Feature                     |  Expect                                       | Action   | Result |
+| ----------------------------| ----------------------------------------------| -------- | -------|
+|  Qty control bar            | Add or Subtract little up & down toggle  Qty  | Click On |   ✔    |
+|  Qty - Button               | Subtract Product Qty                          | Click On |   ✔    |
+|  Qty + Button               | Add Product Qty                               | Click On |   ✔    |
+|  Update                     | Updates Qty Cahnges made                      | Click On |   ✔    |
+|  Remove                     | Removes Product from Shopping Cart            | Click On |   ✔    |
+|  Keep Shopping Button       | Goes to All Products Page                     | Click On |   ✔    |
+|  Secure Checkout Button     | Goes to Secure Checkout Page                  | Click On |   ✔    |
+
+</details> 
+
+### Secure Check Out
+
+<details><summary>Secure Check Out :</summary>
+
+The Secure Check Out Page supplies the User / Shopper with a secure location to check out / pay for their Purchases.
+
+| Feature                     |  Expect                                       | Action   | Result |
+| ----------------------------| ----------------------------------------------| -------- | -------|
+|  Order From                 | Type In Details                               | Type     |   ✔    |
+| Save delivery information   | Saves delivery information to profile         | Tick Box |   ✔    |
+|  Payment Input Field        | Input Card Validets if Correct                | Type     |   ✔    |
+|  Adjust Shopping Cart Button| Goes to Shopping Cart Page                    | Click On |   ✔    |
+|  Complete Order Button      | Processes the Order & Payment                 | Click On |   ✔    |
+
+</details> 
+
+### Coffee
+
+<details><summary>Coffee :</summary>
+
+The Coffee Products pages are the same as the All Products page with only one Noticable difference which are the Coffee Products Catergory Buttons under the Main Title of Products. The Coffee Products Page will also only show Coffee Products. The Coffee Products page has 3 of these Buttons as it is sepearted into 3 Categories.
+
+| Feature                     |  Expect                                       | Action   | Result |
+| ----------------------------| ----------------------------------------------| -------- | -------|
+|  Coffee Beans Button        | Show only the Products of that Category       | Click On |   ✔    |
+|  Coffee Grounds Button      | Show only the Products of that Category       | Click On |   ✔    |
+|  Coffee Capsule Pods        | Show only the Products of that Category       | Click On |   ✔    |
+
+</details> 
+
+### Coffee Machines
+
+<details><summary>Coffee Machines :</summary>
+
+The Coffee Machines Products pages are the same as the All Products page with only one Noticable difference which are the Coffee Machines Products Catergory Buttons under the Main Title of Products. The Coffee Machines Products Page will also only show Coffee Machine Products. The Coffee Machines Products page has 3 of these Buttons as it is sepearted into 3 Categories
+
+| Feature                     |  Expect                                       | Action   | Result |
+| ----------------------------| ----------------------------------------------| -------- | -------|
+|  Capsule Pods Button        | Show only the Products of that Category       | Click On |   ✔    |
+|  Coffee Makers Button       | Show only the Products of that Category       | Click On |   ✔    |
+|  Espresso Pods              | Show only the Products of that Category       | Click On |   ✔    |
+
+</details> 
+
+### Accessories
+
+<details><summary>Accessories :</summary>
+
+The Accessories Products pages are the same as the All Products page with only one Noticable difference which are the Accessories Products Catergory Buttons under the Main Title of Products. The Accessories Products Page will also only show Accessories Products. The Accessories Products page has 2 of these Buttons as it is sepearted into 2 Categories.
+
+| Feature                     |  Expect                                       | Action   | Result |
+| ----------------------------| ----------------------------------------------| -------- | -------|
+|  Drink Wears Button         | Show only the Products of that Category       | Click On |   ✔    |
+|  Manual Coffee Makers Button| Show only the Products of that Category       | Click On |   ✔    |
+
+</details> 
+
+### Gift Sets & Treats
+
+<details><summary>Gift Sets & Treats :</summary>
+
+The Gift Sets & Treats Products pages are the same as the All Products page with only one Noticable difference which are the Gift Sets & Treats Products Catergory Buttons under the Main Title of Products. The Gift Sets & Treats Products Page will also only show Gift Sets & Treats Products. The Gift Sets & Treats Products page has 2 of these Buttons as it is sepearted into 2 Categories.
+
+| Feature                     |  Expect                                       | Action   | Result |
+| ----------------------------| ----------------------------------------------| -------- | -------|
+|  Gift Sets Button           | Show only the Products of that Category       | Click On |   ✔    |
+|  Treats Button              | Show only the Products of that Category       | Click On |   ✔    |
+
+</details>
+
+### Blog
+
+<details><summary>Blog :</summary>
+
+The Blog Page shows a Basic view of the Blog article with an Image & Title below the image. If the User / Shopper clicks on the image they will be redirect to the Blog Detail page
+
+There are also 3 Buttons present
+
+| Feature                 |  Expect                                          | Action   | Result |
+| ------------------------| -------------------------------------------------| -------- | -------|
+|  Iamge Card             | Goes to Blog Detail page                         | Click On |   ✔    |
+|  Read More Button       | Goes to Blog Detail page                         | Click On |   ✔    |
+|  Edit Button            | Goes to Edit Blog page - Visable only to Admin   | Click On |   ✔    |
+|  Delete Button          | Goes to Delete Blog page - Visable only to Admin | Click On |   ✔    |
+
+
+</details> 
+
+### Blog Detail
+
+<details><summary>Blog Detail :</summary>
+
+The Blog Detail Page shows the full Blog article with The Title at the top , Image below & Full article following. 
+There are links within the Blog article that open in a seperte tab if clicked on. 
+Credit has been given to all article information at the bottom of the the Main body of the Article with a link that will open in a new tab.
+
+There are also 3 Buttons present
+
+| Feature                 |  Expect                                          | Action   | Result |
+| ------------------------| -------------------------------------------------| -------- | -------|
+|  Links                  | Open in a seperte tab                            | Click On |   ✔    |
+|  Back to Blog Button    | Goes to Blog Detail page                         | Click On |   ✔    |
+|  Edit Button            | Goes to Edit Blog page - Visable only to Admin   | Click On |   ✔    |
+|  Delete Button          | Goes to Delete Blog page - Visable only to Admin | Click On |   ✔    |
+
+
+</details> 
+
+### Contact US
+
+<details><summary>Contact US :</summary>
+
+The Contact Us Page provides thr User / Shopper even if not logged in with a contact form to fill in. Form askes for : Name , Email , Subject & Message from the User / Shopper.
+
+2 Buttons are available
+
+
+| Feature                 |  Expect                   | Action   | Result |
+| ------------------------| --------------------------| -------- | -------|
+|  Contact form           | Fill in Form              | Type     |   ✔    |
+|  Cancel Button          | Goes to  Home page        | Click On |   ✔    |
+|  Submit Button          | Submits the Contact form   | Click On |   ✔    |
+
+
+</details> 
+
+### FAQ's
+
+<details><summary>FAQ's :</summary>
+
+The FAQ's page provides the User / Shopper with a list of Questions clicking on the Question will drop down & SHow the Answer. The First Question is open by default to give the User / Shopper the idea on how to use this section as it shows both the Question with the answers below it.
+
+
+| Feature                 |  Expect                   | Action   | Result |
+| ------------------------| --------------------------| -------- | -------|
+|  Question               | Drops Down - Reveals      | Click On |   ✔    |
+|  Question               | Pulls Up - Hides          | Click On |   ✔    |
+
+</details> 
+
+
+
 
 
 ## Admin Control Maual Testing
