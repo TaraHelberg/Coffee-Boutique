@@ -9,6 +9,7 @@ Git Hub Repository : [Coffee Boutique Repository](https://github.com/TaraHelberg
 Coffee Boutique is a online E-commerce website engaged in the selling of Coffee & associated Coffee Product. The store offers it's shoppers a wide range of Coffee as well as Coffee product such as machines, manual coffee makers, gift sets and even some treats for those with a sweet tooth.
 The App is aimed at all Coffee Lovers and shows it love of Coffee in its design and colour choice.
 
+Note : It is recommended to use Ctrl + click on all links as this will open them in a seperate tab.
 
 # Contents
 
@@ -285,6 +286,8 @@ Although only a few are represented in the Kanban the E-commerce store that I ha
     As a Shop Owner I require to give Discount Coupons that a Shopper can see & use so that it encourages shoppers / user to make that first purchase.
 
  Other Future Features include using Product variants to manage not only the change in Price for size difference but for product colour selection.
+
+ A better Review star rating system
 
  The abitity to make up your own Gift set by selecting from excisting Products.
 
@@ -629,11 +632,15 @@ The Keywords selection was made by tracking what is trending and  looking into w
 
 The website App also has a sitemap file with a list of important URLs was in order to help the  search engines spiderbots to crawl the business website faster and fetch all relevant content.
 
+Made by using XML-Sitemaps.com : https://www.xml-sitemaps.com/
+
 [Back to top ⇧](#contents)
 
 ## Robots 
 
 The use of robots.txt file has been applied to allow search engine spiderbots  where not to go on the website and increase the quality of the site, ultimately improving the SEO rating.
+
+Made with help of Walkthrough Boutique Ado.
 
 [Back to top ⇧](#contents)
 
@@ -747,13 +754,9 @@ Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App.
 
 Custom Error Pages have been created to give the User / Shopper more information and help redirect them when an should an Error occur. These pages are provided with a Redirect Button Return to Shop areas of the App.
 
-404 Error page shown as an Example of what the Error pages. 
+404 & 500 Error page shown as an Examples of what the Error pages. 
 
-<details><summary>Error Page Example Imagery</summary>
-
-![400]()
-
-![403]()
+<details><summary>Error Page Examples Imagery</summary>
 
 ![404](assets/readme-images/Error_Pg/404-Error-pg.jpeg)
 
